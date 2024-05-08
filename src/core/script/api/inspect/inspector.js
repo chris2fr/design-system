@@ -40,7 +40,7 @@ class LogLevel {
 class Message {
   constructor (domain) {
     this.inputs = ['%c'];
-    this.styles = ['font-family:Marianne', 'line-height: 1.5'];
+    this.styles = ['font-family:fengardoneue', 'line-height: 1.5'];
     this.objects = [];
 
     if (domain) this.add(`${domain} :`);

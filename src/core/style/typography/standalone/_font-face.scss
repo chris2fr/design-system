@@ -4,7 +4,7 @@
 ////
 
 @mixin standalone-font-face($id, $subset, $types) {
-  $family: 'Marianne-#{$id}';
+  $family: 'fengardoneue-#{$id}';
 
   @at-root {
     @each $type in $types {

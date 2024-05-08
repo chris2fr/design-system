@@ -1,6 +1,6 @@
 import { Module } from '../module.js';
 
-const FONT_FAMILIES = ['Marianne', 'Spectral'];
+const FONT_FAMILIES = ['fengardoneue', 'lack'];
 
 class FontSwap extends Module {
   constructor () {

@@ -16,8 +16,8 @@ const standaloneFontSubset = async (pck) => {
   let separator = '';
 
   for (const key in content) {
-    const woff = await readFile(root(`src/core/asset/fonts/Marianne-${key}.woff2`));
-    const buffer = await subsetFont(woff, content[key], { targetFormat: 'woff2' });
+    const woff = await readFile(root(`src/core/asset/fonts/fengardoneue-${key}.woff`));
+    const buffer = await subsetFont(woff, content[key], { targetFormat: 'woff' });
     font += `${separator}${key.toLowerCase()}: '${buffer.toString('base64')}'`;
     separator = `,
     `;
