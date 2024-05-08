@@ -13,11 +13,11 @@ $font-settings: (
     styles: (
       regular: (
         font-weight: 400,
-        file: 'fengardoneue_regular-webfont'
+        file: 'fengardoneue-Regular'
       ),
       bold: (
         font-weight: 700,
-        file: 'fengardoneue_black-webfont'
+        file: 'fengardoneue-Bold'
       )
     )
   ),
@@ -28,12 +28,12 @@ $font-settings: (
     styles: (
       regular: (
         font-weight: 400,
-        file: 'lack-regular'
+        file: 'lack-Regular'
       ),
       italic: (
         font-weight: 600,
-        file: 'lack-italic-webfont'
+        file: 'lack-Italic'
       )
-    ),
+    )
   )
 );

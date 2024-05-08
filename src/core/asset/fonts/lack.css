@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'lack';
-    src: url('lack-italic-webfont.woff2') format('woff2'),
-         url('lack-italic-webfont.woff') format('woff');
+    src: url('lack-Italic.woff2') format('woff2'),
+         url('lack-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
 
@@ -40,8 +40,8 @@
 
 @font-face {
     font-family: 'lack';
-    src: url('lack-regular.woff2') format('woff2'),
-         url('lack-regular.woff') format('woff');
+    src: url('lack-Regular.woff2') format('woff2'),
+         url('lack-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
