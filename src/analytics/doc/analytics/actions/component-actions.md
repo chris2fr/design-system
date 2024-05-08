@@ -1,8 +1,8 @@
-## Actions sur les composants DSFR
+## Actions sur les composants dsfacile
 
-Les composants du DSFR envoient automatiquement des actions prédéfinies.
+Les composants du dsfacile envoient automatiquement des actions prédéfinies.
 
-Le tableau, ci-dessous, regroupe les différentes actions remontées à Eulérian pour chaque composant du DSFR.
+Le tableau, ci-dessous, regroupe les différentes actions remontées à Eulérian pour chaque composant du dsfacile.
 Vous trouverez pour chaque composant une colonne :
 
   * **Composant** : Nom du composant

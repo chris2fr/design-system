@@ -1,6 +1,6 @@
 ## Opt
 L’instance de Opt est accessible depuis
-`window.dsfr.analytics.opt`
+`window.dsfacile.analytics.opt`
 
 Elle permet de gérer l’Opt-out lorsque l’utilisateur ne consent pas à la collecte de données.
 
@@ -12,7 +12,7 @@ Le Opt-Out complet empêche le chargement de la librairie JS eulerian ainsi que 
 
 _Boolean_
 
-`window.dsfr.analytics.opt.isDisabled`
+`window.dsfacile.analytics.opt.isDisabled`
 
 Retourne une valeur booléenne “true” pour un Opt-Out et “false” pour un Opt-In (par défaut).
 
@@ -24,7 +24,7 @@ alias de la fonction de l’API eulerian _EA_disabled()
 
 #### enable
 
-`window.dsfr.analytics.opt.enable()`
+`window.dsfacile.analytics.opt.enable()`
 
 Opt-in, la collecte de données est activée.
 
@@ -32,7 +32,7 @@ Opt-in, la collecte de données est activée.
 
 #### disable
 
-`window.dsfr.analytics.opt.disable()`
+`window.dsfacile.analytics.opt.disable()`
 
 Opt-out, la collecte de données est désactivée.
 
@@ -40,6 +40,6 @@ Opt-out, la collecte de données est désactivée.
 
 #### toggle
 
-`window.dsfr.analytics.opt.toggle()`
+`window.dsfacile.analytics.opt.toggle()`
 
 Inverse le statut Opt-in / Opt-out

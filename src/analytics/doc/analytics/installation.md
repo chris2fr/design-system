@@ -1,9 +1,9 @@
 ## Installation
 
-#### Au sein du DSFR
+#### Au sein du dsfacile
 
 Pour installer le système d’analytics, il suffit d’importer le fichier javascript :
-`/dist/analytics/analytics.module.js` **après** `dsfr.module.js`
+`/dist/analytics/analytics.module.js` **après** `dsfacile.module.js`
 
 Fonctionnalités disponibles :
 - Intégration CMP
@@ -15,11 +15,11 @@ Fonctionnalités disponibles :
 Le script d’Eulerian est automatiquement chargé au sein du package, attention à ne pas l’insérer dans la page afin d'éviter les doublons.
 
 > **⚠️ Important :** 
-> Pour les versions du dsfr inférieures à dsfr-1.9.0 (minimum 1.3.0), il est nécessaire d’ajouter le fichier : `/dist/patch/patch.module.js` **avant** `dsfr.module.js`
+> Pour les versions du dsfacile inférieures à dsfacile-1.9.0 (minimum 1.3.0), il est nécessaire d’ajouter le fichier : `/dist/patch/patch.module.js` **avant** `dsfacile.module.js`
 
 Il est préférable d'utiliser l'api dans ses dernières versions pour profiter des optimisations et correctifs
 
-Analytics est un package à part, il n’est pas compris dans le fichier js global du DSFR. Il n'est cependant pas totalement autonome et est dépendant du core du DSFR (compris dans le fichier global du DSFR)
+Analytics est un package à part, il n’est pas compris dans le fichier js global du dsfacile. Il n'est cependant pas totalement autonome et est dépendant du core du dsfacile (compris dans le fichier global du dsfacile)
 
 #### Version standalone
 
@@ -33,14 +33,14 @@ Fonctionnalités disponibles :
 - ~~Actions dans les composants~~
 - ~~Actions hors composants~~
 
-Cette version permet d’effectuer la mesure d'audience sans dépendance au DSFR et peut fonctionner de manière autonome.
+Cette version permet d’effectuer la mesure d'audience sans dépendance au dsfacile et peut fonctionner de manière autonome.
 
 > **⚠️ Important :**
 > La mesure des actions n'est pas disponible dans cette version
 
 #### Pour aller plus loin
 
-Pour le fonctionnement du package Analytics, une configuration particulière du dsfr est nécessaire :
+Pour le fonctionnement du package Analytics, une configuration particulière du dsfacile est nécessaire :
 [Configuration](installation/configuration.md)
 
 Le package Analytics doit être lié à une plateforme de consentement et l'API propose des utilitaires à cet effet : [ConsentManagementPlatform](installation/cmp.md)

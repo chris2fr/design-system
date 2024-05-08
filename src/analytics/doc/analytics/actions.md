@@ -13,7 +13,7 @@ Les actions correspondent aux évènements et aux interactions que l’on souhai
 * Les actions d'interaction sont limitées dans leur envoi à la seule première interaction avec l'élément dans la page, sauf si la donnée associée à l'envoi change. Par exemple, un bouton particulier dans le menu enverra des données au premier click, puis sera limité. Si la page change, il enverra de nouveau des données au premier click. Dans le cas d'un composant de recherche, chaque interaction enverra une requête de recherche différente et passera outre la règle de limitation. Si la requête de recherche est identique à la précédente, celle-ci ne sera pas envoyée.
 
 > **Note** :
-> Les actions ne sont pas supportées dans la [version standalone](./installation.md#Version standalone). Pour mesurer les actions avec l'API analytics, utiliser la version complète du DSFR
+> Les actions ne sont pas supportées dans la [version standalone](./installation.md#Version standalone). Pour mesurer les actions avec l'API analytics, utiliser la version complète du dsfacile
 
 #### ActionName
 
@@ -22,12 +22,12 @@ Ce nom d’action est constitué de 3 éléments :
 ```
 (type)_title_[id]
 ```
-* Type : type d'action. (voir [types d'actions](actions/custom-actions.md#ActionType) et [types d'actions sur les composants DSFR](actions/component-actions.md)) 
+* Type : type d'action. (voir [types d'actions](actions/custom-actions.md#ActionType) et [types d'actions sur les composants dsfacile](actions/component-actions.md)) 
 * Title : la hiérarchie des intitulés des éléments ou la valeur de l'attribut `data-fr-analytics-action`
 * Id : l'id de l'élément (correspondant à l'attribut `id`sur l'élément) - obligatoire.
 
 > **⚠️ Important :**
-> **Un id est obligatoire sur tous les éléments traqués** (retrouvez les éléments du dsfr nécessitant un id dans la colonne “element” du [tableau d'actions des composants du dsfr](actions/component-actions.md)).
+> **Un id est obligatoire sur tous les éléments traqués** (retrouvez les éléments du dsfacile nécessitant un id dans la colonne “element” du [tableau d'actions des composants du dsfacile](actions/component-actions.md)).
 >Il est nécessaire que l’id soit :
 >  * unique : L’id doit être unique au site, par exemple:
 >    * Deux boutons différents ne doivent pas avoir le même id, même sur des pages différentes
@@ -58,4 +58,4 @@ L'ajout de l'attribut `data-fr-analytics-rating` sur élément particulier perme
 
 - Analytics/Actions
   - [Actions d’interaction hors composant](actions/custom-actions.md)
-  - [Actions sur les composants DSFR](actions/component-actions.md)
+  - [Actions sur les composants dsfacile](actions/component-actions.md)

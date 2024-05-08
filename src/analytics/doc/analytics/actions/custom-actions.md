@@ -1,6 +1,6 @@
 ### Actions d’interaction hors composant
 
-Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du DSFR.
+Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du dsfacile.
 
 Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-fr-analytics-{action}` sur la
 balise

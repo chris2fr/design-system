@@ -2,13 +2,13 @@
 
 L’instance de Site est accessible depuis
 
-window.dsfr.analytics.site
+window.dsfacile.analytics.site
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.dsfr = {
+    window.dsfacile = {
         analytics: {
             site: {
                 environment: 'production', // by default development ['development', 'stage', 'production']
@@ -35,7 +35,7 @@ window.dsfr.analytics.site
 
 _String_ (EA: site\_environment)
 
-`window.dsfr.analytics.site.environment`
+`window.dsfacile.analytics.site.environment`
 
 Défini l’environnement du site parmi :
 
@@ -45,7 +45,7 @@ Défini l’environnement du site parmi :
 
 * `stage`
 
-Les différentes valeurs sont énumérées dans l’objet `window.dsfr.analytics.site.constructor.Environment`
+Les différentes valeurs sont énumérées dans l’objet `window.dsfacile.analytics.site.constructor.Environment`
 
 * * *
 
@@ -53,7 +53,7 @@ Les différentes valeurs sont énumérées dans l’objet `window.dsfr.analytics
 
 _String_ (EA: site\_entity) (required)
 
-`window.dsfr.analytics.site.entity`
+`window.dsfacile.analytics.site.entity`
 
 Défini l'entité responsable du site **(obligatoire)**
 
@@ -63,7 +63,7 @@ Défini l'entité responsable du site **(obligatoire)**
 
 _String_ (EA: site\_language)
 
-`window.dsfr.analytics.site.language`
+`window.dsfacile.analytics.site.language`
 
 Défini la langue du site en ISO 639-1
 
@@ -75,7 +75,7 @@ Par défaut, reprend l’attribut lang sur la balise `<html>` de la page
 
 _String_ (EA: site\_target)
 
-`window.dsfr.analytics.site.target`
+`window.dsfacile.analytics.site.target`
 
 Défini l'objectif du site
 
@@ -85,7 +85,7 @@ Défini l'objectif du site
 
 _String_ (EA: site\_type)
 
-`window.dsfr.analytics.site.type`
+`window.dsfacile.analytics.site.type`
 
 Défini le type de site
 
@@ -95,7 +95,7 @@ Défini le type de site
 
 _String_ (EA: site\_region)
 
-`window.dsfr.analytics.site.region`
+`window.dsfacile.analytics.site.region`
 
 Défini la région du site (pour les sites régionaux) au format
 [ISO 3166-2:FR](https://fr.wikipedia.org/wiki/ISO_3166-2:FR#R.C3.A9gions_m.C3.A9tropolitaines)
@@ -106,7 +106,7 @@ Défini la région du site (pour les sites régionaux) au format
 
 _String_ (EA: site\_department)
 
-`window.dsfr.analytics.site.department`
+`window.dsfacile.analytics.site.department`
 
 Défini le département du site (pour les sites départementaux) au format
 [ISO 3166-2:FR](https://fr.wikipedia.org/wiki/ISO_3166-2:FR#D.C3.A9partements_m.C3.A9tropolitains_.2896.29)
@@ -117,7 +117,7 @@ Défini le département du site (pour les sites départementaux) au format
 
 _String_ (EA: site\_version)
 
-`window.dsfr.analytics.site.version`
+`window.dsfacile.analytics.site.version`
 
 Défini la version du site
 
@@ -127,9 +127,9 @@ Défini la version du site
 
 _String_ (EA: api\_version)
 
-`window.dsfr.analytics.site.api`
+`window.dsfacile.analytics.site.api`
 
-Retourne la version de l’API DSFR, géré et injecté automatiquement par le script
+Retourne la version de l’API dsfacile, géré et injecté automatiquement par le script
 
 * * *
 
@@ -137,7 +137,7 @@ Retourne la version de l’API DSFR, géré et injecté automatiquement par le s
 
 ##### reset (clear = false)
 
-`window.dsfr.analytics.site.reset(clear)`
+`window.dsfacile.analytics.site.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

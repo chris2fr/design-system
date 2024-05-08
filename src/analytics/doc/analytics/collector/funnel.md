@@ -2,13 +2,13 @@
 
 L’instance de Funnel est accessible depuis
 
-`window.dsfr.analytics.funnel`
+`window.dsfacile.analytics.funnel`
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.dsfr = {
+    window.dsfacile = {
         analytics: {
             funnel: {
                 id: 'id',
@@ -35,7 +35,7 @@ L’instance de Funnel est accessible depuis
 
 _String_ (EA: funnel\_id)
 
-`window.dsfr.analytics.funnel.id`
+`window.dsfacile.analytics.funnel.id`
 
 Identifiant du parcours / formulaire multi-étape
 
@@ -45,7 +45,7 @@ Identifiant du parcours / formulaire multi-étape
 
 _String_ (EA: funnel\_type)
 
-`window.dsfr.analytics.funnel.type`
+`window.dsfacile.analytics.funnel.type`
 
 Type de parcours / formulaire
 
@@ -55,7 +55,7 @@ Type de parcours / formulaire
 
 _String_ (EA: funnel\_name)
 
-`window.dsfr.analytics.funnel.name`
+`window.dsfacile.analytics.funnel.name`
 
 Nom du parcours/formulaire si besoin de précision.
 
@@ -65,7 +65,7 @@ Nom du parcours/formulaire si besoin de précision.
 
 _String_ (EA: funnel\_step\_name)
 
-`window.dsfr.analytics.funnel.step`
+`window.dsfacile.analytics.funnel.step`
 
 Nom de l'étape du parcours/formulaire.
 
@@ -75,7 +75,7 @@ Nom de l'étape du parcours/formulaire.
 
 _Int_ (EA: funnel\_step\_number)
 
-`window.dsfr.analytics.funnel.current`
+`window.dsfacile.analytics.funnel.current`
 
 Numéro de l'étape en cours dans le parcours/formulaire.
 
@@ -85,7 +85,7 @@ Numéro de l'étape en cours dans le parcours/formulaire.
 
 _Int_ (EA: funnel\_step\_max)
 
-`window.dsfr.analytics.funnel.total`
+`window.dsfacile.analytics.funnel.total`
 
 Nombre d’étapes maximum dans le parcours/formulaire.
 
@@ -95,7 +95,7 @@ Nombre d’étapes maximum dans le parcours/formulaire.
 
 _String_ (EA: funnel\_objective)
 
-`window.dsfr.analytics.funnel.objective`
+`window.dsfacile.analytics.funnel.objective`
 
 Objectif du parcours/formulaire.
 
@@ -105,7 +105,7 @@ Objectif du parcours/formulaire.
 
 _String_ (EA: funnel\_error)
 
-`window.dsfr.analytics.funnel.error`
+`window.dsfacile.analytics.funnel.error`
 
 Type d’erreur d’un parcours/formulaire.
 
@@ -115,7 +115,7 @@ Type d’erreur d’un parcours/formulaire.
 
 ##### reset (clear = false)
 
-`window.dsfr.analytics.funnel.reset(clear)`
+`window.dsfacile.analytics.funnel.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

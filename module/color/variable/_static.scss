@@ -8,3 +8,5 @@ $black-a64: rgba(nth(map-get(options.$values, grey-50), 1), 64%);
 $white: nth(map-get(options.$values, grey-1000), 1);
 $blue-facile: nth(map-get(options.$values, blue-facile-sun), 1);
 $red-facile: nth(map-get(options.$values, red-facile-main), 1);
+$green-menthe: nth(map-get(options.$values, green-menthe-sun), 1);
+$purple-glycine: nth(map-get(options.$values, purple-glycine-main), 1);

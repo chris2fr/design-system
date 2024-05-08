@@ -3,13 +3,13 @@
 
 L’instance de Page est accessible depuis
 
-window.dsfr.analytics.page
+window.dsfacile.analytics.page
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.dsfr = {
+    window.dsfacile = {
         analytics: {
             page: {
                 path: 'path_name/from/url', // path for page tracking
@@ -48,7 +48,7 @@ window.dsfr.analytics.page
 
 _String_ (EA: path)
 
-`window.dsfr.analytics.page.path`
+`window.dsfacile.analytics.page.path`
 
 * Défini le chemin de la page
 
@@ -60,7 +60,7 @@ _String_ (EA: path)
 
 _String_ (EA: referrer)
 
-`window.dsfr.analytics.page.referrer`
+`window.dsfacile.analytics.page.referrer`
 
 * Défini la page précédente si différente de `document.referer` (si page virtuelle)
 
@@ -70,7 +70,7 @@ _String_ (EA: referrer)
 
 _String_ (EA: page_id)
 
-`window.dsfr.analytics.page.id`
+`window.dsfacile.analytics.page.id`
 
 * Défini l'identifiant unique de la page
 
@@ -80,7 +80,7 @@ _String_ (EA: page_id)
 
 _String_ (EA: page_title)
 
-`window.dsfr.analytics.page.title`
+`window.dsfacile.analytics.page.title`
 
 * Défini le titre de page si différent de la balise `title` de la page (si page virtuelle)
 
@@ -90,7 +90,7 @@ _String_ (EA: page_title)
 
 _String_ (EA: page_name)
 
-`window.dsfr.analytics.page.name`
+`window.dsfacile.analytics.page.name`
 
 * Défini un nom de page (égal à title par défaut)
 
@@ -100,7 +100,7 @@ _String_ (EA: page_name)
 
 _String_ (EA: page_author)
 
-`window.dsfr.analytics.page.author`
+`window.dsfacile.analytics.page.author`
 
 * Défini le nom de l'auteur de la page
 
@@ -110,7 +110,7 @@ _String_ (EA: page_author)
 
 _Date_ (EA: page_date)
 
-`window.dsfr.analytics.page.date`
+`window.dsfacile.analytics.page.date`
 
 * Défini la date de publication de la page restituée au format de date calendaire [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) [YYYY-MM-DD]
 
@@ -122,7 +122,7 @@ _Date_ (EA: page_date)
 
 _Array`<String>`_ (EA: pagelabel)
 
-`window.dsfr.analytics.page.labels`
+`window.dsfacile.analytics.page.labels`
 
 * Liste de 5 regroupements de contenus maximum
 
@@ -132,7 +132,7 @@ _Array`<String>`_ (EA: pagelabel)
 
 _Array`<String>`_ (EA: page_category1, page_category2, page_category1)
 
-`window.dsfr.analytics.page.categories`
+`window.dsfacile.analytics.page.categories`
 
 * Liste de 5 regroupements de contenus maximum
 
@@ -145,7 +145,7 @@ page_category3)
 
 _Array`<String>`_ (EA: page_tags)
 
-`window.dsfr.analytics.page.tags`
+`window.dsfacile.analytics.page.tags`
 
 * Défini les tags associés à la page. Si plusieurs tags, ils doivent être séparés par une virgule sans espaces (pas de limite)
 
@@ -155,7 +155,7 @@ _Array`<String>`_ (EA: page_tags)
 
 _String_ (EA: template)
 
-`window.dsfr.analytics.page.template`
+`window.dsfacile.analytics.page.template`
 
 * Permet de définir un nom de template
 
@@ -165,7 +165,7 @@ _String_ (EA: template)
 
 _String_ (EA: pagegroup)
 
-`window.dsfr.analytics.page.group`
+`window.dsfacile.analytics.page.group`
 
 * Permet de définir un nom de groupe (par défaut égal à template)
 
@@ -175,7 +175,7 @@ _String_ (EA: pagegroup)
 
 _String_ (EA: segment-site)
 
-`window.dsfr.analytics.page.segment`
+`window.dsfacile.analytics.page.segment`
 
 * Permet de définir un nom de segment (par défaut égal à template)
 
@@ -185,7 +185,7 @@ _String_ (EA: segment-site)
 
 _String_ (EA: page_subtemplate)
 
-`window.dsfr.analytics.page.subtemplate`
+`window.dsfacile.analytics.page.subtemplate`
 
 Apporte un niveau de détail supplémentaire lié au contenu pour les page_template comprenant beaucoup de pages sur des thèmes différents
 
@@ -195,7 +195,7 @@ Apporte un niveau de détail supplémentaire lié au contenu pour les page_templ
 
 _String_ (EA: page_theme)
 
-`window.dsfr.analytics.page.theme`
+`window.dsfacile.analytics.page.theme`
 
 * Permet de définir le thème principal des contenus
 
@@ -205,7 +205,7 @@ _String_ (EA: page_theme)
 
 _String_ (EA: page_subtheme)
 
-`window.dsfr.analytics.page.subtheme`
+`window.dsfacile.analytics.page.subtheme`
 
 * Permet de définir un sous-theme
 
@@ -215,7 +215,7 @@ _String_ (EA: page_subtheme)
 
 _String_ (EA: page_related)
 
-`window.dsfr.analytics.page.related`
+`window.dsfacile.analytics.page.related`
 
 * Clé unique passée sur l'ensemble des pages avec des contenus liés
 
@@ -225,7 +225,7 @@ _String_ (EA: page_related)
 
 _Integer_ (EA: page_depth)
 
-`window.dsfr.analytics.page.depth`
+`window.dsfacile.analytics.page.depth`
 
 Niveau de profondeur de la page (default: 0)
 
@@ -235,7 +235,7 @@ Niveau de profondeur de la page (default: 0)
 
 _Boolean_ (EA: error) - default: false (required)
 
-`window.dsfr.analytics.page.isError`
+`window.dsfacile.analytics.page.isError`
 
 * Défini si la page est une page d’erreur (**obligatoire** si page d’erreur)
 
@@ -245,7 +245,7 @@ _Boolean_ (EA: error) - default: false (required)
 
 _Integer_ (EA: page_pagination)
 
-`window.dsfr.analytics.page.current`
+`window.dsfacile.analytics.page.current`
 
 Numéro de page si au sein d’un découpage ou d’une pagination
 
@@ -257,7 +257,7 @@ Numéro de page si au sein d’un découpage ou d’une pagination
 
 _Integer_
 
-`window.dsfr.analytics.page.total`
+`window.dsfacile.analytics.page.total`
 
 Nombre de page au sein du découpage ou de la pagination
 
@@ -273,7 +273,7 @@ Si le composant Pagination est présent, la récupération automatique se fait d
 
 * _Array`<String>`_ (EA: page_filters)
 
-`window.dsfr.analytics.page.filters`
+`window.dsfacile.analytics.page.filters`
 
 Défini les filtres appliqués à la page
 
@@ -283,7 +283,7 @@ Défini les filtres appliqués à la page
 
 ##### reset (clear = false)
 
-`window.dsfr.analytics.page.reset(clear)`
+`window.dsfacile.analytics.page.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

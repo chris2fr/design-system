@@ -2,13 +2,13 @@
 
 L’instance de ConsentManagerPlatform est accessible depuis
 
-window.dsfr.analytics.cmp
+window.dsfacile.analytics.cmp
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.dsfr = {
+    window.dsfacile = {
         analytics: {
             cmp: {
             id: 'tarteaucitron'
@@ -24,7 +24,7 @@ la configuration d’une CMP permet d’automatiser son lancement
 
 ##### integrateTarteAuCitron ()
 
-`window.dsfr.analytics.cmp.integrateTarteAuCitron()`
+`window.dsfacile.analytics.cmp.integrateTarteAuCitron()`
 
 Permet d’intégrer tarteaucitron
 

@@ -1,6 +1,6 @@
 ---
 name: Rapporter un bug
-about: Rapporter un bug pour améliorer le DSFR
+about: Rapporter un bug pour améliorer le dsfacile
 title: ''
 labels: bug
 assignees: ''
@@ -25,7 +25,7 @@ Une description claire et concise de ce qui devrait se produire.
 Ajouter des captures d’écran ou un exemple de code pour préciser le bug et le contexte.
 
 ### Configuration et système utilisé
-- **Version du DSFR : **
+- **Version du dsfacile : **
 - **Appareil (mobile, tablette, desktop) : **
 - **Système d’exploitation : **
 - **Navigateur et version : **

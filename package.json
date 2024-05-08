@@ -1,13 +1,13 @@
 {
-  "name": "@gouvfr/dsfr",
+  "name": "@gouvfr/dsfacile",
   "version": "1.11.2",
-  "description": "Système de Design de l'Etat - DSFR",
-  "repository": "git@github.com:GouvernementFR/dsfr.git",
+  "description": "Système de Design de l'Etat - dsfacile",
+  "repository": "git@github.com:GouvernementFR/dsfacile.git",
   "author": "Service d'Information du Gouvernement <maxime.beaugrand@pm.gouv.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
     "prefix": "fr",
-    "namespace": "dsfr",
+    "namespace": "dsfacile",
     "organisation": "@gouvfr"
   },
   "engines": {
