@@ -38,7 +38,7 @@
   $name: list.nth($settings, $index);
 
   @if not map.has-key(options.$values, $name) {
-    @error ('color ' + $name + ' doesn\'t exists');
+    @error ('color ' + $name + ' doesn\'t exist');
   }
 
   $option: map.get(options.$values, $name);

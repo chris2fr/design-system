@@ -26,7 +26,7 @@
 
       &:checked {
         ~ #{ns(radio-rich__img)} {
-          @include color.background-image((action-high blue-france) (action-high blue-france) (action-high blue-france) (border default grey) , (legacy: $legacy));
+          @include color.background-image((action-high blue-facile) (action-high blue-facile) (action-high blue-facile) (border default grey) , (legacy: $legacy));
         }
 
         @include disabled.selector {

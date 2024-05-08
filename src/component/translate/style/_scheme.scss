@@ -9,8 +9,8 @@
   #{ns(translate)} {
     #{ns(translate)}__btn {
       &[aria-expanded="true"] {
-        @include color.text(active blue-france, (legacy: $legacy));
-        @include color.background(open blue-france, (legacy: $legacy));
+        @include color.text(active blue-facile, (legacy: $legacy));
+        @include color.background(open blue-facile, (legacy: $legacy));
         @include hover-tint;
       }
     }

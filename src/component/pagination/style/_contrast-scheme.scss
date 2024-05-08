@@ -12,7 +12,7 @@
     #{ns(pagination)} {
       &__link {
         @include selector.current {
-          @include color.border(active blue-france, (legacy: $legacy, hover: true));
+          @include color.border(active blue-facile, (legacy: $legacy, hover: true));
         }
       }
     }

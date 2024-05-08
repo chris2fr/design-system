@@ -11,7 +11,7 @@
   #{ns(mega-menu)} {
     @include media-query.respond-from(lg) {
       @include elevation.elevate(overlap, (legacy: $legacy));
-      @include color.box-shadow(open blue-france, (legacy:$legacy), top-1-in);
+      @include color.box-shadow(open blue-facile, (legacy:$legacy), top-1-in);
     }
 
     &__list {

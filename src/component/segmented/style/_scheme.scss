@@ -22,8 +22,8 @@
       input {
         &:checked {
           + label {
-            @include color.box-shadow(active blue-france, (legacy:$legacy));
-            @include color.text(active blue-france, (legacy:$legacy));
+            @include color.box-shadow(active blue-facile, (legacy:$legacy));
+            @include color.text(active blue-facile, (legacy:$legacy));
           }
 
           @include disabled.selector {

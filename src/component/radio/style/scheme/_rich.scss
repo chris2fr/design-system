@@ -16,7 +16,7 @@
 
     input[type="radio"] {
       + label {
-        @include color.background-image((border default grey) (border action-high blue-france), (legacy: $legacy), '#{radio-rich-background-image(false)}');
+        @include color.background-image((border default grey) (border action-high blue-facile), (legacy: $legacy), '#{radio-rich-background-image(false)}');
         @include color.background((background default grey), (legacy: $legacy));
       }
 
@@ -34,11 +34,11 @@
 
       &:checked {
         + label {
-          @include color.background-image((border active blue-france) (border active blue-france) (active blue-france), (legacy: $legacy), '#{radio-rich-background-image(true)}');
+          @include color.background-image((border active blue-facile) (border active blue-facile) (active blue-facile), (legacy: $legacy), '#{radio-rich-background-image(true)}');
         }
 
         ~ #{selector.ns(radio-rich__pictogram)} {
-          @include color.background-image((action-high blue-france) (action-high blue-france) (action-high blue-france) (border default grey), (legacy: $legacy));
+          @include color.background-image((action-high blue-facile) (action-high blue-facile) (action-high blue-facile) (border default grey), (legacy: $legacy));
         }
 
         @include disabled.selector {
@@ -63,7 +63,7 @@
           }
 
           &:checked + label {
-            @include color.background-image((action-high blue-france) (border plain error) (active blue-france), (legacy: $legacy), '#{radio-rich-background-image(true)}');
+            @include color.background-image((action-high blue-facile) (border plain error) (active blue-facile), (legacy: $legacy), '#{radio-rich-background-image(true)}');
           }
         }
       }
@@ -77,7 +77,7 @@
           }
 
           &:checked + label {
-            @include color.background-image((action-high blue-france) (border plain success) (active blue-france), (legacy: $legacy), '#{radio-rich-background-image(true)}');
+            @include color.background-image((action-high blue-facile) (border plain success) (active blue-facile), (legacy: $legacy), '#{radio-rich-background-image(true)}');
           }
         }
       }
@@ -91,7 +91,7 @@
           }
 
           &:checked + label {
-            @include color.background-image((action-high blue-france) (border plain info) (active blue-france), (legacy: $legacy), '#{radio-rich-background-image(true)}');
+            @include color.background-image((action-high blue-facile) (border plain info) (active blue-facile), (legacy: $legacy), '#{radio-rich-background-image(true)}');
           }
         }
       }
