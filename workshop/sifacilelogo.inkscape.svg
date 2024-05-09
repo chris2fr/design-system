@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="440mm"
+   height="180mm"
+   viewBox="0 0 440 180"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="sifacilelogo.inkscape.svg"
+   inkscape:export-filename="sifacilelogo.svg"
+   inkscape:export-xdpi="2.5400002"
+   inkscape:export-ydpi="2.5400002"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.37683081"
+     inkscape:cx="-337.02128"
+     inkscape:cy="437.86229"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:export-bgcolor="#ffffff00" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 156.58542,157.77824 c 29.19532,0 48.3429,-15.73514 48.3429,-36.9681 0,-22.560016 -12.89144,-31.280696 -38.67432,-41.897176 -17.44136,-7.20404 -25.97246,-10.80606 -25.97246,-22.18086 0,-9.479 9.28942,-14.59766 23.31834,-14.78724 13.83934,0 26.35162,5.30824 33.93482,12.3227 V 32.086703 c -9.28942,-6.25614 -20.09548,-10.04774 -32.03902,-9.85816 -27.10994,0 -46.44711,14.2185 -46.44711,34.503561 0,22.56002 12.51228,31.47028 37.91601,42.08676 17.44136,7.204036 26.73078,11.943536 26.73078,21.801696 0,10.4269 -7.39362,17.63094 -27.10994,17.63094 -15.35598,0 -31.47029,-5.87698 -43.03467,-14.97682 v 21.23296 c 7.39362,6.44572 21.80171,13.2706 43.03467,13.2706 z M 326.44924,45.357304 V 26.020143 H 232.41756 V 154.74496 h 20.66422 V 95.785584 h 58.39064 v -19.33716 h -58.39064 v -31.09112 z"
+       id="text1"
+       style="font-size:189.58px;font-family:Lack;-inkscape-font-specification:Lack;text-align:center;text-anchor:middle;fill:#ffffff;stroke:#ffffff;stroke-width:4.44326"
+       aria-label="SF" />
+  </g>
+</svg>

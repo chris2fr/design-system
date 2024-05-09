@@ -20,7 +20,7 @@
 
   @include before('', block) {
     background-repeat: no-repeat, no-repeat, no-repeat;
-    $marianne: svg-encode($svg-marianne, true);
+    $marianne: svg-encode($svg-sifacilelogo, true);
     background-image: url($marianne), linear-gradient(90deg, color.$blue-facile 0%, color.$blue-facile 50%, color.$red-facile 50%, color.$red-facile 100%), linear-gradient(90deg, color.$absolute-black 0%, color.$absolute-black 100%);
   }
 
