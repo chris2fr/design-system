@@ -67,19 +67,19 @@
 
     &__link,
     &__btn {
-      @include color.text(action-high blue-facile, (legacy:$legacy));
+      @include color.text(action-high sifacile-primary, (legacy:$legacy));
 
       @include selector.current {
-        @include color.text(active blue-facile, (legacy:$legacy));
+        @include color.text(active sifacile-primary, (legacy:$legacy));
         @include before {
-          @include color.background(border active blue-facile, (legacy:$legacy));
+          @include color.background(border active sifacile-primary, (legacy:$legacy));
         }
       }
     }
 
     &__btn {
       &[aria-expanded='true'] {
-        @include color.background(open blue-facile, (legacy: $legacy));
+        @include color.background(open sifacile-primary, (legacy: $legacy));
       }
     }
   }

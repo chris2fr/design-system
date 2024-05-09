@@ -342,11 +342,11 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 - ajoute un margin-top: -1.25rem (-20px) sur le sifacile-mega-menu__leader
 - passe le texte de description et le lien du sifacile-mega-menu__leader en taille sm
 - supprime la classe sifacile-mb-4v de la colonne entourant le sifacile-mega-menu__leader
-- le texte du bouton de navigation passe en $text-action-high-blue-facile à l'ouverture
+- le texte du bouton de navigation passe en $text-action-high-sifacile-primary à l'ouverture
 
 
 #### 🐛 fix(unavailable): couleur de fond et image décorative [(#787)](https://github.com/GouvernementFR/dsfr/pull/787)
-- change la couleur de fond de page pour du $background-alt-blue-facile
+- change la couleur de fond de page pour du $background-alt-sifacile-primary
 - remplace l'image décorative par un SVG
 
 
@@ -370,8 +370,8 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 
 
 #### 🐛 fix(tag): token de couleur du tag selectionnable [(#780)](https://github.com/GouvernementFR/dsfr/pull/780)
-- utilisation du token $text-inverted-blue-facile sur la couleur du texte des tag selectionnable et supprimable à la place de $text-inverted-grey
-- remplacement du token de couleur de fond des tag selectionnable par $background-active-blue-facile au lieu de $background-action-high-blue-facile
+- utilisation du token $text-inverted-sifacile-primary sur la couleur du texte des tag selectionnable et supprimable à la place de $text-inverted-grey
+- remplacement du token de couleur de fond des tag selectionnable par $background-active-sifacile-primary au lieu de $background-action-high-sifacile-primary
 
 
 #### 🐛 fix(summary): alignement du titre du sommaire [(#779)](https://github.com/GouvernementFR/dsfr/pull/779)
@@ -414,7 +414,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 
 #### 🐛 fix(checkbox): met a jour le token de la coche [(#762)](https://github.com/GouvernementFR/dsfr/pull/762)
-- passe la couleur de la coche en $text-inverted-blue-facile
+- passe la couleur de la coche en $text-inverted-sifacile-primary
 
 
 #### 🐛 fix(login): correction espacements [(#759)](https://github.com/GouvernementFR/dsfr/pull/759)
@@ -718,7 +718,7 @@ Ajouts des mêmes variations que la carte :
 
 #### ✨ feat(navigation, header, sidemenu): homogénéisation des espacements et indentation [(#678)](https://github.com/GouvernementFR/dsfr/pull/678)
 - Uniformisation du menu latéral, navigation, et accordéon
-  - ajout d'un fond open-blue-facile et du texte en blue-facile sur les boutons d'ouverture en état ouvert
+  - ajout d'un fond open-sifacile-primary et du texte en sifacile-primary sur les boutons d'ouverture en état ouvert
   - ajout de marge pour indenter les sous menus
   - ajustement des espacements
 - Ajustement de la navigation du header en mobile
@@ -817,7 +817,7 @@ Ajoute dans la page d’exemple le déplacement du focus :
 
 #### 🐛 fix(sidemenu):  suppression variante et correctif style bouton mobile [(#660)](https://github.com/GouvernementFR/dsfr/pull/660)
 - Suppression de la variante avec bordure
-- Corrige le style du bouton mobile en action-high-blue-facile (cohérence navigation/accordion)
+- Corrige le style du bouton mobile en action-high-sifacile-primary (cohérence navigation/accordion)
 
 
 #### 🐛 fix(company): retrait des pluriels [(#659)](https://github.com/GouvernementFR/dsfr/pull/659)
@@ -959,8 +959,8 @@ Le composant `Infobulle` (ou `bulle d’aide`, `aide contextuelle`) permet d’a
 
 #### 🐛 fix(accordion, transcription, translate, sidemenu): Ajustement sur l'état défaut et actif [(#564)](https://github.com/GouvernementFR/dsfr/pull/564)
 Harmonisation avec la navigation sur Accordion, Sidemenu, Translate et Transcription :
-- Passage icône et intitulé en action-high-blue-facile
-- Ajout background-open-blue-facile sur le bouton lorsque l'élément est ouvert
+- Passage icône et intitulé en action-high-sifacile-primary
+- Ajout background-open-sifacile-primary sur le bouton lorsque l'élément est ouvert
 - Icône “arrow-down-s-ligne” (la même que sur navigation)
 - Accordion, Translate : Retrait changement de graisse (normal -> bold) à l'ouverture et graisse constante en medium
 
@@ -2519,7 +2519,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### fix: bouton sidemenu display none / scheme package.yml / sifacile-input code inutile / table refactor et couleurs [(#100)](https://github.com/GouvernementFR/dsfr/pull/100)
 
 
-#### fix(logo): correction blue-facile & mourning [(#99)](https://github.com/GouvernementFR/dsfr/pull/99)
+#### fix(logo): correction sifacile-primary & mourning [(#99)](https://github.com/GouvernementFR/dsfr/pull/99)
 
 
 #### fix: correction du token art déprécié [(#98)](https://github.com/GouvernementFR/dsfr/pull/98)

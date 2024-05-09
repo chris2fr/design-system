@@ -42,7 +42,7 @@
     }
 
     #{ns(consent-service__collapse-btn)} {
-      @include color.text(action-high blue-facile, (legacy:$legacy));
+      @include color.text(action-high sifacile-primary, (legacy:$legacy));
     }
   }
 }

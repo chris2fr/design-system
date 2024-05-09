@@ -12,16 +12,16 @@
     input[type="checkbox"] {
       + label {
         @include before {
-          @include color.background-image(border action-high blue-facile, (), checkbox-background-image());
+          @include color.background-image(border action-high sifacile-primary, (), checkbox-background-image());
         }
       }
 
       &:checked {
         + label {
           @include before {
-            @include color.background(active blue-facile);
-            @include color.background-image(border active blue-facile, (), checkbox-background-image());
-            @include color.data-uri-svg(text inverted blue-facile, (), $checkbox-svg, false);
+            @include color.background(active sifacile-primary);
+            @include color.background-image(border active sifacile-primary, (), checkbox-background-image());
+            @include color.data-uri-svg(text inverted sifacile-primary, (), $checkbox-svg, false);
           }
         }
       }

@@ -41,7 +41,7 @@
 
     &-wrap--addon {
       > #{ns(input)}:not(:last-child) {
-        @include color.box-shadow(action-high blue-facile, (legacy:$legacy), bottom-2-in);
+        @include color.box-shadow(action-high sifacile-primary, (legacy:$legacy), bottom-2-in);
       }
     }
 

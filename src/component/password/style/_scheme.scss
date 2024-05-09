@@ -23,7 +23,7 @@
         + label {
           @include color.text(label grey, (legacy: $legacy));
           @include before {
-            @include color.background-image(border action-high blue-facile, (), checkbox-background-image());
+            @include color.background-image(border action-high sifacile-primary, (), checkbox-background-image());
           }
         }
       }

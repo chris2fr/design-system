@@ -12,18 +12,18 @@
   #{selector.ns(range)} {
     &#{selector.ns-attr(js-range)} {
       @include before {
-        @include color.box-shadow(action-high blue-facile, (legacy:$legacy), );
+        @include color.box-shadow(action-high sifacile-primary, (legacy:$legacy), );
       }
 
       @include after {
-        @include color.background(active blue-facile, (legacy:$legacy));
+        @include color.background(active sifacile-primary, (legacy:$legacy));
       }
 
       input[type=range] {
         @include selector.range-thumb($legacy) {
           @include elevation.elevate(raised, (legacy: $legacy));
           @include color.background(default grey, (legacy:$legacy));
-          @include color.border(action-high blue-facile, (legacy:$legacy));
+          @include color.border(action-high sifacile-primary, (legacy:$legacy));
         }
 
         @include disabled.selector {
@@ -35,7 +35,7 @@
     }
 
     &__output {
-      @include color.text(active blue-facile, (legacy:$legacy));
+      @include color.text(active sifacile-primary, (legacy:$legacy));
     }
 
     &__min,
@@ -46,12 +46,12 @@
     &--step {
       &#{selector.ns-attr(js-range)} {
         @include before {
-          @include color.background-image(action-high blue-facile, (legacy:$legacy), $range-track-gradient);
+          @include color.background-image(action-high sifacile-primary, (legacy:$legacy), $range-track-gradient);
         }
 
         @include after {
-          @include color.background-image(action-low blue-facile, (legacy:$legacy), $range-progress-gradient);
-          @include color.box-shadow(active blue-facile, (legacy:$legacy), left-10-in right-10-in);
+          @include color.background-image(action-low sifacile-primary, (legacy:$legacy), $range-progress-gradient);
+          @include color.box-shadow(active sifacile-primary, (legacy:$legacy), left-10-in right-10-in);
         }
       }
     }
@@ -59,7 +59,7 @@
     &--step#{&}--sm {
       &#{selector.ns-attr(js-range)} {
         @include after {
-          @include color.box-shadow(active blue-facile, (legacy:$legacy), left-6-in right-6-in);
+          @include color.box-shadow(active sifacile-primary, (legacy:$legacy), left-6-in right-6-in);
         }
       }
     }
@@ -67,7 +67,7 @@
     // &--double#{&}--step {
     //   &#{selector.ns-attr(js-range)} {
     //     @include after {
-    //       @include color.box-shadow(active blue-facile, (legacy:$legacy), left-22-in right-22-in);
+    //       @include color.box-shadow(active sifacile-primary, (legacy:$legacy), left-22-in right-22-in);
     //     }
     //   }
     // }
@@ -75,7 +75,7 @@
     // &--double#{&}--step#{&}--sm {
     //   &#{selector.ns-attr(js-range)} {
     //     @include after {
-    //       @include color.box-shadow(active blue-facile, (legacy:$legacy), left-14-in right-14-in);
+    //       @include color.box-shadow(active sifacile-primary, (legacy:$legacy), left-14-in right-14-in);
     //     }
     //   }
     // }

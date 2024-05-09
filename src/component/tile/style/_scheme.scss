@@ -40,10 +40,10 @@
       }
 
       a {
-        @include color.text(action-high blue-facile, (legacy: $legacy));
+        @include color.text(action-high sifacile-primary, (legacy: $legacy));
 
         @include before {
-          @include color.background-image((border active blue-facile), (legacy: $legacy));
+          @include color.background-image((border active sifacile-primary), (legacy: $legacy));
         }
 
         &:not([href]) {
