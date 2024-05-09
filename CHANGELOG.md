@@ -68,7 +68,7 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 
 #### ✨ feat(accordions-group): ajoute un attribut pour dégrouper [(#860)](https://github.com/GouvernementFR/dsfr/pull/860)
-- ajout d'un attribut `data-fr-group="false"` pour dissocier le comportement d'ouverture/fermeture des accordéons à l'intérieur d'un groupe d'accordéons
+- ajout d'un attribut `data-sifacile-group="false"` pour dissocier le comportement d'ouverture/fermeture des accordéons à l'intérieur d'un groupe d'accordéons
 - étend l'utilisation de cet attribut aux composants héritant du collapses-group : la navigation (uniquement en mobile) et le menu latéral
 
 
@@ -231,7 +231,7 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 #### 📈 feat(analytics): gestion des actions [(#812)](https://github.com/GouvernementFR/dsfr/pull/812)
 - ajout de la propriété `isActionEnabled` dans la configuration et sur l'objet `window.dsfr.analytics` permettant d'activer l'envoi des données d'actions si nécessaire.
-- ajout de l'attribut `data-fr-action` permettant d'activer l'envoi d'action sur un élément particulier et de spécifier la partie title de l'actionName envoyé
+- ajout de l'attribut `data-sifacile-action` permettant d'activer l'envoi d'action sur un élément particulier et de spécifier la partie title de l'actionName envoyé
 - correctif sur les sélecteurs des card, title pour traquer des boutons
 
 
@@ -250,7 +250,7 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 #### 🐛 feat(css-print): ajoute la feuille de style impression [(#802)](https://github.com/GouvernementFR/dsfr/pull/802)
 - génere une feuille de style "dist/dsfr.print.css" à charger pour appliquer les règles d'impression du DSFR
-- ajoute la classe utilitaire `.fr-no-print` pour retirer un élement de l'impression
+- ajoute la classe utilitaire `.sifacile-no-print` pour retirer un élement de l'impression
 
 
 #### ⬆️ chore(dependencies): met a jour les dependances Node [(#815)](https://github.com/GouvernementFR/dsfr/pull/815)
@@ -283,7 +283,7 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 #### 🐛 fix(connect): taille de la fonte adapatable [(#813)](https://github.com/GouvernementFR/dsfr/pull/813)
 - Le bouton FranceConnect doit répondre aux critères d’accessibilité qui redéfinissent le letter-spacing et la taille de fonte.
   - Passage des valeurs de tailles et d'espacements en 'em' pour les rendre relatives à la taille de fonte du bouton
-  - Retrait du '+' de 'FranceConnect+' dans l'intitulé de `fr-connect__brand`. Celui-ci est désormais placé en contenu du pseudo-élément after du bouton
+  - Retrait du '+' de 'FranceConnect+' dans l'intitulé de `sifacile-connect__brand`. Celui-ci est désormais placé en contenu du pseudo-élément after du bouton
 
 
 #### 📝 doc(readme): correction du lien de la documentation des icônes [(#804)](https://github.com/GouvernementFR/dsfr/pull/804)
@@ -305,18 +305,18 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 
 
 #### 🐛 fix(sidemenu): correction marge interne [(#793)](https://github.com/GouvernementFR/dsfr/pull/793)
-- retire 1v de padding gauche et droite sur `fr-sidemenu__inner` en desktop
+- retire 1v de padding gauche et droite sur `sifacile-sidemenu__inner` en desktop
 
 
 #### 🐛 fix(footer): ajustements [(#792)](https://github.com/GouvernementFR/dsfr/pull/792)
 - corrige le niveau de titre des partenaires
 - le texte filler de footer__content-desc doit faire maximum 3 lignes en desktop
-- passe les liens .fr-footer__content-link en $text-default-grey
-- passe le padding top de .fr-footer__bottom-list à 4v
-- correction des espacements autour de fr-footer-body :  en mobile et en desktop (32px en haut et 24px en bas)
-- titre “nos partenaire“ → fr-footer__partners-title passe en graisse régular, couleur text-default-grey
+- passe les liens .sifacile-footer__content-link en $text-default-grey
+- passe le padding top de .sifacile-footer__bottom-list à 4v
+- correction des espacements autour de sifacile-footer-body :  en mobile et en desktop (32px en haut et 24px en bas)
+- titre “nos partenaire“ → sifacile-footer__partners-title passe en graisse régular, couleur text-default-grey
 - ecart de 12px sous “Nos partenaire” en mobile/desktop
-- enleve le padding sur .fr-footer__partners .fr-footer__logo, ajoute une border 1px en $border-default-grey + un background en background-default-grey
+- enleve le padding sur .sifacile-footer__partners .sifacile-footer__logo, ajoute une border 1px en $border-default-grey + un background en background-default-grey
 - en desktop l’ecart entre logo et bloc mark passe à 32px
 - passe le logo opérateur en 16x9
 - ajoute un margin bottom négatif de 8px sur le groupe de lien pour garder 24px en dessous
@@ -339,9 +339,9 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 
 
 #### 🐛 fix(navigation): correctifs de style mega-menu [(#785)](https://github.com/GouvernementFR/dsfr/pull/785)
-- ajoute un margin-top: -1.25rem (-20px) sur le fr-mega-menu__leader
-- passe le texte de description et le lien du fr-mega-menu__leader en taille sm
-- supprime la classe fr-mb-4v de la colonne entourant le fr-mega-menu__leader
+- ajoute un margin-top: -1.25rem (-20px) sur le sifacile-mega-menu__leader
+- passe le texte de description et le lien du sifacile-mega-menu__leader en taille sm
+- supprime la classe sifacile-mb-4v de la colonne entourant le sifacile-mega-menu__leader
 - le texte du bouton de navigation passe en $text-action-high-blue-facile à l'ouverture
 
 
@@ -351,7 +351,7 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 
 
 #### 🐛 fix(close-btn): retire le `margin-left` négatif [(#784)](https://github.com/GouvernementFR/dsfr/pull/784)
-- retire la marge négative sur le modifier .fr-btn--close et corrige l'impact sur les composants 'alert', 'navigation', et 'notice'
+- retire la marge négative sur le modifier .sifacile-btn--close et corrige l'impact sur les composants 'alert', 'navigation', et 'notice'
 
 
 #### 🐛 fix(form): token de couleur de la légende [(#783)](https://github.com/GouvernementFR/dsfr/pull/783)
@@ -366,7 +366,7 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 #### 🐛 fix(follow): corrige affichage [(#781)](https://github.com/GouvernementFR/dsfr/pull/781)
 - inverse l'ordre des boutons "Instagram" et "LinkedIn"
 - supprime les margin left et right du groupe de boutons
-- place le bouton d'action dans un groupe de bouton fr-btns-group--inline-md sur les exemples "Lettre d'info seule" et "Réseaux sociaux et Lettre d'info mise en avant" pour que le bouton prenne l’ensemble de la largeur en vue mobile.
+- place le bouton d'action dans un groupe de bouton sifacile-btns-group--inline-md sur les exemples "Lettre d'info seule" et "Réseaux sociaux et Lettre d'info mise en avant" pour que le bouton prenne l’ensemble de la largeur en vue mobile.
 
 
 #### 🐛 fix(tag): token de couleur du tag selectionnable [(#780)](https://github.com/GouvernementFR/dsfr/pull/780)
@@ -410,7 +410,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 #### 🐛 fix(form, input): met a jour les espacements des icônes [(#766)](https://github.com/GouvernementFR/dsfr/pull/766)
 - place l’icône à 16px du bord droit des champs de saisie
 - ajuste le padding-right à 44px sur les champs de saisie avec icône
-- corrige la largeur des class fr-fieldset__content pour la version dépréciée
+- corrige la largeur des class sifacile-fieldset__content pour la version dépréciée
 
 
 #### 🐛 fix(checkbox): met a jour le token de la coche [(#762)](https://github.com/GouvernementFR/dsfr/pull/762)
@@ -528,7 +528,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### 🐛 fix(analytics): réduction d'envoi des données [(#806)](https://github.com/GouvernementFR/dsfr/pull/806)
 - suppression du taux d'interaction global
-- ajout de l'attribut data-fr-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
+- ajout de l'attribut data-sifacile-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
 - suppression de l'impression des composants sans interactions
 - limitation de l'envoi de donnée à la première interaction
 - bouton associé à l'accordéon, l'onglet et la transcription rendu muet
@@ -563,7 +563,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### 🐛 fix(analytics): réduction d'envoi des données [(#807)](https://github.com/GouvernementFR/dsfr/pull/807)
 - suppression du taux d'interaction global
-- ajout de l'attribut data-fr-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
+- ajout de l'attribut data-sifacile-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
 - suppression de l'impression des composants sans interactions
 - limitation de l'envoi de donnée à la première interaction
 - bouton associé à l'accordéon, l'onglet et la transcription rendu muet
@@ -658,7 +658,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### 🐛 fix(password): correctif accessibilité des messages [(#694)](https://github.com/GouvernementFR/dsfr/pull/694)
 - ajout sur les messages de validation et d'erreur de la composition du mot de passe d'un statut en after uniquement pour les lecteurs d'écrans
-- BREAKING CHANGE : il est nécessaire d'ajouter les attributs `data-fr-valid`et `data-fr-error` avec les textes correspondants à l'état (respectivement, en français, "validé" et "en erreur"
+- BREAKING CHANGE : il est nécessaire d'ajouter les attributs `data-sifacile-valid`et `data-sifacile-error` avec les textes correspondants à l'état (respectivement, en français, "validé" et "en erreur"
 
 
 #### 🐛 fix(sidemenu): correction de la couleur des liens du sidemenu [(#698)](https://github.com/GouvernementFR/dsfr/pull/698)
@@ -698,10 +698,10 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### ✨ feat(tile): ajouts de variations de tuiles [(#685)](https://github.com/GouvernementFR/dsfr/pull/685)
 Ajouts des mêmes variations que la carte : 
-- `.fr-tile--no-border` sans le bordure encadrant la tuile (mais la barre épaisse basse reste)
-- `.fr-tile--shadow` avec élévation
-- `.fr-tile--grey` en gris contrast
-- `.fr-tile--no-background` couleur de fond transparente
+- `.sifacile-tile--no-border` sans le bordure encadrant la tuile (mais la barre épaisse basse reste)
+- `.sifacile-tile--shadow` avec élévation
+- `.sifacile-tile--grey` en gris contrast
+- `.sifacile-tile--no-background` couleur de fond transparente
 
 
 #### 🐛 fix(card,tile): corrige erreur de syntaxe ejs + lint [(#687)](https://github.com/GouvernementFR/dsfr/pull/687)
@@ -829,7 +829,7 @@ Ajoute dans la page d’exemple le déplacement du focus :
 
 
 #### 🐛 fix(password): bug icône [(#648)](https://github.com/GouvernementFR/dsfr/pull/648)
-- conditionne l'ajout de la classe utile `fr-icon` à l'utilisation d'une string en paramètre `icon`
+- conditionne l'ajout de la classe utile `sifacile-icon` à l'utilisation d'une string en paramètre `icon`
 
 
 #### 🐛 feat(company): accessibilité lien externe [(#656)](https://github.com/GouvernementFR/dsfr/pull/656)
@@ -837,7 +837,7 @@ Ajoute dans la page d’exemple le déplacement du focus :
 
 
 #### 🐛 fix(unexpected): corrige groupe de bouton vide [(#655)](https://github.com/GouvernementFR/dsfr/pull/655)
-- ajoute une condition sur l'ajout du wrapper `.fr-btns-group` dans la template `ejs`
+- ajoute une condition sur l'ajout du wrapper `.sifacile-btns-group` dans la template `ejs`
 
 
 #### 🐛 fix(*): accessibilité aria-live [(#654)](https://github.com/GouvernementFR/dsfr/pull/654)
@@ -913,17 +913,17 @@ Sur ios le champ dépasse de 1px par rapport au bouton.
 
 
 #### ✨ feat(select, input): ajout de la bordure en état erreur / succés / info [(#635)](https://github.com/GouvernementFR/dsfr/pull/635)
-Actuellement la bordure gauche montrant l'état d'erreur/succès/info n'est appliqué que dans le cas d'un groupe de champ en erreur via les modificateur .fr-fieldset--error, .fr-fieldset--valid, .fr-fieldset--info
+Actuellement la bordure gauche montrant l'état d'erreur/succès/info n'est appliqué que dans le cas d'un groupe de champ en erreur via les modificateur .sifacile-fieldset--error, .sifacile-fieldset--valid, .sifacile-fieldset--info
 
 Afin d'être ISO avec l'UI nous rajoutons cet élément visuel sur : 
-- les champs seuls (.fr-input-group) : 
-  - `.fr-input-group--error`
-  - `.fr-input-group--valid`
-  - `.fr-input-group--info`
-- les selects (.fr-select-group)
-  - `.fr-select-group--error`
-  - `.fr-select-group--valid`
-  - `.fr-select-group--info`
+- les champs seuls (.sifacile-input-group) : 
+  - `.sifacile-input-group--error`
+  - `.sifacile-input-group--valid`
+  - `.sifacile-input-group--info`
+- les selects (.sifacile-select-group)
+  - `.sifacile-select-group--error`
+  - `.sifacile-select-group--valid`
+  - `.sifacile-select-group--info`
 
 
 #### 🐛 fix(tab): correction onglets imbriqués en legacy [(#628)](https://github.com/GouvernementFR/dsfr/pull/628)
@@ -954,7 +954,7 @@ Le composant `Infobulle` (ou `bulle d’aide`, `aide contextuelle`) permet d’a
 
 #### 🐛 fix(account): met a jour la hiérarchie html des modèles de page [(#618)](https://github.com/GouvernementFR/dsfr/pull/618)
 - Mise en place d'une hiérarchie sans saut de niveau de titre, plus cohérente
-- Correctif typo sur la classe `fr-grid-row--gutters`
+- Correctif typo sur la classe `sifacile-grid-row--gutters`
 
 
 #### 🐛 fix(accordion, transcription, translate, sidemenu): Ajustement sur l'état défaut et actif [(#564)](https://github.com/GouvernementFR/dsfr/pull/564)
@@ -975,8 +975,8 @@ Harmonisation avec la navigation sur Accordion, Sidemenu, Translate et Transcrip
 #### 📝 doc(core): ajoute des exemples liens bruts et resets [(#613)](https://github.com/GouvernementFR/dsfr/pull/613)
 Par défaut, le dsfr stylise les liens natifs, ce qui peut poser problème dans l'utilisation de librairie tierce.
 2 classes utilitaires sont mise à disposition pour contrecarrer le style fort du lien : 
-- `.fr-raw-link` retire toute stylisation sur les liens natifs
-- `.fr-reset-link` remet le soulignement natif du navigateur (`text-decoration: underline;`)
+- `.sifacile-raw-link` retire toute stylisation sur les liens natifs
+- `.sifacile-reset-link` remet le soulignement natif du navigateur (`text-decoration: underline;`)
 Des pages d'exemples en illustrant l'utilisation ont été ajoutées dans les pages d'exemples des fondamentaux.
 
 
@@ -987,35 +987,35 @@ Les radios riches doivent utiliser des pictogrammes et non des images :
 
 Le snippet :
 ```html
-<div class="fr-radio-group fr-radio-rich">
+<div class="sifacile-radio-group sifacile-radio-rich">
   <input value="1" type="radio" id="radio-rich-1" name="radio-rich">
-  <label class="fr-label" for="radio-rich-1">
+  <label class="sifacile-label" for="radio-rich-1">
       Libellé bouton radio
   </label>
-  <div class="fr-radio-rich__img">
+  <div class="sifacile-radio-rich__img">
       <img src="../../../example/img/placeholder.1x1.png" alt="[À MODIFIER - vide ou texte alternatif de l’image]" />
   </div>
 </div>
 ```
 DEVIENT : 
 ```html
-<div class="fr-radio-group fr-radio-rich">
+<div class="sifacile-radio-group sifacile-radio-rich">
   <input value="1" type="radio" id="radio-rich-1" name="radio-rich">
-  <label class="fr-label" for="radio-rich-1">
+  <label class="sifacile-label" for="radio-rich-1">
       Libellé bouton radio
   </label>
-  <div class="fr-radio-rich__pictogram">
-      <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
-          <use class="fr-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
-          <use class="fr-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
-          <use class="fr-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
+  <div class="sifacile-radio-rich__pictogram">
+      <svg aria-hidden="true" class="sifacile-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+          <use class="sifacile-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
+          <use class="sifacile-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
+          <use class="sifacile-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
       </svg>
   </div>
 </div>
 ```
 Remplacer buildings/city-hall par la catégorie et le nom du pictogramme désiré
 
-BREAKING CHANGE : `fr-radio-rich__img` devient `fr-radio-rich__pictogram`
+BREAKING CHANGE : `sifacile-radio-rich__img` devient `sifacile-radio-rich__pictogram`
 
 
 #### 📝 doc(core): corrige les liens vers les pages de documentation des fondamentaux [(#623)](https://github.com/GouvernementFR/dsfr/pull/623)
@@ -1094,18 +1094,18 @@ Dans le modèle de de bloc nom/prénom, un bouton permet d'ajouter des champs de
 #### ✨ feat(tile): Ajout icône flèche, état désactivé, icone lien externe, tuile de téléchargement [(#602)](https://github.com/GouvernementFR/dsfr/pull/602)
 Les tuiles peuvent maintenant être de type téléchargement (comme les cartes)
   - Les tuiles de téléchargement sont par défaut horizontales
-  - Le détail de la tuile de téléchargement est obligatoire et il peut être rempli automatiquement en fonction du fichier à télécharger en plaçant à l'attribut "data-fr-assess-file" sur le lien (comme pour carte)
+  - Le détail de la tuile de téléchargement est obligatoire et il peut être rempli automatiquement en fonction du fichier à télécharger en plaçant à l'attribut "data-sifacile-assess-file" sur le lien (comme pour carte)
 
 Les tuiles ont maintenant par défaut une icone.
   - arrow-right (par défaut)
   - external-link (en target="_blank")
-  - download (avec la classe fr-tile--download)
+  - download (avec la classe sifacile-tile--download)
 
 Les tuiles désactivées (a sans href) ont à présent:
   - la bordure bottom en grise
   - l'icone et le titre en gris
   
-Ajout des classes "fr-tile--vertical@md" et  "fr-tile--vertical@lg" pour passer une tuile horizontale, ou download, en vertical à partir des breakpoints md et lg
+Ajout des classes "sifacile-tile--vertical@md" et  "sifacile-tile--vertical@lg" pour passer une tuile horizontale, ou download, en vertical à partir des breakpoints md et lg
 
 
 #### 🎉 feat(tile): évolution des tuiles [(#534)](https://github.com/GouvernementFR/dsfr/pull/534)
@@ -1114,26 +1114,26 @@ Nous souhaitons revoir la structure html de la tuile pour étendre les variation
 
 Changements apportés :
 - Ajout d'un niveau d'encapsulation dans la structure html
-  - Ajout d'un wrapper "fr-tile__content" pour englober le contenu
-  - Ajout d'un wrapper "fr-tile__header" pour englober l'image
+  - Ajout d'un wrapper "sifacile-tile__content" pour englober le contenu
+  - Ajout d'un wrapper "sifacile-tile__header" pour englober l'image
 - L'image des tuiles est remplacée par un pictogramme
-  - La classe "fr-tile__img" devient "fr-tile__pictogram" 
-  - Son contenu est maintenant un svg "fr-artwork"
+  - La classe "sifacile-tile__img" devient "sifacile-tile__pictogram" 
+  - Son contenu est maintenant un svg "sifacile-artwork"
 - Ajout de la possibilité de placer un badge, un tag, un texte de détail, dans le contenu de la tuile
-- Ajout d'une taille de tuile SM : "fr-tile--sm"
+- Ajout d'une taille de tuile SM : "sifacile-tile--sm"
 
 **⚠️ Breaking Change**
 Le snippet de code d'une tuile : 
 ```html
-<div class="fr-tile fr-enlarge-link">
-    <div class="fr-tile__body">
-        <h4 class="fr-tile__title">
-            <a class="fr-tile__link" href>Titre M bold</a>
+<div class="sifacile-tile sifacile-enlarge-link">
+    <div class="sifacile-tile__body">
+        <h4 class="sifacile-tile__title">
+            <a class="sifacile-tile__link" href>Titre M bold</a>
         </h4>
-        <p class="fr-tile__desc">Texte M regular 2 lignes max</p>
+        <p class="sifacile-tile__desc">Texte M regular 2 lignes max</p>
    </div>
-   <div class="fr-tile__img">
-       <img class="fr-responsive-img" src="../../../example/img/placeholder.1x1.png" alt="" />
+   <div class="sifacile-tile__img">
+       <img class="sifacile-responsive-img" src="../../../example/img/placeholder.1x1.png" alt="" />
        <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
     </div>
 </div>
@@ -1141,21 +1141,21 @@ Le snippet de code d'une tuile :
 
 Devient : 
 ```html
-<div class="fr-tile fr-enlarge-link" id="tile-6584">
-    <div class="fr-tile__body">
-        <div class="fr-tile__content">
-            <h3 class="fr-tile__title">
+<div class="sifacile-tile sifacile-enlarge-link" id="tile-6584">
+    <div class="sifacile-tile__body">
+        <div class="sifacile-tile__content">
+            <h3 class="sifacile-tile__title">
                 <a href="#">Intitulé de la tuile</a>
             </h3>
-            <p class="fr-tile__desc">Lorem [...] elit ut.</p>
+            <p class="sifacile-tile__desc">Lorem [...] elit ut.</p>
         </div>
     </div>
-    <div class="fr-tile__header">
-        <div class="fr-tile__pictogram">
-            <svg aria-hidden="true" class="fr-artwork" viewBox="0 0 80 80" width="80px" height="80px">
-                <use class="fr-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
-                <use class="fr-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
-                <use class="fr-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
+    <div class="sifacile-tile__header">
+        <div class="sifacile-tile__pictogram">
+            <svg aria-hidden="true" class="sifacile-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                <use class="sifacile-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
+                <use class="sifacile-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
+                <use class="sifacile-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
             </svg>
         </div>
     </div>
@@ -1167,15 +1167,15 @@ Devient :
 Pour mutualiser les comportements de la carte et du lien au composant download, celui-ci doit devenir une variante de ces composants et non pas l'inverse.
 
 Retrait du composant : téléchargement de fichier - Download -> déprécié
-Ajout de la variante de carte : fr-card--download 
-Ajout de la variante de lien : fr-link--download 
+Ajout de la variante de carte : sifacile-card--download 
+Ajout de la variante de lien : sifacile-link--download 
 
 Le lien de téléchargement : 
 ```html
-<div class="fr-download">
+<div class="sifacile-download">
     <h3>
-        <a href="[À MODIFIER - /example/img/image.jpg]" download class="fr-download__link">Télécharger le document lorem ipsum sit dolores amet
-            <span class="fr-download__detail">
+        <a href="[À MODIFIER - /example/img/image.jpg]" download class="sifacile-download__link">Télécharger le document lorem ipsum sit dolores amet
+            <span class="sifacile-download__detail">
                 JPG – 61,88 ko
             </span>
         </a>
@@ -1184,44 +1184,44 @@ Le lien de téléchargement :
 ```
 DEVIENT : 
 ```html
-<a class="fr-link fr-link--download" download href="[À MODIFIER - example/img/image.jpg]">
-    Télécharger le document lorem ipsum sit dolores amet <span class="fr-link__detail">JPG – 61,88 ko</span>
+<a class="sifacile-link sifacile-link--download" download href="[À MODIFIER - example/img/image.jpg]">
+    Télécharger le document lorem ipsum sit dolores amet <span class="sifacile-link__detail">JPG – 61,88 ko</span>
 </a>
 ```
 
 et la carte de téléchargement : 
 ```html
-<div class="fr-download fr-enlarge-link fr-download--card">
+<div class="sifacile-download sifacile-enlarge-link sifacile-download--card">
     <h3>
-        <a href="[À MODIFIER - example/img/image.jpg]" download class="fr-download__link">Télécharger le document lorem ipsum sit dolores amet
-            <span class="fr-download__detail">
+        <a href="[À MODIFIER - example/img/image.jpg]" download class="sifacile-download__link">Télécharger le document lorem ipsum sit dolores amet
+            <span class="sifacile-download__detail">
                 JPG – 61,88 ko
             </span>
         </a>
     </h3>
-    <p class="fr-download__desc">Texte de description<</p>
+    <p class="sifacile-download__desc">Texte de description<</p>
 </div>
 ```
 DEVIENT : 
 ```html
-<div class="fr-card fr-enlarge-link fr-card--download">
-    <div class="fr-card__body">
-        <div class="fr-card__content">
-            <h3 class="fr-card__title">
+<div class="sifacile-card sifacile-enlarge-link sifacile-card--download">
+    <div class="sifacile-card__body">
+        <div class="sifacile-card__content">
+            <h3 class="sifacile-card__title">
                 <a download href="[À MODIFIER - example/img/image.jpg]">
                     Télécharger le document lorem ipsum sit dolores amet
                 </a>
             </h3>
-            <p class="fr-card__desc">Texte de description</p>
-            <div class="fr-card__end">
-                <p class="fr-card__detail">JPG – 61,88 ko</p>
+            <p class="sifacile-card__desc">Texte de description</p>
+            <div class="sifacile-card__end">
+                <p class="sifacile-card__detail">JPG – 61,88 ko</p>
             </div>
         </div>
     </div>
 </div>
 ```
 
-BREAKING CHANGE : Remplacer le composant fr-download par la variante de link fr-link--download et remplacer le composant fr-download--card par une carte fr-card--download
+BREAKING CHANGE : Remplacer le composant sifacile-download par la variante de link sifacile-link--download et remplacer le composant sifacile-download--card par une carte sifacile-card--download
 
 
 
@@ -1232,7 +1232,7 @@ BREAKING CHANGE : Remplacer le composant fr-download par la variante de link fr-
 
 #### 🐛 fix(analytics): réduction d'envoi des données [(#807)](https://github.com/GouvernementFR/dsfr/pull/807)
 - suppression du taux d'interaction global
-- ajout de l'attribut data-fr-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
+- ajout de l'attribut data-sifacile-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
 - suppression de l'impression des composants sans interactions
 - limitation de l'envoi de donnée à la première interaction
 - bouton associé à l'accordéon, l'onglet et la transcription rendu muet
@@ -1387,7 +1387,7 @@ Depuis la version 109 de Firefox, l'icone date-picker est en double sur les cham
 #### ✨ feat(header,navigation): fermeture de la navigation au clic sur lien ou bouton [(#583)](https://github.com/GouvernementFR/dsfr/pull/583)
 Actuellement, la navigation reste présente en mobile et en desktop lorsque l'on clique sur un lien ou un bouton qu'elle contient, ce qui pose problème dans le cas des Single-page application.
 La fonctionnalité est maintenant modifiée pour que tout clic sur un élément `<button>` ou `<a>` entraîne la fermeture de la navigation (modale et/ou menu).
-L'ajout de l'attribut `data-fr-prevent-conceal` permet de préserver un lien ou un bouton particulier de ce nouveau comportement.
+L'ajout de l'attribut `data-sifacile-prevent-conceal` permet de préserver un lien ou un bouton particulier de ce nouveau comportement.
 
 
 #### 🐛 fix(build): changement des path pour compiler sur windows [(#580)](https://github.com/GouvernementFR/dsfr/pull/580)
@@ -1504,9 +1504,9 @@ corrige le problème de double icône remonté dans #530
 
 #### feat(icon): ajout icones system [(#551)](https://github.com/GouvernementFR/dsfr/pull/551)
 Ajout d'icônes dans system :
-fr--arrow-right-up-circle-fill,
-fr--arrow-right-down-circle-fill,
-fr--equal-circle-fill,
+sifacile--arrow-right-up-circle-fill,
+sifacile--arrow-right-down-circle-fill,
+sifacile--equal-circle-fill,
 
 
 #### fix(scheme): ajout du mode sombre de la scrollbar du navigateur  (#535) [(#407)](https://github.com/GouvernementFR/dsfr/pull/407)
@@ -1682,7 +1682,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### feat(address): Ajout du pattern adresse [(#398)](https://github.com/GouvernementFR/dsfr/pull/398)
 
 
-#### refactor(form): Ajout des fr-control et correction des pattern civility & name [(#401)](https://github.com/GouvernementFR/dsfr/pull/401)
+#### refactor(form): Ajout des sifacile-control et correction des pattern civility & name [(#401)](https://github.com/GouvernementFR/dsfr/pull/401)
 
 
 #### feat(password): ajout du composant mot de passe [(#391)](https://github.com/GouvernementFR/dsfr/pull/391)
@@ -1838,7 +1838,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### fix(core,link,button,tag,card): correctif icône lien extérieur [(#333)](https://github.com/GouvernementFR/dsfr/pull/333)
 
 
-#### fix(icons): correctif depreciation fr-fi-checkbox-circle-line [(#334)](https://github.com/GouvernementFR/dsfr/pull/334)
+#### fix(icons): correctif depreciation sifacile-fi-checkbox-circle-line [(#334)](https://github.com/GouvernementFR/dsfr/pull/334)
 
 
 #### fix(navigation): correctif focus au clic sur les liens [(#336)](https://github.com/GouvernementFR/dsfr/pull/336)
@@ -1874,7 +1874,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### feat(artwork): ajout des pictogrammes illustratifs [(#317)](https://github.com/GouvernementFR/dsfr/pull/317)
 
 
-#### refactor(core, card, content): ajout utilitaire fr-ratio et aspect-ratio des content img & vid [(#316)](https://github.com/GouvernementFR/dsfr/pull/316)
+#### refactor(core, card, content): ajout utilitaire sifacile-ratio et aspect-ratio des content img & vid [(#316)](https://github.com/GouvernementFR/dsfr/pull/316)
 
 
 #### feat(notice): Ajout du composant bandeau d'information [(#302)](https://github.com/GouvernementFR/dsfr/pull/302)
@@ -1949,7 +1949,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### fix(download): correction erreur js legacy [(#292)](https://github.com/GouvernementFR/dsfr/pull/292)
 
 
-#### fix(dsfr-deprecated): correction du nom de fichier sur le js legacy [(#295)](https://github.com/GouvernementFR/dsfr/pull/295)
+#### fix(dssifacile-deprecated): correction du nom de fichier sur le js legacy [(#295)](https://github.com/GouvernementFR/dsfr/pull/295)
 
 
 
@@ -2516,7 +2516,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### refactor: inclusion des composants ejs dans locals.nomComposant [(#76)](https://github.com/GouvernementFR/dsfr/pull/76)
 
 
-#### fix: bouton sidemenu display none / scheme package.yml / fr-input code inutile / table refactor et couleurs [(#100)](https://github.com/GouvernementFR/dsfr/pull/100)
+#### fix: bouton sidemenu display none / scheme package.yml / sifacile-input code inutile / table refactor et couleurs [(#100)](https://github.com/GouvernementFR/dsfr/pull/100)
 
 
 #### fix(logo): correction blue-facile & mourning [(#99)](https://github.com/GouvernementFR/dsfr/pull/99)
@@ -2580,7 +2580,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 
 
 #### fix: favicon path [(#66)](https://github.com/GouvernementFR/dsfr/pull/66)
-dsfr-dev devient dsfr
+dssifacile-dev devient dsfr
 
 
 #### fix(navigation): mega menu category bold [(#61)](https://github.com/GouvernementFR/dsfr/pull/61)
@@ -2589,13 +2589,13 @@ dsfr-dev devient dsfr
 #### refactor: modification du gitignore [(#62)](https://github.com/GouvernementFR/dsfr/pull/62)
 
 
-#### fix(core): fr-text devient fr-text--md [(#63)](https://github.com/GouvernementFR/dsfr/pull/63)
+#### fix(core): sifacile-text devient sifacile-text--md [(#63)](https://github.com/GouvernementFR/dsfr/pull/63)
 
 
 #### fix(core): reset bordure des inputs (ios) [(#58)](https://github.com/GouvernementFR/dsfr/pull/58)
 
 
-#### fix(search): correction fr-input--error et fr-input--valid [(#57)](https://github.com/GouvernementFR/dsfr/pull/57)
+#### fix(search): correction sifacile-input--error et sifacile-input--valid [(#57)](https://github.com/GouvernementFR/dsfr/pull/57)
 
 
 #### fix(content): Le composant media ne fonctionne pas avec une image svg [(#54)](https://github.com/GouvernementFR/dsfr/pull/54)
@@ -2610,7 +2610,7 @@ dsfr-dev devient dsfr
 #### fix(header): correction semicolon manquant devant last-child [(#50)](https://github.com/GouvernementFR/dsfr/pull/50)
 
 
-#### fix(input): fr-input--error sur un textarea le passe en rouge [(#47)](https://github.com/GouvernementFR/dsfr/pull/47)
+#### fix(input): sifacile-input--error sur un textarea le passe en rouge [(#47)](https://github.com/GouvernementFR/dsfr/pull/47)
 
 
 #### fix(share): correction espacements des boutons de partage [(#49)](https://github.com/GouvernementFR/dsfr/pull/49)
@@ -2769,8 +2769,8 @@ Co-authored-by: lab9 <lab9.fr@gmail.com>
 #### fix(core): fonte Marianne dans le reset inputs
 
 
-#### fix(core): correction utilitaire taille d'icone fr-fi--size
-ajout taille fr-fi--md
+#### fix(core): correction utilitaire taille d'icone sifacile-fi--size
+ajout taille sifacile-fi--md
 ajout !important pour forcer le modifieur
 
 

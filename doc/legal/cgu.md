@@ -25,7 +25,7 @@ Les termes débutant avec une majuscule dans les présentes CGU, qu’ils soient
 
 * **Contribution** : désigne tout élément fourni par l’Utilisateur dans le cadre de l’utilisation de la Plateforme, qu’il s’agisse de la modification d’un Composant ou du développement d’un nouveau Composant.
 
-* **Système de Design de l'État (dsfacile)** : désigne l’ensemble de Composants réutilisables, guidé par des standards et une gouvernance, devant être assemblés pour construire les sites internet et applications mobiles des Entités Autorisées et objet des présentes Conditions Générales.
+* **Système de Design de l'État (sifacile)** : désigne l’ensemble de Composants réutilisables, guidé par des standards et une gouvernance, devant être assemblés pour construire les sites internet et applications mobiles des Entités Autorisées et objet des présentes Conditions Générales.
 
 * **Documentation** : désigne les principes d’utilisation des Composants auxquels les Utilisateurs doivent se conformer.
 
@@ -33,7 +33,7 @@ Les termes débutant avec une majuscule dans les présentes CGU, qu’ils soient
 
 * **Eléments d’Interface** : désigne les éléments des Composants liés à l’interface (boutons, liens, champs de saisie, case à cocher, cards, …).
 
-* **Entités Autorisées** : désigne les services de l’État devant utiliser le dsfacile, à savoir les administrations centrales, leurs directions, les délégations interministérielles, les préfectures, les ambassades, l’ensemble des services déconcentrés ainsi que les Opérateurs de l’État.
+* **Entités Autorisées** : désigne les services de l’État devant utiliser le sifacile, à savoir les administrations centrales, leurs directions, les délégations interministérielles, les préfectures, les ambassades, l’ensemble des services déconcentrés ainsi que les Opérateurs de l’État.
 
 * **Eléments d’Identité** : désigne les éléments des Composants qui identifient les Entités Autorisées (dénomination, logos, autres Éléments graphiques comme les couleurs, typographies, iconographies, etc.) définis dans la « Marque État ».
 
@@ -67,7 +67,7 @@ La navigation sur la Plateforme est libre et gratuite.
 
 L’espace de la Communauté ouvert sur la Plateforme permet aux Utilisateurs d’obtenir de l’aide et du support sur l’utilisation de la Plateforme, d’échanger avec la Communauté et d’être tenu informé sur l’espace « Système de Design de l’État » sur l’outil tiers Slack.
 
-Les Utilisateurs peuvent (i) rechercher et consulter le contenu fourni par l’équipe du Système de Design de l’État, (ii) solliciter l’équipe du dsfacile pour suggérer des modifications ou améliorations, et (iii) interagir et s’entraider avec les autres membres de la Communauté.
+Les Utilisateurs peuvent (i) rechercher et consulter le contenu fourni par l’équipe du Système de Design de l’État, (ii) solliciter l’équipe du sifacile pour suggérer des modifications ou améliorations, et (iii) interagir et s’entraider avec les autres membres de la Communauté.
 
 Tout Utilisateur diffusant du contenu à la Communauté, sous quelque forme que ce soit, s’engage à respecter les règles de participations spécifiques détaillées sur la Plateforme, les présentes CGU, les lois et les règlements en vigueur.
 
@@ -85,17 +85,17 @@ Le SIG confirmera la prise en compte de la demande par email dans les meilleurs 
 
 Toutes les Ressources sont la propriété de l’État.
 
-Toutes les Ressources sont mises à disposition des Utilisateurs dans les conditions suivantes étant précisé que la Documentation est accessible aux Utilisateurs mais ses modifications sont strictement réservées à l’équipe du dsfacile :
+Toutes les Ressources sont mises à disposition des Utilisateurs dans les conditions suivantes étant précisé que la Documentation est accessible aux Utilisateurs mais ses modifications sont strictement réservées à l’équipe du sifacile :
 
 ##### I° Conditions d’utilisation des Ressources par les seuls Utilisateurs de l’État
 
-Pendant toute la durée pendant laquelle les Ressources sont accessibles sur le dsfacile, les Utilisateurs de l’État peuvent les utiliser afin de concevoir et développer les sites Internet et applications mobiles des Entités autorisées.
+Pendant toute la durée pendant laquelle les Ressources sont accessibles sur le sifacile, les Utilisateurs de l’État peuvent les utiliser afin de concevoir et développer les sites Internet et applications mobiles des Entités autorisées.
 
-Le dsfacile étant évolutif, certains Composants peuvent être remplacés par des nouveaux régulièrement et les Entités Autorisées devront assurer la substitution requise par le SIG.
+Le sifacile étant évolutif, certains Composants peuvent être remplacés par des nouveaux régulièrement et les Entités Autorisées devront assurer la substitution requise par le SIG.
 
 Aux fins de garantir la cohérence, la qualité et l’harmonisation des sites et des applications mobiles des Entités Autorisées, il est précisé aux Utilisateurs de l’État qu’ils ne peuvent pas modifier les Éléments d’Identité, les Éléments d’Interface et Fondamentaux Techniques lors de leur utilisation pour leurs sites ou applications mobiles ; la Documentation spécifique propre à chaque Composant précise toutes les caractéristiques techniques à respecter.
 
-Dans le cas où les besoins fonctionnels des Utilisateurs de l’État ne sont pas couverts par les Ressources mises à disposition, les Utilisateurs de l’État peuvent construire de nouveaux composants à partir des Fondamentaux Techniques et des Éléments d’Identité, dans le respect des Composants déjà existants, de l’esprit et des principes de design du dsfacile afin de garantir sa cohérence.
+Dans le cas où les besoins fonctionnels des Utilisateurs de l’État ne sont pas couverts par les Ressources mises à disposition, les Utilisateurs de l’État peuvent construire de nouveaux composants à partir des Fondamentaux Techniques et des Éléments d’Identité, dans le respect des Composants déjà existants, de l’esprit et des principes de design du sifacile afin de garantir sa cohérence.
 
 Chaque nouveau site des Entités Autorisées ou refonte de ces sites fera l’objet d’une procédure d’agrément par le SIG selon les conditions de l’article 5.
 
@@ -108,13 +108,13 @@ Il est expressément rappelé aux Autres Utilisateurs que toute utilisation des 
 
 ### ARTICLE 3 - CONDITIONS SPÉCIFIQUES AUX CONTRIBUTIONS
 
-Dans l’hypothèse où un Utilisateur souhaiterait, dans le respect des limitations visées à l’article 2 ci-dessus, modifier un Composant ou apporter un nouveau Composant au dsfacile, il devra proposer au SIG sa Contribution, qui ne pourra être intégrée au catalogue des Composants du dsfacile qu’une fois validée par le SIG.
+Dans l’hypothèse où un Utilisateur souhaiterait, dans le respect des limitations visées à l’article 2 ci-dessus, modifier un Composant ou apporter un nouveau Composant au sifacile, il devra proposer au SIG sa Contribution, qui ne pourra être intégrée au catalogue des Composants du sifacile qu’une fois validée par le SIG.
 
 L’Utilisateur qui souhaite devenir Contributeur doit se rendre sur le Jira Service Desk (https://gouvfr.atlassian.net/servicedesk/customer/portals), sur le dépôt de code Git ou sur le Slack et remplir un formulaire afin de faire une demande d’évolution de design ou de codes sources ou proposer un nouveau Composant auprès du SIG.
 
 Le SIG entrera en contact avec l’Utilisateur pour l’informer du statut de sa demande.
 
-En fonction de la pertinence, de la qualité et de la cohérence de la Contribution avec le dsfacile, le SIG pourra accepter ou refuser la Contribution. L’acceptation par le SIG de chaque Contribution est conditionnée par la signature d’un certificat de garantie d’origine de l’Utilisateur Contributeur.
+En fonction de la pertinence, de la qualité et de la cohérence de la Contribution avec le sifacile, le SIG pourra accepter ou refuser la Contribution. L’acceptation par le SIG de chaque Contribution est conditionnée par la signature d’un certificat de garantie d’origine de l’Utilisateur Contributeur.
 
 Pour les Contributions développées par des agents de l’État pour le compte des Entités Autorisées, les droits de propriété intellectuelle y afférents appartiennent à l’État conformément aux dispositions de l’article L.131-3-1 du code de la propriété intellectuelle.
 
@@ -128,9 +128,9 @@ Pour les Contributions relatives aux Codes Sources, le fichier contributing.md s
 
 Il est précisé que la validation de la Contribution relative au Code Source s’effectue comme suit :
 
-Le Code Source développé ou modifié est soumis à l’équipe de développement du dsfacile pour analyse. Pour les modifications structurantes et le développement de nouveaux Composants, le processus de création devra suivre le fonctionnement de l’équipe du Système de Design de l’État :
+Le Code Source développé ou modifié est soumis à l’équipe de développement du sifacile pour analyse. Pour les modifications structurantes et le développement de nouveaux Composants, le processus de création devra suivre le fonctionnement de l’équipe du Système de Design de l’État :
 * Une phase de découverte UX qui a pour objectifs de cadrer le périmètre de développement
-* Une phase de design UI (échanges et partages possibles avec l’équipe dsfacile dès cette phase)
+* Une phase de design UI (échanges et partages possibles avec l’équipe sifacile dès cette phase)
 * Une phase de développement
 
 

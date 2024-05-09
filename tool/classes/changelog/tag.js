@@ -155,7 +155,7 @@ class Tag {
 class Major {
   constructor (major) {
     this._major = major;
-    this._title = `dsfacile v${major}`;
+    this._title = `sifacile v${major}`;
     this._minors = [];
   }
 

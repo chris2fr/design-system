@@ -1,14 +1,13 @@
 {
-  "name": "@gouvfr/dsfacile",
+  "name": "sifacile",
   "version": "1.11.2",
-  "description": "Système de Design de l'Etat - dsfacile",
-  "repository": "git@github.com:GouvernementFR/dsfacile.git",
-  "author": "Service d'Information du Gouvernement <maxime.beaugrand@pm.gouv.fr>",
+  "description": "Redre générique le Système de Design de l'Etat - sifacile",
+  "repository": "git@github.com:chris2fr/sifacile.git",
+  "author": "Chris Mann avec de l'aide <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "fr",
-    "namespace": "dsfacile",
-    "organisation": "@gouvfr"
+    "prefix": "sifacile",
+    "namespace": "sifacile"
   },
   "engines": {
     "node": ">=18.16.1"

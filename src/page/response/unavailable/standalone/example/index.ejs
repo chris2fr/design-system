@@ -10,12 +10,12 @@
 </head>
 <body>
   <main role="main" id="content">
-    <div class="fr-container">
-      <div class="fr-grid-row fr-grid-row--center fr-grid-row--gutters">
-        <div class="fr-server__body fr-col-12 fr-col-md-6">
-          <h1 class="fr-h1"><%= getText('page.title', 'unavailable') %></h1>
-          <p class="fr-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
-          <p class="fr-text--sm"><%= getText('page.retry', 'unavailable') %></p>
+    <div class="sifacile-container">
+      <div class="sifacile-grid-row sifacile-grid-row--center sifacile-grid-row--gutters">
+        <div class="sifacile-server__body sifacile-col-12 sifacile-col-md-6">
+          <h1 class="sifacile-h1"><%= getText('page.title', 'unavailable') %></h1>
+          <p class="sifacile-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
+          <p class="sifacile-text--sm"><%= getText('page.retry', 'unavailable') %></p>
 
           <%- include(root + 'src/component/button/example/sample/buttons-group.ejs', {
             buttonsGroup: { size: 'sm', inline: true, buttons: [
@@ -24,14 +24,14 @@
               {label: '<span aria-hidden="true">' + include(root + 'src/core/icon/logo/linkedin-box-fill.svg') + '</span>' + getText('social.linkedin', 'global'), kind: 3, markup: 'a', href: contentPlaceholder(getText('social.linkedin.url', 'global'))},
             ] }}); %>
         </div>
-        <div class="fr-server__image fr-col-12 fr-col-md-3 fr-col-offset-md-1">
+        <div class="sifacile-server__image sifacile-col-12 sifacile-col-md-3 sifacile-col-offset-md-1">
           <%- include('./sample/svg.ejs') %>
         </div>
       </div>
     </div>
 
-    <div class="fr-server__footer">
-      <div class="fr-grid-row fr-grid-row--center">
+    <div class="sifacile-server__footer">
+      <div class="sifacile-grid-row sifacile-grid-row--center">
         <img width="66px" height="24px" src="<%- imgToBase64('asset/marianne.png'); %>" alt="<%= getText('marianne', 'global') %>">
       </div>
     </div>

@@ -1,12 +1,12 @@
 ## Configuration {#Configuration}
 
-Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API dsfacile](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-dsfacile/developpeurs/api-javascript)
+Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API sifacile](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-sifacile/developpeurs/api-javascript)
 
-La configuration doit être placée **avant** les fichiers `patch.module.js`, `dsfacile.module.js` et `analytics.module.js`.
+La configuration doit être placée **avant** les fichiers `patch.module.js`, `sifacile.module.js` et `analytics.module.js`.
 
 ```javascript
 <script>
-    window.dsfacile = {
+    window.sifacile = {
         analytics: {
             domain: ' mon.domainedetracking.com',
             // collection: 'manual',

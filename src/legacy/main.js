@@ -1,2 +1,2 @@
-// TODO : Reactiver l'import après modification du build pour ne pas charger le pck Legacy dans le script dsfacile.module.js
+// TODO : Reactiver l'import après modification du build pour ne pas charger le pck Legacy dans le script sifacile.module.js
 // import './script/index';

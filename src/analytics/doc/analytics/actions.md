@@ -13,7 +13,7 @@ Les actions correspondent aux évènements et aux interactions que l’on souhai
 * Les actions d'interaction sont limitées dans leur envoi à la seule première interaction avec l'élément dans la page, sauf si la donnée associée à l'envoi change. Par exemple, un bouton particulier dans le menu enverra des données au premier click, puis sera limité. Si la page change, il enverra de nouveau des données au premier click. Dans le cas d'un composant de recherche, chaque interaction enverra une requête de recherche différente et passera outre la règle de limitation. Si la requête de recherche est identique à la précédente, celle-ci ne sera pas envoyée.
 
 > **Note** :
-> Les actions ne sont pas supportées dans la [version standalone](./installation.md#Version standalone). Pour mesurer les actions avec l'API analytics, utiliser la version complète du dsfacile
+> Les actions ne sont pas supportées dans la [version standalone](./installation.md#Version standalone). Pour mesurer les actions avec l'API analytics, utiliser la version complète du sifacile
 
 #### ActionName
 
@@ -22,12 +22,12 @@ Ce nom d’action est constitué de 3 éléments :
 ```
 (type)_title_[id]
 ```
-* Type : type d'action. (voir [types d'actions](actions/custom-actions.md#ActionType) et [types d'actions sur les composants dsfacile](actions/component-actions.md)) 
-* Title : la hiérarchie des intitulés des éléments ou la valeur de l'attribut `data-fr-analytics-action`
+* Type : type d'action. (voir [types d'actions](actions/custom-actions.md#ActionType) et [types d'actions sur les composants sifacile](actions/component-actions.md)) 
+* Title : la hiérarchie des intitulés des éléments ou la valeur de l'attribut `data-sifacile-analytics-action`
 * Id : l'id de l'élément (correspondant à l'attribut `id`sur l'élément) - obligatoire.
 
 > **⚠️ Important :**
-> **Un id est obligatoire sur tous les éléments traqués** (retrouvez les éléments du dsfacile nécessitant un id dans la colonne “element” du [tableau d'actions des composants du dsfacile](actions/component-actions.md)).
+> **Un id est obligatoire sur tous les éléments traqués** (retrouvez les éléments du sifacile nécessitant un id dans la colonne “element” du [tableau d'actions des composants du sifacile](actions/component-actions.md)).
 >Il est nécessaire que l’id soit :
 >  * unique : L’id doit être unique au site, par exemple:
 >    * Deux boutons différents ne doivent pas avoir le même id, même sur des pages différentes
@@ -44,13 +44,13 @@ exemple d’actionName : `(click)_titre_niveau_2_›_titre_niveau_3_›_label_de
 #### Activer les actions
 
 Par défaut, l'envoi des actions est désactivé. Le paramètre de configuration `isActionEnabled` permet de l'activer. (voir [isActionEnabled dans Analytics](collector/analytics.md#isActionEnabled)). 
-Il est possible de d'activer l'envoi sporadiquement sur un élément particulier en utilisant l'attribut `data-fr-analytics-action`, qui permet également de donner une valeur spécifique au title de l'[ActionName](#ActionName).
+Il est possible de d'activer l'envoi sporadiquement sur un élément particulier en utilisant l'attribut `data-sifacile-analytics-action`, qui permet également de donner une valeur spécifique au title de l'[ActionName](#ActionName).
 
 #### Taux d'interaction
 
 L’API analytics utilise des actions pour suivre les interactions de l’utilisateur dans et en dehors des composants.
 
-L'ajout de l'attribut `data-fr-analytics-rating` sur élément particulier permet d'activer la mesure du taux d’interaction sur cet élément, à savoir le rapport entre le nombre de fois où il a été affiché et le nombre de fois où une interaction a eu lieu.
+L'ajout de l'attribut `data-sifacile-analytics-rating` sur élément particulier permet d'activer la mesure du taux d’interaction sur cet élément, à savoir le rapport entre le nombre de fois où il a été affiché et le nombre de fois où une interaction a eu lieu.
 
 > **⚠️ Important :**
 > Cette fonctionnalité entraîne un envoi de donnée plus important, la donnée d'affichage étant automatiquement envoyée tandis que l'envoi de la donnée d'interaction se fait à l'intervention de l'utilisateur. Pour rappel, le modèle de facturation dépend du volume d'appels envoyés à Eulerian et l'envoi de multiples affichages de composants entraîne donc une hausse de la consommation de données. Il est important de s’assurer de la pertinence de chaque élément où cette fonctionnalité est activée afin d'optimiser l'envoi de données.
@@ -58,4 +58,4 @@ L'ajout de l'attribut `data-fr-analytics-rating` sur élément particulier perme
 
 - Analytics/Actions
   - [Actions d’interaction hors composant](actions/custom-actions.md)
-  - [Actions sur les composants dsfacile](actions/component-actions.md)
+  - [Actions sur les composants sifacile](actions/component-actions.md)

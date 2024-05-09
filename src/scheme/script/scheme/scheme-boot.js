@@ -2,8 +2,8 @@ import { supportLocalStorage } from '../../../core/script/api/utilities/support/
 import { SchemeValue } from './scheme-value';
 import { SchemeTheme } from './scheme-theme';
 
-const ATTRIBUTE_THEME = 'data-fr-theme';
-const ATTRIBUTE_SCHEME = 'data-fr-scheme';
+const ATTRIBUTE_THEME = 'data-sifacile-theme';
+const ATTRIBUTE_SCHEME = 'data-sifacile-scheme';
 const SELECTOR_SCHEME = `:root[${ATTRIBUTE_THEME}], :root[${ATTRIBUTE_SCHEME}]`;
 
 const setDarkTheme = () => {

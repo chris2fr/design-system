@@ -1,8 +1,8 @@
 ### Actions d’interaction hors composant
 
-Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du dsfacile.
+Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du sifacile.
 
-Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-fr-analytics-{action}` sur la
+Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-sifacile-analytics-{action}` sur la
 balise
 HTML concernée.
 
@@ -10,14 +10,14 @@ HTML concernée.
 
 ```html
 <p>Envoyez un événement lors du clic sur
-<span data-fr-analytics-click="label à remonter">ce texte</span>.
+<span data-sifacile-analytics-click="label à remonter">ce texte</span>.
 </p>
 ```
 
 ```html
 <p>
 Envoyez un événement lors du clic sur
-<a href="http://url-externe" data-fr-analytics-click>ce lien externe</span>.
+<a href="http://url-externe" data-sifacile-analytics-click>ce lien externe</span>.
 </p>
 ```
 
@@ -29,7 +29,7 @@ Il existe les types d'actions suivants :
 
 ##### click
 
-`data-fr-analytics-click`
+`data-sifacile-analytics-click`
 
 Mode : [out] | type : _interaction_
 
@@ -45,7 +45,7 @@ De manière automatique, le type de l'action approprié sera sélectionné :
 
 ##### internal
 
-`data-fr-analytics-internal`
+`data-sifacile-analytics-internal`
 
 Mode : [out] | type : _interaction_
 
@@ -56,7 +56,7 @@ Clique vers un lien interne, une ancre.
 
 ##### external
 
-`data-fr-analytics-external`
+`data-sifacile-analytics-external`
 
 Mode : [out] | type : _interaction_
 
@@ -67,7 +67,7 @@ Clique vers un lien externe.
 
 ##### download
 
-`data-fr-analytics-download`
+`data-sifacile-analytics-download`
 
 Mode : [out] | type : _interaction_
 
@@ -78,7 +78,7 @@ Clique sur un lien téléchargeable.
 
 ##### double-click
 
-`data-fr-analytics-dblclick`
+`data-sifacile-analytics-dblclick`
 
 Mode : [out] | type : _interaction_
 
@@ -88,7 +88,7 @@ Interaction générique du double-clic.
 
 ##### change
 
-`data-fr-analytics-change`
+`data-sifacile-analytics-change`
 
 Mode : [out] | type : _event_
 
