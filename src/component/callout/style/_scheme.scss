@@ -8,7 +8,7 @@
 @mixin _callout-scheme($legacy: false) {
   #{ns(callout)} {
     @include color.background(contrast grey, (legacy:$legacy));
-    @include color.background-image(border default sifacile-primary, (legacy:$legacy));
+    @include color.background-image(border default webfacile-primary, (legacy:$legacy));
 
     @include before {
       @include color.text(title grey, (legacy:$legacy));

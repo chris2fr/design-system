@@ -12,13 +12,13 @@
     @include color.background(contrast grey, (legacy: $legacy));
 
     @include pressed-selector(false) {
-      @include color.text(action-high sifacile-primary, (legacy: $legacy));
-      @include color.background(action-low sifacile-primary, (legacy: $legacy, hover: true));
+      @include color.text(action-high webfacile-primary, (legacy: $legacy));
+      @include color.background(action-low webfacile-primary, (legacy: $legacy, hover: true));
     }
 
     &#{ns(tag)}--dismiss {
-      @include color.text(inverted sifacile-primary, (legacy: $legacy));
-      @include color.background(action-high sifacile-primary, (legacy: $legacy, hover: true));
+      @include color.text(inverted webfacile-primary, (legacy: $legacy));
+      @include color.background(action-high webfacile-primary, (legacy: $legacy, hover: true));
     }
   }
 
@@ -26,8 +26,8 @@
   button,
   input[type=button] {
     &#{ns(tag)} {
-      @include color.text(action-high sifacile-primary, (legacy: $legacy));
-      @include color.background(action-low sifacile-primary, (legacy: $legacy, hover: true));
+      @include color.text(action-high webfacile-primary, (legacy: $legacy));
+      @include color.background(action-low webfacile-primary, (legacy: $legacy, hover: true));
 
       @include color.accentuate {
         @include color.text(action-high accent, (legacy: $legacy));
@@ -42,12 +42,12 @@
       @include pressed-selector(true) {
         &:not(:disabled) {
           @include color.transparent-background((legacy:$legacy));
-          @include color.text(inverted sifacile-primary, (legacy: $legacy));
-          @include tag-punched-background(background active sifacile-primary, md, $legacy);
+          @include color.text(inverted webfacile-primary, (legacy: $legacy));
+          @include tag-punched-background(background active webfacile-primary, md, $legacy);
         }
 
         @include after {
-          @include color.text(action-high sifacile-primary, (legacy: $legacy));
+          @include color.text(action-high webfacile-primary, (legacy: $legacy));
         }
 
         @include disabled.selector {
@@ -59,7 +59,7 @@
         }
 
         &#{ns(tag)}--sm {
-          @include tag-punched-background(background active sifacile-primary, sm, $legacy);
+          @include tag-punched-background(background active webfacile-primary, sm, $legacy);
 
           @include disabled.selector {
             @include tag-punched-background(background disabled grey, sm, $legacy, false);
@@ -84,7 +84,7 @@
       input[type=button] {
         &#{ns(tag)} {
           @include pressed-selector(true) {
-            @include tag-punched-background(background active sifacile-primary, sm, $legacy);
+            @include tag-punched-background(background active webfacile-primary, sm, $legacy);
 
             @include disabled.selector {
               @include tag-punched-background(background disabled grey, sm, $legacy, false);

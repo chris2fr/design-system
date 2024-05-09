@@ -9,15 +9,15 @@
 @mixin _core-artwork-scheme($legacy: false) {
   #{selector.ns(artwork)} {
     &-decorative {
-      @include color.fill(artwork decorative sifacile-primary, (legacy: $legacy));
+      @include color.fill(artwork decorative webfacile-primary, (legacy: $legacy));
     }
 
     &-minor {
-      @include color.fill(artwork minor sifacile-secondary, (legacy: $legacy));
+      @include color.fill(artwork minor webfacile-secondary, (legacy: $legacy));
     }
 
     &-major {
-      @include color.fill(artwork major sifacile-primary, (legacy: $legacy));
+      @include color.fill(artwork major webfacile-primary, (legacy: $legacy));
     }
 
     &-background {

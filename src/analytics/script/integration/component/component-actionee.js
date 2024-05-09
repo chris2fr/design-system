@@ -5,7 +5,7 @@ import { ButtonEmission } from './button/button-emission';
 
 class ComponentActionee extends Actionee {
   constructor (priority = -1) {
-    super(priority, 'sifacile_component');
+    super(priority, 'webfacile_component');
   }
 
   static get instanceClassName () {

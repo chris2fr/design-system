@@ -49,7 +49,7 @@ class TabsList extends api.core.Instance {
     }
   }
 
-  /* ajoute la classe sifacile-table__shadow-left ou sifacile-table__shadow-right sur sifacile-table en fonction d'une valeur de scroll et du sens (right, left) */
+  /* ajoute la classe webfacile-table__shadow-left ou webfacile-table__shadow-right sur webfacile-table en fonction d'une valeur de scroll et du sens (right, left) */
   scroll () {
     const scrollLeft = this.node.scrollLeft;
     const isMin = scrollLeft <= SCROLL_OFFSET;

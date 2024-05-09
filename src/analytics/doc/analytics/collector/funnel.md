@@ -2,13 +2,13 @@
 
 L’instance de Funnel est accessible depuis
 
-`window.sifacile.analytics.funnel`
+`window.webfacile.analytics.funnel`
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.sifacile = {
+    window.webfacile = {
         analytics: {
             funnel: {
                 id: 'id',
@@ -35,7 +35,7 @@ L’instance de Funnel est accessible depuis
 
 _String_ (EA: funnel\_id)
 
-`window.sifacile.analytics.funnel.id`
+`window.webfacile.analytics.funnel.id`
 
 Identifiant du parcours / formulaire multi-étape
 
@@ -45,7 +45,7 @@ Identifiant du parcours / formulaire multi-étape
 
 _String_ (EA: funnel\_type)
 
-`window.sifacile.analytics.funnel.type`
+`window.webfacile.analytics.funnel.type`
 
 Type de parcours / formulaire
 
@@ -55,7 +55,7 @@ Type de parcours / formulaire
 
 _String_ (EA: funnel\_name)
 
-`window.sifacile.analytics.funnel.name`
+`window.webfacile.analytics.funnel.name`
 
 Nom du parcours/formulaire si besoin de précision.
 
@@ -65,7 +65,7 @@ Nom du parcours/formulaire si besoin de précision.
 
 _String_ (EA: funnel\_step\_name)
 
-`window.sifacile.analytics.funnel.step`
+`window.webfacile.analytics.funnel.step`
 
 Nom de l'étape du parcours/formulaire.
 
@@ -75,7 +75,7 @@ Nom de l'étape du parcours/formulaire.
 
 _Int_ (EA: funnel\_step\_number)
 
-`window.sifacile.analytics.funnel.current`
+`window.webfacile.analytics.funnel.current`
 
 Numéro de l'étape en cours dans le parcours/formulaire.
 
@@ -85,7 +85,7 @@ Numéro de l'étape en cours dans le parcours/formulaire.
 
 _Int_ (EA: funnel\_step\_max)
 
-`window.sifacile.analytics.funnel.total`
+`window.webfacile.analytics.funnel.total`
 
 Nombre d’étapes maximum dans le parcours/formulaire.
 
@@ -95,7 +95,7 @@ Nombre d’étapes maximum dans le parcours/formulaire.
 
 _String_ (EA: funnel\_objective)
 
-`window.sifacile.analytics.funnel.objective`
+`window.webfacile.analytics.funnel.objective`
 
 Objectif du parcours/formulaire.
 
@@ -105,7 +105,7 @@ Objectif du parcours/formulaire.
 
 _String_ (EA: funnel\_error)
 
-`window.sifacile.analytics.funnel.error`
+`window.webfacile.analytics.funnel.error`
 
 Type d’erreur d’un parcours/formulaire.
 
@@ -115,7 +115,7 @@ Type d’erreur d’un parcours/formulaire.
 
 ##### reset (clear = false)
 
-`window.sifacile.analytics.funnel.reset(clear)`
+`window.webfacile.analytics.funnel.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

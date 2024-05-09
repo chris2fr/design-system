@@ -42,7 +42,7 @@
 
         @include selector.range-ms-fill-lower {
           @include height(3v);
-          @include color.background(active sifacile-primary, (legacy: true));
+          @include color.background(active webfacile-primary, (legacy: true));
           border-radius: spacing.space(1.5v);
         }
 
@@ -63,7 +63,7 @@
       }
 
       &#{selector.ns(range)}--double {
-        @include color.background-image(active sifacile-primary, (legacy: true), 'linear-gradient(to right, $COLOR 0, $COLOR 100%)');
+        @include color.background-image(active webfacile-primary, (legacy: true), 'linear-gradient(to right, $COLOR 0, $COLOR 100%)');
         background-position-y: spacing.space(6.5v);
         background-repeat: no-repeat;
 

@@ -1,13 +1,13 @@
 {
-  "name": "sifacile",
+  "name": "webfacile",
   "version": "1.11.2",
-  "description": "Redre générique le Système de Design de l'Etat - sifacile",
-  "repository": "git@github.com:chris2fr/sifacile.git",
+  "description": "Redre générique le Système de Design de l'Etat - webfacile",
+  "repository": "git@github.com:chris2fr/webfacile.git",
   "author": "Chris Mann avec de l'aide <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "sifacile",
-    "namespace": "sifacile"
+    "prefix": "webfacile",
+    "namespace": "webfacile"
   },
   "engines": {
     "node": ">=18.16.1"

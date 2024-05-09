@@ -21,7 +21,7 @@ const generateIcon = async (dir) => {
         const s = filename.split('--');
         switch (s[0]) {
           case 'fr':
-            family = 'sifacile';
+            family = 'webfacile';
             name = s.slice(1).join('--');
             break;
         }

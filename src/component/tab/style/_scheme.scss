@@ -22,14 +22,14 @@
       @include color.box-shadow(background default grey, (legacy: $legacy), bottom-2-out);
 
       &:not([aria-selected=true]) {
-        @include color.background(action-low sifacile-primary, (legacy: $legacy));
+        @include color.background(action-low webfacile-primary, (legacy: $legacy));
         @include color.text(action-high grey, (legacy: $legacy));
       }
 
       &[aria-selected=true]:not(:disabled) {
-        @include color.background-image((border active sifacile-primary) (border default grey) (border default grey) (border default grey), (legacy: $legacy));
+        @include color.background-image((border active webfacile-primary) (border default grey) (border default grey) (border default grey), (legacy: $legacy));
         @include color.background(default grey, (legacy: $legacy));
-        @include color.text(active sifacile-primary, (legacy: $legacy));
+        @include color.text(active webfacile-primary, (legacy: $legacy));
       }
 
       @include disabled.selector((), (legacy: $legacy, text: true, background: true));

@@ -1,8 +1,8 @@
 ### Actions d’interaction hors composant
 
-Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du sifacile.
+Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du webfacile.
 
-Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-sifacile-analytics-{action}` sur la
+Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-webfacile-analytics-{action}` sur la
 balise
 HTML concernée.
 
@@ -10,14 +10,14 @@ HTML concernée.
 
 ```html
 <p>Envoyez un événement lors du clic sur
-<span data-sifacile-analytics-click="label à remonter">ce texte</span>.
+<span data-webfacile-analytics-click="label à remonter">ce texte</span>.
 </p>
 ```
 
 ```html
 <p>
 Envoyez un événement lors du clic sur
-<a href="http://url-externe" data-sifacile-analytics-click>ce lien externe</span>.
+<a href="http://url-externe" data-webfacile-analytics-click>ce lien externe</span>.
 </p>
 ```
 
@@ -29,7 +29,7 @@ Il existe les types d'actions suivants :
 
 ##### click
 
-`data-sifacile-analytics-click`
+`data-webfacile-analytics-click`
 
 Mode : [out] | type : _interaction_
 
@@ -45,7 +45,7 @@ De manière automatique, le type de l'action approprié sera sélectionné :
 
 ##### internal
 
-`data-sifacile-analytics-internal`
+`data-webfacile-analytics-internal`
 
 Mode : [out] | type : _interaction_
 
@@ -56,7 +56,7 @@ Clique vers un lien interne, une ancre.
 
 ##### external
 
-`data-sifacile-analytics-external`
+`data-webfacile-analytics-external`
 
 Mode : [out] | type : _interaction_
 
@@ -67,7 +67,7 @@ Clique vers un lien externe.
 
 ##### download
 
-`data-sifacile-analytics-download`
+`data-webfacile-analytics-download`
 
 Mode : [out] | type : _interaction_
 
@@ -78,7 +78,7 @@ Clique sur un lien téléchargeable.
 
 ##### double-click
 
-`data-sifacile-analytics-dblclick`
+`data-webfacile-analytics-dblclick`
 
 Mode : [out] | type : _interaction_
 
@@ -88,7 +88,7 @@ Interaction générique du double-clic.
 
 ##### change
 
-`data-sifacile-analytics-change`
+`data-webfacile-analytics-change`
 
 Mode : [out] | type : _event_
 

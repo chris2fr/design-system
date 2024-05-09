@@ -12,7 +12,7 @@
     #{ns(pagination)} {
       &__link {
         @include selector.current {
-          @include color.border(active sifacile-primary, (legacy: $legacy, hover: true));
+          @include color.border(active webfacile-primary, (legacy: $legacy, hover: true));
         }
       }
     }

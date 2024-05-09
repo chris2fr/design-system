@@ -13,8 +13,8 @@
 
     &__link {
       @include selector.current {
-        @include color.background(active sifacile-primary, (legacy: $legacy, hover: true));
-        @include color.text(inverted sifacile-primary, (legacy: $legacy));
+        @include color.background(active webfacile-primary, (legacy: $legacy, hover: true));
+        @include color.text(inverted webfacile-primary, (legacy: $legacy));
       }
 
       @include selector.not-current {

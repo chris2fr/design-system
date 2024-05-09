@@ -22,8 +22,8 @@
       input {
         &:checked {
           + label {
-            @include color.box-shadow(active sifacile-primary, (legacy:$legacy));
-            @include color.text(active sifacile-primary, (legacy:$legacy));
+            @include color.box-shadow(active webfacile-primary, (legacy:$legacy));
+            @include color.text(active webfacile-primary, (legacy:$legacy));
           }
 
           @include disabled.selector {

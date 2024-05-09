@@ -12,10 +12,10 @@
     }
 
     &__btn {
-      @include color.text(action-high sifacile-primary, (legacy:$legacy));
+      @include color.text(action-high webfacile-primary, (legacy:$legacy));
 
       &[aria-expanded='true'] {
-        @include color.background(open sifacile-primary, (legacy: $legacy));
+        @include color.background(open webfacile-primary, (legacy: $legacy));
       }
     }
   }

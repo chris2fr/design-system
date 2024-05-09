@@ -1,6 +1,6 @@
 ## class Analytics
 
-L’instance d’Analytics est accessible depuis `window.sifacile.analytics`
+L’instance d’Analytics est accessible depuis `window.webfacile.analytics`
 
 ### PROPRIÉTÉS
 
@@ -8,7 +8,7 @@ L’instance d’Analytics est accessible depuis `window.sifacile.analytics`
 
 _Page_
 
-`window.sifacile.analytics.page`
+`window.webfacile.analytics.page`
 
 Getter qui retourne l’instance de [Page](page.md)
 
@@ -18,7 +18,7 @@ Getter qui retourne l’instance de [Page](page.md)
 
 _Site_
 
-`window.sifacile.analytics.site`
+`window.webfacile.analytics.site`
 
 Getter qui retourne l’instance de [Site](site.md)
 
@@ -28,7 +28,7 @@ Getter qui retourne l’instance de [Site](site.md)
 
 _User_
 
-`window.sifacile.analytics.user`
+`window.webfacile.analytics.user`
 
 Getter qui retourne l’instance de [User](user.md)
 
@@ -39,7 +39,7 @@ Getter qui retourne l’instance de [User](user.md)
 
 _Search_
 
-`window.sifacile.analytics.search`
+`window.webfacile.analytics.search`
 
 Getter qui retourne l’instance de [Search](search.md)
 
@@ -49,7 +49,7 @@ Getter qui retourne l’instance de [Search](search.md)
 
 _Funnel_
 
-`window.sifacile.analytics.funnel`
+`window.webfacile.analytics.funnel`
 
 Getter qui retourne l’instance de [Funnel](funnel.md)
 
@@ -59,7 +59,7 @@ Getter qui retourne l’instance de [Funnel](funnel.md)
 
 _ConsentManagerPlatform_
 
-`window.sifacile.analytics.cmp`
+`window.webfacile.analytics.cmp`
 
 Getter qui retourne l’instance de [ConsentManagerPlatform](cmp.md)
 
@@ -69,7 +69,7 @@ Getter qui retourne l’instance de [ConsentManagerPlatform](cmp.md)
 
 _Opt_
 
-`window.sifacile.analytics.opt`
+`window.webfacile.analytics.opt`
 
 Getter qui retourne l’instance de [Opt](opt.md)
 
@@ -77,7 +77,7 @@ Getter qui retourne l’instance de [Opt](opt.md)
 
 _Boolean_
 
-`window.sifacile.analytics.isReady`
+`window.webfacile.analytics.isReady`
 
 Getter qui retourne l'état de l'API, à savoir `true` quand elle est prête à être utilisée.
 
@@ -87,11 +87,11 @@ Getter qui retourne l'état de l'API, à savoir `true` quand elle est prête à 
 
 _Promise_
 
-`window.sifacile.analytics.readiness`
+`window.webfacile.analytics.readiness`
 
 Getter qui retourne une Promise permettant de se synchroniser sur l'API, lorsque celle-ci est prête à être utilisée.
 
-    window.sifacile.analytics.readiness.then(() => { // start }, () => { // error } );
+    window.webfacile.analytics.readiness.then(() => { // start }, () => { // error } );
 
 * * *
 
@@ -99,7 +99,7 @@ Getter qui retourne une Promise permettant de se synchroniser sur l'API, lorsque
 
 _String_
 
-`window.sifacile.analytics.collection`
+`window.webfacile.analytics.collection`
 
 Getter qui retourne le mode de récolte des données de la page. Défini dans la configuration (voir propriété `collection` de la [configuration](../installation/configuration.md#collection))
 
@@ -108,7 +108,7 @@ Getter qui retourne le mode de récolte des données de la page. Défini dans la
 * `load` : Les données de page sont envoyées automatiquement au chargement de la page. (par défaut)
 
 * `full` : Les données sont envoyées à chaque changement de path dans l’URL, permettant le support des “Single-page
-  application” (par défaut si sifacile en mode ‘vue’, ‘react’ ou ‘angular’)
+  application” (par défaut si webfacile en mode ‘vue’, ‘react’ ou ‘angular’)
   
 * `hash` : Les données sont envoyées à chaque changement de hash dans l'URL
 
@@ -118,7 +118,7 @@ Getter qui retourne le mode de récolte des données de la page. Défini dans la
 
 _Boolean_
 
-`window.sifacile.analytics.isActionEnabled`
+`window.webfacile.analytics.isActionEnabled`
 
 Permet d’activer / désactiver la mesure d'audience des actions.
 
@@ -132,7 +132,7 @@ Défini dans la configuration (voir propriété `isActionEnabled` de la [configu
 
 _Boolean_
 
-`window.sifacile.analytics.isDebugging`
+`window.webfacile.analytics.isDebugging`
 
 Permet d’activer / désactiver le debug Eulerian.
 
@@ -144,7 +144,7 @@ Permet d’activer / désactiver le debug Eulerian.
 
 ##### push (type, layer)
 
-`window.sifacile.analytics.push(type, layer)`
+`window.webfacile.analytics.push(type, layer)`
 
 Alias de la fonction EA\_push d’Eulerian via le package. (voir doc Eulerian [https://eulerian.wiki/doku.php?id=fr:quickonboarding:installation:tag\_installation\_guide#types\_d\_appels](https://eulerian.wiki/doku.php?id=fr:quickonboarding:installation:tag_installation_guide#types_d_appels))
 
@@ -152,7 +152,7 @@ Alias de la fonction EA\_push d’Eulerian via le package. (voir doc Eulerian [h
 
 ##### reset (clear = false)
 
-`window.sifacile.analytics.reset(clear)`
+`window.webfacile.analytics.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 
@@ -162,7 +162,7 @@ Si le paramètre `clear = true` => toutes les données sont remises en état ind
 
 ###### collect {#collect}
 
-`window.sifacile.analytics.collect()`
+`window.webfacile.analytics.collect()`
 
 Envoie au collector le datalayer constitué par l’ensemble des données consolidées depuis :
 
@@ -187,13 +187,13 @@ Envoie au collector le datalayer constitué par l’ensemble des données consol
 
 
 ```javascript
-sifacile.analytics.readiness.then(() => { // l'API analytics est prête à l'utilisation
-    sifacile.analytics.isDebugging = true; // active le debugging eulerian
-    sifacile.analytics.reset(); // remet les données à l'état de configuration
-    sifacile.analytics.user.connect('USER\_ID', 'ENCRYPTED\_EMAIL', true);
-    sifacile.analytics.page.path = 'my/virtual/page';
-    sifacile.analytics.page.isError = true;
-    sifacile.analytics.page.template = 'page404';
-    sifacile.analytics.collect(); // envoie les données
+webfacile.analytics.readiness.then(() => { // l'API analytics est prête à l'utilisation
+    webfacile.analytics.isDebugging = true; // active le debugging eulerian
+    webfacile.analytics.reset(); // remet les données à l'état de configuration
+    webfacile.analytics.user.connect('USER\_ID', 'ENCRYPTED\_EMAIL', true);
+    webfacile.analytics.page.path = 'my/virtual/page';
+    webfacile.analytics.page.isError = true;
+    webfacile.analytics.page.template = 'page404';
+    webfacile.analytics.collect(); // envoie les données
 });
 ```

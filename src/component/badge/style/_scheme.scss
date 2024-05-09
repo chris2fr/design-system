@@ -31,8 +31,8 @@
     }
 
     &--new {
-      @include color.text(action-high sifacile-color14, (legacy: $legacy));
-      @include color.background(contrast sifacile-color14, (legacy: $legacy));
+      @include color.text(action-high webfacile-color14, (legacy: $legacy));
+      @include color.background(contrast webfacile-color14, (legacy: $legacy));
     }
 
     @include color.accentuate {
