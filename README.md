@@ -1,14 +1,12 @@
-# 🇫🇷 Système de Design de l’État
+# Système de design WebFacile basé sur le système de design de la France
 
-[![GitHub release](https://img.shields.io/github/v/release/gouvernementFR/webfacile.svg)](https://GitHub.com/gouvernementFR/webfacile/releases/) [![Generic badge](https://img.shields.io/badge/npm-yellow.svg)](https://www.npmjs.com/package/@gouvfr/webfacile) [![Generic badge](https://img.shields.io/badge/license-grey.svg)](https://github.com/GouvernementFR/webfacile/blob/main/LICENSE.md) [![Npm package monthly downloads](https://badgen.net/npm/dm/@gouvfr/webfacile)](https://npmjs.com/package/@gouvfr/webfacile)
+Ceci est le résultat du travail de l'Etat français pour ses propres sites webs. Ce travail met en valeur l'accessibilité, la lisibilité et l'aisance techonologique. Pour voir le projet source, consultez  [systeme-de-design.gouv.fr](https://www.systeme-de-design.gouv.fr).
 
-Le Système de Design de l’État (ci-après, le **webfacile**) est un ensemble de composants web HTML, CSS et Javascript pour faciliter le travail des équipes projets des sites Internet publics, et créer des interfaces numériques de qualité et accessibles.
+Le texte ci-dessous vient de l'entrepôt source, sauf que 'DSFR' a été remplacé par 'webfacile' qui reflète un automatisme de rechercher-remplacer dans l'ensemnble du dépôt. Comme vous pouvez le constater, il est impératif que les outils du système de design, et l'accessibilité des composants génériques soient rentenus sans rentenir aucunement les élément du design de l'Etat lui-même. Pas fastoche. 
 
-L'outil est développé, maintenu et géré par le [Service d'Information du Gouvernement (SIG)](https://www.gouvernement.fr/service-d-information-du-gouvernement-sig).
+Les couleurs ont été automatisées. Les logos ont été changés. La police Marianne a été remplacé par la police libre Fendango Neue (et la police Spectre par Lack, aussi libre). Il y a sans doute d'autres choses à faire pour distinguer le design WebFacile du DSFR. C'est un travail en cours. 
 
-Son utilisation par les administrations est soumise à une demande d'agrément (voir partie 5 des Conditions Générales d'Utilisation).
-
-[Voir la documentation officielle](https://www.systeme-de-design.gouv.fr).
+Ce projet sert pour django-webfacile et wagtail-webfacile. 
 
 ## Licence et droit d'utilisation
 
