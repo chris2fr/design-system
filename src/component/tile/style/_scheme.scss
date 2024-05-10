@@ -40,10 +40,10 @@
       }
 
       a {
-        @include color.text(action-high webfacile-primary, (legacy: $legacy));
+        @include color.text(action-high webfastoche-primary, (legacy: $legacy));
 
         @include before {
-          @include color.background-image((border active webfacile-primary), (legacy: $legacy));
+          @include color.background-image((border active webfastoche-primary), (legacy: $legacy));
         }
 
         &:not([href]) {

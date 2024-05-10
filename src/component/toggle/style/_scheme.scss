@@ -12,30 +12,30 @@
       @include color.text(label grey, (legacy:$legacy));
 
       @include before {
-        @include color.text(active webfacile-primary, (legacy:$legacy));
-        @include color.data-uri-svg(border action-high webfacile-primary, (legacy: $legacy), $toggle-unchecked-svg);
+        @include color.text(active webfastoche-primary, (legacy:$legacy));
+        @include color.data-uri-svg(border action-high webfastoche-primary, (legacy: $legacy), $toggle-unchecked-svg);
       }
 
       @include after {
-        @include color.text(active webfacile-primary, (legacy:$legacy));
-        @include color.box-shadow(action-high webfacile-primary, (legacy:$legacy), all-1-in);
+        @include color.text(active webfastoche-primary, (legacy:$legacy));
+        @include color.box-shadow(action-high webfastoche-primary, (legacy:$legacy), all-1-in);
         @include color.background(default grey, (legacy:$legacy));
       }
     }
 
     input[type="checkbox"] {
-      @include color.box-shadow(action-high webfacile-primary, (legacy:$legacy), all-1-in);
+      @include color.box-shadow(action-high webfastoche-primary, (legacy:$legacy), all-1-in);
 
       &:checked {
-        @include color.background(active webfacile-primary, (legacy:$legacy));
+        @include color.background(active webfastoche-primary, (legacy:$legacy));
 
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border active webfacile-primary) (border active webfacile-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border active webfastoche-primary) (border active webfastoche-primary), (legacy: $legacy), $toggle-checked-svg);
           }
 
           @include after {
-            @include color.data-uri-svg(active webfacile-primary, (legacy: $legacy), $toggle-svg);
+            @include color.data-uri-svg(active webfastoche-primary, (legacy: $legacy), $toggle-svg);
           }
         }
       }
@@ -96,7 +96,7 @@
       &:checked {
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border plain error) (active webfacile-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border plain error) (active webfastoche-primary), (legacy: $legacy), $toggle-checked-svg);
           }
         }
       }
@@ -122,7 +122,7 @@
       &:checked {
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border plain success) (active webfacile-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border plain success) (active webfastoche-primary), (legacy: $legacy), $toggle-checked-svg);
           }
         }
       }

@@ -12,16 +12,16 @@
     input[type="checkbox"] {
       + label {
         @include before {
-          @include color.background-image(border action-high webfacile-primary, (), checkbox-background-image());
+          @include color.background-image(border action-high webfastoche-primary, (), checkbox-background-image());
         }
       }
 
       &:checked {
         + label {
           @include before {
-            @include color.background(active webfacile-primary);
-            @include color.background-image(border active webfacile-primary, (), checkbox-background-image());
-            @include color.data-uri-svg(text inverted webfacile-primary, (), $checkbox-svg, false);
+            @include color.background(active webfastoche-primary);
+            @include color.background-image(border active webfastoche-primary, (), checkbox-background-image());
+            @include color.data-uri-svg(text inverted webfastoche-primary, (), $checkbox-svg, false);
           }
         }
       }

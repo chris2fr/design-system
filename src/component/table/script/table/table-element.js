@@ -32,7 +32,7 @@ class TableElement extends api.core.Instance {
     }
   }
 
-  /* ajoute la classe webfacile-table__shadow-left ou webfacile-table__shadow-right sur webfacile-table en fonction d'une valeur de scroll et du sens (right, left) */
+  /* ajoute la classe webfastoche-table__shadow-left ou webfastoche-table__shadow-right sur webfastoche-table en fonction d'une valeur de scroll et du sens (right, left) */
   scroll () {
     const isMin = this.node.scrollLeft <= SCROLL_OFFSET;
     const max = this.content.offsetWidth - this.node.offsetWidth - SCROLL_OFFSET;

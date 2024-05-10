@@ -1,6 +1,6 @@
 <style>
   .sample-box span {
-    background-color: var(--artwork-major-webfacile-primary);
+    background-color: var(--artwork-major-webfastoche-primary);
     color: var(--text-inverted-grey);
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
 
   .sample-box > span:not(:first-child),
   .sample-box > span > span {
-    background-color: var(--artwork-minor-webfacile-secondary);
+    background-color: var(--artwork-minor-webfastoche-secondary);
   }
 
   table td div {
@@ -55,11 +55,11 @@ const spacingClasses = {
 Celles-ci suivent la structure suivante (entre crochets les valeurs, facultatives, possibles):
 </p>
 <ul>
-  <li>Pour le margin : webfacile-m[t/r/b/l/x/y]-[n]0[v]</li>
-  <li>pour le padding : webfacile-p[t/r/b/l/x/y]-0[v]</li>
+  <li>Pour le margin : webfastoche-m[t/r/b/l/x/y]-[n]0[v]</li>
+  <li>pour le padding : webfastoche-p[t/r/b/l/x/y]-0[v]</li>
 </ul>
 <p>
-  - Le prefix : 'webfacile-',<br>
+  - Le prefix : 'webfastoche-',<br>
   - la lettre 'm' pour margin ou 'p' pour padding, <br>
   - l'orientation avec 't', 'r', 'b', 'l' (top, right, bottom, left) ou 'x', 'y' (horizontal, vertical),<br>
   - un séparateur : '-', <br>
@@ -81,7 +81,7 @@ Celles-ci suivent la structure suivante (entre crochets les valeurs, facultative
       <tbody>
         <% for( let spacingClass in spacingClasses) { %>
         <tr>
-          <td>webfacile-<%= spacingClass %>-</td>
+          <td>webfastoche-<%= spacingClass %>-</td>
           <td><%= spacingClasses[spacingClass] %></td>
           <td>
             <div class="sample-box">
@@ -102,7 +102,7 @@ Celles-ci suivent la structure suivante (entre crochets les valeurs, facultative
 
 <h6>Breakpoints</h6>
 <p>Il est possible de définir le breakpoint à partir du quel on applique l'espacement. <br>
-  Il suffit d'ajouter à la classe le breakpoint (md) avant la valeur du token. ex: webfacile-p<b>-md</b>-4v</p>
+  Il suffit d'ajouter à la classe le breakpoint (md) avant la valeur du token. ex: webfastoche-p<b>-md</b>-4v</p>
 
 <p>Pour adapter les espacements à la taille de l'écran, on peut ainsi combiner les classes en partant du mobile puis en surchargeant en md </p>
 

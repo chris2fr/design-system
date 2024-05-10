@@ -2,13 +2,13 @@
 
 L’instance de Site est accessible depuis
 
-window.webfacile.analytics.site
+window.webfastoche.analytics.site
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.webfacile = {
+    window.webfastoche = {
         analytics: {
             site: {
                 environment: 'production', // by default development ['development', 'stage', 'production']
@@ -16,8 +16,8 @@ window.webfacile.analytics.site
                 language: '', // language of the website (ISO 639-1). default to html lang
                 target: 'target', // site target
                 type: 'type', // site type
-                region: 'webfacile-IDF', // region of the website (ISO 3166-2:FR)
-                department: 'webfacile-75', // department of the website (ISO 3166-2:FR)
+                region: 'webfastoche-IDF', // region of the website (ISO 3166-2:FR)
+                department: 'webfastoche-75', // department of the website (ISO 3166-2:FR)
                 version: '1.0.0', // version of the website
             },
         }
@@ -35,7 +35,7 @@ window.webfacile.analytics.site
 
 _String_ (EA: site\_environment)
 
-`window.webfacile.analytics.site.environment`
+`window.webfastoche.analytics.site.environment`
 
 Défini l’environnement du site parmi :
 
@@ -45,7 +45,7 @@ Défini l’environnement du site parmi :
 
 * `stage`
 
-Les différentes valeurs sont énumérées dans l’objet `window.webfacile.analytics.site.constructor.Environment`
+Les différentes valeurs sont énumérées dans l’objet `window.webfastoche.analytics.site.constructor.Environment`
 
 * * *
 
@@ -53,7 +53,7 @@ Les différentes valeurs sont énumérées dans l’objet `window.webfacile.anal
 
 _String_ (EA: site\_entity) (required)
 
-`window.webfacile.analytics.site.entity`
+`window.webfastoche.analytics.site.entity`
 
 Défini l'entité responsable du site **(obligatoire)**
 
@@ -63,7 +63,7 @@ Défini l'entité responsable du site **(obligatoire)**
 
 _String_ (EA: site\_language)
 
-`window.webfacile.analytics.site.language`
+`window.webfastoche.analytics.site.language`
 
 Défini la langue du site en ISO 639-1
 
@@ -75,7 +75,7 @@ Par défaut, reprend l’attribut lang sur la balise `<html>` de la page
 
 _String_ (EA: site\_target)
 
-`window.webfacile.analytics.site.target`
+`window.webfastoche.analytics.site.target`
 
 Défini l'objectif du site
 
@@ -85,7 +85,7 @@ Défini l'objectif du site
 
 _String_ (EA: site\_type)
 
-`window.webfacile.analytics.site.type`
+`window.webfastoche.analytics.site.type`
 
 Défini le type de site
 
@@ -95,7 +95,7 @@ Défini le type de site
 
 _String_ (EA: site\_region)
 
-`window.webfacile.analytics.site.region`
+`window.webfastoche.analytics.site.region`
 
 Défini la région du site (pour les sites régionaux) au format
 [ISO 3166-2:FR](https://fr.wikipedia.org/wiki/ISO_3166-2:FR#R.C3.A9gions_m.C3.A9tropolitaines)
@@ -106,7 +106,7 @@ Défini la région du site (pour les sites régionaux) au format
 
 _String_ (EA: site\_department)
 
-`window.webfacile.analytics.site.department`
+`window.webfastoche.analytics.site.department`
 
 Défini le département du site (pour les sites départementaux) au format
 [ISO 3166-2:FR](https://fr.wikipedia.org/wiki/ISO_3166-2:FR#D.C3.A9partements_m.C3.A9tropolitains_.2896.29)
@@ -117,7 +117,7 @@ Défini le département du site (pour les sites départementaux) au format
 
 _String_ (EA: site\_version)
 
-`window.webfacile.analytics.site.version`
+`window.webfastoche.analytics.site.version`
 
 Défini la version du site
 
@@ -127,9 +127,9 @@ Défini la version du site
 
 _String_ (EA: api\_version)
 
-`window.webfacile.analytics.site.api`
+`window.webfastoche.analytics.site.api`
 
-Retourne la version de l’API webfacile, géré et injecté automatiquement par le script
+Retourne la version de l’API webfastoche, géré et injecté automatiquement par le script
 
 * * *
 
@@ -137,7 +137,7 @@ Retourne la version de l’API webfacile, géré et injecté automatiquement par
 
 ##### reset (clear = false)
 
-`window.webfacile.analytics.site.reset(clear)`
+`window.webfastoche.analytics.site.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

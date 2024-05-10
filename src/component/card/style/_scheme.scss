@@ -45,7 +45,7 @@
       @include color.text(title grey, (legacy:$legacy));
 
       a[href] {
-        @include color.text(action-high webfacile-primary, (legacy:$legacy));
+        @include color.text(action-high webfastoche-primary, (legacy:$legacy));
       }
 
       @include disabled.selector((can-be-link: true), (legacy: $legacy, text: true, background: true));

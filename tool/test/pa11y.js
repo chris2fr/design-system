@@ -49,7 +49,7 @@ const runPa11yTest = async (path, browser, hasDarkMode) => {
       hideElements: hideElements,
       ignore: ['WCAG2AA.Principle4.Guideline4_1.4_1_1.F77'], /* Ignore duplicate ID rule */
       actions: [
-        'check field #webfacile-radios-theme-dark'
+        'check field #webfastoche-radios-theme-dark'
       ]
     }).then(results => {
       displayResults(results, true);

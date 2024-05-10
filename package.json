@@ -1,13 +1,13 @@
 {
-  "name": "webfacile",
+  "name": "webfastoche",
   "version": "1.11.2",
-  "description": "Redre générique le Système de Design de l'Etat - webfacile",
-  "repository": "git@github.com:chris2fr/webfacile.git",
+  "description": "Redre générique le Système de Design de l'Etat - webfastoche",
+  "repository": "git@github.com:chris2fr/webfastoche.git",
   "author": "Chris Mann avec de l'aide <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "webfacile",
-    "namespace": "webfacile"
+    "prefix": "webfastoche",
+    "namespace": "webfastoche"
   },
   "engines": {
     "node": ">=18.16.1"
