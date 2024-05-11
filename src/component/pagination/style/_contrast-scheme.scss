@@ -12,7 +12,7 @@
     #{ns(pagination)} {
       &__link {
         @include selector.current {
-          @include color.border(active webfastoche-primary, (legacy: $legacy, hover: true));
+          @include color.border(active fastoche-primary, (legacy: $legacy, hover: true));
         }
       }
     }

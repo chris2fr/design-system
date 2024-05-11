@@ -26,7 +26,7 @@
 
       &:checked {
         ~ #{ns(radio-rich__img)} {
-          @include color.background-image((action-high webfastoche-primary) (action-high webfastoche-primary) (action-high webfastoche-primary) (border default grey) , (legacy: $legacy));
+          @include color.background-image((action-high fastoche-primary) (action-high fastoche-primary) (action-high fastoche-primary) (border default grey) , (legacy: $legacy));
         }
 
         @include disabled.selector {

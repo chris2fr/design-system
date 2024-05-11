@@ -2,8 +2,8 @@ import { supportLocalStorage } from '../../../core/script/api/utilities/support/
 import { SchemeValue } from './scheme-value';
 import { SchemeTheme } from './scheme-theme';
 
-const ATTRIBUTE_THEME = 'data-webfastoche-theme';
-const ATTRIBUTE_SCHEME = 'data-webfastoche-scheme';
+const ATTRIBUTE_THEME = 'data-fastoche-theme';
+const ATTRIBUTE_SCHEME = 'data-fastoche-scheme';
 const SELECTOR_SCHEME = `:root[${ATTRIBUTE_THEME}], :root[${ATTRIBUTE_SCHEME}]`;
 
 const setDarkTheme = () => {

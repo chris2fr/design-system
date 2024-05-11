@@ -10,12 +10,12 @@
 </head>
 <body>
   <main role="main" id="content">
-    <div class="webfastoche-container">
-      <div class="webfastoche-grid-row webfastoche-grid-row--center webfastoche-grid-row--gutters">
-        <div class="webfastoche-server__body webfastoche-col-12 webfastoche-col-md-6">
-          <h1 class="webfastoche-h1"><%= getText('page.title', 'unavailable') %></h1>
-          <p class="webfastoche-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
-          <p class="webfastoche-text--sm"><%= getText('page.retry', 'unavailable') %></p>
+    <div class="fastoche-container">
+      <div class="fastoche-grid-row fastoche-grid-row--center fastoche-grid-row--gutters">
+        <div class="fastoche-server__body fastoche-col-12 fastoche-col-md-6">
+          <h1 class="fastoche-h1"><%= getText('page.title', 'unavailable') %></h1>
+          <p class="fastoche-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
+          <p class="fastoche-text--sm"><%= getText('page.retry', 'unavailable') %></p>
 
           <%- include(root + 'src/component/button/example/sample/buttons-group.ejs', {
             buttonsGroup: { size: 'sm', inline: true, buttons: [
@@ -24,14 +24,14 @@
               {label: '<span aria-hidden="true">' + include(root + 'src/core/icon/logo/linkedin-box-fill.svg') + '</span>' + getText('social.linkedin', 'global'), kind: 3, markup: 'a', href: contentPlaceholder(getText('social.linkedin.url', 'global'))},
             ] }}); %>
         </div>
-        <div class="webfastoche-server__image webfastoche-col-12 webfastoche-col-md-3 webfastoche-col-offset-md-1">
+        <div class="fastoche-server__image fastoche-col-12 fastoche-col-md-3 fastoche-col-offset-md-1">
           <%- include('./sample/svg.ejs') %>
         </div>
       </div>
     </div>
 
-    <div class="webfastoche-server__footer">
-      <div class="webfastoche-grid-row webfastoche-grid-row--center">
+    <div class="fastoche-server__footer">
+      <div class="fastoche-grid-row fastoche-grid-row--center">
         <img width="66px" height="24px" src="<%- imgToBase64('asset/marianne.png'); %>" alt="<%= getText('marianne', 'global') %>">
       </div>
     </div>

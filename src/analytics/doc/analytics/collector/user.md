@@ -2,13 +2,13 @@
 
 L’instance de User est accessible depuis
 
-window.webfastoche.analytics.user
+window.fastoche.analytics.user
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.webfastoche = {
+    window.fastoche = {
         analytics: {
             user: {
                 connect: {
@@ -35,7 +35,7 @@ window.webfastoche.analytics.user
 
 _String_ (EA: uid)
 
-`window.webfastoche.analytics.user.uid`
+`window.fastoche.analytics.user.uid`
 
 getter permettant de lire la valeur de l’uid
 
@@ -47,7 +47,7 @@ Voir la méthode [connect](#connect)
 
 _String_ (EA: email)
 
-`window.webfastoche.analytics.user.email`
+`window.fastoche.analytics.user.email`
 
 getter permettant de lire la valeur de l’email
 
@@ -59,7 +59,7 @@ Voir la méthode [connect](#connect)
 
 _Boolean_ (EA: newcustomer)
 
-`window.webfastoche.analytics.user.isNew`
+`window.fastoche.analytics.user.isNew`
 
 getter permettant de savoir s’il s’agit d’un nouvel utilisateur
 
@@ -71,7 +71,7 @@ Voir la méthode [connect](#connect)
 
 _String_ (EA: user\_login\_status)
 
-`window.webfastoche.analytics.user.status`
+`window.fastoche.analytics.user.status`
 
 propriété définissant l'état de l’utilisateur entre ces différents status :
 
@@ -79,7 +79,7 @@ propriété définissant l'état de l’utilisateur entre ces différents status
 
 * `connected` (connecté)
 
-Les différentes valeurs sont énumérées dans l’objet `window.webfastoche.analytics.user.constructor.Status`
+Les différentes valeurs sont énumérées dans l’objet `window.fastoche.analytics.user.constructor.Status`
 
 Voir la méthode [connect](#connect)
 
@@ -89,7 +89,7 @@ Voir la méthode [connect](#connect)
 
 _String_ (EA: profile)
 
-`window.webfastoche.analytics.user.profile`
+`window.fastoche.analytics.user.profile`
 
 Défini la catégorie de profil de l’utilisateur
 
@@ -99,7 +99,7 @@ Défini la catégorie de profil de l’utilisateur
 
 _String_ (EA: user\_language)
 
-`window.webfastoche.analytics.user.language`
+`window.fastoche.analytics.user.language`
 
 Langage de l’utilisateur au format ISO 639-1.
 
@@ -111,7 +111,7 @@ Par défaut, langage du navigateur
 
 _String_ (EA: user\_type)
 
-`window.webfastoche.analytics.user.type`
+`window.fastoche.analytics.user.type`
 
 Défini le type d’utilisateur parmi les valeurs suivantes :
 
@@ -119,7 +119,7 @@ Défini le type d’utilisateur parmi les valeurs suivantes :
 
 * `individual` (part)
 
-Les différentes valeurs sont énumérées dans l’objet `window.webfastoche.analytics.user.constructor.Type`
+Les différentes valeurs sont énumérées dans l’objet `window.fastoche.analytics.user.constructor.Type`
 
 * * *
 
@@ -127,7 +127,7 @@ Les différentes valeurs sont énumérées dans l’objet `window.webfastoche.an
 
 ##### reset (clear = false)
 
-`window.webfastoche.analytics.user.reset(clear)`
+`window.fastoche.analytics.user.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 
@@ -137,7 +137,7 @@ Si le paramètre `clear = true` => toutes les données sont remises en état ind
 
 ##### connect (uid, email, isNew = false)
 
-`window.webfastoche.analytics.page.connect(uid, email, isNew)`
+`window.fastoche.analytics.page.connect(uid, email, isNew)`
 
 Permet de renseigner un utilisateur connecté
 

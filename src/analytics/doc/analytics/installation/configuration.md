@@ -1,12 +1,12 @@
 ## Configuration {#Configuration}
 
-Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API webfastoche](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-webfastoche/developpeurs/api-javascript)
+Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API fastoche](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-fastoche/developpeurs/api-javascript)
 
-La configuration doit être placée **avant** les fichiers `patch.module.js`, `webfastoche.module.js` et `analytics.module.js`.
+La configuration doit être placée **avant** les fichiers `patch.module.js`, `fastoche.module.js` et `analytics.module.js`.
 
 ```javascript
 <script>
-    window.webfastoche = {
+    window.fastoche = {
         analytics: {
             domain: ' mon.domainedetracking.com',
             // collection: 'manual',

@@ -1,13 +1,13 @@
 {
-  "name": "webfastoche",
+  "name": "fastoche",
   "version": "1.11.2",
-  "description": "Redre générique le Système de Design de l'Etat - webfastoche",
-  "repository": "git@github.com:chris2fr/webfastoche.git",
+  "description": "Redre générique le Système de Design de l'Etat - fastoche",
+  "repository": "git@github.com:chris2fr/fastoche.git",
   "author": "Chris Mann avec de l'aide <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "webfastoche",
-    "namespace": "webfastoche"
+    "prefix": "fastoche",
+    "namespace": "fastoche"
   },
   "engines": {
     "node": ">=18.16.1"

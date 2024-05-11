@@ -20,8 +20,8 @@
 
   @include before('', block) {
     background-repeat: no-repeat, no-repeat, no-repeat;
-    $marianne: svg-encode($svg-webfastochelogo, true);
-    background-image: url($marianne), linear-gradient(90deg, color.$webfastoche-primary 0%, color.$webfastoche-primary 50%, color.$webfastoche-secondary 50%, color.$webfastoche-secondary 100%), linear-gradient(90deg, color.$absolute-black 0%, color.$absolute-black 100%);
+    $marianne: svg-encode($svg-fastochelogo, true);
+    background-image: url($marianne), linear-gradient(90deg, color.$fastoche-primary 0%, color.$fastoche-primary 50%, color.$fastoche-secondary 50%, color.$fastoche-secondary 100%), linear-gradient(90deg, color.$absolute-black 0%, color.$absolute-black 100%);
   }
 
   @include after('', block) {

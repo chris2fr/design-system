@@ -196,7 +196,7 @@ const evaluate = (packages, type) => {
 };
 
 const generateJSON = () => {
-  const config = analyse('webfastoche', 'src');
+  const config = analyse('fastoche', 'src');
   const packages = flatten(config);
   evaluate(packages, 'style');
   evaluate(packages, 'script');

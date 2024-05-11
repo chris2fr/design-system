@@ -16,7 +16,7 @@
   let pagination = locals.pagination || {};
   const attrPagination = pagination.attr || {};
   attrPagination['aria-label'] = 'Pagination';
-  if (pagination.pages && pagination.pages.length) attrPagination['data-webfastoche-analytics-page-total'] = pagination.pages[pagination.pages.length - 1].label;
+  if (pagination.pages && pagination.pages.length) attrPagination['data-fastoche-analytics-page-total'] = pagination.pages[pagination.pages.length - 1].label;
 %>
 <% eval(include('../../../../core/index.ejs')); %>
 

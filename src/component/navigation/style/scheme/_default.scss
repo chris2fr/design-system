@@ -13,17 +13,17 @@
       @include color.text(action-high grey, (legacy: $legacy));
 
       @include selector.current {
-        @include color.text(active webfastoche-primary, (legacy: $legacy));
+        @include color.text(active fastoche-primary, (legacy: $legacy));
         @include before {
-          @include color.background(active webfastoche-primary, (legacy: $legacy));
+          @include color.background(active fastoche-primary, (legacy: $legacy));
         }
       }
     }
 
     &__btn {
       &[aria-expanded="true"]:not(:disabled) {
-        @include color.background(open webfastoche-primary, (legacy: $legacy));
-        @include color.text(action-high webfastoche-primary, (legacy: $legacy));
+        @include color.background(open fastoche-primary, (legacy: $legacy));
+        @include color.text(action-high fastoche-primary, (legacy: $legacy));
       }
     }
 

@@ -10,8 +10,8 @@
   @include margin-x(-2v);
 
   /**
-  * webfastoche-btns-group--inline : aligne les boutons horizontalement dans tout les cas
-  * webfastoche-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  * fastoche-btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * fastoche-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
   */
   &--inline {
     @include horizontal-btns-group;
@@ -64,7 +64,7 @@
   }
 
   /**
-  * webfastoche-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  * fastoche-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
   */
   &--left {
     &,
@@ -75,7 +75,7 @@
   }
 
   /**
-  * webfastoche-btns-group--right : aligne les boutons sur la droite
+  * fastoche-btns-group--right : aligne les boutons sur la droite
   */
   &--right {
     &,
@@ -86,7 +86,7 @@
   }
 
   /**
-  * webfastoche-btns-group--center : aligne les boutons au centre du conteneur
+  * fastoche-btns-group--center : aligne les boutons au centre du conteneur
   */
   &--center {
     &,
@@ -97,7 +97,7 @@
   }
 
   /**
-  * webfastoche-btns-group--center : aligne les boutons au centre du conteneur
+  * fastoche-btns-group--center : aligne les boutons au centre du conteneur
   */
   &--between {
     &,
@@ -108,7 +108,7 @@
   }
 
   /**
-  * webfastoche-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  * fastoche-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
   */
   &--equisized {
     --equisized-width: auto;
@@ -120,7 +120,7 @@
   }
 
   /**
-  * webfastoche-btns-group--sm : Fixe les boutons à la taille SM
+  * fastoche-btns-group--sm : Fixe les boutons à la taille SM
   */
   &--sm {
     #{ns(btn)} {
@@ -156,7 +156,7 @@
   }
 
   /**
-  * webfastoche-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  * fastoche-btns-group--md : (défaut) Fixe les boutons à la taille MD
   */
   &:not(#{ns-group(btns)}--sm):not(#{ns-group(btns)}--lg) {
     #{ns(btn)} {
@@ -192,7 +192,7 @@
   }
 
   /**
-  * webfastoche-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  * fastoche-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
   */
   &--lg {
     #{ns(btn)} {

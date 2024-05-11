@@ -31,8 +31,8 @@
     }
 
     &--new {
-      @include color.text(action-high webfastoche-color14, (legacy: $legacy));
-      @include color.background(contrast webfastoche-color14, (legacy: $legacy));
+      @include color.text(action-high fastoche-color14, (legacy: $legacy));
+      @include color.background(contrast fastoche-color14, (legacy: $legacy));
     }
 
     @include color.accentuate {
