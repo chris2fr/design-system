@@ -20,7 +20,8 @@
     @include padding(0);
     border-radius: spacing.space(8v);
     margin: 0 spacing.space(4v);
-    // background-color: ;
+    @include padding-left(4v);
+    @include padding-right(4v);
 
     @include respond-from(lg) {
       flex-direction: row;

@@ -1,4 +1,4 @@
-from="webfastoche"
+from="dsfr"
 to="fastoche"
 files=`find . -name "*$from*"`
 for i in $files 
