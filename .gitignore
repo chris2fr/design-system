@@ -5,3 +5,8 @@ public/
 /dist/
 /example/
 /standalone/
+/fastoche/dist/
+/fastoche/dist-build/
+/fastoche/dist-release/
+/fastoche/example/
+/fastoche/standalone/

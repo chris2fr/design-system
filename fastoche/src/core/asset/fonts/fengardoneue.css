@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'fengardoneue';
+    src:    url('fengardoneue-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fengardoneue';
+    src:    url('fengardoneue-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}

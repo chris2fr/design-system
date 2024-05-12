@@ -13,7 +13,7 @@
 
   @include body {
     &-row {
-      @include display-flex(row, center, flex-start);
+      @include display-flex(row-reverse, center, flex-start);
       @include margin(0 -4v);
       @include padding(6v 0, lg);
     }
