@@ -1,5 +1,5 @@
 from="dsfr"
-to="fastoche"
+to="cfran"
 files=`find . -name "*$from*"`
 for i in $files 
     do echo mv $i ${i/$from/$to}

@@ -1,13 +1,13 @@
 {
-  "name": "fastoche",
+  "name": "cfran",
   "version": "1.11.2",
-  "description": "Redre générique le Système de Design de l'Etat - fastoche",
-  "repository": "git@github.com:chris2fr/fastoche.git",
+  "description": "Redre générique le Système de Design de l'Etat - cfran",
+  "repository": "git@github.com:chris2fr/cfran.git",
   "author": "Chris Mann avec de l'aide <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "fastoche",
-    "namespace": "fastoche"
+    "prefix": "cfran",
+    "namespace": "cfran"
   },
   "engines": {
     "node": ">=18.16.1"
@@ -20,11 +20,11 @@
     "standalone": "node tool/tool.js standalone",
     "changelog": "node tool/tool.js changelog",
     "serve": "browser-sync start --server --port 8080 --startPath example/",
-    "fastoche": "cd /home/mannchri/work/web-fastoche/fastoche/; browser-sync start -s --port 8080 --startPath example/component/header/ "
+    "cfran": "cd /home/mannchri/work/web-cfran/cfran/; browser-sync start -s --port 8080 --startPath example/component/header/ "
   },
   "files": [
     "/dist",
-    "/fastoche",
+    "/cfran",
     "/src",
     "/module",
     "/standalone",
