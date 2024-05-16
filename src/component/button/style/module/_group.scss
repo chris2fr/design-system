@@ -10,8 +10,8 @@
   @include margin-x(-2v);
 
   /**
-  * fastoche-btns-group--inline : aligne les boutons horizontalement dans tout les cas
-  * fastoche-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
+  * cfran-btns-group--inline : aligne les boutons horizontalement dans tout les cas
+  * cfran-btns-group--inline-(sm/md/lg) : permet de passer en horizontal à partir de la valeur du breakpoint appliqué (sm, md, lg)
   */
   &--inline {
     @include horizontal-btns-group;
@@ -64,7 +64,7 @@
   }
 
   /**
-  * fastoche-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
+  * cfran-btns-group--left : (Défaut) aligne les boutons sur la gauche (en lecture L-t-R)
   */
   &--left {
     &,
@@ -75,7 +75,7 @@
   }
 
   /**
-  * fastoche-btns-group--right : aligne les boutons sur la droite
+  * cfran-btns-group--right : aligne les boutons sur la droite
   */
   &--right {
     &,
@@ -86,7 +86,7 @@
   }
 
   /**
-  * fastoche-btns-group--center : aligne les boutons au centre du conteneur
+  * cfran-btns-group--center : aligne les boutons au centre du conteneur
   */
   &--center {
     &,
@@ -97,7 +97,7 @@
   }
 
   /**
-  * fastoche-btns-group--center : aligne les boutons au centre du conteneur
+  * cfran-btns-group--center : aligne les boutons au centre du conteneur
   */
   &--between {
     &,
@@ -108,7 +108,7 @@
   }
 
   /**
-  * fastoche-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
+  * cfran-btns-group--equisized : Fixe la largeur des boutons à celle du plus grand. Géré en grande partie en JS.
   */
   &--equisized {
     --equisized-width: auto;
@@ -120,7 +120,7 @@
   }
 
   /**
-  * fastoche-btns-group--sm : Fixe les boutons à la taille SM
+  * cfran-btns-group--sm : Fixe les boutons à la taille SM
   */
   &--sm {
     #{ns(btn)} {
@@ -156,7 +156,7 @@
   }
 
   /**
-  * fastoche-btns-group--md : (défaut) Fixe les boutons à la taille MD
+  * cfran-btns-group--md : (défaut) Fixe les boutons à la taille MD
   */
   &:not(#{ns-group(btns)}--sm):not(#{ns-group(btns)}--lg) {
     #{ns(btn)} {
@@ -192,7 +192,7 @@
   }
 
   /**
-  * fastoche-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
+  * cfran-btns-group--lg : Fixe les boutons à la taille LG (sans modfifieur => MD)
   */
   &--lg {
     #{ns(btn)} {

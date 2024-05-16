@@ -6,7 +6,7 @@
 @use 'module/color';
 
 body {
-  @include color.background(alt fastoche-primary, (standalone: true));
+  @include color.background(alt cfran-primary, (standalone: true));
 }
 
 a {
@@ -17,10 +17,10 @@ a {
   &--tertiary {
     @include color.background(alt grey, (standalone: true, hover: true));
     @include color.box-shadow(default grey, (standalone: true), all-1-in);
-    @include color.text(action-high fastoche-primary, (standalone: true));
+    @include color.text(action-high cfran-primary, (standalone: true));
   }
 
   svg {
-    @include color.fill(text action-high fastoche-primary, (standalone: true));
+    @include color.fill(text action-high cfran-primary, (standalone: true));
   }
 }

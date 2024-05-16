@@ -2,13 +2,13 @@
 
 L’instance de Funnel est accessible depuis
 
-`window.fastoche.analytics.funnel`
+`window.cfran.analytics.funnel`
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.fastoche = {
+    window.cfran = {
         analytics: {
             funnel: {
                 id: 'id',
@@ -35,7 +35,7 @@ L’instance de Funnel est accessible depuis
 
 _String_ (EA: funnel\_id)
 
-`window.fastoche.analytics.funnel.id`
+`window.cfran.analytics.funnel.id`
 
 Identifiant du parcours / formulaire multi-étape
 
@@ -45,7 +45,7 @@ Identifiant du parcours / formulaire multi-étape
 
 _String_ (EA: funnel\_type)
 
-`window.fastoche.analytics.funnel.type`
+`window.cfran.analytics.funnel.type`
 
 Type de parcours / formulaire
 
@@ -55,7 +55,7 @@ Type de parcours / formulaire
 
 _String_ (EA: funnel\_name)
 
-`window.fastoche.analytics.funnel.name`
+`window.cfran.analytics.funnel.name`
 
 Nom du parcours/formulaire si besoin de précision.
 
@@ -65,7 +65,7 @@ Nom du parcours/formulaire si besoin de précision.
 
 _String_ (EA: funnel\_step\_name)
 
-`window.fastoche.analytics.funnel.step`
+`window.cfran.analytics.funnel.step`
 
 Nom de l'étape du parcours/formulaire.
 
@@ -75,7 +75,7 @@ Nom de l'étape du parcours/formulaire.
 
 _Int_ (EA: funnel\_step\_number)
 
-`window.fastoche.analytics.funnel.current`
+`window.cfran.analytics.funnel.current`
 
 Numéro de l'étape en cours dans le parcours/formulaire.
 
@@ -85,7 +85,7 @@ Numéro de l'étape en cours dans le parcours/formulaire.
 
 _Int_ (EA: funnel\_step\_max)
 
-`window.fastoche.analytics.funnel.total`
+`window.cfran.analytics.funnel.total`
 
 Nombre d’étapes maximum dans le parcours/formulaire.
 
@@ -95,7 +95,7 @@ Nombre d’étapes maximum dans le parcours/formulaire.
 
 _String_ (EA: funnel\_objective)
 
-`window.fastoche.analytics.funnel.objective`
+`window.cfran.analytics.funnel.objective`
 
 Objectif du parcours/formulaire.
 
@@ -105,7 +105,7 @@ Objectif du parcours/formulaire.
 
 _String_ (EA: funnel\_error)
 
-`window.fastoche.analytics.funnel.error`
+`window.cfran.analytics.funnel.error`
 
 Type d’erreur d’un parcours/formulaire.
 
@@ -115,7 +115,7 @@ Type d’erreur d’un parcours/formulaire.
 
 ##### reset (clear = false)
 
-`window.fastoche.analytics.funnel.reset(clear)`
+`window.cfran.analytics.funnel.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

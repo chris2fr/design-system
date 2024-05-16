@@ -9,15 +9,15 @@
 @mixin _core-artwork-scheme($legacy: false) {
   #{selector.ns(artwork)} {
     &-decorative {
-      @include color.fill(artwork decorative fastoche-primary, (legacy: $legacy));
+      @include color.fill(artwork decorative cfran-primary, (legacy: $legacy));
     }
 
     &-minor {
-      @include color.fill(artwork minor fastoche-secondary, (legacy: $legacy));
+      @include color.fill(artwork minor cfran-secondary, (legacy: $legacy));
     }
 
     &-major {
-      @include color.fill(artwork major fastoche-primary, (legacy: $legacy));
+      @include color.fill(artwork major cfran-primary, (legacy: $legacy));
     }
 
     &-background {

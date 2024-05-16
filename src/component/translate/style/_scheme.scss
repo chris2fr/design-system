@@ -9,8 +9,8 @@
   #{ns(translate)} {
     #{ns(translate)}__btn {
       &[aria-expanded="true"] {
-        @include color.text(active fastoche-primary, (legacy: $legacy));
-        @include color.background(open fastoche-primary, (legacy: $legacy));
+        @include color.text(active cfran-primary, (legacy: $legacy));
+        @include color.background(open cfran-primary, (legacy: $legacy));
         @include hover-tint;
       }
     }

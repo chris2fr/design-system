@@ -16,7 +16,7 @@ class ConnectActionee extends ComponentActionee {
   }
 
   get label () {
-    if (this.node.classList.contains('fastoche-connect--plus')) return 'FranceConnect+';
+    if (this.node.classList.contains('cfran-connect--plus')) return 'FranceConnect+';
     return 'FranceConnect';
   }
 

@@ -12,16 +12,16 @@
       @include color.box-shadow(default grey, (legacy:$legacy), all-1-in);
 
       #{ns(download__link)} {
-        @include color.text(action-high fastoche-primary, (legacy:$legacy));
+        @include color.text(action-high cfran-primary, (legacy:$legacy));
 
         @include after {
-          @include color.text(action-high fastoche-primary, (legacy:$legacy));
+          @include color.text(action-high cfran-primary, (legacy:$legacy));
         }
       }
     }
 
     &__link {
-      @include color.text(action-high fastoche-primary, (legacy:$legacy));
+      @include color.text(action-high cfran-primary, (legacy:$legacy));
     }
 
     &__detail {
@@ -31,7 +31,7 @@
 
   #{ns-group(downloads)} {
     li::marker {
-      @include color.text(action-high fastoche-primary, (legacy:$legacy));
+      @include color.text(action-high cfran-primary, (legacy:$legacy));
     }
 
     &--bordered {

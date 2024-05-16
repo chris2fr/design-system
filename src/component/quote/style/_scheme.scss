@@ -8,7 +8,7 @@
 @mixin _quote-scheme($legacy: false) {
   #{ns(quote)} {
     @include before {
-      @include color.text((artwork minor fastoche-primary), (legacy:$legacy));
+      @include color.text((artwork minor cfran-primary), (legacy:$legacy));
     }
 
     @include color.accentuate {

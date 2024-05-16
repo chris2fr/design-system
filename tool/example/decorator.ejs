@@ -3,8 +3,8 @@
 let sampling = false;
 
 function section (title, desc, spacing = '32v', container = false) {
-  let sectionText = `<div class="fastoche-mt-${spacing}">`;
-  if (container) sectionText += `<div class="fastoche-container">`;
+  let sectionText = `<div class="cfran-mt-${spacing}">`;
+  if (container) sectionText += `<div class="cfran-container">`;
   if (title) sectionText += `<h2>${title}</h2>`;
   if (desc) sectionText += `<p>${desc}</p>`;
   if (container) sectionText += `</div>`;
@@ -15,7 +15,7 @@ function section (title, desc, spacing = '32v', container = false) {
 locals.section = section;
 
 function deprecation () {
-  return section('Dépréciation', '<span class="fastoche-icon-warning-fill"></span> Les exemples suivants sont dépréciés, ne pas utiliser comme référence<br>Pour support des versions précédentes');
+  return section('Dépréciation', '<span class="cfran-icon-warning-fill"></span> Les exemples suivants sont dépréciés, ne pas utiliser comme référence<br>Pour support des versions précédentes');
 }
 
 locals.deprecation = deprecation;

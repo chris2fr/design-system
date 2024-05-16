@@ -1,6 +1,6 @@
 ## Opt
 L’instance de Opt est accessible depuis
-`window.fastoche.analytics.opt`
+`window.cfran.analytics.opt`
 
 Elle permet de gérer l’Opt-out lorsque l’utilisateur ne consent pas à la collecte de données.
 
@@ -12,7 +12,7 @@ Le Opt-Out complet empêche le chargement de la librairie JS eulerian ainsi que 
 
 _Boolean_
 
-`window.fastoche.analytics.opt.isDisabled`
+`window.cfran.analytics.opt.isDisabled`
 
 Retourne une valeur booléenne “true” pour un Opt-Out et “false” pour un Opt-In (par défaut).
 
@@ -24,7 +24,7 @@ alias de la fonction de l’API eulerian _EA_disabled()
 
 #### enable
 
-`window.fastoche.analytics.opt.enable()`
+`window.cfran.analytics.opt.enable()`
 
 Opt-in, la collecte de données est activée.
 
@@ -32,7 +32,7 @@ Opt-in, la collecte de données est activée.
 
 #### disable
 
-`window.fastoche.analytics.opt.disable()`
+`window.cfran.analytics.opt.disable()`
 
 Opt-out, la collecte de données est désactivée.
 
@@ -40,6 +40,6 @@ Opt-out, la collecte de données est désactivée.
 
 #### toggle
 
-`window.fastoche.analytics.opt.toggle()`
+`window.cfran.analytics.opt.toggle()`
 
 Inverse le statut Opt-in / Opt-out
