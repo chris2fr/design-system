@@ -1,23 +1,23 @@
-$cfran-primary-hue: 122;
-$cfran-secondary-hue: 212;
-$cfran-color3-hue: 249;
-$cfran-color4-hue: 249;
-$cfran-color5-hue: 249;
-$cfran-color6-hue: 249;
-$cfran-color7-hue: 34;
-$cfran-color8-hue: 34;
-$cfran-color9-hue: 34;
-$cfran-color10-hue: 100;
-$cfran-color11-hue: 105;
-$cfran-color12-hue: 115;
-$cfran-color13-hue: 135;
-$cfran-color14-hue: 145;
-$cfran-color15-hue: 155;
-$cfran-color16-hue: 165;
-$cfran-color17-hue: 175;
-$cfran-color18-hue: 185;
-$cfran-color19-hue: 195;
-$cfran-color20-hue: 230;
+$cfran-primary-hue: 180;
+$cfran-secondary-hue: 270;
+$cfran-color3-hue: 0;
+$cfran-color4-hue: 90;
+$cfran-color5-hue: 180;
+$cfran-color6-hue: 290;
+$cfran-color7-hue: 0;
+$cfran-color8-hue: 90;
+$cfran-color9-hue: 180;
+$cfran-color10-hue: 270;
+$cfran-color11-hue: 0;
+$cfran-color12-hue: 90;
+$cfran-color13-hue: 180;
+$cfran-color14-hue: 270;
+$cfran-color15-hue: 0;
+$cfran-color16-hue: 90;
+$cfran-color17-hue: 180;
+$cfran-color18-hue: 270;
+$cfran-color19-hue: 0;
+$cfran-color20-hue: 90;
 // Chaque couleur est définie suivant ce modèle :
 // [color-name]-[grade]: [hex] [hue] [saturation] [lightness]; Les valeurs sont principal, hover, active,
 $values: (
@@ -44,6 +44,7 @@ $values: (
   cfran-primary-100: hsl($cfran-primary-hue, 20%, 10%) hsl($cfran-primary-hue, 22%, 13%) hsl($cfran-primary-hue, 33%, 18%),
   cfran-primary-125: hsl($cfran-primary-hue, 33%, 13%) hsl($cfran-primary-hue, 40%, 65%) hsl($cfran-primary-hue, 45%, 65%),
   cfran-primary-200: hsl($cfran-primary-hue, 45%, 20%) hsl($cfran-primary-hue, 50%, 25%) hsl($cfran-primary-hue, 60%, 30%),
+  cfran-primary-425: hsl($cfran-primary-hue, 45%, 43%) hsl($cfran-primary-hue, 50%, 50%) hsl($cfran-primary-hue, 60%, 50%),
   cfran-primary-625: hsl($cfran-primary-hue, 80%, 65%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
   cfran-primary-850: hsl($cfran-primary-hue, 80%, 85%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
   cfran-primary-925: hsl($cfran-primary-hue, 80%, 93%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
@@ -67,58 +68,67 @@ $values: (
   cfran-secondary-moon: hsl($cfran-secondary-hue, 80%, 75%) hsl($cfran-secondary-hue, 60%, 75%) hsl($cfran-secondary-hue, 40%, 75%),
   cfran-secondary-main: hsl($cfran-secondary-hue, 85%, 25%) hsl($cfran-secondary-hue, 60%, 15%) hsl($cfran-secondary-hue, 40%, 15%) hsl($cfran-secondary-hue, 60%, 15%) hsl($cfran-secondary-hue, 40%, 55%),
   // info
-  info-75: #171d2e #333e5c #445177,
-  info-100: #1d2437 #3b4767 #4c5b83,
-  info-125: #222a3f #414e71 #53638d,
-  info-200: #273961 #45619f #5576c0,
-  info-425: #0063cb #3b87ff #6798ff,
-  info-625: #518fff #98b4ff #b4c7ff,
-  info-850: #bccdff #83a9ff #5f96ff,
-  info-925: #dde5ff #b1c6ff #95b4ff,
-  info-950: #e8edff #c2d1ff #a9bfff,
-  info-975: #f4f6ff #d6deff #c2cfff,
-  info-main: #0078f3 #6196ff #85a9ff #6196ff #85a9ff,
+  info-75: hsl($cfran-primary-hue, 20%, 7%) hsl($cfran-primary-hue, 20%, 12%) hsl($cfran-primary-hue, 30%, 15%),
+  info-100: hsl($cfran-primary-hue, 20%, 10%) hsl($cfran-primary-hue, 22%, 13%) hsl($cfran-primary-hue, 33%, 18%),
+  info-125: hsl($cfran-primary-hue, 33%, 13%) hsl($cfran-primary-hue, 40%, 65%) hsl($cfran-primary-hue, 45%, 65%),
+  info-200: hsl($cfran-primary-hue, 45%, 20%) hsl($cfran-primary-hue, 50%, 25%) hsl($cfran-primary-hue, 60%, 30%),
+  info-425: hsl($cfran-primary-hue, 45%, 43%) hsl($cfran-primary-hue, 50%, 50%) hsl($cfran-primary-hue, 60%, 50%),
+  info-625: hsl($cfran-primary-hue, 80%, 65%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
+  info-850: hsl($cfran-primary-hue, 80%, 85%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
+  info-925: hsl($cfran-primary-hue, 80%, 93%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
+  info-950: hsl($cfran-primary-hue, 80%, 96%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
+  info-975: hsl($cfran-primary-hue, 80%, 98%) hsl($cfran-primary-hue, 60%, 65%) hsl($cfran-primary-hue, 90%, 65%),
+  info-sun: hsl($cfran-primary-hue, 75%, 25%) hsl($cfran-primary-hue, 60%, 20%) hsl($cfran-primary-hue, 40%, 15%),
+  info-moon: hsl($cfran-primary-hue, 80%, 75%) hsl($cfran-primary-hue, 60%, 75%) hsl($cfran-primary-hue, 40%, 75%),
+  info-main: hsl($cfran-primary-hue, 85%, 25%) hsl($cfran-primary-hue, 60%, 15%) hsl($cfran-primary-hue, 40%, 15%) hsl($cfran-color3-hue, 60%, 15%) hsl($cfran-color3-hue, 40%, 15%),
   // success
-  success-75: #142117 #2e4533 #3d5943,
-  success-100: #19271d #344c3b #44624d,
-  success-125: #1e2e22 #3b5541 #4b6b53,
-  success-200: #204129 #3a6d48 #478558,
-  success-425: #18753c #27a959 #2fc368,
-  success-625: #27a658 #36d975 #3df183,
-  success-850: #3bea7e #2cb862 #259e53,
-  success-925: #88fdaa #3ee87e #36d070,
-  success-950: #b8fec9 #46fd89 #34eb7b,
-  success-975: #dffee6 #8afcab #4efb8d,
-  success-main: #1f8d49 #2ec166 #36db75 #2ec166 #36db75,
+  success-75: hsl($cfran-secondary-hue, 20%, 7%) hsl($cfran-secondary-hue, 20%, 12%) hsl($cfran-secondary-hue, 30%, 15%),
+  success-100: hsl($cfran-secondary-hue, 20%, 10%) hsl($cfran-secondary-hue, 22%, 13%) hsl($cfran-secondary-hue, 33%, 18%),
+  success-125: hsl($cfran-secondary-hue, 33%, 13%) hsl($cfran-secondary-hue, 40%, 65%) hsl($cfran-secondary-hue, 45%, 65%),
+  success-200: hsl($cfran-secondary-hue, 45%, 20%) hsl($cfran-secondary-hue, 50%, 25%) hsl($cfran-secondary-hue, 60%, 30%),
+  success-425: hsl($cfran-secondary-hue, 45%, 43%) hsl($cfran-secondary-hue, 50%, 50%) hsl($cfran-secondary-hue, 60%, 50%),
+  success-625: hsl($cfran-secondary-hue, 80%, 65%) hsl($cfran-secondary-hue, 60%, 65%) hsl($cfran-secondary-hue, 90%, 65%),
+  success-850: hsl($cfran-secondary-hue, 80%, 85%) hsl($cfran-secondary-hue, 60%, 65%) hsl($cfran-secondary-hue, 90%, 65%),
+  success-925: hsl($cfran-secondary-hue, 80%, 93%) hsl($cfran-secondary-hue, 60%, 65%) hsl($cfran-secondary-hue, 90%, 65%),
+  success-950: hsl($cfran-secondary-hue, 80%, 96%) hsl($cfran-secondary-hue, 60%, 65%) hsl($cfran-secondary-hue, 90%, 65%),
+  success-975: hsl($cfran-secondary-hue, 80%, 98%) hsl($cfran-secondary-hue, 60%, 65%) hsl($cfran-secondary-hue, 90%, 65%),
+  success-sun: hsl($cfran-secondary-hue, 75%, 25%) hsl($cfran-secondary-hue, 60%, 20%) hsl($cfran-secondary-hue, 40%, 15%),
+  success-moon: hsl($cfran-secondary-hue, 80%, 75%) hsl($cfran-secondary-hue, 60%, 75%) hsl($cfran-secondary-hue, 40%, 75%),
+  success-main: hsl($cfran-secondary-hue, 85%, 25%) hsl($cfran-secondary-hue, 60%, 15%) hsl($cfran-secondary-hue, 40%, 15%) hsl($cfran-color3-hue, 60%, 15%) hsl($cfran-color3-hue, 40%, 15%),
   // warning
-  warning-75: #2d1814 #5b352e #75473e,
-  warning-100: #361e19 #663d35 #824f44,
-  warning-125: #3e231e #70433b #8d564c,
-  warning-200: #5d2c20 #9a4d3a #bc5f49,
-  warning-425: #b34000 #ff6218 #ff7a55,
-  warning-625: #fc5d00 #ff8c73 #ffa595,
-  warning-850: #ffbeb4 #ff8e77 #ff7550,
-  warning-925: #ffded9 #ffb6a9 #ff9f8b,
-  warning-950: #ffe9e6 #ffc6bd #ffb0a2,
-  warning-975: #fff4f3 #ffd7d3 #ffc4bd,
-  warning-main: #d64d00 #ff754e #ff8e76 #ff754e #ff8e76,
+  warning-75: hsl($cfran-color4-hue, 20%, 7%) hsl($cfran-color4-hue, 20%, 12%) hsl($cfran-color4-hue, 30%, 15%),
+  warning-100: hsl($cfran-color4-hue, 20%, 10%) hsl($cfran-color4-hue, 22%, 13%) hsl($cfran-color4-hue, 33%, 18%),
+  warning-125: hsl($cfran-color4-hue, 33%, 13%) hsl($cfran-color4-hue, 40%, 65%) hsl($cfran-color4-hue, 45%, 65%),
+  warning-200: hsl($cfran-color4-hue, 45%, 20%) hsl($cfran-color4-hue, 50%, 25%) hsl($cfran-color4-hue, 60%, 30%),
+  warning-425: hsl($cfran-color4-hue, 45%, 43%) hsl($cfran-color4-hue, 50%, 50%) hsl($cfran-color4-hue, 60%, 50%),
+  warning-625: hsl($cfran-color4-hue, 80%, 65%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
+  warning-850: hsl($cfran-color4-hue, 80%, 85%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
+  warning-925: hsl($cfran-color4-hue, 80%, 93%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
+  warning-950: hsl($cfran-color4-hue, 80%, 96%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
+  warning-975: hsl($cfran-color4-hue, 80%, 98%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
+  warning-sun: hsl($cfran-color4-hue, 75%, 25%) hsl($cfran-color4-hue, 60%, 20%) hsl($cfran-color4-hue, 40%, 15%),
+  warning-moon: hsl($cfran-color4-hue, 80%, 75%) hsl($cfran-color4-hue, 60%, 75%) hsl($cfran-color4-hue, 40%, 75%),
+  warning-main: hsl($cfran-color4-hue, 85%, 25%) hsl($cfran-color4-hue, 60%, 15%) hsl($cfran-color4-hue, 40%, 15%) hsl($cfran-color3-hue, 60%, 15%) hsl($cfran-color3-hue, 40%, 15%),
   // error
-  error-75: #301717 #603434 #7c4444,
-  error-100: #391c1c #6c3a3a #894b4b,
-  error-125: #412121 #764040 #935252,
-  error-200: #642626 #a74545 #cb5555,
-  error-425: #ce0500 #ff2725 #ff4140,
-  error-625: #ff5655 #ff8c8c #ffa6a6,
-  error-850: #ffbdbd #ff8c8c #ff7272,
-  error-925: #fdd #ffb4b4 #ff9c9c,
-  error-950: #ffe9e9 #ffc5c5 #ffafaf,
-  error-975: #fff4f4 #ffd7d7 #ffc3c3,
-  error-main: #f60700 #ff3634 #ff5150 #ff3634 #ff5150,
+  error-75: hsl($cfran-color3-hue, 20%, 7%) hsl($cfran-color3-hue, 20%, 12%) hsl($cfran-color3-hue, 30%, 15%),
+  error-100: hsl($cfran-color3-hue, 20%, 10%) hsl($cfran-color3-hue, 22%, 13%) hsl($cfran-color3-hue, 33%, 18%),
+  error-125: hsl($cfran-color3-hue, 33%, 13%) hsl($cfran-color3-hue, 40%, 65%) hsl($cfran-color3-hue, 45%, 65%),
+  error-200: hsl($cfran-color3-hue, 45%, 20%) hsl($cfran-color3-hue, 50%, 25%) hsl($cfran-color3-hue, 60%, 30%),
+  error-425: hsl($cfran-color3-hue, 45%, 43%) hsl($cfran-color3-hue, 50%, 50%) hsl($cfran-color3-hue, 60%, 50%),
+  error-625: hsl($cfran-color3-hue, 80%, 65%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
+  error-850: hsl($cfran-color3-hue, 80%, 85%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
+  error-925: hsl($cfran-color3-hue, 80%, 93%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
+  error-950: hsl($cfran-color3-hue, 80%, 96%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
+  error-975: hsl($cfran-color3-hue, 80%, 98%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
+  error-sun: hsl($cfran-color3-hue, 75%, 25%) hsl($cfran-color3-hue, 60%, 20%) hsl($cfran-color3-hue, 40%, 15%),
+  error-moon: hsl($cfran-color3-hue, 80%, 75%) hsl($cfran-color3-hue, 60%, 75%) hsl($cfran-color3-hue, 40%, 75%),
+  error-main: hsl($cfran-color3-hue, 85%, 25%) hsl($cfran-color3-hue, 60%, 15%) hsl($cfran-color3-hue, 40%, 15%) hsl($cfran-color3-hue, 60%, 15%) hsl($cfran-color3-hue, 40%, 15%),
   // cfran-color3-
   cfran-color3-75: hsl($cfran-color3-hue, 20%, 7%) hsl($cfran-color3-hue, 20%, 12%) hsl($cfran-color3-hue, 30%, 15%),
   cfran-color3-100: hsl($cfran-color3-hue, 20%, 10%) hsl($cfran-color3-hue, 22%, 13%) hsl($cfran-color3-hue, 33%, 18%),
   cfran-color3-125: hsl($cfran-color3-hue, 33%, 13%) hsl($cfran-color3-hue, 40%, 65%) hsl($cfran-color3-hue, 45%, 65%),
   cfran-color3-200: hsl($cfran-color3-hue, 45%, 20%) hsl($cfran-color3-hue, 50%, 25%) hsl($cfran-color3-hue, 60%, 30%),
+  cfran-color3-425: hsl($cfran-color3-hue, 45%, 43%) hsl($cfran-color3-hue, 50%, 50%) hsl($cfran-color3-hue, 60%, 50%),
   cfran-color3-625: hsl($cfran-color3-hue, 80%, 65%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
   cfran-color3-850: hsl($cfran-color3-hue, 80%, 85%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
   cfran-color3-925: hsl($cfran-color3-hue, 80%, 93%) hsl($cfran-color3-hue, 60%, 65%) hsl($cfran-color3-hue, 90%, 65%),
@@ -132,6 +142,7 @@ $values: (
   cfran-color4-100: hsl($cfran-color4-hue, 20%, 10%) hsl($cfran-color4-hue, 22%, 13%) hsl($cfran-color4-hue, 33%, 18%),
   cfran-color4-125: hsl($cfran-color4-hue, 33%, 13%) hsl($cfran-color4-hue, 40%, 65%) hsl($cfran-color4-hue, 45%, 65%),
   cfran-color4-200: hsl($cfran-color4-hue, 45%, 20%) hsl($cfran-color4-hue, 50%, 25%) hsl($cfran-color4-hue, 60%, 30%),
+  cfran-color4-425: hsl($cfran-color4-hue, 45%, 43%) hsl($cfran-color4-hue, 50%, 50%) hsl($cfran-color4-hue, 60%, 50%),
   cfran-color4-625: hsl($cfran-color4-hue, 80%, 65%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
   cfran-color4-850: hsl($cfran-color4-hue, 80%, 85%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
   cfran-color4-925: hsl($cfran-color4-hue, 80%, 93%) hsl($cfran-color4-hue, 60%, 65%) hsl($cfran-color4-hue, 90%, 65%),
