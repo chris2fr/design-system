@@ -11,11 +11,17 @@
   @include disable-list-style;
   @include set-text-margin(0);
   @include set-title-margin(0);
+  margin: 0 auto;
+  width: fit-content;
 
   @include list {
-    @include display-flex(column);
+    @include display-flex(column, null, center);
     @include margin(0);
     @include padding(0);
+    border-radius: spacing.space(8v);
+    margin: 0 spacing.space(4v);
+    @include padding-left(4v);
+    @include padding-right(4v);
 
     @include respond-from(lg) {
       flex-direction: row;
@@ -87,7 +93,7 @@
     @include size(100%);
     @include padding(3v 4v);
     @include text-style(md);
-    text-align: left;
+    text-align: center;
 
     @include respond-from(lg) {
       @include text-style(sm);

@@ -25,7 +25,9 @@ let brand = locals.brand || {};
   %>
 
   <div class="<%= prefix %>-header__brand-top" >
+    
     <div class="<%= prefix %>-header__logo" >
+      <!-- DEBUT LOGO -->
       <% if (linkInfos.position === 'logo') { %><%- link %><% } %>
         <%
           let path, data;
@@ -42,6 +44,7 @@ let brand = locals.brand || {};
         %>
         <%- include(path, {logo: data}); %>
       <% if (linkInfos.position === 'logo') { %><%- '</a>' %><% } %>
+      <!-- FIN LOGO -->
     </div>
 
 
