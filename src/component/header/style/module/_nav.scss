@@ -5,6 +5,7 @@
 
 #{ns(header)} {
   #{ns(nav)} {
+    grid-area: m;
     @include respond-from(lg) {
       justify-content: flex-start;
 

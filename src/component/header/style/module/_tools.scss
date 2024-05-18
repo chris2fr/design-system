@@ -5,6 +5,7 @@
 
 #{ns(header)} {
   &__tools {
+    grid-area: t;
     @include respond-from(lg) {
       flex-direction: column;
       align-items: flex-end;

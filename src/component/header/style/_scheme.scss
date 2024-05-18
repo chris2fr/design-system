@@ -14,6 +14,7 @@
     }
 
     &__service {
+      text-align: left; /* chris2fr */
       @include color.text(title grey, (legacy:$legacy));
       @include color.box-shadow(default grey, (legacy:$legacy), top-1-in);
     }
@@ -70,9 +71,24 @@
     }
 
     #{ns(header__menu)} {
+      #{ns(container)} {
+        display: grid; /* chris2fr */
+        grid-template-columns: 1fr;
+        grid-template-areas: "l" "h" "m" "t";
+        @include respond-from(lg) {
+          grid-template-columns: auto 1fr;
+          grid-template-rows: auto;
+          grid-template-areas: "l m"
+                               "h h";
+        }
+      }
       @include respond-from(lg) {
         @include color.box-shadow(default grey, (legacy:$legacy), top-1-in);
       }
+    }
+
+    &__menu-logo {
+      grid-area: l;
     }
 
     #{ns(modal)} {

@@ -13,7 +13,20 @@
 <% let tools = locals.tools || {}; %>
 
 <div class="<%= prefix %>-header__tools">
-  <% if (tools.links !== undefined || tools.translate !== undefined) { %>
+
+  <% if (tools.search !== undefined) {
+    if (!tools.search.id || !tools.search.modalId) throw new Error('tools.search is not defined in header. id & modalId required');
+%>
+<div class="<%= prefix %>-header__search <%= prefix %>-modal" id="<%= tools.search.modalId %>" aria-labelledby="<%= navbar.search.btnId %>">
+    <div class="<%= prefix %>-container <%= prefix %>-container-lg--fluid" >
+      <%- include('../../../button/template/ejs/button-close', {button: { closeId: tools.search.modalId }}); %>
+      <%- include( tools.search.sample !== undefined ? tools.search.sample : '../../../search/template/ejs/search', {search: tools.search}); %>
+    </div>
+  </div>
+
+<% } %>
+
+    <% if (tools.links !== undefined || tools.translate !== undefined) { %>
     <div class="<%= prefix %>-header__tools-links">
       <% if (tools.links.buttons.length) { %>
         <% if (tools.links.buttons.length > 1) { %>
@@ -34,15 +47,5 @@
     </div>
   <% } %>
 
-  <% if (tools.search !== undefined) {
-      if (!tools.search.id || !tools.search.modalId) throw new Error('tools.search is not defined in header. id & modalId required');
-  %>
-    <div class="<%= prefix %>-header__search <%= prefix %>-modal" id="<%= tools.search.modalId %>" aria-labelledby="<%= navbar.search.btnId %>">
-      <div class="<%= prefix %>-container <%= prefix %>-container-lg--fluid" >
-        <%- include('../../../button/template/ejs/button-close', {button: { closeId: tools.search.modalId }}); %>
-        <%- include( tools.search.sample !== undefined ? tools.search.sample : '../../../search/template/ejs/search', {search: tools.search}); %>
-      </div>
-    </div>
 
-  <% } %>
 </div>

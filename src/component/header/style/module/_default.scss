@@ -12,6 +12,7 @@
   @include relative;
 
   @include body {
+    grid-area: h;
     &-row {
       @include display-flex(row, center, flex-start);
       @include margin(0 -4v);

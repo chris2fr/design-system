@@ -25,9 +25,8 @@ let brand = locals.brand || {};
   %>
 
   <div class="<%= prefix %>-header__brand-top" >
-    
+    <% /* %>
     <div class="<%= prefix %>-header__logo" >
-      <!-- DEBUT LOGO -->
       <% if (linkInfos.position === 'logo') { %><%- link %><% } %>
         <%
           let path, data;
@@ -44,8 +43,8 @@ let brand = locals.brand || {};
         %>
         <%- include(path, {logo: data}); %>
       <% if (linkInfos.position === 'logo') { %><%- '</a>' %><% } %>
-      <!-- FIN LOGO -->
     </div>
+    <% */ %>
 
 
     <% if (brand.operator !== undefined) { %>
@@ -70,7 +69,7 @@ let brand = locals.brand || {};
               <%- brand.service.title %>
             <% } %>
             <% if (brand.service.beta) { %>
-              <%- include('../../../badge/template/ejs/badge.ejs', {badge: {markup: 'span', label: "BETA", size: 'sm', accent: 'cfran-color5'} }) %>
+              <%- include('../../../badge/template/ejs/badge.ejs', {badge: {markup: 'span', label: "BETA", size: 'sm', accent: 'green-emeraude'} }) %>
             <% } %>
           </p>
         <% } %>

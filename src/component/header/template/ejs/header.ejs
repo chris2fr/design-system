@@ -69,7 +69,7 @@ if (header.menu.navigation && header.menu.modalId) {
 
 <header role="banner" class="<%= prefix %>-header" <%- includeAttrs(attributes) %>>
   <% if ((header.menu.navigation && header.body.brand.navbar) || (header.body.tools && header.body.tools.links)) { %>
-    <%- include('./menu', {menu: header.menu});%>
+    <%- include('./menu', {menu: header.menu, brand: header.body.brand});%>
   <% } %>
   <%- include('./body', {body: header.body});%>
 </header>
