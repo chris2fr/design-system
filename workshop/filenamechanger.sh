@@ -1,4 +1,4 @@
-from="dsfr"
+from="cfran"
 to="cfran"
 files=`find . -name "*$from*"`
 for i in $files 

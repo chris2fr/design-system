@@ -78,8 +78,7 @@
         @include respond-from(lg) {
           grid-template-columns: auto 1fr;
           grid-template-rows: auto;
-          grid-template-areas: "l m"
-                               "h h";
+          grid-template-areas: "l m" "h h";
         }
       }
       @include respond-from(lg) {
