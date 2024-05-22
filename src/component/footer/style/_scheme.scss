@@ -7,7 +7,7 @@
 
 @mixin _footer-scheme($legacy: false) {
   #{ns(footer)} {
-    @include color.box-shadow((plain cfran-primary) (default grey), (legacy:$legacy), top-2-in bottom-1-in);
+    @include color.box-shadow((plain fastoche-primary) (default grey), (legacy:$legacy), top-2-in bottom-1-in);
 
     &__content-link {
       @include color.text(default grey, (legacy:$legacy));

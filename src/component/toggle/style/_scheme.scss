@@ -12,30 +12,30 @@
       @include color.text(label grey, (legacy:$legacy));
 
       @include before {
-        @include color.text(active cfran-primary, (legacy:$legacy));
-        @include color.data-uri-svg(border action-high cfran-primary, (legacy: $legacy), $toggle-unchecked-svg);
+        @include color.text(active fastoche-primary, (legacy:$legacy));
+        @include color.data-uri-svg(border action-high fastoche-primary, (legacy: $legacy), $toggle-unchecked-svg);
       }
 
       @include after {
-        @include color.text(active cfran-primary, (legacy:$legacy));
-        @include color.box-shadow(action-high cfran-primary, (legacy:$legacy), all-1-in);
+        @include color.text(active fastoche-primary, (legacy:$legacy));
+        @include color.box-shadow(action-high fastoche-primary, (legacy:$legacy), all-1-in);
         @include color.background(default grey, (legacy:$legacy));
       }
     }
 
     input[type="checkbox"] {
-      @include color.box-shadow(action-high cfran-primary, (legacy:$legacy), all-1-in);
+      @include color.box-shadow(action-high fastoche-primary, (legacy:$legacy), all-1-in);
 
       &:checked {
-        @include color.background(active cfran-primary, (legacy:$legacy));
+        @include color.background(active fastoche-primary, (legacy:$legacy));
 
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border active cfran-primary) (border active cfran-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border active fastoche-primary) (border active fastoche-primary), (legacy: $legacy), $toggle-checked-svg);
           }
 
           @include after {
-            @include color.data-uri-svg(active cfran-primary, (legacy: $legacy), $toggle-svg);
+            @include color.data-uri-svg(active fastoche-primary, (legacy: $legacy), $toggle-svg);
           }
         }
       }
@@ -96,7 +96,7 @@
       &:checked {
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border plain error) (active cfran-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border plain error) (active fastoche-primary), (legacy: $legacy), $toggle-checked-svg);
           }
         }
       }
@@ -122,7 +122,7 @@
       &:checked {
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border plain success) (active cfran-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border plain success) (active fastoche-primary), (legacy: $legacy), $toggle-checked-svg);
           }
         }
       }

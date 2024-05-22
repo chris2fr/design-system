@@ -10,12 +10,12 @@
 </head>
 <body>
   <main role="main" id="content">
-    <div class="cfran-container">
-      <div class="cfran-grid-row cfran-grid-row--center cfran-grid-row--gutters">
-        <div class="cfran-server__body cfran-col-12 cfran-col-md-6">
-          <h1 class="cfran-h1"><%= getText('page.title', 'unavailable') %></h1>
-          <p class="cfran-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
-          <p class="cfran-text--sm"><%= getText('page.retry', 'unavailable') %></p>
+    <div class="fastoche-container">
+      <div class="fastoche-grid-row fastoche-grid-row--center fastoche-grid-row--gutters">
+        <div class="fastoche-server__body fastoche-col-12 fastoche-col-md-6">
+          <h1 class="fastoche-h1"><%= getText('page.title', 'unavailable') %></h1>
+          <p class="fastoche-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
+          <p class="fastoche-text--sm"><%= getText('page.retry', 'unavailable') %></p>
 
           <%- include(root + 'src/component/button/example/sample/buttons-group.ejs', {
             buttonsGroup: { size: 'sm', inline: true, buttons: [
@@ -24,14 +24,14 @@
               {label: '<span aria-hidden="true">' + include(root + 'src/core/icon/logo/linkedin-box-fill.svg') + '</span>' + getText('social.linkedin', 'global'), kind: 3, markup: 'a', href: contentPlaceholder(getText('social.linkedin.url', 'global'))},
             ] }}); %>
         </div>
-        <div class="cfran-server__image cfran-col-12 cfran-col-md-3 cfran-col-offset-md-1">
+        <div class="fastoche-server__image fastoche-col-12 fastoche-col-md-3 fastoche-col-offset-md-1">
           <%- include('./sample/svg.ejs') %>
         </div>
       </div>
     </div>
 
-    <div class="cfran-server__footer">
-      <div class="cfran-grid-row cfran-grid-row--center">
+    <div class="fastoche-server__footer">
+      <div class="fastoche-grid-row fastoche-grid-row--center">
         <img width="66px" height="24px" src="<%- imgToBase64('asset/marianne.png'); %>" alt="<%= getText('marianne', 'global') %>">
       </div>
     </div>

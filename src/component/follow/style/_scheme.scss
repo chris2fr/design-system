@@ -7,7 +7,7 @@
 
 @mixin _follow-scheme($legacy: false) {
   #{ns(follow)} {
-    @include color.background(alt cfran-primary, (legacy: $legacy));
+    @include color.background(alt fastoche-primary, (legacy: $legacy));
 
     #{ns(input)} {
       @include color.background(default grey, (legacy: $legacy));
@@ -31,9 +31,9 @@
 
     #{ns(grid-row)} > *:not(:first-child) {
       // Séparateur en box-shadow
-      @include color.box-shadow(default cfran-primary, (legacy: $legacy), top-1-out);
+      @include color.box-shadow(default fastoche-primary, (legacy: $legacy), top-1-out);
       @include respond-from(md) {
-        @include color.box-shadow(default cfran-primary, (legacy: $legacy), left-1-out);
+        @include color.box-shadow(default fastoche-primary, (legacy: $legacy), left-1-out);
       }
     }
   }

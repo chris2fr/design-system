@@ -32,7 +32,7 @@ class TableElement extends api.core.Instance {
     }
   }
 
-  /* ajoute la classe cfran-table__shadow-left ou cfran-table__shadow-right sur cfran-table en fonction d'une valeur de scroll et du sens (right, left) */
+  /* ajoute la classe fastoche-table__shadow-left ou fastoche-table__shadow-right sur fastoche-table en fonction d'une valeur de scroll et du sens (right, left) */
   scroll () {
     const isMin = this.node.scrollLeft <= SCROLL_OFFSET;
     const max = this.content.offsetWidth - this.node.offsetWidth - SCROLL_OFFSET;

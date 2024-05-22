@@ -2,11 +2,11 @@
   const sample = getSample(include);
 %>
 
-<%- section('Pictogramme - artwork', 'Les pictogrammes svg, ou "artwork", sont disponibles dans le dossier <b>dist/artwork/pictograms</b>.<br> Contrairement aux icônes, les pictogrammes sont composés de 3 couleurs : "decorative", "minor", "major". <br>La couleur mineure peut être modifiée par un modificateur d\'accentuation (ex: cfran-artwork--cfran-color5)', 0) %>
+<%- section('Pictogramme - artwork', 'Les pictogrammes svg, ou "artwork", sont disponibles dans le dossier <b>dist/artwork/pictograms</b>.<br> Contrairement aux icônes, les pictogrammes sont composés de 3 couleurs : "decorative", "minor", "major". <br>La couleur mineure peut être modifiée par un modificateur d\'accentuation (ex: fastoche-artwork--fastoche-color5)', 0) %>
 
 <%- sample('Ajout d\'un pictogramme', '../../template/ejs/artwork/pictogram', {pictogram: {name:'moon'}}, true); %>
 
-<%- sample('Pictogramme accentué en cfran-color5', '../../template/ejs/artwork/pictogram', {pictogram: {name:'moon', accent: 'cfran-color5'}}, true); %>
+<%- sample('Pictogramme accentué en fastoche-color5', '../../template/ejs/artwork/pictogram', {pictogram: {name:'moon', accent: 'fastoche-color5'}}, true); %>
 
 <%- section('Formatage du SVG', 'Pour fonctionner en accord avec les couleurs du design system, les fichiers SVG doivent être formatés de cette façon :', 0) %>
 

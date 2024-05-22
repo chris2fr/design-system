@@ -5,7 +5,7 @@ import { ButtonEmission } from './button/button-emission';
 
 class ComponentActionee extends Actionee {
   constructor (priority = -1) {
-    super(priority, 'cfran_component');
+    super(priority, 'fastoche_component');
   }
 
   static get instanceClassName () {

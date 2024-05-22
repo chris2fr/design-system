@@ -12,10 +12,10 @@
     }
 
     &__btn {
-      @include color.text(action-high cfran-primary, (legacy:$legacy));
+      @include color.text(action-high fastoche-primary, (legacy:$legacy));
 
       &[aria-expanded='true'] {
-        @include color.background(open cfran-primary, (legacy: $legacy));
+        @include color.background(open fastoche-primary, (legacy: $legacy));
       }
     }
   }

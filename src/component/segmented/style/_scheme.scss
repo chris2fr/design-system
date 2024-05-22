@@ -22,8 +22,8 @@
       input {
         &:checked {
           + label {
-            @include color.box-shadow(active cfran-primary, (legacy:$legacy));
-            @include color.text(active cfran-primary, (legacy:$legacy));
+            @include color.box-shadow(active fastoche-primary, (legacy:$legacy));
+            @include color.text(active fastoche-primary, (legacy:$legacy));
           }
 
           @include disabled.selector {

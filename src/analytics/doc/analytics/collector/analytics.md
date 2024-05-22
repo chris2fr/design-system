@@ -1,6 +1,6 @@
 ## class Analytics
 
-L’instance d’Analytics est accessible depuis `window.cfran.analytics`
+L’instance d’Analytics est accessible depuis `window.fastoche.analytics`
 
 ### PROPRIÉTÉS
 
@@ -8,7 +8,7 @@ L’instance d’Analytics est accessible depuis `window.cfran.analytics`
 
 _Page_
 
-`window.cfran.analytics.page`
+`window.fastoche.analytics.page`
 
 Getter qui retourne l’instance de [Page](page.md)
 
@@ -18,7 +18,7 @@ Getter qui retourne l’instance de [Page](page.md)
 
 _Site_
 
-`window.cfran.analytics.site`
+`window.fastoche.analytics.site`
 
 Getter qui retourne l’instance de [Site](site.md)
 
@@ -28,7 +28,7 @@ Getter qui retourne l’instance de [Site](site.md)
 
 _User_
 
-`window.cfran.analytics.user`
+`window.fastoche.analytics.user`
 
 Getter qui retourne l’instance de [User](user.md)
 
@@ -39,7 +39,7 @@ Getter qui retourne l’instance de [User](user.md)
 
 _Search_
 
-`window.cfran.analytics.search`
+`window.fastoche.analytics.search`
 
 Getter qui retourne l’instance de [Search](search.md)
 
@@ -49,7 +49,7 @@ Getter qui retourne l’instance de [Search](search.md)
 
 _Funnel_
 
-`window.cfran.analytics.funnel`
+`window.fastoche.analytics.funnel`
 
 Getter qui retourne l’instance de [Funnel](funnel.md)
 
@@ -59,7 +59,7 @@ Getter qui retourne l’instance de [Funnel](funnel.md)
 
 _ConsentManagerPlatform_
 
-`window.cfran.analytics.cmp`
+`window.fastoche.analytics.cmp`
 
 Getter qui retourne l’instance de [ConsentManagerPlatform](cmp.md)
 
@@ -69,7 +69,7 @@ Getter qui retourne l’instance de [ConsentManagerPlatform](cmp.md)
 
 _Opt_
 
-`window.cfran.analytics.opt`
+`window.fastoche.analytics.opt`
 
 Getter qui retourne l’instance de [Opt](opt.md)
 
@@ -77,7 +77,7 @@ Getter qui retourne l’instance de [Opt](opt.md)
 
 _Boolean_
 
-`window.cfran.analytics.isReady`
+`window.fastoche.analytics.isReady`
 
 Getter qui retourne l'état de l'API, à savoir `true` quand elle est prête à être utilisée.
 
@@ -87,11 +87,11 @@ Getter qui retourne l'état de l'API, à savoir `true` quand elle est prête à 
 
 _Promise_
 
-`window.cfran.analytics.readiness`
+`window.fastoche.analytics.readiness`
 
 Getter qui retourne une Promise permettant de se synchroniser sur l'API, lorsque celle-ci est prête à être utilisée.
 
-    window.cfran.analytics.readiness.then(() => { // start }, () => { // error } );
+    window.fastoche.analytics.readiness.then(() => { // start }, () => { // error } );
 
 * * *
 
@@ -99,7 +99,7 @@ Getter qui retourne une Promise permettant de se synchroniser sur l'API, lorsque
 
 _String_
 
-`window.cfran.analytics.collection`
+`window.fastoche.analytics.collection`
 
 Getter qui retourne le mode de récolte des données de la page. Défini dans la configuration (voir propriété `collection` de la [configuration](../installation/configuration.md#collection))
 
@@ -108,7 +108,7 @@ Getter qui retourne le mode de récolte des données de la page. Défini dans la
 * `load` : Les données de page sont envoyées automatiquement au chargement de la page. (par défaut)
 
 * `full` : Les données sont envoyées à chaque changement de path dans l’URL, permettant le support des “Single-page
-  application” (par défaut si cfran en mode ‘vue’, ‘react’ ou ‘angular’)
+  application” (par défaut si fastoche en mode ‘vue’, ‘react’ ou ‘angular’)
   
 * `hash` : Les données sont envoyées à chaque changement de hash dans l'URL
 
@@ -118,7 +118,7 @@ Getter qui retourne le mode de récolte des données de la page. Défini dans la
 
 _Boolean_
 
-`window.cfran.analytics.isActionEnabled`
+`window.fastoche.analytics.isActionEnabled`
 
 Permet d’activer / désactiver la mesure d'audience des actions.
 
@@ -132,7 +132,7 @@ Défini dans la configuration (voir propriété `isActionEnabled` de la [configu
 
 _Boolean_
 
-`window.cfran.analytics.isDebugging`
+`window.fastoche.analytics.isDebugging`
 
 Permet d’activer / désactiver le debug Eulerian.
 
@@ -144,7 +144,7 @@ Permet d’activer / désactiver le debug Eulerian.
 
 ##### push (type, layer)
 
-`window.cfran.analytics.push(type, layer)`
+`window.fastoche.analytics.push(type, layer)`
 
 Alias de la fonction EA\_push d’Eulerian via le package. (voir doc Eulerian [https://eulerian.wiki/doku.php?id=fr:quickonboarding:installation:tag\_installation\_guide#types\_d\_appels](https://eulerian.wiki/doku.php?id=fr:quickonboarding:installation:tag_installation_guide#types_d_appels))
 
@@ -152,7 +152,7 @@ Alias de la fonction EA\_push d’Eulerian via le package. (voir doc Eulerian [h
 
 ##### reset (clear = false)
 
-`window.cfran.analytics.reset(clear)`
+`window.fastoche.analytics.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 
@@ -162,7 +162,7 @@ Si le paramètre `clear = true` => toutes les données sont remises en état ind
 
 ###### collect {#collect}
 
-`window.cfran.analytics.collect()`
+`window.fastoche.analytics.collect()`
 
 Envoie au collector le datalayer constitué par l’ensemble des données consolidées depuis :
 
@@ -187,13 +187,13 @@ Envoie au collector le datalayer constitué par l’ensemble des données consol
 
 
 ```javascript
-cfran.analytics.readiness.then(() => { // l'API analytics est prête à l'utilisation
-    cfran.analytics.isDebugging = true; // active le debugging eulerian
-    cfran.analytics.reset(); // remet les données à l'état de configuration
-    cfran.analytics.user.connect('USER\_ID', 'ENCRYPTED\_EMAIL', true);
-    cfran.analytics.page.path = 'my/virtual/page';
-    cfran.analytics.page.isError = true;
-    cfran.analytics.page.template = 'page404';
-    cfran.analytics.collect(); // envoie les données
+fastoche.analytics.readiness.then(() => { // l'API analytics est prête à l'utilisation
+    fastoche.analytics.isDebugging = true; // active le debugging eulerian
+    fastoche.analytics.reset(); // remet les données à l'état de configuration
+    fastoche.analytics.user.connect('USER\_ID', 'ENCRYPTED\_EMAIL', true);
+    fastoche.analytics.page.path = 'my/virtual/page';
+    fastoche.analytics.page.isError = true;
+    fastoche.analytics.page.template = 'page404';
+    fastoche.analytics.collect(); // envoie les données
 });
 ```

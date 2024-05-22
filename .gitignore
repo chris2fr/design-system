@@ -5,8 +5,8 @@ public/
 /dist/
 /example/
 /standalone/
-/cfran/dist/
-/cfran/dist-build/
-/cfran/dist-release/
-/cfran/example/
-/cfran/standalone/
+/fastoche/dist/
+/fastoche/dist-build/
+/fastoche/dist-release/
+/fastoche/example/
+/fastoche/standalone/

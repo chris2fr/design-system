@@ -2,19 +2,19 @@
 # Analytics
 
 > **Note**
-> Ajout de la propriété `isActionEnabled` dans la configuration et sur l'objet `window.cfran.analytics` permettant d'activer l'envoi de l'ensemble des données d'actions des composants. Pour activer l'envoi d'action sur des éléments spécifiques au cas par cas, il est possible d'ajouter l'attribut `data-cfran-analytics-action` sur l'élément.
+> Ajout de la propriété `isActionEnabled` dans la configuration et sur l'objet `window.fastoche.analytics` permettant d'activer l'envoi de l'ensemble des données d'actions des composants. Pour activer l'envoi d'action sur des éléments spécifiques au cas par cas, il est possible d'ajouter l'attribut `data-fastoche-analytics-action` sur l'élément.
 
 > **Important**
-> La propriété de configuration `enableRating` a été retirée, celle-ci entraînant des envois de données trop importants. En remplacement, un attribut `data-cfran-analytics-rating` peut être ajouté sur un élément dont on veut mesurer spécifiquement le taux de click. 
+> La propriété de configuration `enableRating` a été retirée, celle-ci entraînant des envois de données trop importants. En remplacement, un attribut `data-fastoche-analytics-rating` peut être ajouté sur un élément dont on veut mesurer spécifiquement le taux de click. 
 
 > **Warning**
-> Ce package est prévu pour fonctionner de manière optimale avec la version cfran-1.9.0 ou suppérieure.
-> L'ajout d'un patch, présent dans `dist/patch/`, permet le support des versions précédentes (à partir de la version cfran-1.3.0).
-> Pour ce faire, importer `dist/patch/patch.module.min.js` et `dist/patch/patch.nomodule.min.js` après l'élément de configuration window.cfran.analytics et avant le JS du cfran.
+> Ce package est prévu pour fonctionner de manière optimale avec la version fastoche-1.9.0 ou suppérieure.
+> L'ajout d'un patch, présent dans `dist/patch/`, permet le support des versions précédentes (à partir de la version fastoche-1.3.0).
+> Pour ce faire, importer `dist/patch/patch.module.min.js` et `dist/patch/patch.nomodule.min.js` après l'élément de configuration window.fastoche.analytics et avant le JS du fastoche.
 > Les différents tests effectués semblent montrer un fonctionnement global sans que nous puissions garantir une compatibilité optimale sur ces versions. N'hésitez pas à nous remonter tous problèmes rencontrés.
 
 
-Le système de design apporte avec lui un outil de collecte de données analytics basé sur la solution Eulérian. Ce package, bien que fourni par le cfran, peut être utilisé indépendamment de celui-ci via une [version standalone](analytics/installation.md#Version standalone).
+Le système de design apporte avec lui un outil de collecte de données analytics basé sur la solution Eulérian. Ce package, bien que fourni par le fastoche, peut être utilisé indépendamment de celui-ci via une [version standalone](analytics/installation.md#Version standalone).
 
 
 
@@ -32,4 +32,4 @@ Le système de design apporte avec lui un outil de collecte de données analytic
     - [class Funnel](analytics/collector/funnel.md)
   - [Actions](analytics/actions.md)
     - [Actions d’interaction hors composant](analytics/actions/custom-actions.md)
-    - [Actions sur les composants cfran](analytics/actions/component-actions.md)
+    - [Actions sur les composants fastoche](analytics/actions/component-actions.md)

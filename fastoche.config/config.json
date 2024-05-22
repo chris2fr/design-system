@@ -17,7 +17,7 @@
         ]
     },
     "type": "folder",
-    "id": "cfran",
+    "id": "fastoche",
     "title": "Système de design de l'État",
     "description": "",
     "draft": false,
@@ -28,7 +28,7 @@
     "module": true,
     "nomodule": true,
     "detached": false,
-    "filename": "cfran",
+    "filename": "fastoche",
     "inject": false,
     "example": {
         "style": [],
@@ -128,7 +128,7 @@
         {
             "path": "src/core",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "style": {
                 "level": 0,
@@ -357,7 +357,7 @@
         {
             "path": "src/scheme",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "style": {
                 "level": 1,
@@ -435,7 +435,7 @@
         {
             "path": "src/legacy",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "script": {
                 "level": 0,
@@ -488,9 +488,9 @@
             "combination": []
         },
         {
-            "path": "src/cfran-deprecated",
+            "path": "src/fastoche-deprecated",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "style": {
                 "level": 0,
@@ -507,7 +507,7 @@
                 ]
             },
             "type": "package",
-            "id": "cfran-deprecated",
+            "id": "fastoche-deprecated",
             "title": "",
             "description": "",
             "draft": true,
@@ -517,7 +517,7 @@
             "module": true,
             "nomodule": true,
             "detached": true,
-            "filename": "cfran",
+            "filename": "fastoche",
             "inject": false,
             "example": {
                 "style": [],
@@ -531,13 +531,13 @@
                 "style": [],
                 "script": []
             },
-            "dist": "dist/cfran",
+            "dist": "dist/fastoche",
             "usage": {
                 "style": [
-                    "cfran-deprecated"
+                    "fastoche-deprecated"
                 ],
                 "script": [
-                    "cfran-deprecated"
+                    "fastoche-deprecated"
                 ]
             },
             "combination": []
@@ -545,7 +545,7 @@
         {
             "path": "src/patch",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "script": {
                 "level": 0,
@@ -590,7 +590,7 @@
         {
             "path": "src/analytics",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "script": {
                 "level": 5,
@@ -1318,7 +1318,7 @@
         {
             "path": "src/pattern",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "type": "folder",
             "id": "pattern",
@@ -1360,7 +1360,7 @@
                 {
                     "path": "src/pattern/address",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "pattern"
                     ],
                     "type": "package",
@@ -1416,7 +1416,7 @@
                 {
                     "path": "src/pattern/civility",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "pattern"
                     ],
                     "type": "package",
@@ -1472,7 +1472,7 @@
                 {
                     "path": "src/pattern/date",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "pattern"
                     ],
                     "type": "package",
@@ -1528,7 +1528,7 @@
                 {
                     "path": "src/pattern/nationality",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "pattern"
                     ],
                     "type": "package",
@@ -1583,7 +1583,7 @@
                 {
                     "path": "src/pattern/name",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "pattern"
                     ],
                     "type": "package",
@@ -1640,7 +1640,7 @@
                 {
                     "path": "src/pattern/company",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "pattern"
                     ],
                     "type": "package",
@@ -1708,7 +1708,7 @@
         {
             "path": "src/component",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "style": {
                 "level": 6,
@@ -1835,7 +1835,7 @@
                 {
                     "path": "src/component/accordion",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -1925,7 +1925,7 @@
                 {
                     "path": "src/component/upload",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -1981,7 +1981,7 @@
                 {
                     "path": "src/component/alert",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2046,7 +2046,7 @@
                 {
                     "path": "src/component/badge",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2108,7 +2108,7 @@
                 {
                     "path": "src/component/notice",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2172,7 +2172,7 @@
                 {
                     "path": "src/component/search",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2241,7 +2241,7 @@
                 {
                     "path": "src/component/logo",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2303,7 +2303,7 @@
                 {
                     "path": "src/component/button",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2377,7 +2377,7 @@
                 {
                     "path": "src/component/connect",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2468,7 +2468,7 @@
                 {
                     "path": "src/component/radio",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2553,7 +2553,7 @@
                 {
                     "path": "src/component/card",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2657,7 +2657,7 @@
                 {
                     "path": "src/component/checkbox",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2733,7 +2733,7 @@
                 {
                     "path": "src/component/quote",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2795,7 +2795,7 @@
                 {
                     "path": "src/component/content",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2865,7 +2865,7 @@
                 {
                     "path": "src/component/segmented",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -2941,7 +2941,7 @@
                 {
                     "path": "src/component/range",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3014,7 +3014,7 @@
                 {
                     "path": "src/component/header",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3117,7 +3117,7 @@
                 {
                     "path": "src/component/breadcrumb",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3202,7 +3202,7 @@
                 {
                     "path": "src/component/form",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3281,7 +3281,7 @@
                 {
                     "path": "src/component/consent",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3370,7 +3370,7 @@
                 {
                     "path": "src/component/stepper",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3432,7 +3432,7 @@
                 {
                     "path": "src/component/tooltip",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3511,7 +3511,7 @@
                 {
                     "path": "src/component/toggle",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3599,7 +3599,7 @@
                 {
                     "path": "src/component/follow",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3670,7 +3670,7 @@
                 {
                     "path": "src/component/link",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3751,7 +3751,7 @@
                 {
                     "path": "src/component/skiplink",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3822,7 +3822,7 @@
                 {
                     "path": "src/component/select",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3898,7 +3898,7 @@
                 {
                     "path": "src/component/sidemenu",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -3971,7 +3971,7 @@
                 {
                     "path": "src/component/callout",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4036,7 +4036,7 @@
                 {
                     "path": "src/component/highlight",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4098,7 +4098,7 @@
                 {
                     "path": "src/component/modal",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4181,7 +4181,7 @@
                 {
                     "path": "src/component/password",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4266,7 +4266,7 @@
                 {
                     "path": "src/component/navigation",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4345,7 +4345,7 @@
                 {
                     "path": "src/component/tab",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4419,7 +4419,7 @@
                 {
                     "path": "src/component/pagination",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4481,7 +4481,7 @@
                 {
                     "path": "src/component/display",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "script": {
@@ -4566,7 +4566,7 @@
                 {
                     "path": "src/component/share",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4634,7 +4634,7 @@
                 {
                     "path": "src/component/footer",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4701,7 +4701,7 @@
                 {
                     "path": "src/component/translate",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4777,7 +4777,7 @@
                 {
                     "path": "src/component/summary",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4839,7 +4839,7 @@
                 {
                     "path": "src/component/table",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4913,7 +4913,7 @@
                 {
                     "path": "src/component/tag",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -4987,7 +4987,7 @@
                 {
                     "path": "src/component/download",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -5058,7 +5058,7 @@
                 {
                     "path": "src/component/transcription",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -5139,7 +5139,7 @@
                 {
                     "path": "src/component/tile",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -5241,7 +5241,7 @@
                 {
                     "path": "src/component/input",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "component"
                     ],
                     "style": {
@@ -5296,7 +5296,7 @@
                         {
                             "path": "src/component/input/input-email",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "component",
                                 "input"
                             ],
@@ -5357,7 +5357,7 @@
                         {
                             "path": "src/component/input/input-tel",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "component",
                                 "input"
                             ],
@@ -5418,7 +5418,7 @@
                         {
                             "path": "src/component/input/input-base",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "component",
                                 "input"
                             ],
@@ -5532,7 +5532,7 @@
         {
             "path": "src/page",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "type": "folder",
             "id": "page",
@@ -5586,7 +5586,7 @@
                 {
                     "path": "src/page/response",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "page"
                     ],
                     "type": "folder",
@@ -5632,7 +5632,7 @@
                         {
                             "path": "src/page/response/unexpected",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "page",
                                 "response"
                             ],
@@ -5717,7 +5717,7 @@
                         {
                             "path": "src/page/response/not-found",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "page",
                                 "response"
                             ],
@@ -5818,7 +5818,7 @@
                         {
                             "path": "src/page/response/unavailable",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "page",
                                 "response"
                             ],
@@ -5899,7 +5899,7 @@
                 {
                     "path": "src/page/account",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "page"
                     ],
                     "type": "folder",
@@ -5954,7 +5954,7 @@
                         {
                             "path": "src/page/account/login",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "page",
                                 "account"
                             ],
@@ -6089,7 +6089,7 @@
                         {
                             "path": "src/page/account/register",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "page",
                                 "account"
                             ],
@@ -6325,7 +6325,7 @@
         {
             "path": "src/utility",
             "ascendants": [
-                "cfran"
+                "fastoche"
             ],
             "style": {
                 "level": 3,
@@ -6404,7 +6404,7 @@
                 {
                     "path": "src/utility/colors",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "utility"
                     ],
                     "style": {
@@ -6466,7 +6466,7 @@
                 {
                     "path": "src/utility/icons",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "utility"
                     ],
                     "style": {
@@ -6534,7 +6534,7 @@
                         {
                             "path": "src/utility/icons/icons-buildings",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6596,7 +6596,7 @@
                         {
                             "path": "src/utility/icons/icons-business",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6658,7 +6658,7 @@
                         {
                             "path": "src/utility/icons/icons-communication",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6720,7 +6720,7 @@
                         {
                             "path": "src/utility/icons/icons-design",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6782,7 +6782,7 @@
                         {
                             "path": "src/utility/icons/icons-development",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6844,7 +6844,7 @@
                         {
                             "path": "src/utility/icons/icons-device",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6906,7 +6906,7 @@
                         {
                             "path": "src/utility/icons/icons-document",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -6968,7 +6968,7 @@
                         {
                             "path": "src/utility/icons/icons-editor",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7030,7 +7030,7 @@
                         {
                             "path": "src/utility/icons/icons-finance",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7092,7 +7092,7 @@
                         {
                             "path": "src/utility/icons/icons-health",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7154,7 +7154,7 @@
                         {
                             "path": "src/utility/icons/icons-logo",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7216,7 +7216,7 @@
                         {
                             "path": "src/utility/icons/icons-map",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7278,7 +7278,7 @@
                         {
                             "path": "src/utility/icons/icons-media",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7340,7 +7340,7 @@
                         {
                             "path": "src/utility/icons/icons-others",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7402,7 +7402,7 @@
                         {
                             "path": "src/utility/icons/icons-system",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7464,7 +7464,7 @@
                         {
                             "path": "src/utility/icons/icons-user",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7526,7 +7526,7 @@
                         {
                             "path": "src/utility/icons/icons-weather",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "icons"
                             ],
@@ -7600,7 +7600,7 @@
                 {
                     "path": "src/utility/pictograms",
                     "ascendants": [
-                        "cfran",
+                        "fastoche",
                         "utility"
                     ],
                     "type": "folder",
@@ -7643,7 +7643,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-buildings",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7697,7 +7697,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-digital",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7751,7 +7751,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-document",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7805,7 +7805,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-environment",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7859,7 +7859,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-health",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7913,7 +7913,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-institutions",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7967,7 +7967,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-leisure",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -8021,7 +8021,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-map",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -8075,7 +8075,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-system",
                             "ascendants": [
-                                "cfran",
+                                "fastoche",
                                 "utility",
                                 "pictograms"
                             ],
@@ -8152,10 +8152,10 @@
     ],
     "usage": {
         "style": [
-            "cfran"
+            "fastoche"
         ],
         "script": [
-            "cfran"
+            "fastoche"
         ]
     },
     "combination": []

@@ -1,6 +1,6 @@
 const config = {
-  prefix: 'cfran',
-  namespace: 'cfran',
+  prefix: 'fastoche',
+  namespace: 'fastoche',
   version: '11.2.1'
 };
 
