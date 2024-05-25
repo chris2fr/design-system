@@ -13,7 +13,7 @@
       @include elevation.elevate(overlap, (background: #{'&__list'}, legacy: $legacy));
 
       &__list {
-        @include color.box-shadow(open fastoche-primary, (legacy:$legacy), top-1-in);
+        @include color.box-shadow(open cefran-primary, (legacy:$legacy), top-1-in);
 
         & > *:first-child,
         & > *:hover,

@@ -1,6 +1,6 @@
 ---
 name: Problème sur la documentation
-about: Rapporter une erreur ou proposer une suggestion pour améliorer la documentation du fastoche.
+about: Rapporter une erreur ou proposer une suggestion pour améliorer la documentation du cefran.
 title: ''
 labels: documentation
 assignees: ''

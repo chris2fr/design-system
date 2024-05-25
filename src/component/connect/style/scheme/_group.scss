@@ -9,7 +9,7 @@
   #{ns(connect)} {
     &-group {
       #{ns(connect)} + p a {
-        @include color.text(action-high fastoche-primary, (legacy:$legacy));
+        @include color.text(action-high cefran-primary, (legacy:$legacy));
       }
 
       p {

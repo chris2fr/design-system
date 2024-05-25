@@ -49,7 +49,7 @@ class TabsList extends api.core.Instance {
     }
   }
 
-  /* ajoute la classe fastoche-table__shadow-left ou fastoche-table__shadow-right sur fastoche-table en fonction d'une valeur de scroll et du sens (right, left) */
+  /* ajoute la classe cefran-table__shadow-left ou cefran-table__shadow-right sur cefran-table en fonction d'une valeur de scroll et du sens (right, left) */
   scroll () {
     const scrollLeft = this.node.scrollLeft;
     const isMin = scrollLeft <= SCROLL_OFFSET;

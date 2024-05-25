@@ -321,7 +321,7 @@ NB : Un fichier icon.scss (et icon.json) est généré dans .config à la compil
 Il définit pour chaque icône :
 - son nom, défini par le nom de l’icone
 - sa catégorie, défini par son dossier
-- sa famille (dsfr ou remix), par défaut remix, dsfr si le nom de l’icone est préfixé par “fastoche--”
+- sa famille (dsfr ou remix), par défaut remix, dsfr si le nom de l’icone est préfixé par “cefran--”
 - son chemin d’accès
 
 ### Tests

@@ -1,8 +1,7 @@
 echo "File Name Changer"
-from="cfran"
-to="fastoche"
-find . -name "*$from*" > /tmp/l
-for i in `cat /tmp/l` 
+from="fastoche"
+to="cefran"
+for i in `find . -name "*$from*"` 
     do echo "mv $i ${i/$from/$to}"
     mv $i ${i/$from/$to}
 done

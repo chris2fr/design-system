@@ -2,13 +2,13 @@
 
 L’instance de Search est accessible depuis :
 
-`window.fastoche.analytics.search`
+`window.cefran.analytics.search`
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.fastoche = {
+    window.cefran = {
         analytics: {
             search: {
                 engine: 'principal',
@@ -39,7 +39,7 @@ L’instance de Search est accessible depuis :
 
 _String_ (EA: isearchengine)
 
-`window.fastoche.analytics.search.engine`
+`window.cefran.analytics.search.engine`
 
 Nom du moteur de recherche configuré dans Eulerian.
 
@@ -49,7 +49,7 @@ Nom du moteur de recherche configuré dans Eulerian.
 
 _Int_ (EA: isearchresults)
 
-`window.fastoche.analytics.search.results`
+`window.cefran.analytics.search.results`
 
 Nombre de résultats sur une page de résultat suite à une recherche dans la barre de recherche.
 
@@ -59,7 +59,7 @@ Nombre de résultats sur une page de résultat suite à une recherche dans la ba
 
 _String_ (EA: isearchkey, search\_terms, isearchdata) [paramètre supplémentaire]
 
-`window.fastoche.analytics.search.terms`
+`window.cefran.analytics.search.terms`
 
 Termes de la recherche.
 
@@ -69,7 +69,7 @@ Termes de la recherche.
 
 _String_ (EA: isearchkey, search\_category, isearchdata) [paramètre supplémentaire]
 
-`window.fastoche.analytics.search.category`
+`window.cefran.analytics.search.category`
 
 Catégorie de la recherche (lorsqu’un sélecteur de catégorie est disponible).
 
@@ -79,7 +79,7 @@ Catégorie de la recherche (lorsqu’un sélecteur de catégorie est disponible)
 
 _String_ (EA: isearchkey, search\_theme, isearchdata) [paramètre supplémentaire]
 
-`window.fastoche.analytics.search.theme`
+`window.cefran.analytics.search.theme`
 
 Thème de la recherche (lorsqu’un sélecteur de thème est disponible).
 
@@ -89,7 +89,7 @@ Thème de la recherche (lorsqu’un sélecteur de thème est disponible).
 
 _String_ (EA: isearchkey, search\_type, isearchdata) [paramètre supplémentaire]
 
-`window.fastoche.analytics.search.type`
+`window.cefran.analytics.search.type`
 
 Type de recherche si le moteur de recherche permet d’appliquer un type particulier (ex: uniquement documents, uniquement les 30 derniers jours)
 
@@ -99,7 +99,7 @@ Type de recherche si le moteur de recherche permet d’appliquer un type particu
 
 _String_ (EA: isearchkey, search\_method, isearchdata) [paramètre supplémentaire]
 
-`window.fastoche.analytics.search.method`
+`window.cefran.analytics.search.method`
 
 Défini la méthode de recherche utilisée, un envoi standard ou au clic sur une suggestion.
 
@@ -113,7 +113,7 @@ Défini la méthode de recherche utilisée, un envoi standard ou au clic sur une
 
 ##### reset (clear = false)
 
-`window.fastoche.analytics.search.reset(clear)`
+`window.cefran.analytics.search.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

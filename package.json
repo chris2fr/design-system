@@ -1,13 +1,13 @@
 {
-  "name": "fabrique-fastoche",
-  "version": "11.2.2",
-  "description": "Redre générique le Système de Design de l'Etat - fastoche",
-  "repository": "git@github.com:chris2fr/fabrique-fastoche.git",
+  "name": "fabrique-cefran",
+  "version": "0.0.1",
+  "description": "Redre générique le Système de Design de l'Etat - DSFR",
+  "repository": "git@github.com:chris2fr/fabrique-cefran.git",
   "author": "Chris Mann <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "fastoche",
-    "namespace": "fastoche"
+    "prefix": "cefran",
+    "namespace": "cefran"
   },
   "engines": {
     "node": ">=18.16.1"

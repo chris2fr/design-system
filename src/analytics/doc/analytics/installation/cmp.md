@@ -2,13 +2,13 @@
 
 L’instance de ConsentManagerPlatform est accessible depuis
 
-window.fastoche.analytics.cmp
+window.cefran.analytics.cmp
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.fastoche = {
+    window.cefran = {
         analytics: {
             cmp: {
             id: 'tarteaucitron'
@@ -24,7 +24,7 @@ la configuration d’une CMP permet d’automatiser son lancement
 
 ##### integrateTarteAuCitron ()
 
-`window.fastoche.analytics.cmp.integrateTarteAuCitron()`
+`window.cefran.analytics.cmp.integrateTarteAuCitron()`
 
 Permet d’intégrer tarteaucitron
 

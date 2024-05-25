@@ -13,8 +13,8 @@
 
     &__link {
       @include selector.current {
-        @include color.background(active fastoche-primary, (legacy: $legacy, hover: true));
-        @include color.text(inverted fastoche-primary, (legacy: $legacy));
+        @include color.background(active cefran-primary, (legacy: $legacy, hover: true));
+        @include color.text(inverted cefran-primary, (legacy: $legacy));
       }
 
       @include selector.not-current {

@@ -56,7 +56,7 @@
     &:-webkit-autofill,
     &:-webkit-autofill:hover,
     &:-webkit-autofill:focus {
-      @include color.box-shadow((plain grey) (background contrast fastoche-primary), (legacy:$legacy), bottom-2-in all-in);
+      @include color.box-shadow((plain grey) (background contrast cefran-primary), (legacy:$legacy), bottom-2-in all-in);
       @include color.text-fill(label grey, (legacy:$legacy));
     }
   }

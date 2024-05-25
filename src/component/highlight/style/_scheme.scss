@@ -7,7 +7,7 @@
 
 @mixin _highlight-scheme($legacy: false) {
   #{ns(highlight)} {
-    @include color.background-image(border default fastoche-primary, (legacy:$legacy));
+    @include color.background-image(border default cefran-primary, (legacy:$legacy));
 
     @include color.accentuate {
       @include color.background-image(border default accent, (legacy:$legacy));

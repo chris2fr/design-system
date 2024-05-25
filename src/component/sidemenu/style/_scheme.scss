@@ -67,19 +67,19 @@
 
     &__link,
     &__btn {
-      @include color.text(action-high fastoche-primary, (legacy:$legacy));
+      @include color.text(action-high cefran-primary, (legacy:$legacy));
 
       @include selector.current {
-        @include color.text(active fastoche-primary, (legacy:$legacy));
+        @include color.text(active cefran-primary, (legacy:$legacy));
         @include before {
-          @include color.background(border active fastoche-primary, (legacy:$legacy));
+          @include color.background(border active cefran-primary, (legacy:$legacy));
         }
       }
     }
 
     &__btn {
       &[aria-expanded='true'] {
-        @include color.background(open fastoche-primary, (legacy: $legacy));
+        @include color.background(open cefran-primary, (legacy: $legacy));
       }
     }
   }
