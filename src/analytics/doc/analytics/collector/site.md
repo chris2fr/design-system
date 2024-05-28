@@ -2,13 +2,13 @@
 
 L’instance de Site est accessible depuis
 
-window.cefran.analytics.site
+window.village.analytics.site
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.cefran = {
+    window.village = {
         analytics: {
             site: {
                 environment: 'production', // by default development ['development', 'stage', 'production']
@@ -16,8 +16,8 @@ window.cefran.analytics.site
                 language: '', // language of the website (ISO 639-1). default to html lang
                 target: 'target', // site target
                 type: 'type', // site type
-                region: 'cefran-IDF', // region of the website (ISO 3166-2:FR)
-                department: 'cefran-75', // department of the website (ISO 3166-2:FR)
+                region: 'village-IDF', // region of the website (ISO 3166-2:FR)
+                department: 'village-75', // department of the website (ISO 3166-2:FR)
                 version: '1.0.0', // version of the website
             },
         }
@@ -35,7 +35,7 @@ window.cefran.analytics.site
 
 _String_ (EA: site\_environment)
 
-`window.cefran.analytics.site.environment`
+`window.village.analytics.site.environment`
 
 Défini l’environnement du site parmi :
 
@@ -45,7 +45,7 @@ Défini l’environnement du site parmi :
 
 * `stage`
 
-Les différentes valeurs sont énumérées dans l’objet `window.cefran.analytics.site.constructor.Environment`
+Les différentes valeurs sont énumérées dans l’objet `window.village.analytics.site.constructor.Environment`
 
 * * *
 
@@ -53,7 +53,7 @@ Les différentes valeurs sont énumérées dans l’objet `window.cefran.analyti
 
 _String_ (EA: site\_entity) (required)
 
-`window.cefran.analytics.site.entity`
+`window.village.analytics.site.entity`
 
 Défini l'entité responsable du site **(obligatoire)**
 
@@ -63,7 +63,7 @@ Défini l'entité responsable du site **(obligatoire)**
 
 _String_ (EA: site\_language)
 
-`window.cefran.analytics.site.language`
+`window.village.analytics.site.language`
 
 Défini la langue du site en ISO 639-1
 
@@ -75,7 +75,7 @@ Par défaut, reprend l’attribut lang sur la balise `<html>` de la page
 
 _String_ (EA: site\_target)
 
-`window.cefran.analytics.site.target`
+`window.village.analytics.site.target`
 
 Défini l'objectif du site
 
@@ -85,7 +85,7 @@ Défini l'objectif du site
 
 _String_ (EA: site\_type)
 
-`window.cefran.analytics.site.type`
+`window.village.analytics.site.type`
 
 Défini le type de site
 
@@ -95,7 +95,7 @@ Défini le type de site
 
 _String_ (EA: site\_region)
 
-`window.cefran.analytics.site.region`
+`window.village.analytics.site.region`
 
 Défini la région du site (pour les sites régionaux) au format
 [ISO 3166-2:FR](https://fr.wikipedia.org/wiki/ISO_3166-2:FR#R.C3.A9gions_m.C3.A9tropolitaines)
@@ -106,7 +106,7 @@ Défini la région du site (pour les sites régionaux) au format
 
 _String_ (EA: site\_department)
 
-`window.cefran.analytics.site.department`
+`window.village.analytics.site.department`
 
 Défini le département du site (pour les sites départementaux) au format
 [ISO 3166-2:FR](https://fr.wikipedia.org/wiki/ISO_3166-2:FR#D.C3.A9partements_m.C3.A9tropolitains_.2896.29)
@@ -117,7 +117,7 @@ Défini le département du site (pour les sites départementaux) au format
 
 _String_ (EA: site\_version)
 
-`window.cefran.analytics.site.version`
+`window.village.analytics.site.version`
 
 Défini la version du site
 
@@ -127,9 +127,9 @@ Défini la version du site
 
 _String_ (EA: api\_version)
 
-`window.cefran.analytics.site.api`
+`window.village.analytics.site.api`
 
-Retourne la version de l’API cefran, géré et injecté automatiquement par le script
+Retourne la version de l’API village, géré et injecté automatiquement par le script
 
 * * *
 
@@ -137,7 +137,7 @@ Retourne la version de l’API cefran, géré et injecté automatiquement par le
 
 ##### reset (clear = false)
 
-`window.cefran.analytics.site.reset(clear)`
+`window.village.analytics.site.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 

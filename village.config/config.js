@@ -1,6 +1,6 @@
 const config = {
-  prefix: 'cefran',
-  namespace: 'cefran',
+  prefix: 'village',
+  namespace: 'village',
   version: '11.2.1'
 };
 

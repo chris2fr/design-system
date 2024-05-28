@@ -1,7 +1,7 @@
 echo "File Name Changer"
-from="cefran_lesgrandsvoisins"
-to="theme_lesgrandsvoisins"
-for i in `find . -name "*$from*"  -not -path "./venv/*"` 
+from="cefran"
+to="village"
+for i in `find . -name "*$from*"  -and -not -path "./venv/*"` 
     do echo "mv $i ${i/$from/$to}"
     mv $i ${i/$from/$to}
 done

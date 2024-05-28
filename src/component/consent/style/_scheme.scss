@@ -42,7 +42,7 @@
     }
 
     #{ns(consent-service__collapse-btn)} {
-      @include color.text(action-high cefran-primary, (legacy:$legacy));
+      @include color.text(action-high village-primary, (legacy:$legacy));
     }
   }
 }

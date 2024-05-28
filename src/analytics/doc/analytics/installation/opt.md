@@ -1,6 +1,6 @@
 ## Opt
 L’instance de Opt est accessible depuis
-`window.cefran.analytics.opt`
+`window.village.analytics.opt`
 
 Elle permet de gérer l’Opt-out lorsque l’utilisateur ne consent pas à la collecte de données.
 
@@ -12,7 +12,7 @@ Le Opt-Out complet empêche le chargement de la librairie JS eulerian ainsi que 
 
 _Boolean_
 
-`window.cefran.analytics.opt.isDisabled`
+`window.village.analytics.opt.isDisabled`
 
 Retourne une valeur booléenne “true” pour un Opt-Out et “false” pour un Opt-In (par défaut).
 
@@ -24,7 +24,7 @@ alias de la fonction de l’API eulerian _EA_disabled()
 
 #### enable
 
-`window.cefran.analytics.opt.enable()`
+`window.village.analytics.opt.enable()`
 
 Opt-in, la collecte de données est activée.
 
@@ -32,7 +32,7 @@ Opt-in, la collecte de données est activée.
 
 #### disable
 
-`window.cefran.analytics.opt.disable()`
+`window.village.analytics.opt.disable()`
 
 Opt-out, la collecte de données est désactivée.
 
@@ -40,6 +40,6 @@ Opt-out, la collecte de données est désactivée.
 
 #### toggle
 
-`window.cefran.analytics.opt.toggle()`
+`window.village.analytics.opt.toggle()`
 
 Inverse le statut Opt-in / Opt-out

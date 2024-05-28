@@ -2,19 +2,19 @@
 # Analytics
 
 > **Note**
-> Ajout de la propriété `isActionEnabled` dans la configuration et sur l'objet `window.cefran.analytics` permettant d'activer l'envoi de l'ensemble des données d'actions des composants. Pour activer l'envoi d'action sur des éléments spécifiques au cas par cas, il est possible d'ajouter l'attribut `data-cefran-analytics-action` sur l'élément.
+> Ajout de la propriété `isActionEnabled` dans la configuration et sur l'objet `window.village.analytics` permettant d'activer l'envoi de l'ensemble des données d'actions des composants. Pour activer l'envoi d'action sur des éléments spécifiques au cas par cas, il est possible d'ajouter l'attribut `data-village-analytics-action` sur l'élément.
 
 > **Important**
-> La propriété de configuration `enableRating` a été retirée, celle-ci entraînant des envois de données trop importants. En remplacement, un attribut `data-cefran-analytics-rating` peut être ajouté sur un élément dont on veut mesurer spécifiquement le taux de click. 
+> La propriété de configuration `enableRating` a été retirée, celle-ci entraînant des envois de données trop importants. En remplacement, un attribut `data-village-analytics-rating` peut être ajouté sur un élément dont on veut mesurer spécifiquement le taux de click. 
 
 > **Warning**
-> Ce package est prévu pour fonctionner de manière optimale avec la version cefran-1.9.0 ou suppérieure.
-> L'ajout d'un patch, présent dans `dist/patch/`, permet le support des versions précédentes (à partir de la version cefran-1.3.0).
-> Pour ce faire, importer `dist/patch/patch.module.min.js` et `dist/patch/patch.nomodule.min.js` après l'élément de configuration window.cefran.analytics et avant le JS du cefran.
+> Ce package est prévu pour fonctionner de manière optimale avec la version village-1.9.0 ou suppérieure.
+> L'ajout d'un patch, présent dans `dist/patch/`, permet le support des versions précédentes (à partir de la version village-1.3.0).
+> Pour ce faire, importer `dist/patch/patch.module.min.js` et `dist/patch/patch.nomodule.min.js` après l'élément de configuration window.village.analytics et avant le JS du village.
 > Les différents tests effectués semblent montrer un fonctionnement global sans que nous puissions garantir une compatibilité optimale sur ces versions. N'hésitez pas à nous remonter tous problèmes rencontrés.
 
 
-Le système de design apporte avec lui un outil de collecte de données analytics basé sur la solution Eulérian. Ce package, bien que fourni par le cefran, peut être utilisé indépendamment de celui-ci via une [version standalone](analytics/installation.md#Version standalone).
+Le système de design apporte avec lui un outil de collecte de données analytics basé sur la solution Eulérian. Ce package, bien que fourni par le village, peut être utilisé indépendamment de celui-ci via une [version standalone](analytics/installation.md#Version standalone).
 
 
 
@@ -32,4 +32,4 @@ Le système de design apporte avec lui un outil de collecte de données analytic
     - [class Funnel](analytics/collector/funnel.md)
   - [Actions](analytics/actions.md)
     - [Actions d’interaction hors composant](analytics/actions/custom-actions.md)
-    - [Actions sur les composants cefran](analytics/actions/component-actions.md)
+    - [Actions sur les composants village](analytics/actions/component-actions.md)

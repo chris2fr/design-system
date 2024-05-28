@@ -12,13 +12,13 @@
     @include color.background(contrast grey, (legacy: $legacy));
 
     @include pressed-selector(false) {
-      @include color.text(action-high cefran-primary, (legacy: $legacy));
-      @include color.background(action-low cefran-primary, (legacy: $legacy, hover: true));
+      @include color.text(action-high village-primary, (legacy: $legacy));
+      @include color.background(action-low village-primary, (legacy: $legacy, hover: true));
     }
 
     &#{ns(tag)}--dismiss {
-      @include color.text(inverted cefran-primary, (legacy: $legacy));
-      @include color.background(action-high cefran-primary, (legacy: $legacy, hover: true));
+      @include color.text(inverted village-primary, (legacy: $legacy));
+      @include color.background(action-high village-primary, (legacy: $legacy, hover: true));
     }
   }
 
@@ -26,8 +26,8 @@
   button,
   input[type=button] {
     &#{ns(tag)} {
-      @include color.text(action-high cefran-primary, (legacy: $legacy));
-      @include color.background(action-low cefran-primary, (legacy: $legacy, hover: true));
+      @include color.text(action-high village-primary, (legacy: $legacy));
+      @include color.background(action-low village-primary, (legacy: $legacy, hover: true));
 
       @include color.accentuate {
         @include color.text(action-high accent, (legacy: $legacy));
@@ -42,12 +42,12 @@
       @include pressed-selector(true) {
         &:not(:disabled) {
           @include color.transparent-background((legacy:$legacy));
-          @include color.text(inverted cefran-primary, (legacy: $legacy));
-          @include tag-punched-background(background active cefran-primary, md, $legacy);
+          @include color.text(inverted village-primary, (legacy: $legacy));
+          @include tag-punched-background(background active village-primary, md, $legacy);
         }
 
         @include after {
-          @include color.text(action-high cefran-primary, (legacy: $legacy));
+          @include color.text(action-high village-primary, (legacy: $legacy));
         }
 
         @include disabled.selector {
@@ -59,7 +59,7 @@
         }
 
         &#{ns(tag)}--sm {
-          @include tag-punched-background(background active cefran-primary, sm, $legacy);
+          @include tag-punched-background(background active village-primary, sm, $legacy);
 
           @include disabled.selector {
             @include tag-punched-background(background disabled grey, sm, $legacy, false);
@@ -84,7 +84,7 @@
       input[type=button] {
         &#{ns(tag)} {
           @include pressed-selector(true) {
-            @include tag-punched-background(background active cefran-primary, sm, $legacy);
+            @include tag-punched-background(background active village-primary, sm, $legacy);
 
             @include disabled.selector {
               @include tag-punched-background(background disabled grey, sm, $legacy, false);

@@ -75,7 +75,7 @@ const validateLang = (value, name, allowNull = true) => {
 const validateGeography = (value, name, allowNull = true) => {
   switch (true) {
     case typeof value === 'string':
-      if (!/^cefran-[A-Z0-9]{2,3}$/.test(value)) api.inspector.warn(`value '${value}' set at analytics.${name} with wrong format. Geographic location should be a String following ISO 3166-2:FR format`);
+      if (!/^village-[A-Z0-9]{2,3}$/.test(value)) api.inspector.warn(`value '${value}' set at analytics.${name} with wrong format. Geographic location should be a String following ISO 3166-2:FR format`);
       return value;
 
     case value === undefined && allowNull:

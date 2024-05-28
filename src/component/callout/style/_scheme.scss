@@ -8,7 +8,7 @@
 @mixin _callout-scheme($legacy: false) {
   #{ns(callout)} {
     @include color.background(contrast grey, (legacy:$legacy));
-    @include color.background-image(border default cefran-primary, (legacy:$legacy));
+    @include color.background-image(border default village-primary, (legacy:$legacy));
 
     @include before {
       @include color.text(title grey, (legacy:$legacy));

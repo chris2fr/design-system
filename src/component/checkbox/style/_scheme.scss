@@ -12,16 +12,16 @@
     input[type="checkbox"] {
       + label {
         @include before {
-          @include color.background-image(border action-high cefran-primary, (), checkbox-background-image());
+          @include color.background-image(border action-high village-primary, (), checkbox-background-image());
         }
       }
 
       &:checked {
         + label {
           @include before {
-            @include color.background(active cefran-primary);
-            @include color.background-image(border active cefran-primary, (), checkbox-background-image());
-            @include color.data-uri-svg(text inverted cefran-primary, (), $checkbox-svg, false);
+            @include color.background(active village-primary);
+            @include color.background-image(border active village-primary, (), checkbox-background-image());
+            @include color.data-uri-svg(text inverted village-primary, (), $checkbox-svg, false);
           }
         }
       }

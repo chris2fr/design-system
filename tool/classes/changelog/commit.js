@@ -52,7 +52,7 @@ class Commit {
     this._details = this._details.replace(/^#{1,6}\s/g, '').replace(/\n#{1,6}\s/g, '');
 
     switch (true) {
-      case this._subject.match(/chore.+cefran/) !== null:
+      case this._subject.match(/chore.+village/) !== null:
       case this._subject.match(/chore.+changelog/) !== null:
       case this._subject.match(/chore.+incrémentation/) !== null:
       case this._subject.match(/chore.+incémentation/) !== null:

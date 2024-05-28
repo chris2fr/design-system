@@ -8,7 +8,7 @@
 @mixin _search-scheme($legacy: false) {
   #{ns(search-bar)} {
     #{ns(input)} {
-      @include color.box-shadow(action-high cefran-primary, (legacy:$legacy), bottom-2-in);
+      @include color.box-shadow(action-high village-primary, (legacy:$legacy), bottom-2-in);
 
       &--valid {
         @include color.box-shadow(plain success, (legacy:$legacy), bottom-2-in);

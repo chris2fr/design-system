@@ -1,13 +1,13 @@
 {
-  "name": "fabrique-cefran",
+  "name": "fabrique-village",
   "version": "0.0.3",
   "description": "Redre générique le Système de Design de l'Etat - DSFR",
-  "repository": "git@github.com:chris2fr/fabrique-cefran.git",
+  "repository": "git@github.com:chris2fr/fabrique-village.git",
   "author": "Chris Mann <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "cefran",
-    "namespace": "cefran"
+    "prefix": "village",
+    "namespace": "village"
   },
   "engines": {
     "node": ">=18.16.1"

@@ -12,30 +12,30 @@
       @include color.text(label grey, (legacy:$legacy));
 
       @include before {
-        @include color.text(active cefran-primary, (legacy:$legacy));
-        @include color.data-uri-svg(border action-high cefran-primary, (legacy: $legacy), $toggle-unchecked-svg);
+        @include color.text(active village-primary, (legacy:$legacy));
+        @include color.data-uri-svg(border action-high village-primary, (legacy: $legacy), $toggle-unchecked-svg);
       }
 
       @include after {
-        @include color.text(active cefran-primary, (legacy:$legacy));
-        @include color.box-shadow(action-high cefran-primary, (legacy:$legacy), all-1-in);
+        @include color.text(active village-primary, (legacy:$legacy));
+        @include color.box-shadow(action-high village-primary, (legacy:$legacy), all-1-in);
         @include color.background(default grey, (legacy:$legacy));
       }
     }
 
     input[type="checkbox"] {
-      @include color.box-shadow(action-high cefran-primary, (legacy:$legacy), all-1-in);
+      @include color.box-shadow(action-high village-primary, (legacy:$legacy), all-1-in);
 
       &:checked {
-        @include color.background(active cefran-primary, (legacy:$legacy));
+        @include color.background(active village-primary, (legacy:$legacy));
 
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border active cefran-primary) (border active cefran-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border active village-primary) (border active village-primary), (legacy: $legacy), $toggle-checked-svg);
           }
 
           @include after {
-            @include color.data-uri-svg(active cefran-primary, (legacy: $legacy), $toggle-svg);
+            @include color.data-uri-svg(active village-primary, (legacy: $legacy), $toggle-svg);
           }
         }
       }
@@ -96,7 +96,7 @@
       &:checked {
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border plain error) (active cefran-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border plain error) (active village-primary), (legacy: $legacy), $toggle-checked-svg);
           }
         }
       }
@@ -122,7 +122,7 @@
       &:checked {
         ~ #{ns(toggle__label)} {
           @include before {
-            @include color.data-uri-svg((border plain success) (active cefran-primary), (legacy: $legacy), $toggle-checked-svg);
+            @include color.data-uri-svg((border plain success) (active village-primary), (legacy: $legacy), $toggle-checked-svg);
           }
         }
       }

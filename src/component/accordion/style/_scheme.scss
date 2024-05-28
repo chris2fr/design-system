@@ -12,10 +12,10 @@
     }
 
     &__btn {
-      @include color.text(action-high cefran-primary, (legacy:$legacy));
+      @include color.text(action-high village-primary, (legacy:$legacy));
 
       &[aria-expanded='true'] {
-        @include color.background(open cefran-primary, (legacy: $legacy));
+        @include color.background(open village-primary, (legacy: $legacy));
       }
     }
   }

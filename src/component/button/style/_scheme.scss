@@ -8,8 +8,8 @@
 
 @mixin _button-scheme($legacy: false) {
   #{ns(btn)} {
-    @include color.background(action-high cefran-primary, (legacy:$legacy, hover: true));
-    @include color.text(inverted cefran-primary, (legacy:$legacy));
+    @include color.background(action-high village-primary, (legacy:$legacy, hover: true));
+    @include color.text(inverted village-primary, (legacy:$legacy));
 
     @include disabled.selector((can-be-link: true), (legacy: $legacy, text: true, background: true));
 

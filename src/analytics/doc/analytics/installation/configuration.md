@@ -1,12 +1,12 @@
 ## Configuration {#Configuration}
 
-Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API cefran](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-cefran/developpeurs/api-javascript)
+Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API village](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-village/developpeurs/api-javascript)
 
-La configuration doit être placée **avant** les fichiers `patch.module.js`, `cefran.module.js` et `analytics.module.js`.
+La configuration doit être placée **avant** les fichiers `patch.module.js`, `village.module.js` et `analytics.module.js`.
 
 ```javascript
 <script>
-    window.cefran = {
+    window.village = {
         analytics: {
             domain: ' mon.domainedetracking.com',
             // collection: 'manual',

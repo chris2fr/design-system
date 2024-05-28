@@ -5,8 +5,8 @@ public/
 /dist/
 /example/
 /standalone/
-/cefran/dist/
-/cefran/dist-build/
-/cefran/dist-release/
-/cefran/example/
-/cefran/standalone/
+/village/dist/
+/village/dist-build/
+/village/dist-release/
+/village/example/
+/village/standalone/

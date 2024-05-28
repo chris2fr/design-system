@@ -1,8 +1,8 @@
 ### Actions d’interaction hors composant
 
-Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du cefran.
+Il est possible de remonter à Eulérian des actions effectuées sur des éléments HTML hors composants du village.
 
-Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-cefran-analytics-{action}` sur la
+Pour ajouter un écouteur d'événement il suffit d’ajouter un attribut `data-village-analytics-{action}` sur la
 balise
 HTML concernée.
 
@@ -10,14 +10,14 @@ HTML concernée.
 
 ```html
 <p>Envoyez un événement lors du clic sur
-<span data-cefran-analytics-click="label à remonter">ce texte</span>.
+<span data-village-analytics-click="label à remonter">ce texte</span>.
 </p>
 ```
 
 ```html
 <p>
 Envoyez un événement lors du clic sur
-<a href="http://url-externe" data-cefran-analytics-click>ce lien externe</span>.
+<a href="http://url-externe" data-village-analytics-click>ce lien externe</span>.
 </p>
 ```
 
@@ -29,7 +29,7 @@ Il existe les types d'actions suivants :
 
 ##### click
 
-`data-cefran-analytics-click`
+`data-village-analytics-click`
 
 Mode : [out] | type : _interaction_
 
@@ -45,7 +45,7 @@ De manière automatique, le type de l'action approprié sera sélectionné :
 
 ##### internal
 
-`data-cefran-analytics-internal`
+`data-village-analytics-internal`
 
 Mode : [out] | type : _interaction_
 
@@ -56,7 +56,7 @@ Clique vers un lien interne, une ancre.
 
 ##### external
 
-`data-cefran-analytics-external`
+`data-village-analytics-external`
 
 Mode : [out] | type : _interaction_
 
@@ -67,7 +67,7 @@ Clique vers un lien externe.
 
 ##### download
 
-`data-cefran-analytics-download`
+`data-village-analytics-download`
 
 Mode : [out] | type : _interaction_
 
@@ -78,7 +78,7 @@ Clique sur un lien téléchargeable.
 
 ##### double-click
 
-`data-cefran-analytics-dblclick`
+`data-village-analytics-dblclick`
 
 Mode : [out] | type : _interaction_
 
@@ -88,7 +88,7 @@ Interaction générique du double-clic.
 
 ##### change
 
-`data-cefran-analytics-change`
+`data-village-analytics-change`
 
 Mode : [out] | type : _event_
 

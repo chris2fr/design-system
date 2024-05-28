@@ -1,16 +1,16 @@
-# Système de design Cefran basé sur le système de design de la France
+# Système de design Village basé sur le système de design de la France
 
 Ceci est le résultat du travail de l'Etat français pour ses propres sites webs. Ce travail met en valeur l'accessibilité, la lisibilité et l'aisance techonologique. Pour voir le projet source, consultez  [systeme-de-design.gouv.fr](https://www.systeme-de-design.gouv.fr).
 
-Le texte ci-dessous vient de l'entrepôt source, sauf que 'DSFR' a été remplacé par 'cefran' qui reflète un automatisme de rechercher-remplacer dans l'ensemnble du dépôt. Comme vous pouvez le constater, il est impératif que les outils du système de design, et l'accessibilité des composants génériques soient rentenus sans rentenir aucunement les élément du design de l'Etat lui-même. Pas cefran. 
+Le texte ci-dessous vient de l'entrepôt source, sauf que 'DSFR' a été remplacé par 'village' qui reflète un automatisme de rechercher-remplacer dans l'ensemnble du dépôt. Comme vous pouvez le constater, il est impératif que les outils du système de design, et l'accessibilité des composants génériques soient rentenus sans rentenir aucunement les élément du design de l'Etat lui-même. Pas village. 
 
-Les couleurs ont été automatisées. Les logos ont été changés. La police Marianne a été remplacé par la police libre Fendango Neue (et la police Spectre par Lack, aussi libre). Il y a sans doute d'autres choses à faire pour distinguer le design Cefran du DSFR. C'est un travail en cours. 
+Les couleurs ont été automatisées. Les logos ont été changés. La police Marianne a été remplacé par la police libre Fendango Neue (et la police Spectre par Lack, aussi libre). Il y a sans doute d'autres choses à faire pour distinguer le design Village du DSFR. C'est un travail en cours. 
 
-Ce projet sert pour django-cefran et wagtail-cefran. 
+Ce projet sert pour django-village et wagtail-village. 
 
 ## Licence et droit d'utilisation
 
-Le contenu de ce projet est placé sous licence MIT License, à l'exception de la fonte Marianne. Voir [LICENSE.md](https://github.com/GouvernementFR/cefran/blob/main/LICENSE.md).
+Le contenu de ce projet est placé sous licence MIT License, à l'exception de la fonte Marianne. Voir [LICENSE.md](https://github.com/GouvernementFR/village/blob/main/LICENSE.md).
 
 #### ⚠️ Utilisation interdite en dehors des sites Internet de l'État
 
@@ -24,29 +24,29 @@ Voir les [conditions générales d'utilisation](doc/legal/cgu.md).
 
 ## Installation
 
-L'installation du Système de Design de l'État (ci-après, le **cefran**) peut se faire de manières différentes. En téléchargeant l'ensemble des fichiers nécessaires à son utilisation, en utilisant le gestionnaire de paquets **NPM**, ou encore via **git**.
+L'installation du Système de Design de l'État (ci-après, le **village**) peut se faire de manières différentes. En téléchargeant l'ensemble des fichiers nécessaires à son utilisation, en utilisant le gestionnaire de paquets **NPM**, ou encore via **git**.
 
 ### Fichiers statiques
 
-Il est possible de télécharger l'ensemble du **cefran** au format zip ci-dessous. Le zip contient un ensemble de fichiers CSS et Javascript, ainsi que les différentes polices web utilisées (Marianne et Spectral), et un ensemble d'icônes et de pictogrammes.
+Il est possible de télécharger l'ensemble du **village** au format zip ci-dessous. Le zip contient un ensemble de fichiers CSS et Javascript, ainsi que les différentes polices web utilisées (Marianne et Spectral), et un ensemble d'icônes et de pictogrammes.
 
-Vous trouverez sur [la page Release de Github](https://github.com/GouvernementFR/cefran/releases), toutes les sources des versions précédentes et la dernière en date.
+Vous trouverez sur [la page Release de Github](https://github.com/GouvernementFR/village/releases), toutes les sources des versions précédentes et la dernière en date.
 
 ### NPM
 
-Le **cefran** est disponible sur NPM via un ensemble de packages qu'il est possible d'ajouter directement à votre projet. Il est de ce fait nécessaire d'installer [NodeJS](https://nodejs.org), et d'avoir un fichier **package.json** à la racine de votre projet. (Il est possible d'en créer un directement via la commande `npm init`).
+Le **village** est disponible sur NPM via un ensemble de packages qu'il est possible d'ajouter directement à votre projet. Il est de ce fait nécessaire d'installer [NodeJS](https://nodejs.org), et d'avoir un fichier **package.json** à la racine de votre projet. (Il est possible d'en créer un directement via la commande `npm init`).
 
-Une fois en place, il suffit d'installer le package **@gouvfr/cefran** contenant l’ensemble des composants:
+Une fois en place, il suffit d'installer le package **@gouvfr/village** contenant l’ensemble des composants:
 
 ```
-npm install @gouvfr/cefran
+npm install @gouvfr/village
 ```
 Il est également possible d'installer le package avec [Yarn](https://yarnpkg.com/) :
 ```
-yarn add @gouvfr/cefran
+yarn add @gouvfr/village
 ```
 
-Une fois terminé le cefran sera alors installé dans le dossier ```node_modules/@gouvfr/cefran/```.
+Une fois terminé le village sera alors installé dans le dossier ```node_modules/@gouvfr/village/```.
 
 Pour visualiser les exemples, il est nécessaire de lancer un serveur local :
 
@@ -56,7 +56,7 @@ npm run serve
 
 Une fois le serveur lancé, les exemples sont disponibles à l'adresse : http://localhost:8080/example/
 
-### Structure du cefran
+### Structure du village
 
 La structure que nous mettons à disposition , sur le zip ou npm est la suivante:
 - **dist** : contient les fichiers css et js à importer en fonction des packages utilisés.
@@ -72,9 +72,9 @@ Une structure minimale serait :
 ```
 / Racine du projet
 └── index.html
-└── cefran.min.css
-└── cefran.module.min.js
-└── cefran.nomodule.min.js
+└── village.min.css
+└── village.module.min.js
+└── village.nomodule.min.js
 └── icons/
 └── favicon/
 └── fonts/
@@ -82,21 +82,21 @@ Une structure minimale serait :
   └── utilities.min.css
 ```
 
-Les polices de caractères utilisées sur le DS, à savoir la Marianne et la Spectral, sont des fichiers .woff et .woff2, ils doivent se trouver dans le répertoire `fonts`. Les dossiers `fonts` et `favicon` doivent être placés au même niveau que le dossier contenant le CSS du core du cefran (ou au même niveau que le css `cefran.min.css` à la racine de dist, qui contient le core).
+Les polices de caractères utilisées sur le DS, à savoir la Marianne et la Spectral, sont des fichiers .woff et .woff2, ils doivent se trouver dans le répertoire `fonts`. Les dossiers `fonts` et `favicon` doivent être placés au même niveau que le dossier contenant le CSS du core du village (ou au même niveau que le css `village.min.css` à la racine de dist, qui contient le core).
 
 Le fichier `utilities.min.css` doit être placé un niveau plus bas que le dossier `icons`, dans dossier utility par exemple, pour respecter les chemins d'accès vers les icônes.
 
 ### Le HTML
 
-Le point de départ de l’utilisation du cefran  est la création de fichiers HTML, afin de pouvoir utiliser les différents composants. Ces fichiers sont à mettre à la racine de votre projet. L’exemple ci dessous est le code minimal afin de pouvoir utiliser le cefran.
+Le point de départ de l’utilisation du village  est la création de fichiers HTML, afin de pouvoir utiliser les différents composants. Ces fichiers sont à mettre à la racine de votre projet. L’exemple ci dessous est le code minimal afin de pouvoir utiliser le village.
 
-L’ajout de l’attribut **data-cefran-scheme** sur la balise html permet d’activer la gestion des thèmes clair et sombre. Les valeurs possibles sont `system`, `light`, `dark`. La valeur “system” permet d’utiliser la configuration définie sur le système d’exploitation de l’utilisateur.
+L’ajout de l’attribut **data-village-scheme** sur la balise html permet d’activer la gestion des thèmes clair et sombre. Les valeurs possibles sont `system`, `light`, `dark`. La valeur “system” permet d’utiliser la configuration définie sur le système d’exploitation de l’utilisateur.
 
 Consulter la [documentation des paramètres d’affichage](https://www.systeme-de-design.gouv.fr/elements-d-interface/composants/parametre-d-affichage) afin d’en savoir plus.
 
 ```html
 <!doctype html>
-<html lang="fr" data-cefran-scheme="system">
+<html lang="fr" data-village-scheme="system">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -110,7 +110,7 @@ Consulter la [documentation des paramètres d’affichage](https://www.systeme-d
     <!-- Modifier les chemins relatifs des favicons en fonction de la structure du projet -->
     <!-- Dans le fichier manifest.webmanifest aussi, modifier les chemins vers les images -->
     
-    <link rel="stylesheet" href="cefran.min.css">
+    <link rel="stylesheet" href="village.min.css">
     <link rel="stylesheet" href="utility/utility.min.css">
 
     <title>Titre de la page - Nom du site</title>
@@ -122,21 +122,21 @@ Consulter la [documentation des paramètres d’affichage](https://www.systeme-d
      -->
 
     <!-- Script en version es6 module et nomodule pour les navigateurs le ne supportant pas -->
-    <script type="module" src="cefran.module.min.js"></script>
-    <script type="text/javascript" nomodule src="cefran.nomodule.min.js"></script>
+    <script type="module" src="village.module.min.js"></script>
+    <script type="text/javascript" nomodule src="village.nomodule.min.js"></script>
   </body>
 </html>
 ```
 
 **Les CSS**
 
-Afin d’inclure la totalité des composants et des styles du système de design, il est nécessaire d’inclure la feuille de style `dist/cefran.min.css`.
+Afin d’inclure la totalité des composants et des styles du système de design, il est nécessaire d’inclure la feuille de style `dist/village.min.css`.
 
 Les classes utilitaires, notamment les icônes, sont disponibles dans un fichier à part dans `dist/utility/utility.scss`.
 ```html
 <html>
   <head>
-    <link rel="stylesheet" href="cefran.min.css">
+    <link rel="stylesheet" href="village.min.css">
     <link rel="stylesheet" href="utility/utility.min.css">
 ```
 Il est aussi possible d’importer uniquement ce que l’on souhaite utiliser. En effet, pour ajouter un composant seul il suffit d’importer son CSS ainsi que celui de chacune des dépendances de ce composant. Ces dépendances sont listés dans le `README.md` de chaque package.
@@ -152,22 +152,22 @@ Il est aussi possible d’importer uniquement ce que l’on souhaite utiliser. E
 
 **Le Javascript**
 
-L’ensemble du code javascript nécessaire au bon fonctionnement du DS se trouve dans deux fichiers `dist/cefran.module.min.js` et `dist/cefran.nomodule.min.js`.
+L’ensemble du code javascript nécessaire au bon fonctionnement du DS se trouve dans deux fichiers `dist/village.module.min.js` et `dist/village.nomodule.min.js`.
 
 
-Le fichier cefran.module.min.js utilise les modules javascript natifs - sa balise script d’appel doit avoir l’attribut **type=”module”**.
+Le fichier village.module.min.js utilise les modules javascript natifs - sa balise script d’appel doit avoir l’attribut **type=”module”**.
 
-Le fichier cefran.nomodule.min.js est utilisé par les anciens navigateurs ne supportant pas les modules javascript (es6) - sa balise script doit contenir l’attribut **nomodule**.
+Le fichier village.nomodule.min.js est utilisé par les anciens navigateurs ne supportant pas les modules javascript (es6) - sa balise script doit contenir l’attribut **nomodule**.
 Il est **impératif** d’appeler les **deux fichiers** javascript afin que le code s’exécute correctement sur l’ensemble des navigateurs supportés :
 
 ```html
-    <script type="module" src="cefran.module.min.js"></script>
-    <script type="text/javascript" nomodule src="cefran.nomodule.min.js"></script>
+    <script type="module" src="village.module.min.js"></script>
+    <script type="text/javascript" nomodule src="village.nomodule.min.js"></script>
   </body>
 </html>
 ```
 
-> NB : Le package analytics est géré indépendament et doit être ajouté après le js du cefran. Voir [documention analytics](https://github.com/GouvernementFR/cefran/blob/main/src/analytics/doc/analytics.md)
+> NB : Le package analytics est géré indépendament et doit être ajouté après le js du village. Voir [documention analytics](https://github.com/GouvernementFR/village/blob/main/src/analytics/doc/analytics.md)
 
 De la même façon que le CSS il est possible d’importer uniquement le JS des composants utilisés (et leurs dépendances).
 
@@ -175,9 +175,9 @@ De la même façon que le CSS il est possible d’importer uniquement le JS des 
 
 Les icônes sont stockées dans `dist/icons` et classées par catégories.
 
-Le design système utilise principalement des icônes de la librairie remixIcon. Il existe aussi des icônes personnalisées, celles-ci sont préfixée par “cefran--”.
+Le design système utilise principalement des icônes de la librairie remixIcon. Il existe aussi des icônes personnalisées, celles-ci sont préfixée par “village--”.
 
-Afin d’utiliser ces icônes, des classes utilitaires CSS sont associés à chaque icône. Par ex. : `cefran-icon-error-fill`
+Afin d’utiliser ces icônes, des classes utilitaires CSS sont associés à chaque icône. Par ex. : `village-icon-error-fill`
 
 Ces classes sont disponibles dans `utility` qui importe `dist/utility/icons/icons.css`.
 
@@ -193,7 +193,7 @@ Pour plus d’informations : [Voir la documentation des icônes](https://www.sys
 
 ### BEM
 
-Le **cefran** utilise la méthodologie [**BEM**]([https://css-tricks.com/bem-101/]([http://getbem.com/naming/](http://getbem.com/naming/))) (Block - Element - Modifier) comme convention de nommage des classes CSS. Elle permet aux développeurs une meilleure compréhension de la relation entre HTML et CSS dans un projet donné.
+Le **village** utilise la méthodologie [**BEM**]([https://css-tricks.com/bem-101/]([http://getbem.com/naming/](http://getbem.com/naming/))) (Block - Element - Modifier) comme convention de nommage des classes CSS. Elle permet aux développeurs une meilleure compréhension de la relation entre HTML et CSS dans un projet donné.
 
 Selon cette méthodologie, un block représente le plus haut niveau d'abstraction d'un nouveau composant, par exemple `.parent`.
 
@@ -203,11 +203,11 @@ Les modifiers quant à eux, servent à manipuler les blocs, de manière à les s
 
 ### Utilisation
 
-Le **cefran** est constitué de différents composants, que vous pouvez utiliser indépendamment au sein de votre projet.
+Le **village** est constitué de différents composants, que vous pouvez utiliser indépendamment au sein de votre projet.
 
 Une documentation spécifique est prévue pour chaque composant, précisant ses principes d’utilisation, ainsi que les snippets de code HTML à utiliser pour votre projet.
 
-🙌 Vous êtes maintenant prêt(e) à utiliser le **cefran**.
+🙌 Vous êtes maintenant prêt(e) à utiliser le **village**.
 
 ## Contribution
 

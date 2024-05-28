@@ -7,7 +7,7 @@ Chacune de ces données est répartie dans différentes catégories qui sont dis
 
 ```javascript
 <script>
-    window.cefran = {
+    window.village = {
         analytics: {
             domain: 'mon.domainedetracking.com',
             // collection: 'manual',
@@ -36,7 +36,7 @@ Défini le mode de récolte des données de la page :
 * `load` : Les données de page sont envoyées automatiquement au chargement de la page. (par défaut)
 
 * `full` : Les données sont envoyées à chaque changement de path dans l’URL, permettant le support des “Single-page
-  application” (par défaut si cefran en mode ‘vue’, ‘react’ ou ‘angular’)
+  application” (par défaut si village en mode ‘vue’, ‘react’ ou ‘angular’)
 
 * `hash` : Les données sont envoyées à chaque changement de hash dans l'URL
 

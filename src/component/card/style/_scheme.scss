@@ -45,7 +45,7 @@
       @include color.text(title grey, (legacy:$legacy));
 
       a[href] {
-        @include color.text(action-high cefran-primary, (legacy:$legacy));
+        @include color.text(action-high village-primary, (legacy:$legacy));
       }
 
       @include disabled.selector((can-be-link: true), (legacy: $legacy, text: true, background: true));

@@ -41,7 +41,7 @@
 
     &-wrap--addon {
       > #{ns(input)}:not(:last-child) {
-        @include color.box-shadow(action-high cefran-primary, (legacy:$legacy), bottom-2-in);
+        @include color.box-shadow(action-high village-primary, (legacy:$legacy), bottom-2-in);
       }
     }
 

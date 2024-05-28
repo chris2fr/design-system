@@ -11,7 +11,7 @@
   #{selector.ns-group(radio)} {
     input[type="radio"] {
       & + label {
-        @include color.background-image((border action-high cefran-primary), (legacy:$legacy), radio-background-image(false));
+        @include color.background-image((border action-high village-primary), (legacy:$legacy), radio-background-image(false));
       }
 
       @include disabled.selector {
@@ -22,7 +22,7 @@
 
       &:checked {
         + label {
-          @include color.background-image((border active cefran-primary) (active cefran-primary), (legacy:$legacy), radio-background-image(true));
+          @include color.background-image((border active village-primary) (active village-primary), (legacy:$legacy), radio-background-image(true));
         }
 
         @include disabled.selector {
@@ -43,7 +43,7 @@
           }
 
           &:checked + label {
-            @include color.background-image((border plain error) (active cefran-primary), (legacy:$legacy), radio-background-image(true));
+            @include color.background-image((border plain error) (active village-primary), (legacy:$legacy), radio-background-image(true));
           }
         }
       }
@@ -57,7 +57,7 @@
           }
 
           &:checked + label {
-            @include color.background-image((border plain success) (active cefran-primary), (legacy:$legacy), radio-background-image(true));
+            @include color.background-image((border plain success) (active village-primary), (legacy:$legacy), radio-background-image(true));
           }
         }
       }
@@ -71,7 +71,7 @@
           }
 
           &:checked + label {
-            @include color.background-image((border plain info) (active cefran-primary), (legacy:$legacy), radio-background-image(true));
+            @include color.background-image((border plain info) (active village-primary), (legacy:$legacy), radio-background-image(true));
           }
         }
       }

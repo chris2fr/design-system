@@ -2,7 +2,7 @@
 const sample = getSample(include);
 %>
 
-<%- section('Alerte statique', 'Précisez le type d\'alerte (Information/Succès/Erreur) dans le titre ou, à défaut, dans le contenu de l\'alerte. <br> Le titre est défini par la classe "cefran-alert__title", la balise &#60;p&#62; peut être remplacée par un niveau de titre hx suivant le contexte.', 0); %>
+<%- section('Alerte statique', 'Précisez le type d\'alerte (Information/Succès/Erreur) dans le titre ou, à défaut, dans le contenu de l\'alerte. <br> Le titre est défini par la classe "village-alert__title", la balise &#60;p&#62; peut être remplacée par un niveau de titre hx suivant le contexte.', 0); %>
 
 <%- sample('Alerte par défaut', './sample/alert-default', {}, true); %>
 
@@ -24,7 +24,7 @@ const sample = getSample(include);
 
 <%- sample('Alerte taille SM refermable', './sample/alert-dismissable', {alert: {title:false, size: "sm", type: "info", text: "Information : cliquer sur la croix pour fermer l'alerte"}}, true); %>
 
-<%- sample('Alerte icône personnalisée', './sample/alert-default', {alert: {classes: ['cefran-icon-lock-fill']}}, true); %>
+<%- sample('Alerte icône personnalisée', './sample/alert-default', {alert: {classes: ['village-icon-lock-fill']}}, true); %>
 
 <%- section('Alerte dynamique', 'Ajouter l\'attribut role="alert" lorsque les alertes sont ajoutées dynamiquement dans le DOM (en js après le chargement de la page)', 0); %>
 

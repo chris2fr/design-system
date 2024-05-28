@@ -1,6 +1,6 @@
 ////
-/// cefran Main
-/// @group cefran
+/// village Legacy
+/// @group village
 ////
 
 @use 'module/path';
@@ -9,4 +9,4 @@
 @include path.to-dist(1);
 @include media-query.order;
 
-@import '../main';
+@import '../legacy';

@@ -40,10 +40,10 @@
       }
 
       a {
-        @include color.text(action-high cefran-primary, (legacy: $legacy));
+        @include color.text(action-high village-primary, (legacy: $legacy));
 
         @include before {
-          @include color.background-image((border active cefran-primary), (legacy: $legacy));
+          @include color.background-image((border active village-primary), (legacy: $legacy));
         }
 
         &:not([href]) {
