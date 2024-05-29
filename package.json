@@ -1,8 +1,8 @@
 {
-  "name": "fabrique-village",
+  "name": "designsystem-village",
   "version": "0.0.3",
   "description": "Redre générique le Système de Design de l'Etat - DSFR",
-  "repository": "git@github.com:chris2fr/fabrique-village.git",
+  "repository": "git@github.com:chris2fr/designsystem-village.git",
   "author": "Chris Mann <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
