@@ -42,7 +42,7 @@ $values: (
   // village-primary
   village-primary-75: hsl($village-primary-hue, 20%, 7%) hsl($village-primary-hue, 20%, 12%) hsl($village-primary-hue, 30%, 15%),
   village-primary-100: hsl($village-primary-hue, 20%, 10%) hsl($village-primary-hue, 22%, 13%) hsl($village-primary-hue, 33%, 18%),
-  village-primary-125: hsl($village-primary-hue, 33%, 13%) hsl($village-primary-hue, 40%, 65%) hsl($village-primary-hue, 45%, 65%),
+  village-primary-125: hsl($village-primary-hue, 33%, 13%) hsl($village-primary-hue, 40%, 18%) hsl($village-primary-hue, 45%, 22%),
   village-primary-200: hsl($village-primary-hue, 45%, 20%) hsl($village-primary-hue, 50%, 25%) hsl($village-primary-hue, 60%, 30%),
   village-primary-425: hsl($village-primary-hue, 45%, 43%) hsl($village-primary-hue, 50%, 50%) hsl($village-primary-hue, 60%, 50%),
   village-primary-625: hsl($village-primary-hue, 80%, 65%) hsl($village-primary-hue, 60%, 65%) hsl($village-primary-hue, 90%, 65%),
@@ -56,7 +56,7 @@ $values: (
   // village-secondary
   village-secondary-75: hsl($village-secondary-hue, 20%, 7%) hsl($village-secondary-hue, 20%, 12%) hsl($village-secondary-hue, 30%, 15%),
   village-secondary-100: hsl($village-secondary-hue, 20%, 10%) hsl($village-secondary-hue, 22%, 13%) hsl($village-secondary-hue, 33%, 18%),
-  village-secondary-125: hsl($village-secondary-hue, 33%, 13%) hsl($village-secondary-hue, 40%, 65%) hsl($village-secondary-hue, 45%, 65%),
+  village-secondary-125: hsl($village-secondary-hue, 33%, 13%) hsl($village-secondary-hue, 40%, 18%) hsl($village-secondary-hue, 45%, 22%),
   village-secondary-200: hsl($village-secondary-hue, 45%, 20%) hsl($village-secondary-hue, 50%, 25%) hsl($village-secondary-hue, 60%, 30%),
   village-secondary-425: hsl($village-secondary-hue, 45%, 43%) hsl($village-secondary-hue, 50%, 50%) hsl($village-secondary-hue, 60%, 50%),
   village-secondary-625: hsl($village-secondary-hue, 80%, 65%) hsl($village-secondary-hue, 60%, 65%) hsl($village-secondary-hue, 90%, 65%),
@@ -70,7 +70,7 @@ $values: (
   // info
   info-75: hsl($village-primary-hue, 20%, 7%) hsl($village-primary-hue, 20%, 12%) hsl($village-primary-hue, 30%, 15%),
   info-100: hsl($village-primary-hue, 20%, 10%) hsl($village-primary-hue, 22%, 13%) hsl($village-primary-hue, 33%, 18%),
-  info-125: hsl($village-primary-hue, 33%, 13%) hsl($village-primary-hue, 40%, 65%) hsl($village-primary-hue, 45%, 65%),
+  info-125: hsl($village-primary-hue, 33%, 13%) hsl($village-primary-hue, 40%, 18%) hsl($village-primary-hue, 45%, 22%),
   info-200: hsl($village-primary-hue, 45%, 20%) hsl($village-primary-hue, 50%, 25%) hsl($village-primary-hue, 60%, 30%),
   info-425: hsl($village-primary-hue, 45%, 43%) hsl($village-primary-hue, 50%, 50%) hsl($village-primary-hue, 60%, 50%),
   info-625: hsl($village-primary-hue, 80%, 65%) hsl($village-primary-hue, 60%, 65%) hsl($village-primary-hue, 90%, 65%),
@@ -84,7 +84,7 @@ $values: (
   // success
   success-75: hsl($village-color4-hue, 20%, 7%) hsl($village-color4-hue, 20%, 12%) hsl($village-color4-hue, 30%, 15%),
   success-100: hsl($village-color4-hue, 20%, 10%) hsl($village-color4-hue, 22%, 13%) hsl($village-color4-hue, 33%, 18%),
-  success-125: hsl($village-color4-hue, 33%, 13%) hsl($village-color4-hue, 40%, 65%) hsl($village-color4-hue, 45%, 65%),
+  success-125: hsl($village-color4-hue, 33%, 13%) hsl($village-color4-hue, 40%, 18%) hsl($village-color4-hue, 45%, 22%),
   success-200: hsl($village-color4-hue, 45%, 20%) hsl($village-color4-hue, 50%, 25%) hsl($village-color4-hue, 60%, 30%),
   success-425: hsl($village-color4-hue, 45%, 43%) hsl($village-color4-hue, 50%, 50%) hsl($village-color4-hue, 60%, 50%),
   success-625: hsl($village-color4-hue, 80%, 65%) hsl($village-color4-hue, 60%, 65%) hsl($village-color4-hue, 90%, 65%),
@@ -112,7 +112,7 @@ $values: (
   // error
   error-75: hsl($village-color3-hue, 20%, 7%) hsl($village-color3-hue, 20%, 12%) hsl($village-color3-hue, 30%, 15%),
   error-100: hsl($village-color3-hue, 20%, 10%) hsl($village-color3-hue, 22%, 13%) hsl($village-color3-hue, 33%, 18%),
-  error-125: hsl($village-color3-hue, 33%, 13%) hsl($village-color3-hue, 40%, 65%) hsl($village-color3-hue, 45%, 65%),
+  error-125: hsl($village-color3-hue, 33%, 13%) hsl($village-color3-hue, 40%, 18%) hsl($village-color3-hue, 45%, 22%),
   error-200: hsl($village-color3-hue, 45%, 20%) hsl($village-color3-hue, 50%, 25%) hsl($village-color3-hue, 60%, 30%),
   error-425: hsl($village-color3-hue, 45%, 43%) hsl($village-color3-hue, 50%, 50%) hsl($village-color3-hue, 60%, 50%),
   error-625: hsl($village-color3-hue, 80%, 65%) hsl($village-color3-hue, 60%, 65%) hsl($village-color3-hue, 90%, 65%),
@@ -126,7 +126,7 @@ $values: (
   // village-color3-
   village-color3-75: hsl($village-color3-hue, 20%, 7%) hsl($village-color3-hue, 20%, 12%) hsl($village-color3-hue, 30%, 15%),
   village-color3-100: hsl($village-color3-hue, 20%, 10%) hsl($village-color3-hue, 22%, 13%) hsl($village-color3-hue, 33%, 18%),
-  village-color3-125: hsl($village-color3-hue, 33%, 13%) hsl($village-color3-hue, 40%, 65%) hsl($village-color3-hue, 45%, 65%),
+  village-color3-125: hsl($village-color3-hue, 33%, 13%) hsl($village-color3-hue, 40%, 18%) hsl($village-color3-hue, 45%, 22%),
   village-color3-200: hsl($village-color3-hue, 45%, 20%) hsl($village-color3-hue, 50%, 25%) hsl($village-color3-hue, 60%, 30%),
   village-color3-425: hsl($village-color3-hue, 45%, 43%) hsl($village-color3-hue, 50%, 50%) hsl($village-color3-hue, 60%, 50%),
   village-color3-625: hsl($village-color3-hue, 80%, 65%) hsl($village-color3-hue, 60%, 65%) hsl($village-color3-hue, 90%, 65%),
@@ -140,7 +140,7 @@ $values: (
   // village-color4-
   village-color4-75: hsl($village-color4-hue, 20%, 7%) hsl($village-color4-hue, 20%, 12%) hsl($village-color4-hue, 30%, 15%),
   village-color4-100: hsl($village-color4-hue, 20%, 10%) hsl($village-color4-hue, 22%, 13%) hsl($village-color4-hue, 33%, 18%),
-  village-color4-125: hsl($village-color4-hue, 33%, 13%) hsl($village-color4-hue, 40%, 65%) hsl($village-color4-hue, 45%, 65%),
+  village-color4-125: hsl($village-color4-hue, 33%, 13%) hsl($village-color4-hue, 40%, 18%) hsl($village-color4-hue, 45%, 22%),
   village-color4-200: hsl($village-color4-hue, 45%, 20%) hsl($village-color4-hue, 50%, 25%) hsl($village-color4-hue, 60%, 30%),
   village-color4-425: hsl($village-color4-hue, 45%, 43%) hsl($village-color4-hue, 50%, 50%) hsl($village-color4-hue, 60%, 50%),
   village-color4-625: hsl($village-color4-hue, 80%, 65%) hsl($village-color4-hue, 60%, 65%) hsl($village-color4-hue, 90%, 65%),
@@ -154,7 +154,7 @@ $values: (
   // village-color5-
   village-color5-75: hsl($village-color5-hue, 20%, 7%) hsl($village-color5-hue, 20%, 12%) hsl($village-color5-hue, 30%, 15%),
   village-color5-100: hsl($village-color5-hue, 20%, 10%) hsl($village-color5-hue, 22%, 13%) hsl($village-color5-hue, 33%, 18%),
-  village-color5-125: hsl($village-color5-hue, 33%, 13%) hsl($village-color5-hue, 40%, 65%) hsl($village-color5-hue, 45%, 65%),
+  village-color5-125: hsl($village-color5-hue, 33%, 13%) hsl($village-color5-hue, 40%, 18%) hsl($village-color5-hue, 45%, 22%),
   village-color5-200: hsl($village-color5-hue, 45%, 20%) hsl($village-color5-hue, 50%, 25%) hsl($village-color5-hue, 60%, 30%),
   village-color5-625: hsl($village-color5-hue, 80%, 65%) hsl($village-color5-hue, 60%, 65%) hsl($village-color5-hue, 90%, 65%),
   village-color5-850: hsl($village-color5-hue, 80%, 85%) hsl($village-color5-hue, 60%, 65%) hsl($village-color5-hue, 90%, 65%),
@@ -167,7 +167,7 @@ $values: (
   // village-color6-
   village-color6-75: hsl($village-color6-hue, 20%, 7%) hsl($village-color6-hue, 20%, 12%) hsl($village-color6-hue, 30%, 15%),
   village-color6-100: hsl($village-color6-hue, 20%, 10%) hsl($village-color6-hue, 22%, 13%) hsl($village-color6-hue, 33%, 18%),
-  village-color6-125: hsl($village-color6-hue, 33%, 13%) hsl($village-color6-hue, 40%, 65%) hsl($village-color6-hue, 45%, 65%),
+  village-color6-125: hsl($village-color6-hue, 33%, 13%) hsl($village-color6-hue, 40%, 18%) hsl($village-color6-hue, 45%, 22%),
   village-color6-200: hsl($village-color6-hue, 45%, 20%) hsl($village-color6-hue, 50%, 25%) hsl($village-color6-hue, 60%, 30%),
   village-color6-625: hsl($village-color6-hue, 80%, 65%) hsl($village-color6-hue, 60%, 65%) hsl($village-color6-hue, 90%, 65%),
   village-color6-850: hsl($village-color6-hue, 80%, 85%) hsl($village-color6-hue, 60%, 65%) hsl($village-color6-hue, 90%, 65%),
@@ -180,7 +180,7 @@ $values: (
   // village-color7-
   village-color7-75: hsl($village-color7-hue, 20%, 7%) hsl($village-color7-hue, 20%, 12%) hsl($village-color7-hue, 30%, 15%),
   village-color7-100: hsl($village-color7-hue, 20%, 10%) hsl($village-color7-hue, 22%, 13%) hsl($village-color7-hue, 33%, 18%),
-  village-color7-125: hsl($village-color7-hue, 33%, 13%) hsl($village-color7-hue, 40%, 65%) hsl($village-color7-hue, 45%, 65%),
+  village-color7-125: hsl($village-color7-hue, 33%, 13%) hsl($village-color7-hue, 40%, 18%) hsl($village-color7-hue, 45%, 22%),
   village-color7-200: hsl($village-color7-hue, 45%, 20%) hsl($village-color7-hue, 50%, 25%) hsl($village-color7-hue, 60%, 30%),
   village-color7-625: hsl($village-color7-hue, 80%, 65%) hsl($village-color7-hue, 60%, 65%) hsl($village-color7-hue, 90%, 65%),
   village-color7-850: hsl($village-color7-hue, 80%, 85%) hsl($village-color7-hue, 60%, 65%) hsl($village-color7-hue, 90%, 65%),
@@ -193,7 +193,7 @@ $values: (
   // village-color8-
   village-color8-75: hsl($village-color8-hue, 20%, 7%) hsl($village-color8-hue, 20%, 12%) hsl($village-color8-hue, 30%, 15%),
   village-color8-100: hsl($village-color8-hue, 20%, 10%) hsl($village-color8-hue, 22%, 13%) hsl($village-color8-hue, 33%, 18%),
-  village-color8-125: hsl($village-color8-hue, 33%, 13%) hsl($village-color8-hue, 40%, 65%) hsl($village-color8-hue, 45%, 65%),
+  village-color8-125: hsl($village-color8-hue, 33%, 13%) hsl($village-color8-hue, 40%, 18%) hsl($village-color8-hue, 45%, 22%),
   village-color8-200: hsl($village-color8-hue, 45%, 20%) hsl($village-color8-hue, 50%, 25%) hsl($village-color8-hue, 60%, 30%),
   village-color8-625: hsl($village-color8-hue, 80%, 65%) hsl($village-color8-hue, 60%, 65%) hsl($village-color8-hue, 90%, 65%),
   village-color8-850: hsl($village-color8-hue, 80%, 85%) hsl($village-color8-hue, 60%, 65%) hsl($village-color8-hue, 90%, 65%),
@@ -206,7 +206,7 @@ $values: (
   // village-color9-
   village-color9-75: hsl($village-color9-hue, 20%, 7%) hsl($village-color9-hue, 20%, 12%) hsl($village-color9-hue, 30%, 15%),
   village-color9-100: hsl($village-color9-hue, 20%, 10%) hsl($village-color9-hue, 22%, 13%) hsl($village-color9-hue, 33%, 18%),
-  village-color9-125: hsl($village-color9-hue, 33%, 13%) hsl($village-color9-hue, 40%, 65%) hsl($village-color9-hue, 45%, 65%),
+  village-color9-125: hsl($village-color9-hue, 33%, 13%) hsl($village-color9-hue, 40%, 18%) hsl($village-color9-hue, 45%, 22%),
   village-color9-200: hsl($village-color9-hue, 45%, 20%) hsl($village-color9-hue, 50%, 25%) hsl($village-color9-hue, 60%, 30%),
   village-color9-625: hsl($village-color9-hue, 80%, 65%) hsl($village-color9-hue, 60%, 65%) hsl($village-color9-hue, 90%, 65%),
   village-color9-850: hsl($village-color9-hue, 80%, 85%) hsl($village-color9-hue, 60%, 65%) hsl($village-color9-hue, 90%, 65%),
@@ -219,7 +219,7 @@ $values: (
   // village-color10-
   village-color10-75: hsl($village-color10-hue, 20%, 7%) hsl($village-color10-hue, 20%, 12%) hsl($village-color10-hue, 30%, 15%),
   village-color10-100: hsl($village-color10-hue, 20%, 10%) hsl($village-color10-hue, 22%, 13%) hsl($village-color10-hue, 33%, 18%),
-  village-color10-125: hsl($village-color10-hue, 33%, 13%) hsl($village-color10-hue, 40%, 65%) hsl($village-color10-hue, 45%, 65%),
+  village-color10-125: hsl($village-color10-hue, 33%, 13%) hsl($village-color10-hue, 40%, 18%) hsl($village-color10-hue, 45%, 22%),
   village-color10-200: hsl($village-color10-hue, 45%, 20%) hsl($village-color10-hue, 50%, 25%) hsl($village-color10-hue, 60%, 30%),
   village-color10-625: hsl($village-color10-hue, 80%, 65%) hsl($village-color10-hue, 60%, 65%) hsl($village-color10-hue, 90%, 65%),
   village-color10-850: hsl($village-color10-hue, 80%, 85%) hsl($village-color10-hue, 60%, 65%) hsl($village-color10-hue, 90%, 65%),
@@ -232,7 +232,7 @@ $values: (
   // village-color11-
   village-color11-75: hsl($village-color11-hue, 20%, 7%) hsl($village-color11-hue, 20%, 12%) hsl($village-color11-hue, 30%, 15%),
   village-color11-100: hsl($village-color11-hue, 20%, 10%) hsl($village-color11-hue, 22%, 13%) hsl($village-color11-hue, 33%, 18%),
-  village-color11-125: hsl($village-color11-hue, 33%, 13%) hsl($village-color11-hue, 40%, 65%) hsl($village-color11-hue, 45%, 65%),
+  village-color11-125: hsl($village-color11-hue, 33%, 13%) hsl($village-color11-hue, 40%, 18%) hsl($village-color11-hue, 45%, 22%),
   village-color11-200: hsl($village-color11-hue, 45%, 20%) hsl($village-color11-hue, 50%, 25%) hsl($village-color11-hue, 60%, 30%),
   village-color11-625: hsl($village-color11-hue, 80%, 65%) hsl($village-color11-hue, 60%, 65%) hsl($village-color11-hue, 90%, 65%),
   village-color11-850: hsl($village-color11-hue, 80%, 85%) hsl($village-color11-hue, 60%, 65%) hsl($village-color11-hue, 90%, 65%),
@@ -245,7 +245,7 @@ $values: (
   // village-color12-
   village-color12-75: hsl($village-color12-hue, 20%, 7%) hsl($village-color12-hue, 20%, 12%) hsl($village-color12-hue, 30%, 15%),
   village-color12-100: hsl($village-color12-hue, 20%, 10%) hsl($village-color12-hue, 22%, 13%) hsl($village-color12-hue, 33%, 18%),
-  village-color12-125: hsl($village-color12-hue, 33%, 13%) hsl($village-color12-hue, 40%, 65%) hsl($village-color12-hue, 45%, 65%),
+  village-color12-125: hsl($village-color12-hue, 33%, 13%) hsl($village-color12-hue, 40%, 18%) hsl($village-color12-hue, 45%, 22%),
   village-color12-200: hsl($village-color12-hue, 45%, 20%) hsl($village-color12-hue, 50%, 25%) hsl($village-color12-hue, 60%, 30%),
   village-color12-625: hsl($village-color12-hue, 80%, 65%) hsl($village-color12-hue, 60%, 65%) hsl($village-color12-hue, 90%, 65%),
   village-color12-850: hsl($village-color12-hue, 80%, 85%) hsl($village-color12-hue, 60%, 65%) hsl($village-color12-hue, 90%, 65%),
@@ -258,7 +258,7 @@ $values: (
   // village-color13-
   village-color13-75: hsl($village-color13-hue, 20%, 7%) hsl($village-color13-hue, 20%, 12%) hsl($village-color13-hue, 30%, 15%),
   village-color13-100: hsl($village-color13-hue, 20%, 10%) hsl($village-color13-hue, 22%, 13%) hsl($village-color13-hue, 33%, 18%),
-  village-color13-125: hsl($village-color13-hue, 33%, 13%) hsl($village-color13-hue, 40%, 65%) hsl($village-color13-hue, 45%, 65%),
+  village-color13-125: hsl($village-color13-hue, 33%, 13%) hsl($village-color13-hue, 40%, 18%) hsl($village-color13-hue, 45%, 22%),
   village-color13-200: hsl($village-color13-hue, 45%, 20%) hsl($village-color13-hue, 50%, 25%) hsl($village-color13-hue, 60%, 30%),
   village-color13-625: hsl($village-color13-hue, 80%, 65%) hsl($village-color13-hue, 60%, 65%) hsl($village-color13-hue, 90%, 65%),
   village-color13-850: hsl($village-color13-hue, 80%, 85%) hsl($village-color13-hue, 60%, 65%) hsl($village-color13-hue, 90%, 65%),
@@ -271,7 +271,7 @@ $values: (
   // village-color14-
   village-color14-75: hsl($village-color14-hue, 20%, 7%) hsl($village-color14-hue, 20%, 12%) hsl($village-color14-hue, 30%, 15%),
   village-color14-100: hsl($village-color14-hue, 20%, 10%) hsl($village-color14-hue, 22%, 13%) hsl($village-color14-hue, 33%, 18%),
-  village-color14-125: hsl($village-color14-hue, 33%, 13%) hsl($village-color14-hue, 40%, 65%) hsl($village-color14-hue, 45%, 65%),
+  village-color14-125: hsl($village-color14-hue, 33%, 13%) hsl($village-color14-hue, 40%, 18%) hsl($village-color14-hue, 45%, 22%),
   village-color14-200: hsl($village-color14-hue, 45%, 20%) hsl($village-color14-hue, 50%, 25%) hsl($village-color14-hue, 60%, 30%),
   village-color14-625: hsl($village-color14-hue, 80%, 65%) hsl($village-color14-hue, 60%, 65%) hsl($village-color14-hue, 90%, 65%),
   village-color14-850: hsl($village-color14-hue, 80%, 85%) hsl($village-color14-hue, 60%, 65%) hsl($village-color14-hue, 90%, 65%),
@@ -284,7 +284,7 @@ $values: (
   // village-color15-
   village-color15-75: hsl($village-color15-hue, 20%, 7%) hsl($village-color15-hue, 20%, 12%) hsl($village-color15-hue, 30%, 15%),
   village-color15-100: hsl($village-color15-hue, 20%, 10%) hsl($village-color15-hue, 22%, 13%) hsl($village-color15-hue, 33%, 18%),
-  village-color15-125: hsl($village-color15-hue, 33%, 13%) hsl($village-color15-hue, 40%, 65%) hsl($village-color15-hue, 45%, 65%),
+  village-color15-125: hsl($village-color15-hue, 33%, 13%) hsl($village-color15-hue, 40%, 18%) hsl($village-color15-hue, 45%, 22%),
   village-color15-200: hsl($village-color15-hue, 45%, 20%) hsl($village-color15-hue, 50%, 25%) hsl($village-color15-hue, 60%, 30%),
   village-color15-625: hsl($village-color15-hue, 80%, 65%) hsl($village-color15-hue, 60%, 65%) hsl($village-color15-hue, 90%, 65%),
   village-color15-850: hsl($village-color15-hue, 80%, 85%) hsl($village-color15-hue, 60%, 65%) hsl($village-color15-hue, 90%, 65%),
@@ -297,7 +297,7 @@ $values: (
   // village-color16-
   village-color16-75: hsl($village-color16-hue, 20%, 7%) hsl($village-color16-hue, 20%, 12%) hsl($village-color16-hue, 30%, 15%),
   village-color16-100: hsl($village-color16-hue, 20%, 10%) hsl($village-color16-hue, 22%, 13%) hsl($village-color16-hue, 33%, 18%),
-  village-color16-125: hsl($village-color16-hue, 33%, 13%) hsl($village-color16-hue, 40%, 65%) hsl($village-color16-hue, 45%, 65%),
+  village-color16-125: hsl($village-color16-hue, 33%, 13%) hsl($village-color16-hue, 40%, 18%) hsl($village-color16-hue, 45%, 22%),
   village-color16-200: hsl($village-color16-hue, 45%, 20%) hsl($village-color16-hue, 50%, 25%) hsl($village-color16-hue, 60%, 30%),
   village-color16-625: hsl($village-color16-hue, 80%, 65%) hsl($village-color16-hue, 60%, 65%) hsl($village-color16-hue, 90%, 65%),
   village-color16-850: hsl($village-color16-hue, 80%, 85%) hsl($village-color16-hue, 60%, 65%) hsl($village-color16-hue, 90%, 65%),
@@ -310,7 +310,7 @@ $values: (
   // village-color17-
   village-color17-75: hsl($village-color17-hue, 20%, 7%) hsl($village-color17-hue, 20%, 12%) hsl($village-color17-hue, 30%, 15%),
   village-color17-100: hsl($village-color17-hue, 20%, 10%) hsl($village-color17-hue, 22%, 13%) hsl($village-color17-hue, 33%, 18%),
-  village-color17-125: hsl($village-color17-hue, 33%, 13%) hsl($village-color17-hue, 40%, 65%) hsl($village-color17-hue, 45%, 65%),
+  village-color17-125: hsl($village-color17-hue, 33%, 13%) hsl($village-color17-hue, 40%, 18%) hsl($village-color17-hue, 45%, 22%),
   village-color17-200: hsl($village-color17-hue, 45%, 20%) hsl($village-color17-hue, 50%, 25%) hsl($village-color17-hue, 60%, 30%),
   village-color17-625: hsl($village-color17-hue, 80%, 65%) hsl($village-color17-hue, 60%, 65%) hsl($village-color17-hue, 90%, 65%),
   village-color17-850: hsl($village-color17-hue, 80%, 85%) hsl($village-color17-hue, 60%, 65%) hsl($village-color17-hue, 90%, 65%),
@@ -323,7 +323,7 @@ $values: (
   // village-color18-
   village-color18-75: hsl($village-color18-hue, 20%, 7%) hsl($village-color18-hue, 20%, 12%) hsl($village-color18-hue, 30%, 15%),
   village-color18-100: hsl($village-color18-hue, 20%, 10%) hsl($village-color18-hue, 22%, 13%) hsl($village-color18-hue, 33%, 18%),
-  village-color18-125: hsl($village-color18-hue, 33%, 13%) hsl($village-color18-hue, 40%, 65%) hsl($village-color18-hue, 45%, 65%),
+  village-color18-125: hsl($village-color18-hue, 33%, 13%) hsl($village-color18-hue, 40%, 18%) hsl($village-color18-hue, 45%, 22%),
   village-color18-200: hsl($village-color18-hue, 45%, 20%) hsl($village-color18-hue, 50%, 25%) hsl($village-color18-hue, 60%, 30%),
   village-color18-625: hsl($village-color18-hue, 80%, 65%) hsl($village-color18-hue, 60%, 65%) hsl($village-color18-hue, 90%, 65%),
   village-color18-850: hsl($village-color18-hue, 80%, 85%) hsl($village-color18-hue, 60%, 65%) hsl($village-color18-hue, 90%, 65%),
@@ -336,7 +336,7 @@ $values: (
   // village-color19-
   village-color19-75: hsl($village-color19-hue, 20%, 7%) hsl($village-color19-hue, 20%, 12%) hsl($village-color19-hue, 30%, 15%),
   village-color19-100: hsl($village-color19-hue, 20%, 10%) hsl($village-color19-hue, 22%, 13%) hsl($village-color19-hue, 33%, 18%),
-  village-color19-125: hsl($village-color19-hue, 33%, 13%) hsl($village-color19-hue, 40%, 65%) hsl($village-color19-hue, 45%, 65%),
+  village-color19-125: hsl($village-color19-hue, 33%, 13%) hsl($village-color19-hue, 40%, 18%) hsl($village-color19-hue, 45%, 22%),
   village-color19-200: hsl($village-color19-hue, 45%, 20%) hsl($village-color19-hue, 50%, 25%) hsl($village-color19-hue, 60%, 30%),
   village-color19-625: hsl($village-color19-hue, 80%, 65%) hsl($village-color19-hue, 60%, 65%) hsl($village-color19-hue, 90%, 65%),
   village-color19-850: hsl($village-color19-hue, 80%, 85%) hsl($village-color19-hue, 60%, 65%) hsl($village-color19-hue, 90%, 65%),

@@ -10,7 +10,6 @@
   #{ns(btn)} {
     @include color.background(action-high village-primary, (legacy:$legacy, hover: true));
     @include color.text(inverted village-primary, (legacy:$legacy));
-
     @include disabled.selector((can-be-link: true), (legacy: $legacy, text: true, background: true));
 
     // Outline variant
