@@ -1,6 +1,6 @@
 ## class Analytics
 
-L’instance d’Analytics est accessible depuis `window.village.analytics`
+L’instance d’Analytics est accessible depuis `window.design-system.analytics`
 
 ### PROPRIÉTÉS
 
@@ -8,7 +8,7 @@ L’instance d’Analytics est accessible depuis `window.village.analytics`
 
 _Page_
 
-`window.village.analytics.page`
+`window.design-system.analytics.page`
 
 Getter qui retourne l’instance de [Page](page.md)
 
@@ -18,7 +18,7 @@ Getter qui retourne l’instance de [Page](page.md)
 
 _Site_
 
-`window.village.analytics.site`
+`window.design-system.analytics.site`
 
 Getter qui retourne l’instance de [Site](site.md)
 
@@ -28,7 +28,7 @@ Getter qui retourne l’instance de [Site](site.md)
 
 _User_
 
-`window.village.analytics.user`
+`window.design-system.analytics.user`
 
 Getter qui retourne l’instance de [User](user.md)
 
@@ -39,7 +39,7 @@ Getter qui retourne l’instance de [User](user.md)
 
 _Search_
 
-`window.village.analytics.search`
+`window.design-system.analytics.search`
 
 Getter qui retourne l’instance de [Search](search.md)
 
@@ -49,7 +49,7 @@ Getter qui retourne l’instance de [Search](search.md)
 
 _Funnel_
 
-`window.village.analytics.funnel`
+`window.design-system.analytics.funnel`
 
 Getter qui retourne l’instance de [Funnel](funnel.md)
 
@@ -59,7 +59,7 @@ Getter qui retourne l’instance de [Funnel](funnel.md)
 
 _ConsentManagerPlatform_
 
-`window.village.analytics.cmp`
+`window.design-system.analytics.cmp`
 
 Getter qui retourne l’instance de [ConsentManagerPlatform](cmp.md)
 
@@ -69,7 +69,7 @@ Getter qui retourne l’instance de [ConsentManagerPlatform](cmp.md)
 
 _Opt_
 
-`window.village.analytics.opt`
+`window.design-system.analytics.opt`
 
 Getter qui retourne l’instance de [Opt](opt.md)
 
@@ -77,7 +77,7 @@ Getter qui retourne l’instance de [Opt](opt.md)
 
 _Boolean_
 
-`window.village.analytics.isReady`
+`window.design-system.analytics.isReady`
 
 Getter qui retourne l'état de l'API, à savoir `true` quand elle est prête à être utilisée.
 
@@ -87,11 +87,11 @@ Getter qui retourne l'état de l'API, à savoir `true` quand elle est prête à 
 
 _Promise_
 
-`window.village.analytics.readiness`
+`window.design-system.analytics.readiness`
 
 Getter qui retourne une Promise permettant de se synchroniser sur l'API, lorsque celle-ci est prête à être utilisée.
 
-    window.village.analytics.readiness.then(() => { // start }, () => { // error } );
+    window.design-system.analytics.readiness.then(() => { // start }, () => { // error } );
 
 * * *
 
@@ -99,7 +99,7 @@ Getter qui retourne une Promise permettant de se synchroniser sur l'API, lorsque
 
 _String_
 
-`window.village.analytics.collection`
+`window.design-system.analytics.collection`
 
 Getter qui retourne le mode de récolte des données de la page. Défini dans la configuration (voir propriété `collection` de la [configuration](../installation/configuration.md#collection))
 
@@ -108,7 +108,7 @@ Getter qui retourne le mode de récolte des données de la page. Défini dans la
 * `load` : Les données de page sont envoyées automatiquement au chargement de la page. (par défaut)
 
 * `full` : Les données sont envoyées à chaque changement de path dans l’URL, permettant le support des “Single-page
-  application” (par défaut si village en mode ‘vue’, ‘react’ ou ‘angular’)
+  application” (par défaut si design-system en mode ‘vue’, ‘react’ ou ‘angular’)
   
 * `hash` : Les données sont envoyées à chaque changement de hash dans l'URL
 
@@ -118,7 +118,7 @@ Getter qui retourne le mode de récolte des données de la page. Défini dans la
 
 _Boolean_
 
-`window.village.analytics.isActionEnabled`
+`window.design-system.analytics.isActionEnabled`
 
 Permet d’activer / désactiver la mesure d'audience des actions.
 
@@ -132,7 +132,7 @@ Défini dans la configuration (voir propriété `isActionEnabled` de la [configu
 
 _Boolean_
 
-`window.village.analytics.isDebugging`
+`window.design-system.analytics.isDebugging`
 
 Permet d’activer / désactiver le debug Eulerian.
 
@@ -144,7 +144,7 @@ Permet d’activer / désactiver le debug Eulerian.
 
 ##### push (type, layer)
 
-`window.village.analytics.push(type, layer)`
+`window.design-system.analytics.push(type, layer)`
 
 Alias de la fonction EA\_push d’Eulerian via le package. (voir doc Eulerian [https://eulerian.wiki/doku.php?id=fr:quickonboarding:installation:tag\_installation\_guide#types\_d\_appels](https://eulerian.wiki/doku.php?id=fr:quickonboarding:installation:tag_installation_guide#types_d_appels))
 
@@ -152,7 +152,7 @@ Alias de la fonction EA\_push d’Eulerian via le package. (voir doc Eulerian [h
 
 ##### reset (clear = false)
 
-`window.village.analytics.reset(clear)`
+`window.design-system.analytics.reset(clear)`
 
 Permet de remettre les données dans l'état d’origine de la configuration.
 
@@ -162,7 +162,7 @@ Si le paramètre `clear = true` => toutes les données sont remises en état ind
 
 ###### collect {#collect}
 
-`window.village.analytics.collect()`
+`window.design-system.analytics.collect()`
 
 Envoie au collector le datalayer constitué par l’ensemble des données consolidées depuis :
 
@@ -187,13 +187,13 @@ Envoie au collector le datalayer constitué par l’ensemble des données consol
 
 
 ```javascript
-village.analytics.readiness.then(() => { // l'API analytics est prête à l'utilisation
-    village.analytics.isDebugging = true; // active le debugging eulerian
-    village.analytics.reset(); // remet les données à l'état de configuration
-    village.analytics.user.connect('USER\_ID', 'ENCRYPTED\_EMAIL', true);
-    village.analytics.page.path = 'my/virtual/page';
-    village.analytics.page.isError = true;
-    village.analytics.page.template = 'page404';
-    village.analytics.collect(); // envoie les données
+design-system.analytics.readiness.then(() => { // l'API analytics est prête à l'utilisation
+    design-system.analytics.isDebugging = true; // active le debugging eulerian
+    design-system.analytics.reset(); // remet les données à l'état de configuration
+    design-system.analytics.user.connect('USER\_ID', 'ENCRYPTED\_EMAIL', true);
+    design-system.analytics.page.path = 'my/virtual/page';
+    design-system.analytics.page.isError = true;
+    design-system.analytics.page.template = 'page404';
+    design-system.analytics.collect(); // envoie les données
 });
 ```

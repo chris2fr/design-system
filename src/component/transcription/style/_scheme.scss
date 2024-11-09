@@ -12,10 +12,10 @@
     }
 
     &__btn {
-      @include color.text(action-high village-primary, (legacy:$legacy));
+      @include color.text(action-high design-system-primary, (legacy:$legacy));
 
       &[aria-expanded='true'] {
-        @include color.background(open village-primary, (legacy: $legacy));
+        @include color.background(open design-system-primary, (legacy: $legacy));
       }
     }
 

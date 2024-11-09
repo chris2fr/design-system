@@ -10,12 +10,12 @@
 </head>
 <body>
   <main role="main" id="content">
-    <div class="village-container">
-      <div class="village-grid-row village-grid-row--center village-grid-row--gutters">
-        <div class="village-server__body village-col-12 village-col-md-6">
-          <h1 class="village-h1"><%= getText('page.title', 'unavailable') %></h1>
-          <p class="village-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
-          <p class="village-text--sm"><%= getText('page.retry', 'unavailable') %></p>
+    <div class="design-system-container">
+      <div class="design-system-grid-row design-system-grid-row--center design-system-grid-row--gutters">
+        <div class="design-system-server__body design-system-col-12 design-system-col-md-6">
+          <h1 class="design-system-h1"><%= getText('page.title', 'unavailable') %></h1>
+          <p class="design-system-text--xl"><%= getText('page.infos', 'unavailable').replace('${site-name}', getText('site.name', 'global')) %></p>
+          <p class="design-system-text--sm"><%= getText('page.retry', 'unavailable') %></p>
 
           <%- include(root + 'src/component/button/example/sample/buttons-group.ejs', {
             buttonsGroup: { size: 'sm', inline: true, buttons: [
@@ -24,14 +24,14 @@
               {label: '<span aria-hidden="true">' + include(root + 'src/core/icon/logo/linkedin-box-fill.svg') + '</span>' + getText('social.linkedin', 'global'), kind: 3, markup: 'a', href: contentPlaceholder(getText('social.linkedin.url', 'global'))},
             ] }}); %>
         </div>
-        <div class="village-server__image village-col-12 village-col-md-3 village-col-offset-md-1">
+        <div class="design-system-server__image design-system-col-12 design-system-col-md-3 design-system-col-offset-md-1">
           <%- include('./sample/svg.ejs') %>
         </div>
       </div>
     </div>
 
-    <div class="village-server__footer">
-      <div class="village-grid-row village-grid-row--center">
+    <div class="design-system-server__footer">
+      <div class="design-system-grid-row design-system-grid-row--center">
         <img width="66px" height="24px" src="<%- imgToBase64('asset/marianne.png'); %>" alt="<%= getText('marianne', 'global') %>">
       </div>
     </div>

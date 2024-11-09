@@ -5,8 +5,8 @@ public/
 /dist/
 /example/
 /standalone/
-/village/dist/
-/village/dist-build/
-/village/dist-release/
-/village/example/
-/village/standalone/
+/design-system/dist/
+/design-system/dist-build/
+/design-system/dist-release/
+/design-system/example/
+/design-system/standalone/

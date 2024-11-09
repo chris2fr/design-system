@@ -196,7 +196,7 @@ const evaluate = (packages, type) => {
 };
 
 const generateJSON = () => {
-  const config = analyse('village', 'src');
+  const config = analyse('design-system', 'src');
   const packages = flatten(config);
   evaluate(packages, 'style');
   evaluate(packages, 'script');

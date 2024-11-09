@@ -2,8 +2,8 @@ import { supportLocalStorage } from '../../../core/script/api/utilities/support/
 import { SchemeValue } from './scheme-value';
 import { SchemeTheme } from './scheme-theme';
 
-const ATTRIBUTE_THEME = 'data-village-theme';
-const ATTRIBUTE_SCHEME = 'data-village-scheme';
+const ATTRIBUTE_THEME = 'data-design-system-theme';
+const ATTRIBUTE_SCHEME = 'data-design-system-scheme';
 const SELECTOR_SCHEME = `:root[${ATTRIBUTE_THEME}], :root[${ATTRIBUTE_SCHEME}]`;
 
 const setDarkTheme = () => {

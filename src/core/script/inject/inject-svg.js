@@ -73,7 +73,7 @@ class InjectSvg extends Instance {
       this.svg.removeAttribute('xmlns:a');
     }
 
-    this.node.setAttribute('data-village-inject-svg', true);
+    this.node.setAttribute('data-design-system-inject-svg', true);
     const svgAttributes = {
       'aria-hidden': true,
       focusable: false
@@ -84,7 +84,7 @@ class InjectSvg extends Instance {
 
   restore () {
     if (this.img && this.svg) {
-      this.node.setAttribute('data-village-inject-svg', false);
+      this.node.setAttribute('data-design-system-inject-svg', false);
       this.node.replaceChild(this.img, this.svg);
     }
   }

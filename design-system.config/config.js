@@ -1,6 +1,6 @@
 const config = {
-  prefix: 'village',
-  namespace: 'village',
+  prefix: 'design-system',
+  namespace: 'design-system',
   version: '11.2.1'
 };
 

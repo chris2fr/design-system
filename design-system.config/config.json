@@ -17,7 +17,7 @@
         ]
     },
     "type": "folder",
-    "id": "village",
+    "id": "design-system",
     "title": "Système de design de l'État",
     "description": "",
     "draft": false,
@@ -28,7 +28,7 @@
     "module": true,
     "nomodule": true,
     "detached": false,
-    "filename": "village",
+    "filename": "design-system",
     "inject": false,
     "example": {
         "style": [],
@@ -128,7 +128,7 @@
         {
             "path": "src/core",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "style": {
                 "level": 0,
@@ -357,7 +357,7 @@
         {
             "path": "src/scheme",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "style": {
                 "level": 1,
@@ -435,7 +435,7 @@
         {
             "path": "src/legacy",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "script": {
                 "level": 0,
@@ -488,9 +488,9 @@
             "combination": []
         },
         {
-            "path": "src/village-deprecated",
+            "path": "src/design-system-deprecated",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "style": {
                 "level": 0,
@@ -507,7 +507,7 @@
                 ]
             },
             "type": "package",
-            "id": "village-deprecated",
+            "id": "design-system-deprecated",
             "title": "",
             "description": "",
             "draft": true,
@@ -517,7 +517,7 @@
             "module": true,
             "nomodule": true,
             "detached": true,
-            "filename": "village",
+            "filename": "design-system",
             "inject": false,
             "example": {
                 "style": [],
@@ -531,13 +531,13 @@
                 "style": [],
                 "script": []
             },
-            "dist": "dist/village",
+            "dist": "dist/design-system",
             "usage": {
                 "style": [
-                    "village-deprecated"
+                    "design-system-deprecated"
                 ],
                 "script": [
-                    "village-deprecated"
+                    "design-system-deprecated"
                 ]
             },
             "combination": []
@@ -545,7 +545,7 @@
         {
             "path": "src/patch",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "script": {
                 "level": 0,
@@ -590,7 +590,7 @@
         {
             "path": "src/analytics",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "script": {
                 "level": 5,
@@ -1318,7 +1318,7 @@
         {
             "path": "src/pattern",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "type": "folder",
             "id": "pattern",
@@ -1360,7 +1360,7 @@
                 {
                     "path": "src/pattern/address",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "pattern"
                     ],
                     "type": "package",
@@ -1416,7 +1416,7 @@
                 {
                     "path": "src/pattern/civility",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "pattern"
                     ],
                     "type": "package",
@@ -1472,7 +1472,7 @@
                 {
                     "path": "src/pattern/date",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "pattern"
                     ],
                     "type": "package",
@@ -1528,7 +1528,7 @@
                 {
                     "path": "src/pattern/nationality",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "pattern"
                     ],
                     "type": "package",
@@ -1583,7 +1583,7 @@
                 {
                     "path": "src/pattern/name",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "pattern"
                     ],
                     "type": "package",
@@ -1640,7 +1640,7 @@
                 {
                     "path": "src/pattern/company",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "pattern"
                     ],
                     "type": "package",
@@ -1708,7 +1708,7 @@
         {
             "path": "src/component",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "style": {
                 "level": 6,
@@ -1835,7 +1835,7 @@
                 {
                     "path": "src/component/accordion",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -1925,7 +1925,7 @@
                 {
                     "path": "src/component/upload",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -1981,7 +1981,7 @@
                 {
                     "path": "src/component/alert",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2046,7 +2046,7 @@
                 {
                     "path": "src/component/badge",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2108,7 +2108,7 @@
                 {
                     "path": "src/component/notice",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2172,7 +2172,7 @@
                 {
                     "path": "src/component/search",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2241,7 +2241,7 @@
                 {
                     "path": "src/component/logo",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2303,7 +2303,7 @@
                 {
                     "path": "src/component/button",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2377,7 +2377,7 @@
                 {
                     "path": "src/component/connect",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2468,7 +2468,7 @@
                 {
                     "path": "src/component/radio",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2553,7 +2553,7 @@
                 {
                     "path": "src/component/card",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2657,7 +2657,7 @@
                 {
                     "path": "src/component/checkbox",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2733,7 +2733,7 @@
                 {
                     "path": "src/component/quote",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2795,7 +2795,7 @@
                 {
                     "path": "src/component/content",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2865,7 +2865,7 @@
                 {
                     "path": "src/component/segmented",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -2941,7 +2941,7 @@
                 {
                     "path": "src/component/range",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3014,7 +3014,7 @@
                 {
                     "path": "src/component/header",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3117,7 +3117,7 @@
                 {
                     "path": "src/component/breadcrumb",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3202,7 +3202,7 @@
                 {
                     "path": "src/component/form",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3281,7 +3281,7 @@
                 {
                     "path": "src/component/consent",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3370,7 +3370,7 @@
                 {
                     "path": "src/component/stepper",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3432,7 +3432,7 @@
                 {
                     "path": "src/component/tooltip",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3511,7 +3511,7 @@
                 {
                     "path": "src/component/toggle",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3599,7 +3599,7 @@
                 {
                     "path": "src/component/follow",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3670,7 +3670,7 @@
                 {
                     "path": "src/component/link",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3751,7 +3751,7 @@
                 {
                     "path": "src/component/skiplink",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3822,7 +3822,7 @@
                 {
                     "path": "src/component/select",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3898,7 +3898,7 @@
                 {
                     "path": "src/component/sidemenu",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -3971,7 +3971,7 @@
                 {
                     "path": "src/component/callout",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4036,7 +4036,7 @@
                 {
                     "path": "src/component/highlight",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4098,7 +4098,7 @@
                 {
                     "path": "src/component/modal",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4181,7 +4181,7 @@
                 {
                     "path": "src/component/password",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4266,7 +4266,7 @@
                 {
                     "path": "src/component/navigation",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4345,7 +4345,7 @@
                 {
                     "path": "src/component/tab",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4419,7 +4419,7 @@
                 {
                     "path": "src/component/pagination",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4481,7 +4481,7 @@
                 {
                     "path": "src/component/display",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "script": {
@@ -4566,7 +4566,7 @@
                 {
                     "path": "src/component/share",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4634,7 +4634,7 @@
                 {
                     "path": "src/component/footer",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4701,7 +4701,7 @@
                 {
                     "path": "src/component/translate",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4777,7 +4777,7 @@
                 {
                     "path": "src/component/summary",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4839,7 +4839,7 @@
                 {
                     "path": "src/component/table",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4913,7 +4913,7 @@
                 {
                     "path": "src/component/tag",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -4987,7 +4987,7 @@
                 {
                     "path": "src/component/download",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -5058,7 +5058,7 @@
                 {
                     "path": "src/component/transcription",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -5139,7 +5139,7 @@
                 {
                     "path": "src/component/tile",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -5241,7 +5241,7 @@
                 {
                     "path": "src/component/input",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "component"
                     ],
                     "style": {
@@ -5296,7 +5296,7 @@
                         {
                             "path": "src/component/input/input-email",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "component",
                                 "input"
                             ],
@@ -5357,7 +5357,7 @@
                         {
                             "path": "src/component/input/input-tel",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "component",
                                 "input"
                             ],
@@ -5418,7 +5418,7 @@
                         {
                             "path": "src/component/input/input-base",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "component",
                                 "input"
                             ],
@@ -5532,7 +5532,7 @@
         {
             "path": "src/page",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "type": "folder",
             "id": "page",
@@ -5586,7 +5586,7 @@
                 {
                     "path": "src/page/response",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "page"
                     ],
                     "type": "folder",
@@ -5632,7 +5632,7 @@
                         {
                             "path": "src/page/response/unexpected",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "page",
                                 "response"
                             ],
@@ -5717,7 +5717,7 @@
                         {
                             "path": "src/page/response/not-found",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "page",
                                 "response"
                             ],
@@ -5818,7 +5818,7 @@
                         {
                             "path": "src/page/response/unavailable",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "page",
                                 "response"
                             ],
@@ -5899,7 +5899,7 @@
                 {
                     "path": "src/page/account",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "page"
                     ],
                     "type": "folder",
@@ -5954,7 +5954,7 @@
                         {
                             "path": "src/page/account/login",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "page",
                                 "account"
                             ],
@@ -6089,7 +6089,7 @@
                         {
                             "path": "src/page/account/register",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "page",
                                 "account"
                             ],
@@ -6325,7 +6325,7 @@
         {
             "path": "src/utility",
             "ascendants": [
-                "village"
+                "design-system"
             ],
             "style": {
                 "level": 3,
@@ -6404,7 +6404,7 @@
                 {
                     "path": "src/utility/colors",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "utility"
                     ],
                     "style": {
@@ -6466,7 +6466,7 @@
                 {
                     "path": "src/utility/icons",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "utility"
                     ],
                     "style": {
@@ -6534,7 +6534,7 @@
                         {
                             "path": "src/utility/icons/icons-buildings",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6596,7 +6596,7 @@
                         {
                             "path": "src/utility/icons/icons-business",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6658,7 +6658,7 @@
                         {
                             "path": "src/utility/icons/icons-communication",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6720,7 +6720,7 @@
                         {
                             "path": "src/utility/icons/icons-design",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6782,7 +6782,7 @@
                         {
                             "path": "src/utility/icons/icons-development",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6844,7 +6844,7 @@
                         {
                             "path": "src/utility/icons/icons-device",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6906,7 +6906,7 @@
                         {
                             "path": "src/utility/icons/icons-document",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -6968,7 +6968,7 @@
                         {
                             "path": "src/utility/icons/icons-editor",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7030,7 +7030,7 @@
                         {
                             "path": "src/utility/icons/icons-finance",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7092,7 +7092,7 @@
                         {
                             "path": "src/utility/icons/icons-health",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7154,7 +7154,7 @@
                         {
                             "path": "src/utility/icons/icons-logo",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7216,7 +7216,7 @@
                         {
                             "path": "src/utility/icons/icons-map",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7278,7 +7278,7 @@
                         {
                             "path": "src/utility/icons/icons-media",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7340,7 +7340,7 @@
                         {
                             "path": "src/utility/icons/icons-others",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7402,7 +7402,7 @@
                         {
                             "path": "src/utility/icons/icons-system",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7464,7 +7464,7 @@
                         {
                             "path": "src/utility/icons/icons-user",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7526,7 +7526,7 @@
                         {
                             "path": "src/utility/icons/icons-weather",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "icons"
                             ],
@@ -7600,7 +7600,7 @@
                 {
                     "path": "src/utility/pictograms",
                     "ascendants": [
-                        "village",
+                        "design-system",
                         "utility"
                     ],
                     "type": "folder",
@@ -7643,7 +7643,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-buildings",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7697,7 +7697,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-digital",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7751,7 +7751,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-document",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7805,7 +7805,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-environment",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7859,7 +7859,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-health",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7913,7 +7913,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-institutions",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -7967,7 +7967,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-leisure",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -8021,7 +8021,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-map",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -8075,7 +8075,7 @@
                         {
                             "path": "src/utility/pictograms/pictograms-system",
                             "ascendants": [
-                                "village",
+                                "design-system",
                                 "utility",
                                 "pictograms"
                             ],
@@ -8152,10 +8152,10 @@
     ],
     "usage": {
         "style": [
-            "village"
+            "design-system"
         ],
         "script": [
-            "village"
+            "design-system"
         ]
     },
     "combination": []

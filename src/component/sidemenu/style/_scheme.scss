@@ -67,19 +67,19 @@
 
     &__link,
     &__btn {
-      @include color.text(action-high village-primary, (legacy:$legacy));
+      @include color.text(action-high design-system-primary, (legacy:$legacy));
 
       @include selector.current {
-        @include color.text(active village-primary, (legacy:$legacy));
+        @include color.text(active design-system-primary, (legacy:$legacy));
         @include before {
-          @include color.background(border active village-primary, (legacy:$legacy));
+          @include color.background(border active design-system-primary, (legacy:$legacy));
         }
       }
     }
 
     &__btn {
       &[aria-expanded='true'] {
-        @include color.background(open village-primary, (legacy: $legacy));
+        @include color.background(open design-system-primary, (legacy: $legacy));
       }
     }
   }

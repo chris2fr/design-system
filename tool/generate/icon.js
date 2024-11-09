@@ -20,8 +20,8 @@ const generateIcon = async (dir) => {
       if (filename.indexOf('--') > -1) {
         const s = filename.split('--');
         switch (s[0]) {
-          case 'village':
-            family = 'village';
+          case 'design-system':
+            family = 'design-system';
             name = s.slice(1).join('--');
             break;
         }

@@ -12,18 +12,18 @@
   #{selector.ns(range)} {
     &#{selector.ns-attr(js-range)} {
       @include before {
-        @include color.box-shadow(action-high village-primary, (legacy:$legacy), );
+        @include color.box-shadow(action-high design-system-primary, (legacy:$legacy), );
       }
 
       @include after {
-        @include color.background(active village-primary, (legacy:$legacy));
+        @include color.background(active design-system-primary, (legacy:$legacy));
       }
 
       input[type=range] {
         @include selector.range-thumb($legacy) {
           @include elevation.elevate(raised, (legacy: $legacy));
           @include color.background(default grey, (legacy:$legacy));
-          @include color.border(action-high village-primary, (legacy:$legacy));
+          @include color.border(action-high design-system-primary, (legacy:$legacy));
         }
 
         @include disabled.selector {
@@ -35,7 +35,7 @@
     }
 
     &__output {
-      @include color.text(active village-primary, (legacy:$legacy));
+      @include color.text(active design-system-primary, (legacy:$legacy));
     }
 
     &__min,
@@ -46,12 +46,12 @@
     &--step {
       &#{selector.ns-attr(js-range)} {
         @include before {
-          @include color.background-image(action-high village-primary, (legacy:$legacy), $range-track-gradient);
+          @include color.background-image(action-high design-system-primary, (legacy:$legacy), $range-track-gradient);
         }
 
         @include after {
-          @include color.background-image(action-low village-primary, (legacy:$legacy), $range-progress-gradient);
-          @include color.box-shadow(active village-primary, (legacy:$legacy), left-10-in right-10-in);
+          @include color.background-image(action-low design-system-primary, (legacy:$legacy), $range-progress-gradient);
+          @include color.box-shadow(active design-system-primary, (legacy:$legacy), left-10-in right-10-in);
         }
       }
     }
@@ -59,7 +59,7 @@
     &--step#{&}--sm {
       &#{selector.ns-attr(js-range)} {
         @include after {
-          @include color.box-shadow(active village-primary, (legacy:$legacy), left-6-in right-6-in);
+          @include color.box-shadow(active design-system-primary, (legacy:$legacy), left-6-in right-6-in);
         }
       }
     }
@@ -67,7 +67,7 @@
     // &--double#{&}--step {
     //   &#{selector.ns-attr(js-range)} {
     //     @include after {
-    //       @include color.box-shadow(active village-primary, (legacy:$legacy), left-22-in right-22-in);
+    //       @include color.box-shadow(active design-system-primary, (legacy:$legacy), left-22-in right-22-in);
     //     }
     //   }
     // }
@@ -75,7 +75,7 @@
     // &--double#{&}--step#{&}--sm {
     //   &#{selector.ns-attr(js-range)} {
     //     @include after {
-    //       @include color.box-shadow(active village-primary, (legacy:$legacy), left-14-in right-14-in);
+    //       @include color.box-shadow(active design-system-primary, (legacy:$legacy), left-14-in right-14-in);
     //     }
     //   }
     // }

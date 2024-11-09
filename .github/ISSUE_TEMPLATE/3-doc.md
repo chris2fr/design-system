@@ -1,6 +1,6 @@
 ---
 name: Problème sur la documentation
-about: Rapporter une erreur ou proposer une suggestion pour améliorer la documentation du village.
+about: Rapporter une erreur ou proposer une suggestion pour améliorer la documentation du design-system.
 title: ''
 labels: documentation
 assignees: ''

@@ -2,13 +2,13 @@
 
 L’instance de ConsentManagerPlatform est accessible depuis
 
-window.village.analytics.cmp
+window.design-system.analytics.cmp
 
 ### CONFIGURATION
 
 ```javascript
 <script>
-    window.village = {
+    window.design-system = {
         analytics: {
             cmp: {
             id: 'tarteaucitron'
@@ -24,7 +24,7 @@ la configuration d’une CMP permet d’automatiser son lancement
 
 ##### integrateTarteAuCitron ()
 
-`window.village.analytics.cmp.integrateTarteAuCitron()`
+`window.design-system.analytics.cmp.integrateTarteAuCitron()`
 
 Permet d’intégrer tarteaucitron
 

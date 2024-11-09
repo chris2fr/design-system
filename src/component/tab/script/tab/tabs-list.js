@@ -49,7 +49,7 @@ class TabsList extends api.core.Instance {
     }
   }
 
-  /* ajoute la classe village-table__shadow-left ou village-table__shadow-right sur village-table en fonction d'une valeur de scroll et du sens (right, left) */
+  /* ajoute la classe design-system-table__shadow-left ou design-system-table__shadow-right sur design-system-table en fonction d'une valeur de scroll et du sens (right, left) */
   scroll () {
     const scrollLeft = this.node.scrollLeft;
     const isMin = scrollLeft <= SCROLL_OFFSET;

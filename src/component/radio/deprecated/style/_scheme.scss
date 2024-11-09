@@ -26,7 +26,7 @@
 
       &:checked {
         ~ #{ns(radio-rich__img)} {
-          @include color.background-image((action-high village-primary) (action-high village-primary) (action-high village-primary) (border default grey) , (legacy: $legacy));
+          @include color.background-image((action-high design-system-primary) (action-high design-system-primary) (action-high design-system-primary) (border default grey) , (legacy: $legacy));
         }
 
         @include disabled.selector {

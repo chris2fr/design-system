@@ -1,12 +1,12 @@
 ## Configuration {#Configuration}
 
-Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API village](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-village/developpeurs/api-javascript)
+Il est nécessaire de configurer le package Analytics au sein de [la configuration de l’API design-system](https://www.systeme-de-design.gouv.fr/comment-utiliser-le-design-system/developpeurs/api-javascript)
 
-La configuration doit être placée **avant** les fichiers `patch.module.js`, `village.module.js` et `analytics.module.js`.
+La configuration doit être placée **avant** les fichiers `patch.module.js`, `design-system.module.js` et `analytics.module.js`.
 
 ```javascript
 <script>
-    window.village = {
+    window.design-system = {
         analytics: {
             domain: ' mon.domainedetracking.com',
             // collection: 'manual',

@@ -1,2 +1,2 @@
-// TODO : Reactiver l'import après modification du build pour ne pas charger le pck Legacy dans le script village.module.js
+// TODO : Reactiver l'import après modification du build pour ne pas charger le pck Legacy dans le script design-system.module.js
 // import './script/index';

@@ -1,13 +1,13 @@
 {
-  "name": "designsystem-village",
+  "name": "designsystem-design-system",
   "version": "0.0.3",
   "description": "Redre générique le Système de Design de l'Etat - DSFR",
-  "repository": "git@github.com:chris2fr/designsystem-village.git",
+  "repository": "git@github.com:chris2fr/designsystem-design-system.git",
   "author": "Chris Mann <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {
-    "prefix": "village",
-    "namespace": "village"
+    "prefix": "design-system",
+    "namespace": "design-system"
   },
   "engines": {
     "node": ">=18.16.1"

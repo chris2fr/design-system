@@ -16,7 +16,7 @@ class ConnectActionee extends ComponentActionee {
   }
 
   get label () {
-    if (this.node.classList.contains('village-connect--plus')) return 'FranceConnect+';
+    if (this.node.classList.contains('design-system-connect--plus')) return 'FranceConnect+';
     return 'FranceConnect';
   }
 

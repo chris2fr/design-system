@@ -1,6 +1,6 @@
 ////
-/// village Main
-/// @group village
+/// design-system Legacy
+/// @group design-system
 ////
 
 @use 'module/path';
@@ -9,4 +9,4 @@
 @include path.to-dist(1);
 @include media-query.order;
 
-@import '../main';
+@import '../legacy';

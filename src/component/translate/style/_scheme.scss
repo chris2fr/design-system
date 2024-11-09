@@ -9,8 +9,8 @@
   #{ns(translate)} {
     #{ns(translate)}__btn {
       &[aria-expanded="true"] {
-        @include color.text(active village-primary, (legacy: $legacy));
-        @include color.background(open village-primary, (legacy: $legacy));
+        @include color.text(active design-system-primary, (legacy: $legacy));
+        @include color.background(open design-system-primary, (legacy: $legacy));
         @include hover-tint;
       }
     }

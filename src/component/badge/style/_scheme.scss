@@ -31,8 +31,8 @@
     }
 
     &--new {
-      @include color.text(action-high village-color14, (legacy: $legacy));
-      @include color.background(contrast village-color14, (legacy: $legacy));
+      @include color.text(action-high design-system-color14, (legacy: $legacy));
+      @include color.background(contrast design-system-color14, (legacy: $legacy));
     }
 
     @include color.accentuate {
