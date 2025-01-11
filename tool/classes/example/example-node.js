@@ -46,7 +46,7 @@ class ExampleNode {
     const replace = this.isStandalone ? 'standalone' : 'example';
     const remove = this.isStandalone ? '/standalone/example' : '/example';
     return `${this.path.replace(remove, '').replace('src/designsystem', replace)}index.html`;
-    //     return `${this.path.replace(remove, '').replace('src/dsfr', replace)}index.html`; // chris2fr 1.11.2 > 1.13.0
+    //     return `${this.path.replace(remove, '').replace('src/designsystem', replace)}index.html`; // chris2fr 1.11.2 > 1.13.0
   }
 
   get data () {

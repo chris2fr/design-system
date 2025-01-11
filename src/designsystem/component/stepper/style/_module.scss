@@ -3,7 +3,7 @@
 /// @group stepper
 ////
 
-@use 'module/spacing';
+@use 'src/module/spacing';
 
 #{ns(stepper)} {
   @include set-title-margin(0);

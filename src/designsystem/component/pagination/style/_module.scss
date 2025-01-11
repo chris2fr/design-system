@@ -3,7 +3,7 @@
 /// @group pagination
 ////
 
-@use 'module/selector';
+@use 'src/module/selector';
 
 @include build-pagination();
 

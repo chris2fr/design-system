@@ -3,7 +3,7 @@
 /// @group Highlight
 ////
 
-@use 'module/spacing';
+@use 'src/module/spacing';
 
 #{ns(highlight)} {
   @include padding-left(5v);

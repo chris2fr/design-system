@@ -3,7 +3,7 @@
 /// @group quote
 ////
 
-@use 'module/spacing';
+@use 'src/module/spacing';
 
 #{ns(quote)} {
   @include relative;

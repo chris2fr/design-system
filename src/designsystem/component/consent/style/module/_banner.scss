@@ -3,7 +3,7 @@
 /// @group consent
 ////
 
-@use 'module/spacing';
+@use 'src/module/spacing';
 
 #{ns(consent-banner)} {
   @include fixed(null, null, 0, 0, 100%);

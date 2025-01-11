@@ -1,8 +1,8 @@
 {
-  "name": "designsystem-designsystem",
+  "name": "web-designsystem",
   "version": "0.0.4",
   "description": "Redre générique le Système de Design de l'Etat - DSFR",
-  "repository": "git@github.com:chris2fr/designsystem-designsystem.git",
+  "repository": "git@github.com:chris2fr/web-designsystem.git",
   "author": "Chris Mann <chris@mann.fr>",
   "license": "SEE LICENSE IN LICENSE.md",
   "config": {

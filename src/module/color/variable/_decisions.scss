@@ -21,9 +21,10 @@ $values: (
       neutral: strongest,
       primary: strong,
       accent: strong,
-      system: strong,
+      system: strong
     ),
     action-high: (
+      neutral: strongest (hover: true),
       primary: strong (hover: true),
       accent: strong (hover: true),
       system: strong (hover: true)
@@ -100,13 +101,16 @@ $values: (
     ),
     black-white: (
       neutral: absolute-black
-    ),
+    )
   ),
   border: (
     default: (
       neutral: border,
       primary: main,
       accent: main
+    ),
+    contrast: (
+      neutral: soft
     ),
     active: (
       primary: strong
@@ -127,7 +131,7 @@ $values: (
       neutral: strongest,
       primary: strong,
       system: strong,
-      accent: strong,
+      accent: strong
     ),
     disabled: (
       neutral: light
@@ -136,7 +140,7 @@ $values: (
   artwork: (
     major: (
       primary: strong (hover: true),
-      accent: strong (hover: true),
+      accent: strong (hover: true)
     ),
     minor: (
       primary: main,

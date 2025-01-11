@@ -3,7 +3,7 @@
 /// @group callout
 ////
 
-@use 'module/spacing';
+@use 'src/module/spacing';
 
 #{ns(callout)} {
   @include relative();

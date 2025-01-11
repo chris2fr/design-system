@@ -3,8 +3,8 @@
 /// @group select
 ////
 
-@use 'module/spacing';
-@use 'module/reset';
+@use 'src/module/spacing';
+@use 'src/module/reset';
 
 #{ns(select)} {
   display: block;

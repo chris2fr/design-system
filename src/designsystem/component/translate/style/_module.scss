@@ -3,8 +3,8 @@
 /// @group header
 ////
 
-@use 'module/animate';
-@use 'module/selector';
+@use 'src/module/animate';
+@use 'src/module/selector';
 
 #{ns(translate)} {
   --rows: 8;

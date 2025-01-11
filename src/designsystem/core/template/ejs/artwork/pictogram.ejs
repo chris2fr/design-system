@@ -8,7 +8,7 @@
 %>
 <% eval(include('../../../index.ejs')); %>
 <%
-  const pictograms = JSON.parse(include('../../../../../.config/pictogram.json'));
+  const pictograms = JSON.parse(include('../../../../../../.config/pictogram.json'));
 
   const pictogram = locals.pictogram || {} ;
   let classes = pictogram.classes || [];

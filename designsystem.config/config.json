@@ -1,5 +1,5 @@
 {
-    "path": "src",
+    "path": "src/designsystem",
     "ascendants": [],
     "style": {
         "level": 7,
@@ -35,7 +35,7 @@
         "script": [],
         "root": {
             "hasData": true,
-            "src": "src/example/index.ejs",
+            "src": "src/designsystem/example/index.ejs",
             "dest": "example/index.html",
             "subdir": [],
             "config": "tool/example/config.ejs"
@@ -355,7 +355,7 @@
             ]
         },
         {
-            "path": "src/scheme",
+            "path": "src/designsystem/scheme",
             "ascendants": [
                 "designsystem"
             ],
@@ -398,7 +398,7 @@
                 ],
                 "root": {
                     "hasData": true,
-                    "src": "src/scheme/example/index.ejs",
+                    "src": "src/designsystem/scheme/example/index.ejs",
                     "dest": "example/scheme/index.html",
                     "subdir": [],
                     "config": "tool/example/config.ejs"
@@ -543,7 +543,7 @@
             "combination": []
         },
         {
-            "path": "src/patch",
+            "path": "src/designsystem/patch",
             "ascendants": [
                 "designsystem"
             ],
@@ -1316,7 +1316,7 @@
             ]
         },
         {
-            "path": "src/pattern",
+            "path": "src/designsystem/pattern",
             "ascendants": [
                 "designsystem"
             ],
@@ -1339,7 +1339,7 @@
                 "script": [],
                 "root": {
                     "hasData": true,
-                    "src": "src/pattern/example/index.ejs",
+                    "src": "src/designsystem/pattern/example/index.ejs",
                     "dest": "example/pattern/index.html",
                     "subdir": [],
                     "config": "tool/example/config.ejs"
@@ -1358,7 +1358,7 @@
             "dist": "dist/pattern",
             "children": [
                 {
-                    "path": "src/pattern/address",
+                    "path": "src/designsystem/pattern/address",
                     "ascendants": [
                         "designsystem",
                         "pattern"
@@ -1386,7 +1386,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/pattern/address/example/index.ejs",
+                            "src": "src/designsystem/pattern/address/example/index.ejs",
                             "dest": "example/pattern/address/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -1414,7 +1414,7 @@
                     ]
                 },
                 {
-                    "path": "src/pattern/civility",
+                    "path": "src/designsystem/pattern/civility",
                     "ascendants": [
                         "designsystem",
                         "pattern"
@@ -1442,7 +1442,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/pattern/civility/example/index.ejs",
+                            "src": "src/designsystem/pattern/civility/example/index.ejs",
                             "dest": "example/pattern/civility/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -1470,7 +1470,7 @@
                     ]
                 },
                 {
-                    "path": "src/pattern/date",
+                    "path": "src/designsystem/pattern/date",
                     "ascendants": [
                         "designsystem",
                         "pattern"
@@ -1498,7 +1498,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/pattern/date/example/index.ejs",
+                            "src": "src/designsystem/pattern/date/example/index.ejs",
                             "dest": "example/pattern/date/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -1526,7 +1526,7 @@
                     ]
                 },
                 {
-                    "path": "src/pattern/nationality",
+                    "path": "src/designsystem/pattern/nationality",
                     "ascendants": [
                         "designsystem",
                         "pattern"
@@ -1553,7 +1553,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/pattern/nationality/example/index.ejs",
+                            "src": "src/designsystem/pattern/nationality/example/index.ejs",
                             "dest": "example/pattern/nationality/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -1581,7 +1581,7 @@
                     ]
                 },
                 {
-                    "path": "src/pattern/name",
+                    "path": "src/designsystem/pattern/name",
                     "ascendants": [
                         "designsystem",
                         "pattern"
@@ -1610,7 +1610,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/pattern/name/example/index.ejs",
+                            "src": "src/designsystem/pattern/name/example/index.ejs",
                             "dest": "example/pattern/name/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -1638,7 +1638,7 @@
                     ]
                 },
                 {
-                    "path": "src/pattern/company",
+                    "path": "src/designsystem/pattern/company",
                     "ascendants": [
                         "designsystem",
                         "pattern"
@@ -1667,7 +1667,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/pattern/company/example/index.ejs",
+                            "src": "src/designsystem/pattern/company/example/index.ejs",
                             "dest": "example/pattern/company/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -5530,7 +5530,7 @@
             ]
         },
         {
-            "path": "src/page",
+            "path": "src/designsystem/page",
             "ascendants": [
                 "designsystem"
             ],
@@ -5553,7 +5553,7 @@
                 "script": [],
                 "root": {
                     "hasData": true,
-                    "src": "src/page/example/index.ejs",
+                    "src": "src/designsystem/page/example/index.ejs",
                     "dest": "example/page/index.html",
                     "subdir": [],
                     "config": "tool/example/config.ejs"
@@ -5584,7 +5584,7 @@
             "dist": "dist/page",
             "children": [
                 {
-                    "path": "src/page/response",
+                    "path": "src/designsystem/page/response",
                     "ascendants": [
                         "designsystem",
                         "page"
@@ -5608,7 +5608,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/page/response/example/index.ejs",
+                            "src": "src/designsystem/page/response/example/index.ejs",
                             "dest": "example/page/response/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -5630,7 +5630,7 @@
                     "dist": "dist/page/response",
                     "children": [
                         {
-                            "path": "src/page/response/unexpected",
+                            "path": "src/designsystem/page/response/unexpected",
                             "ascendants": [
                                 "designsystem",
                                 "page",
@@ -5660,7 +5660,7 @@
                                 ],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/page/response/unexpected/example/index.ejs",
+                                    "src": "src/designsystem/page/response/unexpected/example/index.ejs",
                                     "dest": "example/page/response/unexpected/index.html",
                                     "subdir": [
                                         "contact",
@@ -5670,14 +5670,14 @@
                                     "children": [
                                         {
                                             "hasData": true,
-                                            "src": "src/page/response/unexpected/example/contact/index.ejs",
+                                            "src": "src/designsystem/page/response/unexpected/example/contact/index.ejs",
                                             "dest": "example/page/response/unexpected/contact/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/response/unexpected/example/default/index.ejs",
+                                            "src": "src/designsystem/page/response/unexpected/example/default/index.ejs",
                                             "dest": "example/page/response/unexpected/default/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
@@ -5715,7 +5715,7 @@
                             ]
                         },
                         {
-                            "path": "src/page/response/not-found",
+                            "path": "src/designsystem/page/response/not-found",
                             "ascendants": [
                                 "designsystem",
                                 "page",
@@ -5745,7 +5745,7 @@
                                 ],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/page/response/not-found/example/index.ejs",
+                                    "src": "src/designsystem/page/response/not-found/example/index.ejs",
                                     "dest": "example/page/response/not-found/index.html",
                                     "subdir": [
                                         "complete",
@@ -5757,28 +5757,28 @@
                                     "children": [
                                         {
                                             "hasData": true,
-                                            "src": "src/page/response/not-found/example/complete/index.ejs",
+                                            "src": "src/designsystem/page/response/not-found/example/complete/index.ejs",
                                             "dest": "example/page/response/not-found/complete/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/response/not-found/example/contact/index.ejs",
+                                            "src": "src/designsystem/page/response/not-found/example/contact/index.ejs",
                                             "dest": "example/page/response/not-found/contact/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/response/not-found/example/default/index.ejs",
+                                            "src": "src/designsystem/page/response/not-found/example/default/index.ejs",
                                             "dest": "example/page/response/not-found/default/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/response/not-found/example/search/index.ejs",
+                                            "src": "src/designsystem/page/response/not-found/example/search/index.ejs",
                                             "dest": "example/page/response/not-found/search/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
@@ -5816,7 +5816,7 @@
                             ]
                         },
                         {
-                            "path": "src/page/response/unavailable",
+                            "path": "src/designsystem/page/response/unavailable",
                             "ascendants": [
                                 "designsystem",
                                 "page",
@@ -5834,7 +5834,7 @@
                                     "script": [],
                                     "root": {
                                         "hasData": true,
-                                        "src": "src/page/response/unavailable/standalone/example/index.ejs",
+                                        "src": "src/designsystem/page/response/unavailable/standalone/example/index.ejs",
                                         "dest": "standalone/page/response/unavailable/index.html",
                                         "subdir": [],
                                         "config": "tool/example/config.ejs"
@@ -5859,7 +5859,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/page/response/unavailable/example/index.ejs",
+                                    "src": "src/designsystem/page/response/unavailable/example/index.ejs",
                                     "dest": "example/page/response/unavailable/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -5897,7 +5897,7 @@
                     ]
                 },
                 {
-                    "path": "src/page/account",
+                    "path": "src/designsystem/page/account",
                     "ascendants": [
                         "designsystem",
                         "page"
@@ -5921,7 +5921,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/page/account/example/index.ejs",
+                            "src": "src/designsystem/page/account/example/index.ejs",
                             "dest": "example/page/account/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -5952,7 +5952,7 @@
                     "dist": "dist/page/account",
                     "children": [
                         {
-                            "path": "src/page/account/login",
+                            "path": "src/designsystem/page/account/login",
                             "ascendants": [
                                 "designsystem",
                                 "page",
@@ -5984,7 +5984,7 @@
                                 ],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/page/account/login/example/index.ejs",
+                                    "src": "src/designsystem/page/account/login/example/index.ejs",
                                     "dest": "example/page/account/login/index.html",
                                     "subdir": [
                                         "1-default",
@@ -5995,21 +5995,21 @@
                                     "children": [
                                         {
                                             "hasData": true,
-                                            "src": "src/page/account/login/example/1-default/index.ejs",
+                                            "src": "src/designsystem/page/account/login/example/1-default/index.ejs",
                                             "dest": "example/page/account/login/1-default/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/account/login/example/2-error/index.ejs",
+                                            "src": "src/designsystem/page/account/login/example/2-error/index.ejs",
                                             "dest": "example/page/account/login/2-error/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/account/login/example/3-recover/index.ejs",
+                                            "src": "src/designsystem/page/account/login/example/3-recover/index.ejs",
                                             "dest": "example/page/account/login/3-recover/index.html",
                                             "subdir": [
                                                 "3a-form",
@@ -6019,14 +6019,14 @@
                                             "children": [
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/login/example/3-recover/3a-form/index.ejs",
+                                                    "src": "src/designsystem/page/account/login/example/3-recover/3a-form/index.ejs",
                                                     "dest": "example/page/account/login/3-recover/3a-form/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
                                                 },
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/login/example/3-recover/3b-confirmation/index.ejs",
+                                                    "src": "src/designsystem/page/account/login/example/3-recover/3b-confirmation/index.ejs",
                                                     "dest": "example/page/account/login/3-recover/3b-confirmation/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
@@ -6087,7 +6087,7 @@
                             ]
                         },
                         {
-                            "path": "src/page/account/register",
+                            "path": "src/designsystem/page/account/register",
                             "ascendants": [
                                 "designsystem",
                                 "page",
@@ -6119,7 +6119,7 @@
                                 ],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/page/account/register/example/index.ejs",
+                                    "src": "src/designsystem/page/account/register/example/index.ejs",
                                     "dest": "example/page/account/register/index.html",
                                     "subdir": [
                                         "1-single",
@@ -6130,14 +6130,14 @@
                                     "children": [
                                         {
                                             "hasData": true,
-                                            "src": "src/page/account/register/example/1-single/index.ejs",
+                                            "src": "src/designsystem/page/account/register/example/1-single/index.ejs",
                                             "dest": "example/page/account/register/1-single/index.html",
                                             "subdir": [],
                                             "config": "tool/example/config.ejs"
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/account/register/example/2-steps/index.ejs",
+                                            "src": "src/designsystem/page/account/register/example/2-steps/index.ejs",
                                             "dest": "example/page/account/register/2-steps/index.html",
                                             "subdir": [
                                                 "2a-login",
@@ -6148,21 +6148,21 @@
                                             "children": [
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/register/example/2-steps/2a-login/index.ejs",
+                                                    "src": "src/designsystem/page/account/register/example/2-steps/2a-login/index.ejs",
                                                     "dest": "example/page/account/register/2-steps/2a-login/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
                                                 },
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/register/example/2-steps/2b-identity/index.ejs",
+                                                    "src": "src/designsystem/page/account/register/example/2-steps/2b-identity/index.ejs",
                                                     "dest": "example/page/account/register/2-steps/2b-identity/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
                                                 },
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/register/example/2-steps/2c-address/index.ejs",
+                                                    "src": "src/designsystem/page/account/register/example/2-steps/2c-address/index.ejs",
                                                     "dest": "example/page/account/register/2-steps/2c-address/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
@@ -6171,7 +6171,7 @@
                                         },
                                         {
                                             "hasData": true,
-                                            "src": "src/page/account/register/example/3-confirmation/index.ejs",
+                                            "src": "src/designsystem/page/account/register/example/3-confirmation/index.ejs",
                                             "dest": "example/page/account/register/3-confirmation/index.html",
                                             "subdir": [
                                                 "3a-create",
@@ -6181,14 +6181,14 @@
                                             "children": [
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/register/example/3-confirmation/3a-create/index.ejs",
+                                                    "src": "src/designsystem/page/account/register/example/3-confirmation/3a-create/index.ejs",
                                                     "dest": "example/page/account/register/3-confirmation/3a-create/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
                                                 },
                                                 {
                                                     "hasData": true,
-                                                    "src": "src/page/account/register/example/3-confirmation/3b-activate/index.ejs",
+                                                    "src": "src/designsystem/page/account/register/example/3-confirmation/3b-activate/index.ejs",
                                                     "dest": "example/page/account/register/3-confirmation/3b-activate/index.html",
                                                     "subdir": [],
                                                     "config": "tool/example/config.ejs"
@@ -6323,7 +6323,7 @@
             ]
         },
         {
-            "path": "src/utility",
+            "path": "src/designsystem/utility",
             "ascendants": [
                 "designsystem"
             ],
@@ -6363,7 +6363,7 @@
                 "script": [],
                 "root": {
                     "hasData": true,
-                    "src": "src/utility/example/index.ejs",
+                    "src": "src/designsystem/utility/example/index.ejs",
                     "dest": "example/utility/index.html",
                     "subdir": [],
                     "config": "tool/example/config.ejs"
@@ -6402,7 +6402,7 @@
             "dist": "dist/utility",
             "children": [
                 {
-                    "path": "src/utility/colors",
+                    "path": "src/designsystem/utility/colors",
                     "ascendants": [
                         "designsystem",
                         "utility"
@@ -6435,7 +6435,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/utility/colors/example/index.ejs",
+                            "src": "src/designsystem/utility/colors/example/index.ejs",
                             "dest": "example/utility/colors/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -6464,7 +6464,7 @@
                     ]
                 },
                 {
-                    "path": "src/utility/icons",
+                    "path": "src/designsystem/utility/icons",
                     "ascendants": [
                         "designsystem",
                         "utility"
@@ -6495,7 +6495,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/utility/icons/example/index.ejs",
+                            "src": "src/designsystem/utility/icons/example/index.ejs",
                             "dest": "example/utility/icons/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -6532,7 +6532,7 @@
                     "dist": "dist/utility/icons",
                     "children": [
                         {
-                            "path": "src/utility/icons/icons-buildings",
+                            "path": "src/designsystem/utility/icons/icons-buildings",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6565,7 +6565,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-buildings/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-buildings/example/index.ejs",
                                     "dest": "example/utility/icons/icons-buildings/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6594,7 +6594,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-business",
+                            "path": "src/designsystem/utility/icons/icons-business",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6627,7 +6627,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-business/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-business/example/index.ejs",
                                     "dest": "example/utility/icons/icons-business/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6656,7 +6656,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-communication",
+                            "path": "src/designsystem/utility/icons/icons-communication",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6689,7 +6689,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-communication/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-communication/example/index.ejs",
                                     "dest": "example/utility/icons/icons-communication/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6718,7 +6718,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-design",
+                            "path": "src/designsystem/utility/icons/icons-design",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6751,7 +6751,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-design/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-design/example/index.ejs",
                                     "dest": "example/utility/icons/icons-design/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6780,7 +6780,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-development",
+                            "path": "src/designsystem/utility/icons/icons-development",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6813,7 +6813,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-development/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-development/example/index.ejs",
                                     "dest": "example/utility/icons/icons-development/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6842,7 +6842,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-device",
+                            "path": "src/designsystem/utility/icons/icons-device",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6875,7 +6875,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-device/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-device/example/index.ejs",
                                     "dest": "example/utility/icons/icons-device/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6904,7 +6904,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-document",
+                            "path": "src/designsystem/utility/icons/icons-document",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6937,7 +6937,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-document/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-document/example/index.ejs",
                                     "dest": "example/utility/icons/icons-document/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -6966,7 +6966,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-editor",
+                            "path": "src/designsystem/utility/icons/icons-editor",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -6999,7 +6999,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-editor/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-editor/example/index.ejs",
                                     "dest": "example/utility/icons/icons-editor/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7028,7 +7028,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-finance",
+                            "path": "src/designsystem/utility/icons/icons-finance",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7061,7 +7061,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-finance/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-finance/example/index.ejs",
                                     "dest": "example/utility/icons/icons-finance/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7090,7 +7090,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-health",
+                            "path": "src/designsystem/utility/icons/icons-health",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7123,7 +7123,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-health/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-health/example/index.ejs",
                                     "dest": "example/utility/icons/icons-health/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7152,7 +7152,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-logo",
+                            "path": "src/designsystem/utility/icons/icons-logo",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7185,7 +7185,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-logo/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-logo/example/index.ejs",
                                     "dest": "example/utility/icons/icons-logo/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7214,7 +7214,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-map",
+                            "path": "src/designsystem/utility/icons/icons-map",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7247,7 +7247,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-map/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-map/example/index.ejs",
                                     "dest": "example/utility/icons/icons-map/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7276,7 +7276,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-media",
+                            "path": "src/designsystem/utility/icons/icons-media",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7309,7 +7309,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-media/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-media/example/index.ejs",
                                     "dest": "example/utility/icons/icons-media/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7338,7 +7338,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-others",
+                            "path": "src/designsystem/utility/icons/icons-others",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7371,7 +7371,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-others/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-others/example/index.ejs",
                                     "dest": "example/utility/icons/icons-others/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7400,7 +7400,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-system",
+                            "path": "src/designsystem/utility/icons/icons-system",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7433,7 +7433,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-system/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-system/example/index.ejs",
                                     "dest": "example/utility/icons/icons-system/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7462,7 +7462,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-user",
+                            "path": "src/designsystem/utility/icons/icons-user",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7495,7 +7495,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-user/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-user/example/index.ejs",
                                     "dest": "example/utility/icons/icons-user/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7524,7 +7524,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/icons/icons-weather",
+                            "path": "src/designsystem/utility/icons/icons-weather",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7557,7 +7557,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/icons/icons-weather/example/index.ejs",
+                                    "src": "src/designsystem/utility/icons/icons-weather/example/index.ejs",
                                     "dest": "example/utility/icons/icons-weather/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7598,7 +7598,7 @@
                     ]
                 },
                 {
-                    "path": "src/utility/pictograms",
+                    "path": "src/designsystem/utility/pictograms",
                     "ascendants": [
                         "designsystem",
                         "utility"
@@ -7622,7 +7622,7 @@
                         "script": [],
                         "root": {
                             "hasData": true,
-                            "src": "src/utility/pictograms/example/index.ejs",
+                            "src": "src/designsystem/utility/pictograms/example/index.ejs",
                             "dest": "example/utility/pictograms/index.html",
                             "subdir": [],
                             "config": "tool/example/config.ejs"
@@ -7641,7 +7641,7 @@
                     "dist": "dist/utility/pictograms",
                     "children": [
                         {
-                            "path": "src/utility/pictograms/pictograms-buildings",
+                            "path": "src/designsystem/utility/pictograms/pictograms-buildings",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7667,7 +7667,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-buildings/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-buildings/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-buildings/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7695,7 +7695,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-digital",
+                            "path": "src/designsystem/utility/pictograms/pictograms-digital",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7721,7 +7721,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-digital/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-digital/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-digital/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7749,7 +7749,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-document",
+                            "path": "src/designsystem/utility/pictograms/pictograms-document",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7775,7 +7775,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-document/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-document/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-document/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7803,7 +7803,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-environment",
+                            "path": "src/designsystem/utility/pictograms/pictograms-environment",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7829,7 +7829,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-environment/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-environment/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-environment/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7857,7 +7857,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-health",
+                            "path": "src/designsystem/utility/pictograms/pictograms-health",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7883,7 +7883,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-health/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-health/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-health/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7911,7 +7911,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-institutions",
+                            "path": "src/designsystem/utility/pictograms/pictograms-institutions",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7937,7 +7937,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-institutions/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-institutions/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-institutions/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -7965,7 +7965,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-leisure",
+                            "path": "src/designsystem/utility/pictograms/pictograms-leisure",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -7991,7 +7991,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-leisure/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-leisure/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-leisure/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -8019,7 +8019,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-map",
+                            "path": "src/designsystem/utility/pictograms/pictograms-map",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -8045,7 +8045,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-map/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-map/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-map/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"
@@ -8073,7 +8073,7 @@
                             ]
                         },
                         {
-                            "path": "src/utility/pictograms/pictograms-system",
+                            "path": "src/designsystem/utility/pictograms/pictograms-system",
                             "ascendants": [
                                 "designsystem",
                                 "utility",
@@ -8099,7 +8099,7 @@
                                 "script": [],
                                 "root": {
                                     "hasData": true,
-                                    "src": "src/utility/pictograms/pictograms-system/example/index.ejs",
+                                    "src": "src/designsystem/utility/pictograms/pictograms-system/example/index.ejs",
                                     "dest": "example/utility/pictograms/pictograms-system/index.html",
                                     "subdir": [],
                                     "config": "tool/example/config.ejs"

@@ -46,7 +46,7 @@ const copyImages = (removeOrphans) => {
 
 const copyAssets = (removeOrphans) => {
   const src = root('src/designsystem/core/asset/');
-  // const src = root('src/dsfr/core/asset/'); // chris2fr 1.11.2 > 1.13.0
+  // const src = root('src/designsystem/core/asset/'); // chris2fr 1.11.2 > 1.13.0
   const dest = root('dist/');
 
   copyDir(src, dest, ['woff', 'woff2', 'ico', 'jpg', 'png', 'svg', 'webmanifest'], removeOrphans);
@@ -54,7 +54,7 @@ const copyAssets = (removeOrphans) => {
 
 const copyIcons = (removeOrphans) => {
   const src = root('src/designsystem/core/icon/');
-  // const src = root('src/dsfr/core/icon/'); // chris2fr 1.11.2 > 1.13.0
+  // const src = root('src/designsystem/core/icon/'); // chris2fr 1.11.2 > 1.13.0
   const dest = root('dist/icons');
 
   copyDir(src, dest, ['svg', 'png', 'jpg'], removeOrphans);

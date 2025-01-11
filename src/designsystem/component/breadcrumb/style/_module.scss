@@ -3,8 +3,8 @@
 /// @group breadcrumb
 ////
 
-@use 'module/spacing';
-@use 'module/selector';
+@use 'src/module/spacing';
+@use 'src/module/selector';
 
 /**
 un padding de 4px et une marge négative en compensation sont mis en place afin d'éviter de couper le focus.

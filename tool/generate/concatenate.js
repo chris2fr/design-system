@@ -19,7 +19,7 @@ const generateStyle = (pck, file) => {
   const depthLevel = (ascendance.match(/\//g) || []).length - 2;
 
   if (file !== 'print') {
-    content += `@use 'src/module/path';\n@use 'module/shame/media-query';\n\n@include path.to-dist(${depthLevel});\n@include media-query.order;\n\n`;
+    content += `@use 'src/module/path';\n@use 'src/module/shame/media-query';\n\n@include path.to-dist(${depthLevel});\n@include media-query.order;\n\n`;
   }
 
   for (const child of children) {

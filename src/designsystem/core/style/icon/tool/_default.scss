@@ -4,8 +4,8 @@
 ////
 
 @use 'src/module/path';
-@use 'module/spacing';
-@use 'module/specificity';
+@use 'src/module/spacing';
+@use 'src/module/specificity';
 
 /// Return icon size from map
 /// @param {String} $size ['md'] - Icon size from `$icon-size-map` (Default to 'md' = 16px)

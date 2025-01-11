@@ -3,7 +3,7 @@
 /// @group connect
 ////
 
-@use 'module/spacing';
+@use 'src/module/spacing';
 
 #{ns(connect)} {
   @include relative;

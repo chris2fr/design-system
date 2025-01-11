@@ -12,7 +12,8 @@ public/
 /designsystem/standalone/
 /storybook/
 
-dsfr-sb/*storybook.log
-dsfr-sb/storybook-static/
+designsystem-sb/*storybook.log
+designsystem-sb/storybook-static/
 
 .DS_Store
+.config.*
