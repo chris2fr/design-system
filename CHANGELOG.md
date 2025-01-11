@@ -10,6 +10,403 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 > ## DSFR v1
 
+## v1.13
+
+### [v1.13.0](https://github.com/GouvernementFR/dsfr/compare/v1.13.0...v1.13.0) - 4 Décembre 2024
+
+#### 🐛 fix: corrections diverses 1.13.0 [(#1054)](https://github.com/GouvernementFR/dsfr/pull/1054)
+- Corrections mineures : legacy, storybook, analytics, ...
+
+
+#### ✨ feat(analytics): optimisation des créations d'instances [(#1055)](https://github.com/GouvernementFR/dsfr/pull/1055)
+- La propriété `isActionEnabled` peut maintenant prendre la valeur reduce pour limiter la création d'instance de tracking aux éléments comportant l'attribut `data-fr-analytics-action`
+
+
+
+### [v1.13.0](https://github.com/GouvernementFR/dsfr/compare/v1.12.1...v1.13.0) - 26 Novembre 2024
+
+#### ⬆️ chore(dependencies): mise à jour des dépendances npm [(#1052)](https://github.com/GouvernementFR/dsfr/pull/1052)
+- bump cross-spawn from 7.0.3 to 7.0.6
+- bump micromatch from 4.0.5 to 4.0.8
+- bump semver from 7.3.5 to 7.6.2
+- bump ws from 7.5.9 to 7.5.10
+
+
+#### ✨ feat(table): supporte le comportement `row-select` via data attribute [(#1053)](https://github.com/GouvernementFR/dsfr/pull/1053)
+- la sélection de ligne du tableau est implémentée via l'attribut data-fr-row-select="true" sur la case à cocher, le fonctionnement via l'attribut name="row-select" est déprécié.
+
+
+#### ✨ feat(colors) : page d'exemple utilitaires de couleurs [(#1013)](https://github.com/GouvernementFR/dsfr/pull/1013)
+- Ajoute au build la generation d'un json des colors
+- Ajoute des classes utilitaire de bordure (couleur et épaisseur)
+- Ajoute des pages d'exemple d'utilisation des classes utilitaires des couleurs de background, texte et bordure
+- Ajoute une page d'exemple d'utilisation des classes utilitaires de largeur de bordures
+
+
+#### 🐛 fix(tile, navigation): retrait des sélecteur css ">" [(#1049)](https://github.com/GouvernementFR/dsfr/pull/1049)
+- Retrait des selecteurs d'enfants directs pour éviter les problèmes lors de l'ajout de balises intermediaires (cas de création de sous composants)
+
+
+#### 🐛 fix(tab): correction de l'ombre au scroll en RTL [(#1051)](https://github.com/GouvernementFR/dsfr/pull/1051)
+- Correction de l'ombre au scroll en direction RTL
+
+
+#### 🐛 fix(analytics): correction syntaxique documentation des actions [(#1043)](https://github.com/GouvernementFR/dsfr/pull/1043)
+- Correction d'éléments manquants ou mal écrits dans la documentation analytics
+
+
+#### 🐛 fix(table): bordure disparait lors d'un rowspan en dernière position [(#1041)](https://github.com/GouvernementFR/dsfr/pull/1041)
+- Correction de la bordure lorsqu'un rowspan est en dernière position
+
+
+#### ✨ feat(radio): radio riche sans pictogramme compact [(#1047)](https://github.com/GouvernementFR/dsfr/pull/1047)
+- modification du bouton radio pour une version compacte du radio riche sans pictogramme
+
+
+#### ✨ feat: ajout de storybook & restructuration [(#945)](https://github.com/GouvernementFR/dsfr/pull/945)
+- ajout de storybook
+    - ajout d'un package storybook dans `/dsfr-sb`
+    - ajout de stories dans le dossier `template` de chaque composant
+    - accès au storybook en local dans le dossier `/storybook` généré via la commande `yarn build-storybook`
+- changement de structure 
+    - tous les dossiers de `/src` sont déplacés dans un sous-dossier `dsfr`
+    - les dossiers `module` et `i18n` passent dans `src`
+- correction des valeurs en dur dans les templates
+
+
+#### 🐛 fix(legacy): retrait des références à polyfill-io (faille sécurité) [(#1038)](https://github.com/GouvernementFR/dsfr/pull/1038)
+- Toute référence à polyfill-io a été retirée pour éviter une redirection vers ses noms de domaines qui ont été détourné
+
+
+#### 🐛 fix(range): ajout de la possibilité de changer la value en JS [(#1025)](https://github.com/GouvernementFR/dsfr/pull/1025)
+- Le composant est mis à jour graphiquement au changement de value des inputs en js.
+- Ajout d'un accesseur "value" dans l'api du range
+
+
+#### 🐛 fix(accordion): ouverture initiale des accordéons dégroupés [(#1032)](https://github.com/GouvernementFR/dsfr/pull/1032)
+- Correction lorsque tous les disclosures d'un groupe avec l'attribut group="false" sont ouverts au chargement
+
+
+#### 🐛 fix(header): retrait aria-label sur modales désactivées [(#1018)](https://github.com/GouvernementFR/dsfr/pull/1018)
+- En desktop, lorsque les modales de menu et recherche sont désactivés, les attributs aria-label et aria-labelledby sont  retirés
+
+
+#### ✨ feat(api): ajouts d'évènements dans l'api [(#1012)](https://github.com/GouvernementFR/dsfr/pull/1012)
+Ajout des événements : 
+Sur le éléments root (documentElement) :
+- dsfr.ready : lorsque le js est chargé
+- dsfr.start : au démarrage du moteur js du dsfr
+- dsfr.stop : à l'arrêt du moteur js du dsfr
+- dsfr.render : lors du rendu d'une instance
+- dsfr.resize : lors du changement de taille du viewport
+- dsfr.scroll-lock : au blocage du scroll
+- dsfr.scroll-unlock : au déblocage du scroll
+- dsfr.scheme : au chargement et changement du scheme (dark, light, auto)
+- dsfr.theme : au chargement et changement du theme (light, dark)
+
+Au niveau des instances, et remontées aux parents jusqu'au documentElement :
+- dsfr.click : au click sur un bouton
+- dsfr.disclose : à l'ouverture d'un disclosure
+- dsfr.conceal : à la fermeture d'un disclosure
+- dsfr.current : retourne l'élément ouvert d'un groupe de disclosure (accordions, tabs, etc.)
+- dsfr.dismiss : a la fermeture d'un tag supprimable
+- dsfr.toggle : au cochage d'un tag sélectionnable
+- dsfr.show : à l'affichage d'un tooltip
+- dsfr.hide : lorsque le tooltip est masqué
+
+
+#### 🐛 fix(core, tooltip): positionnement du tooltip dans header & modale [(#1010)](https://github.com/GouvernementFR/dsfr/pull/1010)
+- Correction du placement du tooltip dans un élément possédant un filter (modal, header)
+- Gestion du placement en position absolute plutot que fixed
+
+
+#### 🐛 fix(modal): correction modal footer z-index [(#1000)](https://github.com/GouvernementFR/dsfr/pull/1000)
+- Passage du footer de la modale au niveau de z-index "overlap-above", permettant d'être au dessus du tooltip
+
+
+#### 🐛 fix(header): duplication aria-describedby & labelledby [(#976)](https://github.com/GouvernementFR/dsfr/pull/976)
+- Permet la duplication des attributs aria dans le menu mobile des accès rapides
+
+
+#### 🐛 fix(core): bug firefox menu passe en arrière plan [(#1023)](https://github.com/GouvernementFR/dsfr/pull/1023)
+- Ajout d'un overflow auto sur le collapse pour éviter le passage des menus sous des éléments survolés ou le texte surligné
+
+
+#### 🐛 fix(notice): padding notice sans close btn [(#1019)](https://github.com/GouvernementFR/dsfr/pull/1019)
+- Retrait du padding à droite du bandeau lorsqu'il n'y a pas de bouton de fermeture
+
+
+#### 🐛 fix(range): amélioration du rendu en mode contrasté [(#1011)](https://github.com/GouvernementFR/dsfr/pull/1011)
+- Amélioration du design du curseur en mode couleurs forcées
+
+
+#### ✨ feat(form): ajout du message d'avertissement 'warning' [(#1015)](https://github.com/GouvernementFR/dsfr/pull/1015)
+- Ajout de la classe fr-message--warning
+- Ajout d'exemples de messages dans la page d'exemple formulaire
+
+
+#### 🐛 feat(header, sidemenu): correction focus croppé [(#1008)](https://github.com/GouvernementFR/dsfr/pull/1008)
+- Correction du focus croppé sur la navigation latérale
+- Correction du focus croppé sur le header en mobile
+
+
+#### 🐛 fix(link): alignement icône link close déprécié [(#1007)](https://github.com/GouvernementFR/dsfr/pull/1007)
+- Correction de l'alignement vertical de l'icône du lien de fermeture déprécié (maintenant btn-close)
+
+
+#### 🐛 fix(toggle): correction groupe d'interrupteurs dépréciés [(#1006)](https://github.com/GouvernementFR/dsfr/pull/1006)
+- Correction des espacements des groupes d'interrupteurs dépréciés
+
+
+#### 🐛 fix(button): ajoute le type button par défaut [(#1005)](https://github.com/GouvernementFR/dsfr/pull/1005)
+- ajoute le type `button` aux boutons par défaut
+- met à jour les exemples des modèles de pages analytics et page de connexion
+- met à jour les snippets d'exemple des composants : accordéon, alerte, fil d'ariane, bouton, bouton France Connect, carte, gestionnaire de consentement, paramètres d'affichage, champ de saisie, lettre d'information, navigation principale, menu latéral, onglets, tag, tuile et transcription
+- remplace l'attribut `type` par `variant` dans le template du Bouton France Connect et ajoute le type `button` par défaut
+
+
+#### ✨ feat(notice): icone alerte météo rouge [(#1004)](https://github.com/GouvernementFR/dsfr/pull/1004)
+- Changement de l'icône par défaut du bandeau d'alerte météo rouge
+
+
+#### 🐛 fix(notice): correction css markup hx sur le titre du bandeau [(#1003)](https://github.com/GouvernementFR/dsfr/pull/1003)
+- Correction du style du titre du bandeau lors de l'utilisation d'un niveau d'entête hx à la place de la balise p
+
+
+#### 🐛 fix(readme): correction nom fichier utility [(#1002)](https://github.com/GouvernementFR/dsfr/pull/1002)
+- Correction du nom du fichier utility.min.css dans le readme
+
+
+#### ✨ feat(pagination): retrait du lien sur les points de suspension [(#1001)](https://github.com/GouvernementFR/dsfr/pull/1001)
+- Remplace le lien par un span sur les points de suspension de la pagination
+
+
+#### 🐛 fix(anayltics): correction doc page.path [(#998)](https://github.com/GouvernementFR/dsfr/pull/998)
+- Correction de la valeur, si non renseignée, du paramètre page.path dans la documentation analytics
+
+
+#### ✨ fix(dependencies): browsersync dependency >=2.27 [(#997)](https://github.com/GouvernementFR/dsfr/pull/997)
+- Modifie la version de la dépendance à BrowserSync dans le package.json, permettant l'utilisation d'une version plus récente.
+- Retrait de browserSync des peerDependencies
+
+
+#### 🐛 fix(core): opacité du texte du select désactivé  #996
+- Correction de l'opacité du texte des listes déroulantes (select) désactivées
+
+
+#### 🐛 fix(analytics): lancement dsfr start dans les pages SPA [(#995)](https://github.com/GouvernementFR/dsfr/pull/995)
+- correction des collectes d'actions des pages d'exemples react et vue, le dsfr en manuel n'était pas lancé
+
+
+#### 🐛 fix(modal): input sans type bug dans le focus trap de la modale [(#992)](https://github.com/GouvernementFR/dsfr/pull/992)
+* Correction d'une erreur js liée au focus trap lorsqu'un champ de saisie n'a pas d'attribut "type" dans une modale
+
+
+#### 🐛 fix(core): Bug de récursivité infinie sur le getter node [(#993)](https://github.com/GouvernementFR/dsfr/pull/993)
+- Correction du retour du getter instance.node qui engendrait une boucle infinie
+
+
+#### fix(core): getter node
+
+
+
+
+## v1.12
+
+### [v1.12.1](https://github.com/GouvernementFR/dsfr/compare/v1.12.0...v1.12.1) - 25 Juin 2024
+
+#### 🐛 fix(artwork): correction pictogrammes firefox et Chrome156 [(#971)](https://github.com/GouvernementFR/dsfr/pull/971)
+- changement structurel des svg d'artwork
+  - corrige la régression apportée par la nouvelle version de chrome qui ne supporte plus la surchage de colorisation sur le svg si le path ciblé est déja coloré dans le svg
+  - le path ciblé est déja coloré dans le svg
+- corrige l'accentuation des pictogrammes sur firefox
+  - mise en place d'un script permettant de transformer les anciens pictogrammes vers la nouvelle structure
+  - `yarn pictogram-converter -p [chemin/picto]`
+
+
+#### 🐛 fix(table): corrige regressions sur les tableaux déprécies [(#969)](https://github.com/GouvernementFR/dsfr/pull/969)
+- déplace bordures des tableaux déprécies sur les thead et tbody
+- retire les selecteurs css :has
+
+
+
+### [v1.12.0](https://github.com/GouvernementFR/dsfr/compare/v1.11.2...v1.12.0) - 19 Juin 2024
+
+#### ⬆️ chore(dependencies): met a jour les dépendances npm et correction lint [(#961)](https://github.com/GouvernementFR/dsfr/pull/961)
+- mise à jour dépendances npm
+
+
+#### 🐛 fix(*): correctifs pages d'exemple et icone bandeau d'alerte [(#948)](https://github.com/GouvernementFR/dsfr/pull/948)
+- correction icone bandeau d'alerte
+- corrections de libellés dans les pages d'exemples
+
+
+#### 🐛 fix(IE): correctifs divers [(#955)](https://github.com/GouvernementFR/dsfr/pull/955)
+- corrige la numérotation du sommaire
+- corrige les icones chevron du fil d'arianne
+- retire le hover sur les bouton désactivés
+- corrige l'alignement de la case a cocher du mot de passe
+- correction des ombres sur les menus et le tooltip
+- rend les liens d'évitement fonctionnels
+- correction du style du curseur double désactivé
+
+
+#### 🐛 fix(preference): correctifs mode contrasté et reduce motion [(#952)](https://github.com/GouvernementFR/dsfr/pull/952)
+- corrections diverses sur le mode contrasté
+
+
+#### ✨ feat(table) : Mise à jour des exemples [(#949)](https://github.com/GouvernementFR/dsfr/pull/949)
+- correction legacy
+- mise à jour de l'icone twitter
+
+
+#### 🐛 fix(link): met a jour la variante avec markup bouton [(#951)](https://github.com/GouvernementFR/dsfr/pull/951)
+- correction de l'alignement du texte des fr-lien en button
+
+
+#### 🐛 fix(toggle): ajoute les messages erreur et valide sur interrupteur simple [(#954)](https://github.com/GouvernementFR/dsfr/pull/954)
+- retrait des marges avant et après le composant
+- ajoute la bordure en état d'erreur/succès
+
+
+#### ✨ feat(icon): ajout icone weather/sparkling-2 [(#956)](https://github.com/GouvernementFR/dsfr/pull/956)
+- ajout de l'icone sparkling-2, utilisée pour indiquer l'utilisation d'IA.
+
+
+#### ✨ feat(table): ajout du tableau non scrollable [(#947)](https://github.com/GouvernementFR/dsfr/pull/947)
+- ajout d'une version de tableau sans scroll, avec réduction automatique des cellules
+
+
+#### ✨ feat(preference): mode contrasté windows & animation réduite [(#929)](https://github.com/GouvernementFR/dsfr/pull/929)
+- Amélioration du rendu des composants en mode haut contraste windows (forced-colors)
+- Retrait des animations en mode reduce-motion
+
+
+#### 🐛 fix(link, card, tile): enlarge button [(#943)](https://github.com/GouvernementFR/dsfr/pull/943)
+- ajout d'une classe utilitaire enlarge-button utilisée sur les cartes et les tuiles de téléchargement pour élargir la zone de clique à tout le composant quand l'element cliquable est un bouton
+
+
+#### 🐛 fix(footer, header): réduction de la zone de clic retour à l'accueil [(#944)](https://github.com/GouvernementFR/dsfr/pull/944)
+- sur le header mobile la partie à droite du brand n'est plus cliquable pour éviter les clics manqués sur le burger ou la recherche, et le lien du nom de service n'est plus étendu sur toute la largeur
+- sur le footer mobile la zone de clic n'est plus étendu sur toute la largeur
+
+
+#### ✨ feat(icon): ajout d'icônes [(#946)](https://github.com/GouvernementFR/dsfr/pull/946)
+Ajout des icones :
+- design/shapes-fill.svg
+- design/shapes-line.svg
+- logo/whatsapp-fill.svg
+- logo/whatsapp-line.svg
+- others/fr--accessibility-fill.svg
+- others/fr--accessibility-line.svg
+- others/fr--ear-off-fill.svg
+- others/fr--ear-off-line.svg
+- others/fr--mental-disabilities-fill.svg
+- others/fr--mental-disabilities-line.svg
+- others/fr--sign-language-fill.svg
+- others/fr--sign-language-line.svg
+- others/wheelchair-fill.svg
+- others/wheelchair-line.svg
+- system/sort-asc-desc-line.svg
+- system/sort-asc-line.svg
+- system/sort-desc-line.svg
+- weather/fire-fill.svg
+- weather/fire-line.svg
+- weather/flood-fill.svg
+- weather/flood-line.svg
+- weather/fr--avalanches-fill.svg
+- weather/fr--submersion-fill.svg
+- weather/heavy-showers-fill.svg
+- weather/heavy-showers-line.svg
+- weather/snowy-fill.svg
+- weather/snowy-line.svg
+- weather/temp-cold-fill.svg
+- weather/temp-cold-line.svg
+- weather/thunderstorms-fill.svg
+- weather/thunderstorms-line.svg
+- weather/tornado-fill.svg
+- weather/tornado-line.svg
+- weather/typhoon-fill.svg
+- weather/typhoon-line.svg
+- weather/windy-fill.svg
+- weather/windy-line.svg
+
+
+#### ✨ feat(notice): ajout de bandeaux d'information importante [(#917)](https://github.com/GouvernementFR/dsfr/pull/917)
+- ajout des bandeaux d'alertes, des bandeaux vigilance météo, et de 2 niveaux génériques (warning et alert)
+- mise en situation dans une page
+- BC : changement de la structure html pour accueillir une description et un lien en plus du titre
+
+
+#### ✨ feat(table): tableau v2 [(#911)](https://github.com/GouvernementFR/dsfr/pull/911)
+- evolution majeure du tableau
+
+
+#### ✨ feat(analytics): système de régulation des actions [(#937)](https://github.com/GouvernementFR/dsfr/pull/937)
+- ajout de la possibilité de bloquer une action particulière avec l'attribut et la valeur data-fr-analytics-action="false" quand l'envoi des actions est activé au global via la config isActionEnabled: true
+
+
+#### 🐛 fix(card): fichier télécharger et ratio carte de téléchargement [(#938)](https://github.com/GouvernementFR/dsfr/pull/938)
+- met à jour les images des exemples de carte "Image et ratio"
+- ajoute un fichier pdf placeholder pour les cartes de téléchargement
+
+
+#### ✨ feat(card, tile, enlarge-link): ajoute version avec button [(#842)](https://github.com/GouvernementFR/dsfr/pull/842)
+- ajout de la possibilité d'utiliser un "button" plutôt qu'un "a" sur la carte et la tuile
+
+
+#### 🐛 fix(footer): title des liens obligatoires du footer [(#905)](https://github.com/GouvernementFR/dsfr/pull/905)
+- remplace l'intitulé par défaut "[A modifier]" de l'attribut title par l'intitulé officiel sur les liens obligatoires du footer.
+- change l'ordre des liens, et gouvernement.fr devient info.gouv.fr
+
+
+#### ✨ feat(build): config au premier build & precision readme [(#908)](https://github.com/GouvernementFR/dsfr/pull/908)
+- lors de l'execution de la commande yarn build, crée les fichiers de configuration s'ils n'existent pas
+- ajout de browser-sync en tant que peerDependencies dans le package.json
+- ajout de précision sur le lancement du serveur des pages d'exemple dans le README
+
+
+#### ✨ feat(build): ajoute la version dsfr dans les pages d'exemple [(#909)](https://github.com/GouvernementFR/dsfr/pull/909)
+- affiche la version du DSFR en haut des pages d'exemple
+
+
+#### 🐛 fix(quote): ratio de l'image de citation [(#912)](https://github.com/GouvernementFR/dsfr/pull/912)
+- ajout de la propriété object-fit: cover sur l'image de citation pour conserver le ratio de l'image lorsqu'elle n'est pas carrée.
+- dans la mesure du possible, privilégiez un ratio d'image carré pour un meilleur support navigateur
+
+
+#### 🐛 fix(core): centrage des container-bp [(#916)](https://github.com/GouvernementFR/dsfr/pull/916)
+- les container-sm/md/lg/xl ne sont pas centrés correctement
+
+
+#### ✨ feat(pictogram): ajout du picto digital/in-progress [(#918)](https://github.com/GouvernementFR/dsfr/pull/918)
+- ajout du pictogramme "in-progress" dans la catégorie "digital"
+
+
+#### 🐛 fix(toggle): retour à la ligne statut activé/désactivé [(#928)](https://github.com/GouvernementFR/dsfr/pull/928)
+- corrige le retour à la ligne sur le label "activé/désactivé"
+
+
+#### 🐛 fix(range): bug js boucle infinie et step désactivé [(#931)](https://github.com/GouvernementFR/dsfr/pull/931)
+- corrige la boucle infinie qui fait crash la page lorsque stepwidth = 0
+- corrige le style du curseur avec étape désactivé
+- ajout d'exemples de curseurs double désactivé et avec étape désactivé
+- corrige la modification de valeur du deuxième input lorsque le min dépasse le max ou l'inverse sur le curseur double
+
+
+#### ✨ refactor(*): uniformise les intitulés des labels [(#930)](https://github.com/GouvernementFR/dsfr/pull/930)
+- passe les intitulés "label" en "libellé"
+
+
+#### 🐛 fix(content): modifie la structure HTML du composant comportant une transcription [(#932)](https://github.com/GouvernementFR/dsfr/pull/932)
+- passe la transcription apres la figure
+- a11y ajoute texte alternatif sur infographie mentionnant transcription en dessous
+- ajout un attribut title sur les videos iframe
+
+
+#### 🐛 fix(breadcrumb): alignement vertical des icônes de chevron [(#933)](https://github.com/GouvernementFR/dsfr/pull/933)
+
+
 ## v1.11
 
 ### [v1.11.2](https://github.com/GouvernementFR/dsfr/compare/v1.11.1...v1.11.2) - 1er Mars 2024
@@ -68,7 +465,7 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 
 #### ✨ feat(accordions-group): ajoute un attribut pour dégrouper [(#860)](https://github.com/GouvernementFR/dsfr/pull/860)
-- ajout d'un attribut `data-design-system-group="false"` pour dissocier le comportement d'ouverture/fermeture des accordéons à l'intérieur d'un groupe d'accordéons
+- ajout d'un attribut `data-designsystem-group="false"` pour dissocier le comportement d'ouverture/fermeture des accordéons à l'intérieur d'un groupe d'accordéons
 - étend l'utilisation de cet attribut aux composants héritant du collapses-group : la navigation (uniquement en mobile) et le menu latéral
 
 
@@ -231,7 +628,7 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 #### 📈 feat(analytics): gestion des actions [(#812)](https://github.com/GouvernementFR/dsfr/pull/812)
 - ajout de la propriété `isActionEnabled` dans la configuration et sur l'objet `window.dsfr.analytics` permettant d'activer l'envoi des données d'actions si nécessaire.
-- ajout de l'attribut `data-design-system-action` permettant d'activer l'envoi d'action sur un élément particulier et de spécifier la partie title de l'actionName envoyé
+- ajout de l'attribut `data-designsystem-action` permettant d'activer l'envoi d'action sur un élément particulier et de spécifier la partie title de l'actionName envoyé
 - correctif sur les sélecteurs des card, title pour traquer des boutons
 
 
@@ -250,7 +647,7 @@ Pour plus d’informations : [Voir la documentation](https://www.systeme-de-desi
 
 #### 🐛 feat(css-print): ajoute la feuille de style impression [(#802)](https://github.com/GouvernementFR/dsfr/pull/802)
 - génere une feuille de style "dist/dsfr.print.css" à charger pour appliquer les règles d'impression du DSFR
-- ajoute la classe utilitaire `.design-system-no-print` pour retirer un élement de l'impression
+- ajoute la classe utilitaire `.designsystem-no-print` pour retirer un élement de l'impression
 
 
 #### ⬆️ chore(dependencies): met a jour les dependances Node [(#815)](https://github.com/GouvernementFR/dsfr/pull/815)
@@ -283,7 +680,7 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 #### 🐛 fix(connect): taille de la fonte adapatable [(#813)](https://github.com/GouvernementFR/dsfr/pull/813)
 - Le bouton FranceConnect doit répondre aux critères d’accessibilité qui redéfinissent le letter-spacing et la taille de fonte.
   - Passage des valeurs de tailles et d'espacements en 'em' pour les rendre relatives à la taille de fonte du bouton
-  - Retrait du '+' de 'FranceConnect+' dans l'intitulé de `design-system-connect__brand`. Celui-ci est désormais placé en contenu du pseudo-élément after du bouton
+  - Retrait du '+' de 'FranceConnect+' dans l'intitulé de `designsystem-connect__brand`. Celui-ci est désormais placé en contenu du pseudo-élément after du bouton
 
 
 #### 📝 doc(readme): correction du lien de la documentation des icônes [(#804)](https://github.com/GouvernementFR/dsfr/pull/804)
@@ -305,18 +702,18 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 
 
 #### 🐛 fix(sidemenu): correction marge interne [(#793)](https://github.com/GouvernementFR/dsfr/pull/793)
-- retire 1v de padding gauche et droite sur `design-system-sidemenu__inner` en desktop
+- retire 1v de padding gauche et droite sur `designsystem-sidemenu__inner` en desktop
 
 
 #### 🐛 fix(footer): ajustements [(#792)](https://github.com/GouvernementFR/dsfr/pull/792)
 - corrige le niveau de titre des partenaires
 - le texte filler de footer__content-desc doit faire maximum 3 lignes en desktop
-- passe les liens .design-system-footer__content-link en $text-default-grey
-- passe le padding top de .design-system-footer__bottom-list à 4v
-- correction des espacements autour de design-system-footer-body :  en mobile et en desktop (32px en haut et 24px en bas)
-- titre “nos partenaire“ → design-system-footer__partners-title passe en graisse régular, couleur text-default-grey
+- passe les liens .designsystem-footer__content-link en $text-default-grey
+- passe le padding top de .designsystem-footer__bottom-list à 4v
+- correction des espacements autour de designsystem-footer-body :  en mobile et en desktop (32px en haut et 24px en bas)
+- titre “nos partenaire“ → designsystem-footer__partners-title passe en graisse régular, couleur text-default-grey
 - ecart de 12px sous “Nos partenaire” en mobile/desktop
-- enleve le padding sur .design-system-footer__partners .design-system-footer__logo, ajoute une border 1px en $border-default-grey + un background en background-default-grey
+- enleve le padding sur .designsystem-footer__partners .designsystem-footer__logo, ajoute une border 1px en $border-default-grey + un background en background-default-grey
 - en desktop l’ecart entre logo et bloc mark passe à 32px
 - passe le logo opérateur en 16x9
 - ajoute un margin bottom négatif de 8px sur le groupe de lien pour garder 24px en dessous
@@ -339,19 +736,19 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 
 
 #### 🐛 fix(navigation): correctifs de style mega-menu [(#785)](https://github.com/GouvernementFR/dsfr/pull/785)
-- ajoute un margin-top: -1.25rem (-20px) sur le design-system-mega-menu__leader
-- passe le texte de description et le lien du design-system-mega-menu__leader en taille sm
-- supprime la classe design-system-mb-4v de la colonne entourant le design-system-mega-menu__leader
-- le texte du bouton de navigation passe en $text-action-high-design-system-primary à l'ouverture
+- ajoute un margin-top: -1.25rem (-20px) sur le designsystem-mega-menu__leader
+- passe le texte de description et le lien du designsystem-mega-menu__leader en taille sm
+- supprime la classe designsystem-mb-4v de la colonne entourant le designsystem-mega-menu__leader
+- le texte du bouton de navigation passe en $text-action-high-designsystem-primary à l'ouverture
 
 
 #### 🐛 fix(unavailable): couleur de fond et image décorative [(#787)](https://github.com/GouvernementFR/dsfr/pull/787)
-- change la couleur de fond de page pour du $background-alt-design-system-primary
+- change la couleur de fond de page pour du $background-alt-designsystem-primary
 - remplace l'image décorative par un SVG
 
 
 #### 🐛 fix(close-btn): retire le `margin-left` négatif [(#784)](https://github.com/GouvernementFR/dsfr/pull/784)
-- retire la marge négative sur le modifier .design-system-btn--close et corrige l'impact sur les composants 'alert', 'navigation', et 'notice'
+- retire la marge négative sur le modifier .designsystem-btn--close et corrige l'impact sur les composants 'alert', 'navigation', et 'notice'
 
 
 #### 🐛 fix(form): token de couleur de la légende [(#783)](https://github.com/GouvernementFR/dsfr/pull/783)
@@ -366,12 +763,12 @@ créer, par exemple, un système de design entièrement différent (d'où l'int�
 #### 🐛 fix(follow): corrige affichage [(#781)](https://github.com/GouvernementFR/dsfr/pull/781)
 - inverse l'ordre des boutons "Instagram" et "LinkedIn"
 - supprime les margin left et right du groupe de boutons
-- place le bouton d'action dans un groupe de bouton design-system-btns-group--inline-md sur les exemples "Lettre d'info seule" et "Réseaux sociaux et Lettre d'info mise en avant" pour que le bouton prenne l’ensemble de la largeur en vue mobile.
+- place le bouton d'action dans un groupe de bouton designsystem-btns-group--inline-md sur les exemples "Lettre d'info seule" et "Réseaux sociaux et Lettre d'info mise en avant" pour que le bouton prenne l’ensemble de la largeur en vue mobile.
 
 
 #### 🐛 fix(tag): token de couleur du tag selectionnable [(#780)](https://github.com/GouvernementFR/dsfr/pull/780)
-- utilisation du token $text-inverted-design-system-primary sur la couleur du texte des tag selectionnable et supprimable à la place de $text-inverted-grey
-- remplacement du token de couleur de fond des tag selectionnable par $background-active-design-system-primary au lieu de $background-action-high-design-system-primary
+- utilisation du token $text-inverted-designsystem-primary sur la couleur du texte des tag selectionnable et supprimable à la place de $text-inverted-grey
+- remplacement du token de couleur de fond des tag selectionnable par $background-active-designsystem-primary au lieu de $background-action-high-designsystem-primary
 
 
 #### 🐛 fix(summary): alignement du titre du sommaire [(#779)](https://github.com/GouvernementFR/dsfr/pull/779)
@@ -410,11 +807,11 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 #### 🐛 fix(form, input): met a jour les espacements des icônes [(#766)](https://github.com/GouvernementFR/dsfr/pull/766)
 - place l’icône à 16px du bord droit des champs de saisie
 - ajuste le padding-right à 44px sur les champs de saisie avec icône
-- corrige la largeur des class design-system-fieldset__content pour la version dépréciée
+- corrige la largeur des class designsystem-fieldset__content pour la version dépréciée
 
 
 #### 🐛 fix(checkbox): met a jour le token de la coche [(#762)](https://github.com/GouvernementFR/dsfr/pull/762)
-- passe la couleur de la coche en $text-inverted-design-system-primary
+- passe la couleur de la coche en $text-inverted-designsystem-primary
 
 
 #### 🐛 fix(login): correction espacements [(#759)](https://github.com/GouvernementFR/dsfr/pull/759)
@@ -528,7 +925,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### 🐛 fix(analytics): réduction d'envoi des données [(#806)](https://github.com/GouvernementFR/dsfr/pull/806)
 - suppression du taux d'interaction global
-- ajout de l'attribut data-design-system-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
+- ajout de l'attribut data-designsystem-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
 - suppression de l'impression des composants sans interactions
 - limitation de l'envoi de donnée à la première interaction
 - bouton associé à l'accordéon, l'onglet et la transcription rendu muet
@@ -563,7 +960,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### 🐛 fix(analytics): réduction d'envoi des données [(#807)](https://github.com/GouvernementFR/dsfr/pull/807)
 - suppression du taux d'interaction global
-- ajout de l'attribut data-design-system-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
+- ajout de l'attribut data-designsystem-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
 - suppression de l'impression des composants sans interactions
 - limitation de l'envoi de donnée à la première interaction
 - bouton associé à l'accordéon, l'onglet et la transcription rendu muet
@@ -658,7 +1055,7 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### 🐛 fix(password): correctif accessibilité des messages [(#694)](https://github.com/GouvernementFR/dsfr/pull/694)
 - ajout sur les messages de validation et d'erreur de la composition du mot de passe d'un statut en after uniquement pour les lecteurs d'écrans
-- BREAKING CHANGE : il est nécessaire d'ajouter les attributs `data-design-system-valid`et `data-design-system-error` avec les textes correspondants à l'état (respectivement, en français, "validé" et "en erreur"
+- BREAKING CHANGE : il est nécessaire d'ajouter les attributs `data-designsystem-valid`et `data-designsystem-error` avec les textes correspondants à l'état (respectivement, en français, "validé" et "en erreur"
 
 
 #### 🐛 fix(sidemenu): correction de la couleur des liens du sidemenu [(#698)](https://github.com/GouvernementFR/dsfr/pull/698)
@@ -698,10 +1095,10 @@ met à jour le lien vers la page "Typographie" du site de documentation.
 
 #### ✨ feat(tile): ajouts de variations de tuiles [(#685)](https://github.com/GouvernementFR/dsfr/pull/685)
 Ajouts des mêmes variations que la carte : 
-- `.design-system-tile--no-border` sans le bordure encadrant la tuile (mais la barre épaisse basse reste)
-- `.design-system-tile--shadow` avec élévation
-- `.design-system-tile--grey` en gris contrast
-- `.design-system-tile--no-background` couleur de fond transparente
+- `.designsystem-tile--no-border` sans le bordure encadrant la tuile (mais la barre épaisse basse reste)
+- `.designsystem-tile--shadow` avec élévation
+- `.designsystem-tile--grey` en gris contrast
+- `.designsystem-tile--no-background` couleur de fond transparente
 
 
 #### 🐛 fix(card,tile): corrige erreur de syntaxe ejs + lint [(#687)](https://github.com/GouvernementFR/dsfr/pull/687)
@@ -718,7 +1115,7 @@ Ajouts des mêmes variations que la carte :
 
 #### ✨ feat(navigation, header, sidemenu): homogénéisation des espacements et indentation [(#678)](https://github.com/GouvernementFR/dsfr/pull/678)
 - Uniformisation du menu latéral, navigation, et accordéon
-  - ajout d'un fond open-design-system-primary et du texte en design-system-primary sur les boutons d'ouverture en état ouvert
+  - ajout d'un fond open-designsystem-primary et du texte en designsystem-primary sur les boutons d'ouverture en état ouvert
   - ajout de marge pour indenter les sous menus
   - ajustement des espacements
 - Ajustement de la navigation du header en mobile
@@ -817,7 +1214,7 @@ Ajoute dans la page d’exemple le déplacement du focus :
 
 #### 🐛 fix(sidemenu):  suppression variante et correctif style bouton mobile [(#660)](https://github.com/GouvernementFR/dsfr/pull/660)
 - Suppression de la variante avec bordure
-- Corrige le style du bouton mobile en action-high-design-system-primary (cohérence navigation/accordion)
+- Corrige le style du bouton mobile en action-high-designsystem-primary (cohérence navigation/accordion)
 
 
 #### 🐛 fix(company): retrait des pluriels [(#659)](https://github.com/GouvernementFR/dsfr/pull/659)
@@ -829,7 +1226,7 @@ Ajoute dans la page d’exemple le déplacement du focus :
 
 
 #### 🐛 fix(password): bug icône [(#648)](https://github.com/GouvernementFR/dsfr/pull/648)
-- conditionne l'ajout de la classe utile `design-system-icon` à l'utilisation d'une string en paramètre `icon`
+- conditionne l'ajout de la classe utile `designsystem-icon` à l'utilisation d'une string en paramètre `icon`
 
 
 #### 🐛 feat(company): accessibilité lien externe [(#656)](https://github.com/GouvernementFR/dsfr/pull/656)
@@ -837,7 +1234,7 @@ Ajoute dans la page d’exemple le déplacement du focus :
 
 
 #### 🐛 fix(unexpected): corrige groupe de bouton vide [(#655)](https://github.com/GouvernementFR/dsfr/pull/655)
-- ajoute une condition sur l'ajout du wrapper `.design-system-btns-group` dans la template `ejs`
+- ajoute une condition sur l'ajout du wrapper `.designsystem-btns-group` dans la template `ejs`
 
 
 #### 🐛 fix(*): accessibilité aria-live [(#654)](https://github.com/GouvernementFR/dsfr/pull/654)
@@ -913,17 +1310,17 @@ Sur ios le champ dépasse de 1px par rapport au bouton.
 
 
 #### ✨ feat(select, input): ajout de la bordure en état erreur / succés / info [(#635)](https://github.com/GouvernementFR/dsfr/pull/635)
-Actuellement la bordure gauche montrant l'état d'erreur/succès/info n'est appliqué que dans le cas d'un groupe de champ en erreur via les modificateur .design-system-fieldset--error, .design-system-fieldset--valid, .design-system-fieldset--info
+Actuellement la bordure gauche montrant l'état d'erreur/succès/info n'est appliqué que dans le cas d'un groupe de champ en erreur via les modificateur .designsystem-fieldset--error, .designsystem-fieldset--valid, .designsystem-fieldset--info
 
 Afin d'être ISO avec l'UI nous rajoutons cet élément visuel sur : 
-- les champs seuls (.design-system-input-group) : 
-  - `.design-system-input-group--error`
-  - `.design-system-input-group--valid`
-  - `.design-system-input-group--info`
-- les selects (.design-system-select-group)
-  - `.design-system-select-group--error`
-  - `.design-system-select-group--valid`
-  - `.design-system-select-group--info`
+- les champs seuls (.designsystem-input-group) : 
+  - `.designsystem-input-group--error`
+  - `.designsystem-input-group--valid`
+  - `.designsystem-input-group--info`
+- les selects (.designsystem-select-group)
+  - `.designsystem-select-group--error`
+  - `.designsystem-select-group--valid`
+  - `.designsystem-select-group--info`
 
 
 #### 🐛 fix(tab): correction onglets imbriqués en legacy [(#628)](https://github.com/GouvernementFR/dsfr/pull/628)
@@ -954,13 +1351,13 @@ Le composant `Infobulle` (ou `bulle d’aide`, `aide contextuelle`) permet d’a
 
 #### 🐛 fix(account): met a jour la hiérarchie html des modèles de page [(#618)](https://github.com/GouvernementFR/dsfr/pull/618)
 - Mise en place d'une hiérarchie sans saut de niveau de titre, plus cohérente
-- Correctif typo sur la classe `design-system-grid-row--gutters`
+- Correctif typo sur la classe `designsystem-grid-row--gutters`
 
 
 #### 🐛 fix(accordion, transcription, translate, sidemenu): Ajustement sur l'état défaut et actif [(#564)](https://github.com/GouvernementFR/dsfr/pull/564)
 Harmonisation avec la navigation sur Accordion, Sidemenu, Translate et Transcription :
-- Passage icône et intitulé en action-high-design-system-primary
-- Ajout background-open-design-system-primary sur le bouton lorsque l'élément est ouvert
+- Passage icône et intitulé en action-high-designsystem-primary
+- Ajout background-open-designsystem-primary sur le bouton lorsque l'élément est ouvert
 - Icône “arrow-down-s-ligne” (la même que sur navigation)
 - Accordion, Translate : Retrait changement de graisse (normal -> bold) à l'ouverture et graisse constante en medium
 
@@ -975,8 +1372,8 @@ Harmonisation avec la navigation sur Accordion, Sidemenu, Translate et Transcrip
 #### 📝 doc(core): ajoute des exemples liens bruts et resets [(#613)](https://github.com/GouvernementFR/dsfr/pull/613)
 Par défaut, le dsfr stylise les liens natifs, ce qui peut poser problème dans l'utilisation de librairie tierce.
 2 classes utilitaires sont mise à disposition pour contrecarrer le style fort du lien : 
-- `.design-system-raw-link` retire toute stylisation sur les liens natifs
-- `.design-system-reset-link` remet le soulignement natif du navigateur (`text-decoration: underline;`)
+- `.designsystem-raw-link` retire toute stylisation sur les liens natifs
+- `.designsystem-reset-link` remet le soulignement natif du navigateur (`text-decoration: underline;`)
 Des pages d'exemples en illustrant l'utilisation ont été ajoutées dans les pages d'exemples des fondamentaux.
 
 
@@ -987,35 +1384,35 @@ Les radios riches doivent utiliser des pictogrammes et non des images :
 
 Le snippet :
 ```html
-<div class="design-system-radio-group design-system-radio-rich">
+<div class="designsystem-radio-group designsystem-radio-rich">
   <input value="1" type="radio" id="radio-rich-1" name="radio-rich">
-  <label class="design-system-label" for="radio-rich-1">
+  <label class="designsystem-label" for="radio-rich-1">
       Libellé bouton radio
   </label>
-  <div class="design-system-radio-rich__img">
+  <div class="designsystem-radio-rich__img">
       <img src="../../../example/img/placeholder.1x1.png" alt="[À MODIFIER - vide ou texte alternatif de l’image]" />
   </div>
 </div>
 ```
 DEVIENT : 
 ```html
-<div class="design-system-radio-group design-system-radio-rich">
+<div class="designsystem-radio-group designsystem-radio-rich">
   <input value="1" type="radio" id="radio-rich-1" name="radio-rich">
-  <label class="design-system-label" for="radio-rich-1">
+  <label class="designsystem-label" for="radio-rich-1">
       Libellé bouton radio
   </label>
-  <div class="design-system-radio-rich__pictogram">
-      <svg aria-hidden="true" class="design-system-artwork" viewBox="0 0 80 80" width="80px" height="80px">
-          <use class="design-system-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
-          <use class="design-system-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
-          <use class="design-system-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
+  <div class="designsystem-radio-rich__pictogram">
+      <svg aria-hidden="true" class="designsystem-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+          <use class="designsystem-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
+          <use class="designsystem-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
+          <use class="designsystem-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
       </svg>
   </div>
 </div>
 ```
 Remplacer buildings/city-hall par la catégorie et le nom du pictogramme désiré
 
-BREAKING CHANGE : `design-system-radio-rich__img` devient `design-system-radio-rich__pictogram`
+BREAKING CHANGE : `designsystem-radio-rich__img` devient `designsystem-radio-rich__pictogram`
 
 
 #### 📝 doc(core): corrige les liens vers les pages de documentation des fondamentaux [(#623)](https://github.com/GouvernementFR/dsfr/pull/623)
@@ -1094,18 +1491,18 @@ Dans le modèle de de bloc nom/prénom, un bouton permet d'ajouter des champs de
 #### ✨ feat(tile): Ajout icône flèche, état désactivé, icone lien externe, tuile de téléchargement [(#602)](https://github.com/GouvernementFR/dsfr/pull/602)
 Les tuiles peuvent maintenant être de type téléchargement (comme les cartes)
   - Les tuiles de téléchargement sont par défaut horizontales
-  - Le détail de la tuile de téléchargement est obligatoire et il peut être rempli automatiquement en fonction du fichier à télécharger en plaçant à l'attribut "data-design-system-assess-file" sur le lien (comme pour carte)
+  - Le détail de la tuile de téléchargement est obligatoire et il peut être rempli automatiquement en fonction du fichier à télécharger en plaçant à l'attribut "data-designsystem-assess-file" sur le lien (comme pour carte)
 
 Les tuiles ont maintenant par défaut une icone.
   - arrow-right (par défaut)
   - external-link (en target="_blank")
-  - download (avec la classe design-system-tile--download)
+  - download (avec la classe designsystem-tile--download)
 
 Les tuiles désactivées (a sans href) ont à présent:
   - la bordure bottom en grise
   - l'icone et le titre en gris
   
-Ajout des classes "design-system-tile--vertical@md" et  "design-system-tile--vertical@lg" pour passer une tuile horizontale, ou download, en vertical à partir des breakpoints md et lg
+Ajout des classes "designsystem-tile--vertical@md" et  "designsystem-tile--vertical@lg" pour passer une tuile horizontale, ou download, en vertical à partir des breakpoints md et lg
 
 
 #### 🎉 feat(tile): évolution des tuiles [(#534)](https://github.com/GouvernementFR/dsfr/pull/534)
@@ -1114,26 +1511,26 @@ Nous souhaitons revoir la structure html de la tuile pour étendre les variation
 
 Changements apportés :
 - Ajout d'un niveau d'encapsulation dans la structure html
-  - Ajout d'un wrapper "design-system-tile__content" pour englober le contenu
-  - Ajout d'un wrapper "design-system-tile__header" pour englober l'image
+  - Ajout d'un wrapper "designsystem-tile__content" pour englober le contenu
+  - Ajout d'un wrapper "designsystem-tile__header" pour englober l'image
 - L'image des tuiles est remplacée par un pictogramme
-  - La classe "design-system-tile__img" devient "design-system-tile__pictogram" 
-  - Son contenu est maintenant un svg "design-system-artwork"
+  - La classe "designsystem-tile__img" devient "designsystem-tile__pictogram" 
+  - Son contenu est maintenant un svg "designsystem-artwork"
 - Ajout de la possibilité de placer un badge, un tag, un texte de détail, dans le contenu de la tuile
-- Ajout d'une taille de tuile SM : "design-system-tile--sm"
+- Ajout d'une taille de tuile SM : "designsystem-tile--sm"
 
 **⚠️ Breaking Change**
 Le snippet de code d'une tuile : 
 ```html
-<div class="design-system-tile design-system-enlarge-link">
-    <div class="design-system-tile__body">
-        <h4 class="design-system-tile__title">
-            <a class="design-system-tile__link" href>Titre M bold</a>
+<div class="designsystem-tile designsystem-enlarge-link">
+    <div class="designsystem-tile__body">
+        <h4 class="designsystem-tile__title">
+            <a class="designsystem-tile__link" href>Titre M bold</a>
         </h4>
-        <p class="design-system-tile__desc">Texte M regular 2 lignes max</p>
+        <p class="designsystem-tile__desc">Texte M regular 2 lignes max</p>
    </div>
-   <div class="design-system-tile__img">
-       <img class="design-system-responsive-img" src="../../../example/img/placeholder.1x1.png" alt="" />
+   <div class="designsystem-tile__img">
+       <img class="designsystem-responsive-img" src="../../../example/img/placeholder.1x1.png" alt="" />
        <!-- L’alternative de l’image (attribut alt) doit rester vide car l’image est illustrative et ne doit pas être restituée aux technologies d’assistance -->
     </div>
 </div>
@@ -1141,21 +1538,21 @@ Le snippet de code d'une tuile :
 
 Devient : 
 ```html
-<div class="design-system-tile design-system-enlarge-link" id="tile-6584">
-    <div class="design-system-tile__body">
-        <div class="design-system-tile__content">
-            <h3 class="design-system-tile__title">
+<div class="designsystem-tile designsystem-enlarge-link" id="tile-6584">
+    <div class="designsystem-tile__body">
+        <div class="designsystem-tile__content">
+            <h3 class="designsystem-tile__title">
                 <a href="#">Intitulé de la tuile</a>
             </h3>
-            <p class="design-system-tile__desc">Lorem [...] elit ut.</p>
+            <p class="designsystem-tile__desc">Lorem [...] elit ut.</p>
         </div>
     </div>
-    <div class="design-system-tile__header">
-        <div class="design-system-tile__pictogram">
-            <svg aria-hidden="true" class="design-system-artwork" viewBox="0 0 80 80" width="80px" height="80px">
-                <use class="design-system-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
-                <use class="design-system-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
-                <use class="design-system-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
+    <div class="designsystem-tile__header">
+        <div class="designsystem-tile__pictogram">
+            <svg aria-hidden="true" class="designsystem-artwork" viewBox="0 0 80 80" width="80px" height="80px">
+                <use class="designsystem-artwork-decorative" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-decorative"></use>
+                <use class="designsystem-artwork-minor" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-minor"></use>
+                <use class="designsystem-artwork-major" href="../../../dist/artwork/pictograms/buildings/city-hall.svg#artwork-major"></use>
             </svg>
         </div>
     </div>
@@ -1167,15 +1564,15 @@ Devient :
 Pour mutualiser les comportements de la carte et du lien au composant download, celui-ci doit devenir une variante de ces composants et non pas l'inverse.
 
 Retrait du composant : téléchargement de fichier - Download -> déprécié
-Ajout de la variante de carte : design-system-card--download 
-Ajout de la variante de lien : design-system-link--download 
+Ajout de la variante de carte : designsystem-card--download 
+Ajout de la variante de lien : designsystem-link--download 
 
 Le lien de téléchargement : 
 ```html
-<div class="design-system-download">
+<div class="designsystem-download">
     <h3>
-        <a href="[À MODIFIER - /example/img/image.jpg]" download class="design-system-download__link">Télécharger le document lorem ipsum sit dolores amet
-            <span class="design-system-download__detail">
+        <a href="[À MODIFIER - /example/img/image.jpg]" download class="designsystem-download__link">Télécharger le document lorem ipsum sit dolores amet
+            <span class="designsystem-download__detail">
                 JPG – 61,88 ko
             </span>
         </a>
@@ -1184,44 +1581,44 @@ Le lien de téléchargement :
 ```
 DEVIENT : 
 ```html
-<a class="design-system-link design-system-link--download" download href="[À MODIFIER - example/img/image.jpg]">
-    Télécharger le document lorem ipsum sit dolores amet <span class="design-system-link__detail">JPG – 61,88 ko</span>
+<a class="designsystem-link designsystem-link--download" download href="[À MODIFIER - example/img/image.jpg]">
+    Télécharger le document lorem ipsum sit dolores amet <span class="designsystem-link__detail">JPG – 61,88 ko</span>
 </a>
 ```
 
 et la carte de téléchargement : 
 ```html
-<div class="design-system-download design-system-enlarge-link design-system-download--card">
+<div class="designsystem-download designsystem-enlarge-link designsystem-download--card">
     <h3>
-        <a href="[À MODIFIER - example/img/image.jpg]" download class="design-system-download__link">Télécharger le document lorem ipsum sit dolores amet
-            <span class="design-system-download__detail">
+        <a href="[À MODIFIER - example/img/image.jpg]" download class="designsystem-download__link">Télécharger le document lorem ipsum sit dolores amet
+            <span class="designsystem-download__detail">
                 JPG – 61,88 ko
             </span>
         </a>
     </h3>
-    <p class="design-system-download__desc">Texte de description<</p>
+    <p class="designsystem-download__desc">Texte de description<</p>
 </div>
 ```
 DEVIENT : 
 ```html
-<div class="design-system-card design-system-enlarge-link design-system-card--download">
-    <div class="design-system-card__body">
-        <div class="design-system-card__content">
-            <h3 class="design-system-card__title">
+<div class="designsystem-card designsystem-enlarge-link designsystem-card--download">
+    <div class="designsystem-card__body">
+        <div class="designsystem-card__content">
+            <h3 class="designsystem-card__title">
                 <a download href="[À MODIFIER - example/img/image.jpg]">
                     Télécharger le document lorem ipsum sit dolores amet
                 </a>
             </h3>
-            <p class="design-system-card__desc">Texte de description</p>
-            <div class="design-system-card__end">
-                <p class="design-system-card__detail">JPG – 61,88 ko</p>
+            <p class="designsystem-card__desc">Texte de description</p>
+            <div class="designsystem-card__end">
+                <p class="designsystem-card__detail">JPG – 61,88 ko</p>
             </div>
         </div>
     </div>
 </div>
 ```
 
-BREAKING CHANGE : Remplacer le composant design-system-download par la variante de link design-system-link--download et remplacer le composant design-system-download--card par une carte design-system-card--download
+BREAKING CHANGE : Remplacer le composant designsystem-download par la variante de link designsystem-link--download et remplacer le composant designsystem-download--card par une carte designsystem-card--download
 
 
 
@@ -1232,7 +1629,7 @@ BREAKING CHANGE : Remplacer le composant design-system-download par la variante 
 
 #### 🐛 fix(analytics): réduction d'envoi des données [(#807)](https://github.com/GouvernementFR/dsfr/pull/807)
 - suppression du taux d'interaction global
-- ajout de l'attribut data-design-system-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
+- ajout de l'attribut data-designsystem-analytics-rating qui permet de mesurer le taux d'interaction sur un élément particulier
 - suppression de l'impression des composants sans interactions
 - limitation de l'envoi de donnée à la première interaction
 - bouton associé à l'accordéon, l'onglet et la transcription rendu muet
@@ -1387,7 +1784,7 @@ Depuis la version 109 de Firefox, l'icone date-picker est en double sur les cham
 #### ✨ feat(header,navigation): fermeture de la navigation au clic sur lien ou bouton [(#583)](https://github.com/GouvernementFR/dsfr/pull/583)
 Actuellement, la navigation reste présente en mobile et en desktop lorsque l'on clique sur un lien ou un bouton qu'elle contient, ce qui pose problème dans le cas des Single-page application.
 La fonctionnalité est maintenant modifiée pour que tout clic sur un élément `<button>` ou `<a>` entraîne la fermeture de la navigation (modale et/ou menu).
-L'ajout de l'attribut `data-design-system-prevent-conceal` permet de préserver un lien ou un bouton particulier de ce nouveau comportement.
+L'ajout de l'attribut `data-designsystem-prevent-conceal` permet de préserver un lien ou un bouton particulier de ce nouveau comportement.
 
 
 #### 🐛 fix(build): changement des path pour compiler sur windows [(#580)](https://github.com/GouvernementFR/dsfr/pull/580)
@@ -1504,9 +1901,9 @@ corrige le problème de double icône remonté dans #530
 
 #### feat(icon): ajout icones system [(#551)](https://github.com/GouvernementFR/dsfr/pull/551)
 Ajout d'icônes dans system :
-design-system--arrow-right-up-circle-fill,
-design-system--arrow-right-down-circle-fill,
-design-system--equal-circle-fill,
+designsystem--arrow-right-up-circle-fill,
+designsystem--arrow-right-down-circle-fill,
+designsystem--equal-circle-fill,
 
 
 #### fix(scheme): ajout du mode sombre de la scrollbar du navigateur  (#535) [(#407)](https://github.com/GouvernementFR/dsfr/pull/407)
@@ -1682,7 +2079,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### feat(address): Ajout du pattern adresse [(#398)](https://github.com/GouvernementFR/dsfr/pull/398)
 
 
-#### refactor(form): Ajout des design-system-control et correction des pattern civility & name [(#401)](https://github.com/GouvernementFR/dsfr/pull/401)
+#### refactor(form): Ajout des designsystem-control et correction des pattern civility & name [(#401)](https://github.com/GouvernementFR/dsfr/pull/401)
 
 
 #### feat(password): ajout du composant mot de passe [(#391)](https://github.com/GouvernementFR/dsfr/pull/391)
@@ -1838,7 +2235,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### fix(core,link,button,tag,card): correctif icône lien extérieur [(#333)](https://github.com/GouvernementFR/dsfr/pull/333)
 
 
-#### fix(icons): correctif depreciation design-system-fi-checkbox-circle-line [(#334)](https://github.com/GouvernementFR/dsfr/pull/334)
+#### fix(icons): correctif depreciation designsystem-fi-checkbox-circle-line [(#334)](https://github.com/GouvernementFR/dsfr/pull/334)
 
 
 #### fix(navigation): correctif focus au clic sur les liens [(#336)](https://github.com/GouvernementFR/dsfr/pull/336)
@@ -1874,7 +2271,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### feat(artwork): ajout des pictogrammes illustratifs [(#317)](https://github.com/GouvernementFR/dsfr/pull/317)
 
 
-#### refactor(core, card, content): ajout utilitaire design-system-ratio et aspect-ratio des content img & vid [(#316)](https://github.com/GouvernementFR/dsfr/pull/316)
+#### refactor(core, card, content): ajout utilitaire designsystem-ratio et aspect-ratio des content img & vid [(#316)](https://github.com/GouvernementFR/dsfr/pull/316)
 
 
 #### feat(notice): Ajout du composant bandeau d'information [(#302)](https://github.com/GouvernementFR/dsfr/pull/302)
@@ -1949,7 +2346,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### fix(download): correction erreur js legacy [(#292)](https://github.com/GouvernementFR/dsfr/pull/292)
 
 
-#### fix(dsdesign-system-deprecated): correction du nom de fichier sur le js legacy [(#295)](https://github.com/GouvernementFR/dsfr/pull/295)
+#### fix(dsdesignsystem-deprecated): correction du nom de fichier sur le js legacy [(#295)](https://github.com/GouvernementFR/dsfr/pull/295)
 
 
 
@@ -2516,10 +2913,10 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 #### refactor: inclusion des composants ejs dans locals.nomComposant [(#76)](https://github.com/GouvernementFR/dsfr/pull/76)
 
 
-#### fix: bouton sidemenu display none / scheme package.yml / design-system-input code inutile / table refactor et couleurs [(#100)](https://github.com/GouvernementFR/dsfr/pull/100)
+#### fix: bouton sidemenu display none / scheme package.yml / designsystem-input code inutile / table refactor et couleurs [(#100)](https://github.com/GouvernementFR/dsfr/pull/100)
 
 
-#### fix(logo): correction design-system-primary & mourning [(#99)](https://github.com/GouvernementFR/dsfr/pull/99)
+#### fix(logo): correction designsystem-primary & mourning [(#99)](https://github.com/GouvernementFR/dsfr/pull/99)
 
 
 #### fix: correction du token art déprécié [(#98)](https://github.com/GouvernementFR/dsfr/pull/98)
@@ -2580,7 +2977,7 @@ Ajoute les tokens des familles de couleurs neutral, primary et accent sur artwor
 
 
 #### fix: favicon path [(#66)](https://github.com/GouvernementFR/dsfr/pull/66)
-dsdesign-system-dev devient dsfr
+dsdesignsystem-dev devient dsfr
 
 
 #### fix(navigation): mega menu category bold [(#61)](https://github.com/GouvernementFR/dsfr/pull/61)
@@ -2589,13 +2986,13 @@ dsdesign-system-dev devient dsfr
 #### refactor: modification du gitignore [(#62)](https://github.com/GouvernementFR/dsfr/pull/62)
 
 
-#### fix(core): design-system-text devient design-system-text--md [(#63)](https://github.com/GouvernementFR/dsfr/pull/63)
+#### fix(core): designsystem-text devient designsystem-text--md [(#63)](https://github.com/GouvernementFR/dsfr/pull/63)
 
 
 #### fix(core): reset bordure des inputs (ios) [(#58)](https://github.com/GouvernementFR/dsfr/pull/58)
 
 
-#### fix(search): correction design-system-input--error et design-system-input--valid [(#57)](https://github.com/GouvernementFR/dsfr/pull/57)
+#### fix(search): correction designsystem-input--error et designsystem-input--valid [(#57)](https://github.com/GouvernementFR/dsfr/pull/57)
 
 
 #### fix(content): Le composant media ne fonctionne pas avec une image svg [(#54)](https://github.com/GouvernementFR/dsfr/pull/54)
@@ -2610,7 +3007,7 @@ dsdesign-system-dev devient dsfr
 #### fix(header): correction semicolon manquant devant last-child [(#50)](https://github.com/GouvernementFR/dsfr/pull/50)
 
 
-#### fix(input): design-system-input--error sur un textarea le passe en rouge [(#47)](https://github.com/GouvernementFR/dsfr/pull/47)
+#### fix(input): designsystem-input--error sur un textarea le passe en rouge [(#47)](https://github.com/GouvernementFR/dsfr/pull/47)
 
 
 #### fix(share): correction espacements des boutons de partage [(#49)](https://github.com/GouvernementFR/dsfr/pull/49)
@@ -2769,8 +3166,8 @@ Co-authored-by: lab9 <lab9.fr@gmail.com>
 #### fix(core): fonte Marianne dans le reset inputs
 
 
-#### fix(core): correction utilitaire taille d'icone design-system-fi--size
-ajout taille design-system-fi--md
+#### fix(core): correction utilitaire taille d'icone designsystem-fi--size
+ajout taille designsystem-fi--md
 ajout !important pour forcer le modifieur
 
 

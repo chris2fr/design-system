@@ -41,18 +41,20 @@ const copyImages = (removeOrphans) => {
   const src = root('tool/example/img');
   const dest = root('example/img');
 
-  copyDir(src, dest, ['jpg', 'png', 'svg'], removeOrphans);
+  copyDir(src, dest, ['jpg', 'png', 'svg', 'pdf'], removeOrphans);
 };
 
 const copyAssets = (removeOrphans) => {
-  const src = root('src/core/asset/');
+  const src = root('src/designsystem/core/asset/');
+  // const src = root('src/dsfr/core/asset/'); // chris2fr 1.11.2 > 1.13.0
   const dest = root('dist/');
 
   copyDir(src, dest, ['woff', 'woff2', 'ico', 'jpg', 'png', 'svg', 'webmanifest'], removeOrphans);
 };
 
 const copyIcons = (removeOrphans) => {
-  const src = root('src/core/icon/');
+  const src = root('src/designsystem/core/icon/');
+  // const src = root('src/dsfr/core/icon/'); // chris2fr 1.11.2 > 1.13.0
   const dest = root('dist/icons');
 
   copyDir(src, dest, ['svg', 'png', 'jpg'], removeOrphans);
@@ -74,9 +76,14 @@ const deployFavicons = () => {
   copyDir(src, dest, ['ico', 'jpg', 'png', 'svg', 'webmanifest']);
 };
 
+const deployStorybook = () => {
+  copyDir(root('storybook'), root('public/storybook'));
+};
+
 const deployFiles = () => {
   copyDir(root('dist'), root('public/dist'));
   copyDir(root('example'), root('public/example'));
+  copyDir(root('standalone'), root('public/standalone'));
 };
 
 const deployRobots = () => {
@@ -84,4 +91,4 @@ const deployRobots = () => {
   createFile(root('public/robots.txt'), content);
 };
 
-module.exports = { copyFiles, copyImages, copyAssets, copyIcons, deployFavicons, deployFiles, deployRobots };
+module.exports = { copyFiles, copyImages, copyAssets, copyIcons, deployFavicons, deployFiles, deployRobots, deployStorybook };

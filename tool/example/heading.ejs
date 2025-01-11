@@ -3,6 +3,7 @@
   const classes = [prefix + '-icon-arrow-left-line', prefix + '-link--icon-left'];
     if (id !== 'analytics') classes.push(prefix + '-link');
   %>
+  <p class="<%= prefix %>-text--sm" style="float:right"><%= locals.namespace.toUpperCase() %> v<%= locals.version %></p>
   <p><a <%- includeClasses(classes) %> href="../">Retour</a></p>
   <h1><%= title %> <%= locals.id ? `(${id})` : '' %></h1>
   <% if (locals.description) { %>
@@ -17,7 +18,7 @@
     <%
     for (const d of doc) {
     %>
-      <li><a href="<%= d.url %>" <%- includeAttrs(targetBlankData()) %>> <%= d.title %></a></li>
+    <li><a href="<%= d.url %>" rel="noopener external" target="_blank" title="${getBlankTitle(d.title)}"> <%= d.title %></a></li>
     <%
     }
     %>
@@ -27,7 +28,7 @@
 
   case typeof doc === 'string':
   %>
-  <a href="<%= doc %>" <%- includeAttrs(targetBlankData()) %>>Documentation</a>
+  <a href="<%= doc %>" rel="noopener external" target="_blank" title="${getBlankTitle('Documentation')}">Documentation</a>
   <%
     break;
   }

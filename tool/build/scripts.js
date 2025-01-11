@@ -101,6 +101,7 @@ const buildScript = async (pck, minify, legacy, map, standalone) => {
 const buildSchemeBootScript = async () => {
   const regExp = new RegExp('\\' + path.sep, 'g');
   const src = root('src/scheme').replace(regExp, '/');
+  // const src = root('src/dsfr/scheme').replace(regExp, '/'); // chris2fr 1.11.2 > 1.13.0
   const data = `import '${src}/boot.js'\n`;
 
   const input = {

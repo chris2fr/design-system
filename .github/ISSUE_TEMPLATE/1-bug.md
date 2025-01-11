@@ -1,6 +1,6 @@
 ---
 name: Rapporter un bug
-about: Rapporter un bug pour améliorer le design-system
+about: Rapporter un bug pour améliorer le designsystem
 title: ''
 labels: bug
 assignees: ''
@@ -25,7 +25,7 @@ Une description claire et concise de ce qui devrait se produire.
 Ajouter des captures d’écran ou un exemple de code pour préciser le bug et le contexte.
 
 ### Configuration et système utilisé
-- **Version du design-system : **
+- **Version du designsystem : **
 - **Appareil (mobile, tablette, desktop) : **
 - **Système d’exploitation : **
 - **Navigateur et version : **

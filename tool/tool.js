@@ -5,9 +5,10 @@ const { Changelog } = require('./classes/changelog/changelog');
 const yargs = require('yargs');
 const build = require('./build/build');
 const buildRouting = require('./generate/routing');
-const { deployFavicons, deployFiles, deployRobots } = require('./build/copy');
+const { deployFavicons, deployFiles, deployRobots, deployStorybook } = require('./build/copy');
 const { test } = require('./test/test');
 const standalone = require('./build/standalone');
+const { generateNewPictogram } = require('./generate/pictogram');
 
 /**
  * Build
@@ -153,6 +154,16 @@ const deployHandler = async (argv) => {
     styles: true,
     scripts: true,
     examples: true,
+    storybook: true,
+    clean: true,
+    minify: true,
+    legacy: true,
+    locale: argv.locale
+  });
+  await standalone({
+    styles: true,
+    scripts: true,
+    examples: true,
     clean: true,
     legacy: true,
     locale: argv.locale
@@ -161,6 +172,7 @@ const deployHandler = async (argv) => {
   deployFavicons();
   deployFiles();
   deployRobots();
+  deployStorybook();
 };
 
 /**
@@ -293,6 +305,32 @@ const changelogHandler = async (argv) => {
   await changelog.build();
 };
 
+/**
+ * Pictogram converter
+ * Permet de transformer l'ancienne structure des pictogrammes avec des <g> en une structure avec des <symbol> et <use>
+ */
+const newPictogramBuilder = (yargs) => {
+  return yargs
+    .usage('Usage: $0 -p [path/to/svg]')
+    .example(
+      '$0 -p [path/to/svg]',
+      'convertit les pictogrammes en une structure avec des <symbol> et <use>'
+    )
+    .option('path', {
+      alias: '-p',
+      describe: 'chemin vers le dossier contenant les pictogrammes',
+      type: 'string'
+    });
+};
+
+const newPictogramHandler = async (argv) => {
+  const settings = {
+    path: argv.path
+  };
+
+  generateNewPictogram(settings.path || './src/dsfr/core/asset/artwork');
+};
+
 yargs
   .scriptName('tool')
   .command(
@@ -330,6 +368,12 @@ yargs
     'génération du changelog',
     changelogBuilder,
     changelogHandler
+  )
+  .command(
+    'pictogram-converter',
+    'transforme les pictogrammes en une structure avec des <symbol> et <use>',
+    newPictogramBuilder,
+    newPictogramHandler
   )
   .help()
   .argv;

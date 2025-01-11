@@ -1,6 +1,7 @@
 const { buildStyles } = require('./styles');
 const { buildScript } = require('./scripts');
 const { buildExample } = require('./example');
+const { buildStorybook } = require('./storybook');
 const { concatenate } = require('../generate/concatenate');
 const { copyImages, copyIcons, copyAssets } = require('./copy');
 const global = require('../../package.json');
@@ -12,11 +13,12 @@ const generateConfig = require('../generate/config');
 const clean = require('../utilities/clean');
 const { I18n } = require('../classes/i18n/i18n');
 const { Config } = require('../classes/config/config');
+const fs = require('fs');
 
 const build = async (settings) => {
   log(36, `build ${global.config.namespace} - version ${global.version}`);
   if (settings.clean) clean();
-  if (settings.clean || settings.config) {
+  if (settings.clean || settings.config || !fs.existsSync('.config/config.json')) {
     await generateConfig();
     copyImages();
     copyIcons();
@@ -75,6 +77,11 @@ const build = async (settings) => {
         log.error(e);
       }
     }
+  }
+
+  if (settings.storybook) {
+    log.section('storybook', true);
+    await buildStorybook();
   }
 
   if (settings.markdowns) {
