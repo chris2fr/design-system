@@ -1,20 +1,23 @@
+@use "sass:map";
+@use "size";
+
 ////
 /// Link Tool : icons
 /// @group link
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
-@mixin _build-link-icon($size-settings, $place, $size:md, $override-icon: true) {
+@mixin build-link-icon($size-settings, $place, $size:md, $override-icon: true) {
 
-  $icon-size: icon-size(map_get($size-settings, icon));
+  $icon-size: icon-size(map.get($size-settings, icon));
 
   @if $place == only {
-    $icon-size: icon-size(map_get($size-settings, icon-only));
+    $icon-size: icon-size(map.get($size-settings, icon-only));
   }
 
-  $icon-margin: _link-icon-margin(map_get($size-settings, icon));
-  $icon-margin-x: spacing.space(map_get($size-settings, icon-margin-x));
+  $icon-margin: size.link-icon-margin(map.get($size-settings, icon));
+  $icon-margin-x: spacing.space(map.get($size-settings, icon-margin-x));
 
   @if $place == left {
     overflow: initial;
@@ -37,7 +40,7 @@
     }
   }
   @else if $place == only {
-    $min-height: spacing.space(map_get($size-settings, min-height));
+    $min-height: spacing.space(map.get($size-settings, min-height));
     $padding-x: ($min-height - $icon-size) * 0.5;
 
     overflow: hidden;

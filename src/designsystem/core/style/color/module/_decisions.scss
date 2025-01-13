@@ -3,7 +3,7 @@
 /// @group core
 ////
 
-@use 'src/module/color';
+@use '../../../../../module/color';
 
 :root {
   @include color.define();

@@ -1,3 +1,7 @@
+@use "sass:map";
+@use "../../selector/function/namespace";
+@use "../setting/font-weight";
+
 ////
 /// Core Tool : Typography font-weight
 /// @group core
@@ -13,7 +17,7 @@
 ///   }
 
 @function font-weight($scale: regular) {
-  @return map-get($font-weight-scale, $scale);
+  @return map.get(font-weight.$font-weight-scale, $scale);
 }
 
 @mixin font-weight($scale) {
@@ -21,13 +25,13 @@
 }
 
 @mixin build-utillity-font-weight() {
-  $fontWeightValues: map-get($font-weight-vars, values);
+  $fontWeightValues: map.get(font-weight.$font-weight-vars, values);
   @if $fontWeightValues == 'all' {
-    $fontWeightValues: map-keys($font-weight-names);
+    $fontWeightValues: map.keys(font-weight.$font-weight-names);
   }
   @each $weight in $fontWeightValues {
-    $name: map-get($font-weight-names, $weight);
-    #{ns('text--' + $name)} {
+    $name: map.get(font-weight.$font-weight-names, $weight);
+    #{namespace.ns('text--' + $name)} {
       font-weight: #{$weight} !important;
     }
   }

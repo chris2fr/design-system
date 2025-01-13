@@ -3,8 +3,8 @@
 /// @group core
 ////
 
-@import 'module/hidden';
-@import 'module/no-scroll';
-@import 'module/sr-only';
-@import 'module/hr';
-@import 'module/ellipsis';
+@use 'module/hidden';
+@use 'module/no-scroll';
+@use 'module/sr-only';
+@use 'module/hr';
+@use 'module/ellipsis';

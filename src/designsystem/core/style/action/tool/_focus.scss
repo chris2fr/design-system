@@ -1,25 +1,30 @@
+@use "sass:list";
+@use "sass:map";
+@use "../../selector/function/nest";
+@use "../setting/elements";
+
 ////
 /// Core Tool : Action focus
 /// @group core
 ////
 
-@use 'src/module/color';
+@use '../../../../../module/color';
 
-@mixin focusable-selector($elements: $action-elements) {
+@mixin focusable-selector($elements: elements.$action-elements) {
   $selectors: ();
   @each $element, $setting in $elements {
-    $focus: map-get($setting, focus);
-    $isolated: map-get($setting, isolated);
-    $selector: map-get($setting, selector);
+    $focus: map.get($setting, focus);
+    $isolated: map.get($setting, isolated);
+    $selector: map.get($setting, selector);
     @if $focus {
       @if $isolated {
-        $isolated-selectors: nest($selector, '&:focus', map-get($focus, selector));
+        $isolated-selectors: nest.nest($selector, '&:focus', map.get($focus, selector));
         #{$isolated-selectors} {
           @content;
         }
       }
       @else {
-        $selectors: append($selectors, nest($selector, '&:focus', map-get($focus, selector)), 'comma');
+        $selectors: list.append($selectors, nest.nest($selector, '&:focus', map.get($focus, selector)), 'comma');
       }
     }
   }
@@ -29,21 +34,21 @@
   }
 }
 
-@mixin focusable-selector-focus($elements: $action-elements) {
+@mixin focusable-selector-focus($elements: elements.$action-elements) {
   $selectors: ();
   @each $element, $setting in $elements {
-    $focus: map-get($setting, focus);
-    $isolated: map-get($setting, isolated);
-    $selector: map-get($setting, selector);
+    $focus: map.get($setting, focus);
+    $isolated: map.get($setting, isolated);
+    $selector: map.get($setting, selector);
     @if $focus {
       @if $isolated {
-        $isolated-selectors: nest($selector, '&:focus', map-get($focus, selector));
+        $isolated-selectors: nest.nest($selector, '&:focus', map.get($focus, selector));
         #{$isolated-selectors} {
           @content;
         }
       }
       @else {
-        $selectors: append($selectors, nest($selector, '&:focus', map-get($focus, selector)), 'comma');
+        $selectors: list.append($selectors, nest.nest($selector, '&:focus', map.get($focus, selector)), 'comma');
       }
     }
   }
@@ -53,21 +58,21 @@
   }
 }
 
-@mixin focusable-selector-focus-not-visible($elements: $action-elements) {
+@mixin focusable-selector-focus-not-visible($elements: elements.$action-elements) {
   $selectors: ();
   @each $element, $setting in $elements {
-    $focus: map-get($setting, focus);
-    $isolated: map-get($setting, isolated);
-    $selector: map-get($setting, selector);
+    $focus: map.get($setting, focus);
+    $isolated: map.get($setting, isolated);
+    $selector: map.get($setting, selector);
     @if $focus {
       @if $isolated {
-        $isolated-selectors: nest($selector, '&:focus:not(:focus-visible)', map-get($focus, selector));
+        $isolated-selectors: nest.nest($selector, '&:focus:not(:focus-visible)', map.get($focus, selector));
         #{$isolated-selectors} {
           @content;
         }
       }
       @else {
-        $selectors: append($selectors, nest($selector, '&:focus:not(:focus-visible)', map-get($focus, selector)), 'comma');
+        $selectors: list.append($selectors, nest.nest($selector, '&:focus:not(:focus-visible)', map.get($focus, selector)), 'comma');
       }
     }
   }
@@ -77,22 +82,22 @@
   }
 }
 
-@mixin focusable-selector-focus-visible($elements: $action-elements) {
+@mixin focusable-selector-focus-visible($elements: elements.$action-elements) {
   $selectors: ();
 
   @each $element, $setting in $elements {
-    $focus: map-get($setting, focus);
-    $isolated: map-get($setting, isolated);
-    $selector: map-get($setting, selector);
+    $focus: map.get($setting, focus);
+    $isolated: map.get($setting, isolated);
+    $selector: map.get($setting, selector);
     @if $focus {
       @if $isolated {
-        $isolated-selectors: nest($selector, '&:focus-visible', map-get($focus, selector));
+        $isolated-selectors: nest.nest($selector, '&:focus-visible', map.get($focus, selector));
         #{$isolated-selectors} {
           @content;
         }
       }
       @else {
-        $selectors: append($selectors, nest($selector, '&:focus-visible', map-get($focus, selector)), 'comma');
+        $selectors: list.append($selectors, nest.nest($selector, '&:focus-visible', map.get($focus, selector)), 'comma');
       }
     }
   }
@@ -102,7 +107,7 @@
   }
 }
 
-@mixin focusable($elements: $action-elements) {
+@mixin focusable($elements: elements.$action-elements) {
   @include focusable-selector($elements) {
     outline-offset: 2px;
     outline-width: 2px;

@@ -3,7 +3,7 @@
 /// @group stepper
 ////
 
-@use 'src/module/color';
+@use '../../../../module/color';
 
 @mixin _stepper-scheme($legacy: false) {
   #{ns(stepper)} {

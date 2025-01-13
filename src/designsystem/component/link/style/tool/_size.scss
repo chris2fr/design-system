@@ -1,34 +1,35 @@
+@use "sass:map";
 ////
 /// Link Tool : sizes
 /// @group link
 ////
 
 @use "sass:math";
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
-@mixin _build-link-size($size-settings, $border-radius: false) {
-  $font-size: map_get($size-settings, font-size);
+@mixin build-link-size($size-settings, $border-radius: false) {
+  $font-size: map.get($size-settings, font-size);
   $style: get-text-style($font-size);
-  $line-height: spacing.space(map_get($style, line-height));
+  $line-height: spacing.space(map.get($style, line-height));
   font-size: spacing.space($font-size);
   line-height: $line-height;
 
-  $min-height: spacing.space(map_get($size-settings, min-height));
+  $min-height: spacing.space(map.get($size-settings, min-height));
   @if $min-height > 0 {
     min-height: $min-height;
   }
 
   $max-icon-height: icon-size(md);
 
-  @if map_has_key($size-settings, icon-only) {
-    $max-icon-height: icon-size(map_get($size-settings, icon-only));
+  @if map.has-key($size-settings, icon-only) {
+    $max-icon-height: icon-size(map.get($size-settings, icon-only));
   }
-  @else if map_has_key($size-settings, icon) {
-    $max-icon-height: icon-size(map_get($size-settings, icon));
+  @else if map.has-key($size-settings, icon) {
+    $max-icon-height: icon-size(map.get($size-settings, icon));
   }
 
   $space-y: math.max($line-height, $max-icon-height);
-  $padding-x: spacing.space(map_get($size-settings, padding-x));
+  $padding-x: spacing.space(map.get($size-settings, padding-x));
   $padding-y: math.max(($min-height - $space-y) * 0.5, 0);
 
   padding: #{$padding-y} #{$padding-x};
@@ -38,13 +39,13 @@
   }
 }
 
-@function _link-icon-margin($size) {
+@function link-icon-margin($size) {
   @return math.div(icon-size($size), 8);
 }
 
-@mixin _link-align-on-content($size, $place, $size-settings) {
-  $padding-x: spacing.space(map_get($size-settings, padding-x));
-  $icon-margin: _link-icon-margin(map_get($size-settings, icon));
+@mixin link-align-on-content($size, $place, $size-settings) {
+  $padding-x: spacing.space(map.get($size-settings, padding-x));
+  $icon-margin: link-icon-margin(map.get($size-settings, icon));
 
   @if $place == null {
     margin-left: -($padding-x);
@@ -59,8 +60,8 @@
     margin-right: -($padding-x - $icon-margin);
   }
   @else if $place == only {
-    $icon-size: icon-size(map_get($size-settings, icon-only));
-    $min-height: spacing.space(map_get($size-settings, min-height));
+    $icon-size: icon-size(map.get($size-settings, icon-only));
+    $min-height: spacing.space(map.get($size-settings, min-height));
     $padding-x: ($min-height - $icon-size) * 0.5;
 
     margin-left: -($padding-x);

@@ -1,8 +1,10 @@
+@use "../tool/button";
+
 ////
 /// Core Module : Reset button
 /// @group core
 ////
 
 button {
-  @include btn-reset;
+  @include button.btn-reset;
 }

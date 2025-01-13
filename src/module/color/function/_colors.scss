@@ -1,7 +1,8 @@
 @use 'sass:list';
 @use 'sass:map';
 @use 'sass:color';
-@use 'src/module/string';
+@use 'sass:string';
+@use '../../../module/string' as str;
 @use '../variable/options';
 @use '../variable/sets';
 @use '../variable/decisions';
@@ -177,6 +178,6 @@
     @return $prop;
   }
 
-  $a: list.nth(string.split('#{$alpha}', '.'), 2);
+  $a: list.nth(str.split('#{$alpha}', '.'), 2);
   @return #{$prop}-a#{$a};
 }

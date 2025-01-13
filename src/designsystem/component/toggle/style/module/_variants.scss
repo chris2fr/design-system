@@ -3,7 +3,7 @@
 /// @group toggle
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
 #{ns(toggle--label-left)} {
   #{ns(toggle__input)} {

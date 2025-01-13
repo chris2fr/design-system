@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "variables";
+
 ////
 /// Core Setting : Typography title
 /// @group core
@@ -134,6 +137,6 @@ $title-settings: (
 );
 
 $title-utilities: true !default;
-@if map-get($typography-vars, text) == false {
+@if map.get(variables.$typography-vars, text) == false {
   $title-utilities: false;
 }

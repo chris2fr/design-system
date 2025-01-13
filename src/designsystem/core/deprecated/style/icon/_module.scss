@@ -1,12 +1,16 @@
+@use "../../../style/icon/setting";
+@use "../../../style/icon/tool/default";
+@use "../../../style/selector/function/namespace";
+
 ////
 /// Core Deprecated Module
 /// @group core
 ////
 
-#{ns(fi)} {
-  @each $size, $value in $icon-size-map {
+#{namespace.ns(fi)} {
+  @each $size, $value in setting.$icon-size-map {
     &--#{$size} {
-      @include icon-size($size);
+      @include default.icon-size($size);
     }
   }
 }

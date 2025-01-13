@@ -1,9 +1,11 @@
+@use "../../selector/function/namespace";
+
 ////
 /// Core Module : Grid col
 /// @group core
 ////
 
-#{ns(col)} {
+#{namespace.ns(col)} {
   // alignment
   &--top {
     align-self: flex-start;

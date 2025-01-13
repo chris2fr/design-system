@@ -3,8 +3,8 @@
 /// @group link
 ////
 
-@import '../../core/index';
+@use '../../core/index';
 
-@import 'style/setting';
-@import 'style/function';
-@import 'style/tool';
+@use 'style/setting';
+@use 'style/function';
+@use 'style/tool';

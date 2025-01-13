@@ -1,3 +1,8 @@
+@use "../../selector/function/associate";
+@use "../../selector/tool/nest";
+@use "../../spacing/function/space" as function-space;
+@use "../../spacing/tool/space" as tool-space;
+
 ////
 /// Core Tool : Reset list
 /// @group core
@@ -10,13 +15,13 @@
     $selector: ':root';
   }
 
-  @include nest($selector) {
+  @include nest.nest($selector) {
     --ul-type: disc;
     --ol-type: decimal;
-    --ul-start: #{space(4v)};
-    --ol-start: #{space(6v)};
-    --xl-block: #{space(2v)};
-    --li-bottom: #{space(1v)};
+    --ul-start: #{function-space.space(4v)};
+    --ol-start: #{function-space.space(6v)};
+    --xl-block: #{function-space.space(2v)};
+    --li-bottom: #{function-space.space(1v)};
     --xl-base: 1em;
     --ol-content: counters(li-counter, ".") ".\00a0\00a0";
   }
@@ -37,8 +42,8 @@
   $ol: ol;
 
   @if $unify {
-    $ul: selector-associate('&', 'ul');
-    $ol: selector-associate('&', 'ol');
+    $ul: associate.selector-associate('&', 'ul');
+    $ol: associate.selector-associate('&', 'ol');
   }
 
   @at-root {
@@ -52,8 +57,8 @@
 
     #{$ul},
     #{$ol} {
-      @include padding-left(4v);
-      @include margin-y(2v);
+      @include tool-space.padding-left(4v);
+      @include tool-space.margin-y(2v);
     }
   }
 }
@@ -63,8 +68,8 @@
   $ol: '#{&} ol';
 
   @if $unify {
-    $ul: selector-associate('#{&}', 'ul');
-    $ol: selector-associate('#{&}', 'ol');
+    $ul: associate.selector-associate('#{&}', 'ul');
+    $ol: associate.selector-associate('#{&}', 'ol');
   }
 
   @at-root {
@@ -78,8 +83,8 @@
 
     #{$ul},
     #{$ol} {
-      @include padding-left(0);
-      @include margin-y(0);
+      @include tool-space.padding-left(0);
+      @include tool-space.margin-y(0);
     }
   }
 }

@@ -3,7 +3,7 @@
 /// @group core
 ////
 
-@import 'function/namespace';
-@import 'function/nest';
-@import 'function/pattern';
-@import 'function/associate';
+@use 'function/namespace';
+@use 'function/nest';
+@use 'function/pattern';
+@use 'function/associate';

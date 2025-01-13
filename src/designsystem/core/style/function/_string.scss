@@ -1,3 +1,4 @@
+@use "sass:list";
 ////
 /// Core Function : string
 /// @group core
@@ -47,7 +48,7 @@
   @if meta.type-of($value) != string {
     @return $value;
   }
-  $length: str-length($value);
+  $length: string.length($value);
   $int: ();
   $float: ();
   $floating: false;
@@ -65,10 +66,10 @@
     @else {
       @if char-is-int($n) {
         @if $floating {
-          $float: append($float, char-to-int($n));
+          $float: list.append($float, char-to-int($n));
         }
         @else {
-          $int: append($int, char-to-int($n));
+          $int: list.append($int, char-to-int($n));
         }
       }
     }
@@ -76,17 +77,17 @@
 
   $result: 0;
 
-  $length: length($int);
+  $length: list.length($int);
   @if $length > 0 {
     @for $i from 1 through $length {
-      $result: $result + (nth($int, $i) * math.pow(10, $length - $i));
+      $result: $result + (list.nth($int, $i) * math.pow(10, $length - $i));
     }
   }
 
-  $length: length($float);
+  $length: list.length($float);
   @if $length > 0 {
     @for $i from 1 through $length {
-      $result: $result + math.div(nth($float, $i), math.pow(10, $i));
+      $result: $result + math.div(list.nth($float, $i), math.pow(10, $i));
     }
   }
 
@@ -126,10 +127,10 @@
 /// @param {String} $string - chaine de caractère à découper
 /// @param {String} $separator - séparateur
 @function str-split($haystack, $needle:',', $separator: comma) {
-  @if type-of($haystack) != string {
+  @if meta.type-of($haystack) != string {
     $haystack: '#{$haystack}';
   }
-  @if type-of($needle) != string {
+  @if meta.type-of($needle) != string {
     $needle: '#{$needle}';
   }
 
@@ -141,11 +142,11 @@
     $index: string.index($haystack, $needle);
 
     @if $index != null {
-      $list: append($list, string.slice($haystack, 1, $index - 1), $separator);
+      $list: list.append($list, string.slice($haystack, 1, $index - 1), $separator);
       $haystack: string.slice($haystack, $index + $length);
     }
     @else {
-      $list: append($list, $haystack, $separator);
+      $list: list.append($list, $haystack, $separator);
     }
   }
 

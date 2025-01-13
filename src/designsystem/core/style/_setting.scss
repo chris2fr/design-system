@@ -3,14 +3,14 @@
 /// @group core
 ////
 
-@import '../variables.scss';
-@import 'reset/setting';
-@import 'action/setting';
-@import 'selector/setting';
-@import 'spacing/setting';
-@import 'typography/setting';
-@import 'motion/setting';
-@import 'icon/setting';
-@import 'media/setting';
-@import 'grid/setting';
-@import 'collapse/setting';
+@use '../variables.scss';
+@use 'reset/setting';
+@use 'action/setting' as setting2;
+@use 'selector/setting' as setting3;
+@use 'spacing/setting' as setting4;
+@use 'typography/setting' as setting5;
+@use 'motion/setting' as setting6;
+@use 'icon/setting' as setting7;
+@use 'media/setting' as setting8;
+@use 'grid/setting' as setting9;
+@use 'collapse/setting' as setting10;

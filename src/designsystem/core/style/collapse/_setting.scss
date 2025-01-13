@@ -1,1 +1,3 @@
-$collapse-transition-duration: $global-transition-duration;
+@use "../motion/setting";
+
+$collapse-transition-duration: setting.$global-transition-duration;

@@ -3,12 +3,12 @@
 /// @group core
 ////
 
-@import 'tool/pattern';
-@import 'tool/icon';
-@import 'tool/nest';
-@import 'tool/breakpoint';
-@import 'tool/pseudo';
-@import 'tool/block';
-@import 'tool/group';
-@import 'tool/link';
-@import 'tool/autofill';
+@use 'tool/pattern';
+@use 'tool/icon';
+@use 'tool/nest';
+@use 'tool/breakpoint';
+@use 'tool/pseudo';
+@use 'tool/block';
+@use 'tool/group';
+@use 'tool/link';
+@use 'tool/autofill';

@@ -1,11 +1,16 @@
+@use "sass:map";
+@use "../../selector/function/namespace";
+@use "../../spacing/tool/size";
+@use "../setting";
+
 ////
 /// Core Module : Media - fluid-img
 /// @group core
 ////
 
-@if (map-get($media-settings, fluid)) {
-  #{ns(fluid-img)} {
-    @include max-width(100%);
-    @include height(auto);
+@if (map.get(setting.$media-settings, fluid)) {
+  #{namespace.ns(fluid-img)} {
+    @include size.max-width(100%);
+    @include size.height(auto);
   }
 }

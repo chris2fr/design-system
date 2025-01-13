@@ -1,12 +1,16 @@
+@use "../../display/tool/display";
+@use "../../selector/function/namespace";
+@use "../../spacing/tool/space";
+
 ////
 /// Core Module : Grid row
 /// @group core
 ////
 
-#{ns(grid-row)} {
-  @include display-flex(null, null, null, wrap);
-  @include margin(0);
-  @include padding(0);
+#{namespace.ns(grid-row)} {
+  @include display.display-flex(null, null, null, wrap);
+  @include space.margin(0);
+  @include space.padding(0);
 
   // Vertical alignment
   &--top {

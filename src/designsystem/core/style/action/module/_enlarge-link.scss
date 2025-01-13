@@ -1,25 +1,31 @@
+@use "../../selector/function/namespace";
+@use "../../selector/tool/pseudo";
+@use "../../spacing/tool/position";
+@use "../../spacing/tool/z-index";
+@use "../tool/hover";
+
 ////
 /// Core Module : Action enlarge link
 /// @group core
 ////
 
-#{ns(enlarge-link)} {
+#{namespace.ns(enlarge-link)} {
   position: relative;
 
   a {
     background-image: none;
     outline-width: 0;
-    @include before('', block) {
-      @include absolute(0, 0, 0, 0, 100%, 100%);
+    @include pseudo.before('', block) {
+      @include position.absolute(0, 0, 0, 0, 100%, 100%);
       outline-offset: 2px;
       outline-style: inherit;
       outline-color: inherit;
       outline-width: 2px;
-      @include z-index(over);
+      @include z-index.z-index(over);
     }
   }
 
-  @include hover-media-query {
+  @include hover.hover-media-query {
     a {
       &:hover,
       &:active {

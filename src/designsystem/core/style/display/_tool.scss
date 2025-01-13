@@ -3,8 +3,8 @@
 /// @group core
 ////
 
-@import 'tool/display';
-@import 'tool/fit';
-@import 'tool/hr';
-@import 'tool/sr-only';
-@import 'tool/mask-image';
+@use 'tool/display';
+@use 'tool/fit';
+@use 'tool/hr';
+@use 'tool/sr-only';
+@use 'tool/mask-image';

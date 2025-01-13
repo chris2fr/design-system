@@ -3,7 +3,7 @@
 /// @group core
 ////
 
-@import 'module/iframe';
-@import 'module/fluid';
-@import 'module/ratio';
-@import 'module/responsive';
+@use 'module/iframe';
+@use 'module/fluid';
+@use 'module/ratio';
+@use 'module/responsive';

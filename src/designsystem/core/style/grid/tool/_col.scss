@@ -1,3 +1,5 @@
+@use "../../spacing/tool/space";
+
 ////
 /// Grid Tool : colonne
 /// @group core
@@ -42,10 +44,10 @@
   }
 
   &:not(&--right) {
-    @include margin-left($calc);
+    @include space.margin-left($calc);
   }
 
   &--right {
-    @include margin-right($calc);
+    @include space.margin-right($calc);
   }
 }

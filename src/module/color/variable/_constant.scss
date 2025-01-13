@@ -1,3 +1,5 @@
-@use 'src/module/string';
+// @use '../../../module/string' as str;
+@use "sass:string";
+
 
 $value: string.unquote('$COLOR') !default;

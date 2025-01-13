@@ -1,25 +1,30 @@
+@use "../../../../../../.config/icon";
+@use "../../selector/function/namespace";
+@use "../../spacing/tool/size";
+@use "default";
+
 ////
 /// Core Tool : Icon legacy
 /// @group core
 ////
 
 @mixin icon-size-legacy($size:md, $restrain: null) {
-  @include _icon-pseudo($restrain) {
-    $size: icon-size($size);
-    @include size($size, $size);
+  @include default.icon-pseudo($restrain) {
+    $size: default.icon-size($size);
+    @include size.size($size, $size);
     @content;
   }
 }
 
 @mixin icon-image-legacy($icon, $restrain: null, $important: false) {
-  $url: get-icon-url($icon, $important);
-  @include _icon-pseudo($restrain) {
+  $url: default.get-icon-url($icon, $important);
+  @include default.icon-pseudo($restrain) {
     background-image: $url;
   }
 }
 
 @mixin icon-style-legacy($restrain: null) {
-  @include _icon-pseudo($restrain) {
+  @include default.icon-pseudo($restrain) {
     background-color: transparent;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -40,14 +45,14 @@
     @include icon-size-legacy($size, $restrain);
   }
 
-  @include _icon-pseudo($restrain) {
+  @include default.icon-pseudo($restrain) {
     @content;
   }
 }
 
-@mixin generate-icons-legacy($config: $icons-config) {
+@mixin generate-icons-legacy($config: icon.$icons-config) {
   @each $icon, $setting in $config {
-    #{ns(icon-#{$icon})} {
+    #{namespace.ns(icon-#{$icon})} {
       @include icon-image-legacy($icon);
     }
   }

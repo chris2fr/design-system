@@ -3,11 +3,11 @@
 /// @group core
 ////
 
-@import 'function/map';
-@import 'function/list';
-@import 'function/string';
-@import 'function/encoding';
+@use 'function/map';
+@use 'function/list';
+@use 'function/string';
+@use 'function/encoding';
 
-@import 'selector/function';
-@import 'action/function';
-@import 'spacing/function';
+@use 'selector/function';
+@use 'action/function' as function2;
+@use 'spacing/function' as function3;

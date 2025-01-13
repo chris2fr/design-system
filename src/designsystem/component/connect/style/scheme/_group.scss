@@ -3,7 +3,7 @@
 /// @group connect
 ////
 
-@use 'src/module/color';
+@use '../../../../../module/color';
 
 @mixin _connect-scheme-group($legacy: false, $standalone: false) {
   #{ns(connect)} {

@@ -1,3 +1,9 @@
+@use "sass:list";
+@use "sass:map";
+@use "../../selector/function/associate";
+@use "../../selector/function/nest";
+@use "../setting/hover" as setting-hover;
+
 ////
 /// Core Tool : Action Hover
 /// @group core
@@ -13,19 +19,19 @@
   $selectors: ();
 
   @each $element, $setting in $elements {
-    $hover: map-get($setting, hover);
-    $selector: map-get($setting, selector);
+    $hover: map.get($setting, hover);
+    $selector: map.get($setting, selector);
     @if $hover {
-      @if $type == map-get($hover, type) or $type == all {
+      @if $type == map.get($hover, type) or $type == all {
         $nested: $selector;
         @if $check-disabled {
-          $nested: nest($selector, map-get($hover, selector));
+          $nested: nest.nest($selector, map.get($hover, selector));
         }
         $associated: $nested;
         @if & != null and '#{&}' != ':root' {
-          $associated: selector-associate('#{&}', $nested);
+          $associated: associate.selector-associate('#{&}', $nested);
         }
-        $selectors: append($selectors, $associated, 'comma');
+        $selectors: list.append($selectors, $associated, 'comma');
       }
     }
   }
@@ -73,13 +79,13 @@
   @at-root #{$element} {
     &:hover {
       #{$img} {
-        --brightness: calc(100% + var(--brighten) * #{$hover-brighten});
+        --brightness: calc(100% + var(--brighten) * #{setting-hover.$hover-brighten});
       }
     }
 
     &:active {
       #{$img} {
-        --brightness: calc(100% + var(--brighten) * #{$hover-brighten * 2});
+        --brightness: calc(100% + var(--brighten) * #{setting-hover.$hover-brighten * 2});
       }
     }
   }

@@ -3,9 +3,9 @@
 /// @group core
 ////
 
-@import 'tool/font-face';
-@import 'tool/font-size';
-@import 'tool/font-weight';
-@import 'tool/styles';
-@import 'tool/build-typography';
-@import 'tool/list';
+@use 'tool/font-face';
+@use 'tool/font-size';
+@use 'tool/font-weight';
+@use 'tool/styles';
+@use 'tool/build-typography';
+@use 'tool/list';

@@ -3,7 +3,7 @@
 /// @group core
 ////
 
-@import 'module/box-sizing';
-@import 'module/body';
-@import 'module/tap-highlight';
-@import 'module/select';
+@use 'module/box-sizing';
+@use 'module/body';
+@use 'module/tap-highlight';
+@use 'module/select';

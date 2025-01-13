@@ -1,3 +1,14 @@
+@use "sass:map";
+@use "sass:meta";
+@use "style/action/tool/disabled" as tool-disabled;
+@use "style/display/tool/hr";
+@use "style/reset/setting";
+@use "style/selector/function/namespace";
+@use "style/selector/tool/pseudo";
+@use "style/tool/utility";
+@use "style/typography/setting/title";
+@use "style/typography/tool/build-typography";
+
 ////
 /// Core Main
 /// @group core
@@ -7,18 +18,208 @@
   CORE
 \* ˍˍˍˍˍˍˍˍˍ */
 
-@use 'src/module/path';
-@use 'src/module/shame/media-query';
+@use '../../module/path';
+@use '../../module/shame/media-query';
+
+@use '../../module/color';
+@use '../../module/selector';
+@use '../../module/disabled';
+@use 'sass:list';
+@use '../../module/typography';
 
 @include path.to-dist(1);
 @include media-query.order;
 
-@import 'index';
-@import 'style/module';
-@import 'style/scheme';
-@import 'style/outdated';
+@include meta.load-css('index');
+@include meta.load-css('style/module');
+// @include meta.load-css('style/scheme');
+@include meta.load-css('style/outdated');
 
 // deprecated
-@import 'deprecated/style/module';
+@include meta.load-css('deprecated/style/module');
 
-@include _core-scheme;
+// @include _core-scheme;
+
+// @import 'action/scheme';
+////
+/// Core Scheme : Action
+/// @group core
+////
+
+// @import 'scheme/disabled';
+////
+/// Core Scheme : Action cursor
+/// @group core
+////
+
+
+
+@mixin _core-action-disabled-scheme($legacy: false) {
+  @include tool-disabled.disabled-selector {
+    @include disabled.colors((legacy: $legacy, text: true));
+  }
+}
+
+@mixin _core-action-scheme($legacy: false) {
+  @include _core-action-disabled-scheme($legacy);
+}
+
+// @import 'artwork/scheme';
+////
+/// Core Module : Artwork
+/// @group core
+////
+
+// @use '../../module/color';
+// @use '../../module/selector';
+
+@mixin _core-artwork-scheme($legacy: false) {
+  #{selector.ns(artwork)} {
+    &-decorative {
+      @include color.fill(artwork decorative designsystem-primary, (legacy: $legacy));
+    }
+
+    &-minor {
+      @include color.fill(artwork minor designsystem-secondary, (legacy: $legacy));
+    }
+
+    &-major {
+      @include color.fill(artwork major designsystem-primary, (legacy: $legacy));
+    }
+
+    &-background {
+      @include color.fill(artwork background grey, (legacy: $legacy));
+    }
+
+    &-motif {
+      @include color.fill(artwork motif grey, (legacy: $legacy));
+    }
+
+    @include color.accentuate {
+      #{selector.ns(artwork-minor)} {
+        @include color.fill(artwork minor accent, (legacy: $legacy));
+      }
+    }
+  }
+
+  [disabled] {
+    #{selector.ns(artwork)} * {
+      @include color.fill(text disabled grey, (legacy: $legacy));
+    }
+  }
+}
+// @import 'typography/scheme';
+////
+/// Core Scheme : Typography
+/// @group core
+////
+
+// @import 'scheme/heading';
+////
+/// Core Scheme : Reset headings
+/// @group core
+////
+
+
+
+@mixin _core-typography-scheme-heading($legacy: false) {
+  @include build-typography.title-selector {
+    @include color.text(title grey, (legacy:$legacy));
+  }
+
+  $titles: ();
+  @each $title, $variation in (title.$title-settings) {
+    @if typography.is-heading($title) {
+      $titles: list.append($titles, $title, comma);
+    }
+  }
+  #{$titles} {
+    @include color.text(title grey, (legacy: $legacy));
+  }
+}
+
+
+@mixin _core-typography-scheme($legacy: false) {
+  @include _core-typography-scheme-heading($legacy);
+}
+
+// @import 'reset/scheme';
+////
+/// Core Scheme : Reset
+/// @group core
+////
+
+// @import 'scheme/body';
+////
+/// Core Scheme : Reset body
+/// @group core
+////
+
+// @use '../../../../../module/color';
+
+@mixin _core-reset-body-scheme($legacy: false) {
+  @if (map.get(setting.$reset-settings, body)) {
+    body {
+      @include color.background(default grey, (legacy:$legacy));
+      @include color.text(default grey, (legacy:$legacy));
+    }
+  }
+}
+
+
+@mixin _core-reset-scheme($legacy: false) {
+  // @include _core-reset-body-scheme($legacy);
+  @if (map.get(setting.$reset-settings, body)) {
+    body {
+      @include color.background(default grey, (legacy:$legacy));
+      @include color.text(default grey, (legacy:$legacy));
+    }
+  }
+}
+
+// @import 'display/scheme';
+////
+/// Core Scheme : display
+/// @group core
+////
+
+// @import 'scheme/hr';
+////
+/// Core scheme : Display hr
+/// @group core
+////
+
+// @use '../../../../../module/color';
+
+@mixin _core-display-hr-scheme($legacy: false) {
+  hr {
+    @include hr.build-hr-scheme($legacy);
+  }
+
+  #{namespace.ns(hr)} {
+    &-or {
+      @include pseudo.pseudo(before after) {
+        @include color.background(border default grey, (legacy:$legacy));
+      }
+    }
+  }
+
+  @include utility.build-utility(display, hr) {
+    @include hr.build-hr-scheme($legacy);
+  }
+}
+
+
+@mixin _core-display-scheme($legacy: false) {
+  @include _core-display-hr-scheme($legacy);
+}
+
+
+// @mixin _core-scheme($legacy: false) {
+//   // @include _core-reset-scheme($legacy);
+//   // @include _core-action-scheme($legacy);
+//   // @include _core-artwork-scheme($legacy);
+//   // @include _core-typography-scheme($legacy);
+//   // @include _core-display-scheme($legacy);
+// }
+

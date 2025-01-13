@@ -3,8 +3,8 @@
 /// @group core
 ////
 
-@import 'scheme/body';
+@use 'scheme/body';
 
 @mixin _core-reset-scheme($legacy: false) {
-  @include _core-reset-body-scheme($legacy);
+  @include body._core-reset-body-scheme($legacy);
 }

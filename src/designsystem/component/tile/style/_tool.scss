@@ -3,8 +3,8 @@
 /// @group tag
 ////
 
-@use 'src/module/color';
-@use 'src/module/spacing';
+@use '../../../../module/color';
+@use '../../../../module/spacing';
 
 @mixin build-tile-horizontal() {
   flex-direction: row;

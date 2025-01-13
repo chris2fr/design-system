@@ -1,27 +1,34 @@
+@use "sass:map";
+@use "../../selector/function/namespace";
+@use "../../spacing/tool/position";
+@use "../../spacing/tool/size";
+@use "../setting";
+@use "../tool";
+
 ////
 /// Core Module : Media - responsive img/vid
 /// @group core
 ////
 
-@if (map-get($media-settings, responsive)) {
-  #{ns(responsive-img)} {
-    @include size(100%, auto);
+@if (map.get(setting.$media-settings, responsive)) {
+  #{namespace.ns(responsive-img)} {
+    @include size.size(100%, auto);
   }
 
-  #{ns(responsive-vid)} {
-    @include relative;
-    @include size(100%);
-    @include aspect-ratio();
+  #{namespace.ns(responsive-vid)} {
+    @include position.relative;
+    @include size.size(100%);
+    @include tool.aspect-ratio();
     display: block;
 
     &__player {
-      @include size(100%, 100%);
+      @include size.size(100%, 100%);
       display: block;
       border: 0;
     }
 
-    & > #{ns(consent-placeholder)} {
-      @include media-overlay-cover;
+    & > #{namespace.ns(consent-placeholder)} {
+      @include tool.media-overlay-cover;
     }
   }
 }

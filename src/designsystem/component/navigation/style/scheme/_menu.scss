@@ -4,8 +4,8 @@
 ////
 
 @use 'sass:selector';
-@use 'src/module/color';
-@use 'src/module/elevation';
+@use '../../../../../module/color';
+@use '../../../../../module/elevation';
 
 @mixin _navigation-scheme-menu($legacy: false) {
   #{ns(menu)} {

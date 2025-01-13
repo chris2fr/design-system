@@ -1,7 +1,8 @@
 @use 'sass:math';
 @use 'sass:meta';
 @use 'sass:list';
-@use 'src/module/string';
+@use '../../../module/string' as str;
+@use 'sass:string';
 @use '../variable/units';
 
 $V: units.$V;
@@ -106,7 +107,7 @@ $W: units.$W;
     }
 
     @if string.index($value, ',') != null {
-      @return space(string.split($value, ','));
+      @return space(str.split($value, ','));
     }
 
     @if string.index($value, ' ') != null {
@@ -118,8 +119,8 @@ $W: units.$W;
       @return $result;
     }
 
-    @if string.is-num($value) {
-      @return space(string.to-num($value));
+    @if str.is-num($value) {
+      @return space(str.to-num($value));
     }
 
     @return unquote($value);

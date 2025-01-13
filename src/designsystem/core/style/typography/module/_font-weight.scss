@@ -1,6 +1,8 @@
+@use "../tool/font-weight";
+
 ////
 /// Core Module : Typography font-face
 /// @group core
 ////
 
-@include build-utillity-font-weight();
+@include font-weight.build-utillity-font-weight();

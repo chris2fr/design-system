@@ -3,8 +3,8 @@
 /// @group badge
 ////
 
-@import '../../core/index';
-@import '../link/index';
+@use '../../core/index';
+@use '../link/index' as index2;
 
-@import 'style/setting';
-@import 'style/tool';
+@use 'style/setting';
+@use 'style/tool';

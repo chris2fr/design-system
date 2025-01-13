@@ -3,6 +3,6 @@
 /// @group core
 ////
 
-@use 'src/module/elevation';
+@use '../../../../../module/elevation';
 
 @include elevation.define;

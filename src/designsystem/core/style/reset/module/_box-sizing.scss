@@ -1,9 +1,12 @@
+@use "sass:map";
+@use "../setting";
+
 ////
 /// Core Module : Reset box-sizing
 /// @group core
 ////
 
-@if (map-get($reset-settings, box-sizing)) {
+@if (map.get(setting.$reset-settings, box-sizing)) {
   *,
   *::before,
   *::after {

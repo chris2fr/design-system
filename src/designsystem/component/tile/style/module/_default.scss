@@ -3,7 +3,7 @@
 /// @group tile
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
 #{ns(tile)} {
   @include relative;

@@ -3,13 +3,13 @@
 /// @group core
 ////
 
-@import 'tool/utility';
-@import 'selector/tool';
-@import 'typography/tool';
-@import 'icon/tool';
-@import 'action/tool';
-@import 'spacing/tool';
-@import 'media/tool';
-@import 'display/tool';
-@import 'grid/tool';
-@import 'collapse/tool';
+@use 'tool/utility';
+@use 'selector/tool';
+@use 'typography/tool' as tool2;
+@use 'icon/tool' as tool3;
+@use 'action/tool' as tool4;
+@use 'spacing/tool' as tool5;
+@use 'media/tool' as tool6;
+@use 'display/tool' as tool7;
+@use 'grid/tool' as tool8;
+@use 'collapse/tool' as tool9;

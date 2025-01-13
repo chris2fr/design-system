@@ -1,3 +1,8 @@
+@use "../../selector/function/namespace";
+@use "../../selector/tool/pseudo";
+@use "../../tool/utility";
+@use "../tool/hr";
+
 ////
 /// Core scheme : Display hr
 /// @group core
@@ -7,18 +12,18 @@
 
 @mixin _core-display-hr-scheme($legacy: false) {
   hr {
-    @include build-hr-scheme($legacy);
+    @include hr.build-hr-scheme($legacy);
   }
 
-  #{ns(hr)} {
+  #{namespace.ns(hr)} {
     &-or {
-      @include _pseudo(before after) {
+      @include pseudo.pseudo(before after) {
         @include color.background(border default grey, (legacy:$legacy));
       }
     }
   }
 
-  @include build-utility(display, hr) {
-    @include build-hr-scheme($legacy);
+  @include utility.build-utility(display, hr) {
+    @include hr.build-hr-scheme($legacy);
   }
 }

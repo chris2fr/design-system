@@ -1,3 +1,5 @@
+@use "../tool";
+
 ////
 /// Badge Module - group
 /// @group badge
@@ -20,6 +22,6 @@
   }
 
   &--sm {
-    @include nest-badge(sm);
+    @include tool.nest-badge(sm);
   }
 }

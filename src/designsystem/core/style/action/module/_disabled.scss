@@ -1,3 +1,5 @@
+@use "../tool/disabled";
+
 ////
 /// Core Module : Action cursor
 /// @group core
@@ -6,6 +8,6 @@
 /**
  * Override de l'opacité chrome sur un élément disabled
  */
-@include disabled-selector {
+@include disabled.disabled-selector {
   opacity: 1;
 }

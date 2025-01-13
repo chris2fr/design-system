@@ -1,9 +1,13 @@
+@use "../../selector/function/namespace";
+@use "../../spacing/tool/size";
+@use "../../spacing/tool/space";
+
 ////
 /// Core Module : Grid container
 /// @group core
 ////
 
-#{ns(container)} {
-  @include size(100%);
-  @include margin-x(auto);
+#{namespace.ns(container)} {
+  @include size.size(100%);
+  @include space.margin-x(auto);
 }

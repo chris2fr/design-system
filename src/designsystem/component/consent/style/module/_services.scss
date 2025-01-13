@@ -3,7 +3,7 @@
 /// @group consent
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
 #{ns(consent-service)} {
   @include relative;

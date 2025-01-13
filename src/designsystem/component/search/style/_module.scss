@@ -3,7 +3,7 @@
 /// @group search
 ////
 
-@use 'src/module/spacing';
+@use '../../../../module/spacing';
 
 #{ns(search-bar)} {
   @include display-flex(row);

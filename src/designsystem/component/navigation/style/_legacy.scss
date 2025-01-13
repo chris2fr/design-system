@@ -3,8 +3,8 @@
 /// @group navigation
 ////
 
-@use 'src/module/color';
-@use 'src/module/legacy';
+@use '../../../../module/color';
+@use '../../../../module/legacy';
 
 @include legacy.is(ie11) {
   /**

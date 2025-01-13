@@ -1,31 +1,36 @@
+@use "sass:list";
+@use "sass:map";
+@use "../../selector/function/nest";
+@use "../setting/elements";
+
 ////
 /// Core Tool : Action cursor
 /// @group core
 ////
 
-@mixin cursor-selector($type, $elements: $action-elements) {
+@mixin cursor-selector($type, $elements: elements.$action-elements) {
   $selectors: ();
   @each $element, $setting in $elements {
-    $cursor: map-get($setting, cursor);
-    $isolated: map-get($setting, isolated);
-    $selector: map-get($setting, selector);
+    $cursor: map.get($setting, cursor);
+    $isolated: map.get($setting, isolated);
+    $selector: map.get($setting, selector);
     @if $cursor {
-      $kind: map-get($cursor, $type);
+      $kind: map.get($cursor, $type);
       @if $kind {
         @if $isolated {
-          $isolated-selectors: nest($selector, map-get($kind, selector));
+          $isolated-selectors: nest.nest($selector, map.get($kind, selector));
           #{$isolated-selectors} {
             @content;
           }
         }
         @else {
-          $selectors: append($selectors, nest($selector, map-get($kind, selector)), 'comma');
+          $selectors: list.append($selectors, nest.nest($selector, map.get($kind, selector)), 'comma');
         }
       }
     }
   }
 
-  @if (length($selectors) > 0) {
+  @if (list.length($selectors) > 0) {
     #{$selectors} {
       @content;
     }

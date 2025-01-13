@@ -3,7 +3,7 @@
 /// @group core
 ////
 
-@use 'src/module/selector';
+@use '../../../module/selector';
 
 @media print {
   @import 'style/print';

@@ -3,8 +3,8 @@
 /// @group core
 ////
 
-@import 'scheme/heading';
+@use 'scheme/heading';
 
 @mixin _core-typography-scheme($legacy: false) {
-  @include _core-typography-scheme-heading($legacy);
+  @include heading._core-typography-scheme-heading($legacy);
 }

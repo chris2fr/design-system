@@ -3,7 +3,7 @@
 /// @group header
 ////
 
-@use 'src/module/media-query';
+@use '../../../../../module/media-query';
 
 #{ns(header)} {
   &__brand {

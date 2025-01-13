@@ -1,12 +1,13 @@
 @use 'sass:list';
 @use 'sass:selector';
-@use 'src/module/string';
+@use '../../../module/string' as str;
+@use 'sass:string';
 
 @function associate($selector, $element) {
-  $segments: string.split('#{$selector}', ',');
+  $segments: str.split('#{$selector}', ',');
   $result: ();
   @each $segment in $segments {
-    $elements: string.split($segment, ' ');
+    $elements: str.split($segment, ' ');
     $r: ();
     $length: list.length($elements);
     @if $length > 1 {

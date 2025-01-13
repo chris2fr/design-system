@@ -1,24 +1,29 @@
+@use "sass:list";
+@use "sass:selector";
+@use "sass:string";
+@use "../../function/string" as function-string;
+
 ////
 /// Core Function : Selector associate
 /// @group core
 ////
 
 @function selector-associate($selector, $element) {
-  $segments: str-split('#{$selector}', ',');
+  $segments: function-string.str-split('#{$selector}', ',');
   $result: ();
   @each $segment in $segments {
-    $elements: str-split($segment, ' ');
+    $elements: function-string.str-split($segment, ' ');
     $r: ();
-    $length: length($elements);
+    $length: list.length($elements);
     @if $length > 1 {
       @for $i from 1 to $length {
-        $r: append($r, unquote(nth($elements, $i)), 'space');
+        $r: list.append($r, string.unquote(list.nth($elements, $i)), 'space');
       }
     }
-    $u: selector-unify(nth($elements, -1), $element);
+    $u: selector.unify(list.nth($elements, -1), $element);
     @if $u != null {
-      $r: append($r, $u, 'space');
-      $result: append($result, $r, 'comma');
+      $r: list.append($r, $u, 'space');
+      $result: list.append($result, $r, 'comma');
     }
   }
   @return $result;

@@ -3,7 +3,7 @@
 /// @group summary
 ////
 
-@use 'src/module/color';
+@use '../../../../module/color';
 
 @mixin _summary-scheme($legacy: false) {
   #{ns(summary)} {

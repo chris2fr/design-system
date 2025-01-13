@@ -1,3 +1,14 @@
+@use "sass:list";
+@use "sass:map";
+@use "../../function/string";
+@use "../../selector/function/namespace";
+@use "../../spacing/function/space";
+@use "../setting/spacing";
+@use "../setting/text";
+@use "../setting/title";
+@use "font-face";
+@use "styles";
+
 ////
 /// Core Tool : Typography build
 /// @group core
@@ -15,37 +26,37 @@
     $base: '#{$type + $separator}';
   }
 
-  $selectors: (ns('#{$base + $name}'));
+  $selectors: (namespace.ns('#{$base + $name}'));
 
   @if $alt != null {
-    $selectors: append($selectors, ns('#{$base + $alt}'), 'comma');
+    $selectors: list.append($selectors, namespace.ns('#{$base + $alt}'), 'comma');
   }
 
   @return $selectors;
 }
 
 @mixin build-utillity-typography() {
-  @if $text-utilities {
-    @each $name, $variation in $title-settings {
+  @if text.$text-utilities {
+    @each $name, $variation in title.$title-settings {
       $type: display;
-      @if is-heading($name) {
+      @if string.is-heading($name) {
         $type: heading;
       }
 
-      #{typography-selector($type, $name, true, map-get($variation, alt))} {
-        @include title-style($name, true, true, null, true);
+      #{typography-selector($type, $name, true, map.get($variation, alt))} {
+        @include styles.title-style($name, true, true, null, true);
       }
     }
 
-    #{ns(text--alt)} {
-      @include font-family(alt, true);
+    #{namespace.ns(text--alt)} {
+      @include font-face.font-family(alt, true);
     }
   }
 
-  @if $title-utilities {
-    @each $name, $variation in $text-settings {
-      #{typography-selector(text, $name, true, map-get($variation, alt))} {
-        @include text-style($name, true, true, null, true);
+  @if title.$title-utilities {
+    @each $name, $variation in text.$text-settings {
+      #{typography-selector(text, $name, true, map.get($variation, alt))} {
+        @include styles.text-style($name, true, true, null, true);
       }
     }
   }
@@ -53,13 +64,13 @@
 
 @mixin title-selector() {
   $titles: ();
-  @each $name, $variation in $title-settings {
+  @each $name, $variation in title.$title-settings {
     $type: display;
-    @if is-heading($name) {
+    @if string.is-heading($name) {
       $type: heading;
     }
 
-    $titles: append($titles, typography-selector($type, $name, false, map-get($variation, alt)), comma);
+    $titles: list.append($titles, typography-selector($type, $name, false, map.get($variation, alt)), comma);
   }
   #{$titles} {
     @content;
@@ -68,8 +79,8 @@
 
 @mixin generate-margin-vars() {
   :root {
-    @each $name, $margin in $text-spacing {
-      --#{$name}-spacing: #{space($margin)};
+    @each $name, $margin in spacing.$text-spacing {
+      --#{$name}-spacing: #{space.space($margin)};
     }
   }
 }

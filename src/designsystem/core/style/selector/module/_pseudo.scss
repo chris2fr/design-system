@@ -1,12 +1,15 @@
+@use "../function/namespace";
+@use "../tool/pseudo";
+
 ////
 /// Core Module : Selector pseudo
 /// @group core
 ////
 
-#{ns(no-before)} {
-  @include before(none);
+#{namespace.ns(no-before)} {
+  @include pseudo.before(none);
 }
 
-#{ns(no-after)} {
-  @include after(none);
+#{namespace.ns(no-after)} {
+  @include pseudo.after(none);
 }

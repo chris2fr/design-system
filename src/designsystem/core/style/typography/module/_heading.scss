@@ -1,13 +1,19 @@
+@use "sass:map";
+@use "../../function/string";
+@use "../../reset/setting";
+@use "../setting/title";
+@use "../tool/styles";
+
 ////
 /// Core Module : Reset headings
 /// @group core
 ////
 
-@if (map-get($reset-settings, heading)) {
-  @each $title, $variation in ($title-settings) {
-    @if is-heading($title) {
+@if (map.get(setting.$reset-settings, heading)) {
+  @each $title, $variation in (title.$title-settings) {
+    @if string.is-heading($title) {
       #{$title} {
-        @include title-style($title, true);
+        @include styles.title-style($title, true);
       }
     }
   }

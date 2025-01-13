@@ -7,14 +7,27 @@
   LOGO
 \* ˍˍˍˍˍˍˍˍˍ */
 
-@use 'src/module/path';
-@use 'src/module/shame/media-query';
+@use '../../../module/path';
+@use '../../../module/shame/media-query';
+
+@use '../../../module/color';
 
 @include path.to-dist(2);
 @include media-query.order;
 
 @import 'index';
 @import 'style/module';
-@import 'style/scheme';
+// @import 'style/scheme';
 
-@include _logo-scheme;
+// @include _logo-scheme;
+////
+/// Logo Scheme
+/// @group logo
+////
+
+@mixin _logo-scheme($legacy: false) {
+  #{ns(logo)} {
+    @include color.text(black-white grey, (legacy:$legacy));
+  }
+}
+

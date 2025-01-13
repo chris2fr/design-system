@@ -1,8 +1,10 @@
+@use "../tool/build-typography";
+
 ////
 /// Core Module : Typography
 /// @group core
 ////
 
-@include generate-margin-vars();
+@include build-typography.generate-margin-vars();
 
-@include build-utillity-typography();
+@include build-typography.build-utillity-typography();

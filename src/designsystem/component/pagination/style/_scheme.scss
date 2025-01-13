@@ -3,9 +3,9 @@
 /// @group pagination
 ////
 
-@use 'src/module/color';
-@use 'src/module/disabled';
-@use 'src/module/selector';
+@use '../../../../module/color';
+@use '../../../../module/disabled';
+@use '../../../../module/selector';
 
 @mixin _pagination-scheme($legacy: false) {
   #{ns(pagination)} {

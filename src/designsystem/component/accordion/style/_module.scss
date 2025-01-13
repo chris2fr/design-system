@@ -1,9 +1,12 @@
+@use "../../link/style/tool/build";
+@use "tool";
+
 ////
 /// Accordion Module
 /// @group accordion
 ////
 
-@use 'src/module/animate';
+@use '../../../../module/animate';
 
 #{ns(accordion)} {
   position: relative;
@@ -26,10 +29,10 @@
   }
 
   &__btn {
-    @include _build-link-base;
-    @include _link-display(flex);
+    @include build.build-link-base;
+    @include build.link-display(flex);
     @include font-weight('medium');
-    @include nest-accordion-button(arrow-down-s-line);
+    @include tool.nest-accordion-button(arrow-down-s-line);
     @include size(100%);
     text-align: left;
     @include margin(0);

@@ -1,26 +1,29 @@
+@use "../function/space";
+@use "size";
+
 ////
 /// Core Tool : Spacing position
 /// @group core
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
 @mixin position($position, $top: null, $right: null, $bottom: null, $left: null, $width: null, $height: null) {
   position: #{$position};
   @if $top != null {
-    top: #{space($top)};
+    top: #{space.space($top)};
   }
   @if $right != null {
-    right: #{space($right)};
+    right: #{space.space($right)};
   }
   @if $bottom != null {
-    bottom: #{space($bottom)};
+    bottom: #{space.space($bottom)};
   }
   @if $left != null {
-    left: #{space($left)};
+    left: #{space.space($left)};
   }
 
-  @include size($width, $height);
+  @include size.size($width, $height);
 
   @content;
 }

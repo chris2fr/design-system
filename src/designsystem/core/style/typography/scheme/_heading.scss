@@ -1,19 +1,22 @@
+@use "../setting/title";
+@use "../tool/build-typography";
+
 ////
 /// Core Scheme : Reset headings
 /// @group core
 ////
 
 @use 'sass:list';
-@use 'src/module/color';
-@use 'src/module/typography';
+@use '../../../../../module/color';
+@use '../../../../../module/typography';
 
 @mixin _core-typography-scheme-heading($legacy: false) {
-  @include title-selector {
+  @include build-typography.title-selector {
     @include color.text(title grey, (legacy:$legacy));
   }
 
   $titles: ();
-  @each $title, $variation in ($title-settings) {
+  @each $title, $variation in (title.$title-settings) {
     @if typography.is-heading($title) {
       $titles: list.append($titles, $title, comma);
     }

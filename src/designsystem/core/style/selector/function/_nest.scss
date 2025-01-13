@@ -1,3 +1,7 @@
+@use "sass:list";
+@use "sass:selector";
+@use "../../function/string";
+
 ////
 /// Core Function : Selector nest
 /// @group core
@@ -10,10 +14,10 @@
       $result: '#{$selector}';
     }
     @else if $selector {
-      $segments: str-split($result, ',');
+      $segments: string.str-split($result, ',');
       $concat: ();
       @each $segment in $segments {
-        $concat: append($concat, selector-nest($segment, $selector), comma);
+        $concat: list.append($concat, selector.nest($segment, $selector), comma);
       }
       $result: '#{$concat}';
     }

@@ -1,13 +1,15 @@
+@use "../tool/disabled" as tool-disabled;
+
 ////
 /// Core Scheme : Action cursor
 /// @group core
 ////
 
-@use 'src/module/color';
-@use 'src/module/disabled';
+@use '../../../../../module/color';
+@use '../../../../../module/disabled';
 
 @mixin _core-action-disabled-scheme($legacy: false) {
-  @include disabled-selector {
+  @include tool-disabled.disabled-selector {
     @include disabled.colors((legacy: $legacy, text: true));
   }
 }

@@ -1,3 +1,10 @@
+@use "sass:map";
+@use "../../variables";
+@use "../function/map" as function-map;
+@use "../selector/function/namespace";
+@use "../selector/setting/breakpoint" as setting-breakpoint;
+@use "../selector/tool/breakpoint" as tool-breakpoint;
+
 ////
 /// Core Tool
 /// @group core
@@ -5,18 +12,18 @@
 
 @mixin build-utility($category, $name, $modifier: null) {
   // Récupération des variables depuis src/variables.scss
-  $utilityVars: map-get($variables, $category);
+  $utilityVars: map.get(variables.$variables, $category);
 
-  @if map-get($variables, $category) != null {
-    $utilityVars: to-map(map-get($utilityVars, $name));
-    $breakpointsVars: map-get($utilityVars, 'breakpoints');
+  @if map.get(variables.$variables, $category) != null {
+    $utilityVars: function-map.to-map(map.get($utilityVars, $name));
+    $breakpointsVars: map.get($utilityVars, 'breakpoints');
 
     // breakpoints: all = xs, sm, md, lg, xl
-    $breakpointsList: if($breakpointsVars == all, map-keys($breakpoints), $breakpointsVars);
+    $breakpointsList: if($breakpointsVars == all, map.keys(setting-breakpoint.$breakpoints), $breakpointsVars);
     @if ($breakpointsList == null) { $breakpointsList: first; } // default: first
 
     // si l'utilitaire n'est pas désactivé
-    @if (map-get($utilityVars, 1) != false and map-get($utilityVars, active) != false) {
+    @if (map.get($utilityVars, 1) != false and map.get($utilityVars, active) != false) {
       @each $bp in $breakpointsList {
         $mod: '-#{$bp}';
         @if ($bp == xs or $bp == first) {
@@ -26,8 +33,8 @@
         @if $modifier {
           $mod: #{$mod + '-' + $modifier};
         }
-        @include respond-from($bp) {
-          #{ns($name)}#{$mod} {
+        @include tool-breakpoint.respond-from($bp) {
+          #{namespace.ns($name)}#{$mod} {
             @content;
           }
         }

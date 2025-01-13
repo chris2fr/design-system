@@ -1,3 +1,4 @@
+@use "sass:meta";
 ////
 /// Accordion Main
 /// @group accordion
@@ -7,14 +8,37 @@
   ACCORDION
 \* ˍˍˍˍˍˍˍˍˍ */
 
-@use 'src/module/path';
-@use 'src/module/shame/media-query';
+@use '../../../module/path';
+@use '../../../module/shame/media-query';
+
+@use '../../../module/color';
 
 @include path.to-dist(2);
 @include media-query.order;
 
-@import 'index';
-@import 'style/module';
-@import 'style/scheme';
+@include meta.load-css('index');
+@include meta.load-css('style/module');
+// @import 'style/scheme';
+////
+/// Accordion Scheme
+/// @group accordion
+////
+
+@mixin _accordion-scheme($legacy: false) {
+  #{ns(accordion)} {
+    @include before {
+      @include color.box-shadow(default grey, (legacy:$legacy), top-1-in bottom-1-out);
+    }
+
+    &__btn {
+      @include color.text(action-high designsystem-primary, (legacy:$legacy));
+
+      &[aria-expanded='true'] {
+        @include color.background(open designsystem-primary, (legacy: $legacy));
+      }
+    }
+  }
+}
+
 
 @include _accordion-scheme;

@@ -1,9 +1,12 @@
+@use "sass:map";
+@use "../../reset/setting";
+
 ////
 /// Core Module : Media - iframe reset
 /// @group core
 ////
 
-@if (map-get($reset-settings, iframe)) {
+@if (map.get(setting.$reset-settings, iframe)) {
   iframe {
     border: 0;
   }

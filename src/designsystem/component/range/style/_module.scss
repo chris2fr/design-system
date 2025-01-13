@@ -3,10 +3,10 @@
 /// @group range
 ////
 
-@use 'src/module/reset';
-@use 'src/module/spacing';
-@use 'src/module/selector';
-@use 'src/module/disabled';
+@use '../../../../module/reset';
+@use '../../../../module/spacing';
+@use '../../../../module/selector';
+@use '../../../../module/disabled';
 
 #{selector.ns-group(range)} {
   @include relative;

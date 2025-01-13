@@ -3,7 +3,7 @@
 /// @group content
 ////
 
-@use 'src/module/color';
+@use '../../../../module/color';
 
 @mixin _content-scheme($legacy: false) {
   #{ns(content-media)} {

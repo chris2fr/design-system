@@ -1,14 +1,16 @@
+@use "setting";
+
 ////
 /// Badge Tool
 /// @group badge
 ////
 
 @mixin build-badge() {
-  @include _build-link($badge-settings);
+  @include _build-link(setting.$badge-settings);
 }
 
 @mixin nest-badge($size:md, $place: null, $icon:null, $from: null, $insert: true) {
-  @include _nest-link($badge-settings, $size, $place, $icon, $from, $insert) {
+  @include _nest-link(setting.$badge-settings, $size, $place, $icon, $from, $insert) {
     @content;
   }
 }

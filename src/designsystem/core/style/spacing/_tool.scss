@@ -3,8 +3,8 @@
 /// @group core
 ////
 
-@import 'tool/size';
-@import 'tool/space';
-@import 'tool/margin';
-@import 'tool/position';
-@import 'tool/z-index';
+@use 'tool/size';
+@use 'tool/space';
+@use 'tool/margin';
+@use 'tool/position';
+@use 'tool/z-index';

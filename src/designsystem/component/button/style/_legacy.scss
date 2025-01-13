@@ -3,7 +3,7 @@
 /// @group button
 ////
 
-@use 'src/module/legacy';
+@use '../../../../module/legacy';
 
 @include legacy.is(ie11) {
   #{ns(btn)} {

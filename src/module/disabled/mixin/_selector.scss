@@ -1,7 +1,7 @@
 @use 'sass:list';
 @use 'sass:map';
 @use 'colors';
-@use 'src/module/selector';
+@use '../../../module/selector';
 
 /// Applique les couleurs disabled sur l'élément avec les sélecteurs appropriés
 /// @access public

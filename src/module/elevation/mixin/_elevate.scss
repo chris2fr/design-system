@@ -1,12 +1,12 @@
 @use 'sass:list';
 @use 'sass:map';
-@use 'src/module/string';
+@use '../../../module/string' as str;
 @use 'background';
 @use 'z-index';
 @use 'shadow';
 
 @mixin elevate($level, $options: ()) {
-  $layer: list.nth(string.split($level, '-'), 1);
+  $layer: list.nth(str.split($level, '-'), 1);
   $legacy: map.get($options, legacy);
 
   @include z-index.z-index($level, $legacy);

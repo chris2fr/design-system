@@ -1,23 +1,25 @@
+@use "sass:list";
+@use "sass:map";
 ////
 /// Link Function
 /// @group link
 ////
 
-@function _link-sort-sizes($sizes) {
+@function link-sort-sizes($sizes) {
   $sorted-map: (
-    md: map_get($sizes, md)
+    md: map.get($sizes, md)
   );
 
   @each $size, $size-settings in $sizes {
     @if $size != md {
-      $sorted-map: map-merge($sorted-map, ($size: $size-settings));
+      $sorted-map: map.merge($sorted-map, ($size: $size-settings));
     }
   }
 
   @return $sorted-map;
 }
 
-@function _get-link-restrain($places, $place: null) {
+@function get-link-restrain($places, $place: null) {
   @if $place == right {
     @return after;
   }
@@ -28,33 +30,33 @@
   @if $places == null {
     @return null;
   }
-  @if index($places, only) == null and index($places, left) == null and index($places, right) == null {
+  @if list.index($places, only) == null and list.index($places, left) == null and list.index($places, right) == null {
     @return null;
   }
-  @if length($places) == 1 and nth($places) == right {
+  @if list.length($places) == 1 and list.nth($places) == right {
     @return after;
   }
-  @if index($places, right) == null {
+  @if list.index($places, right) == null {
     @return before;
   }
   @return null;
 }
 
-@function _get-link-icon-size($size-settings, $places, $place: null) {
+@function get-link-icon-size($size-settings, $places, $place: null) {
   @if $place == only {
-    @return map_get($size-settings, icon-only);
+    @return map.get($size-settings, icon-only);
   }
-  @if length($places) == 1 and nth($places) == only {
-    @return map_get($size-settings, icon-only);
+  @if list.length($places) == 1 and list.nth($places) == only {
+    @return map.get($size-settings, icon-only);
   }
-  @return map_get($size-settings, icon);
+  @return map.get($size-settings, icon);
 }
 
-@function _get-link-is-before($places, $place: null) {
+@function get-link-is-before($places, $place: null) {
   @if $place == right {
     @return false;
   }
-  @if length($places) == 1 and nth($places) == right {
+  @if list.length($places) == 1 and list.nth($places) == right {
     @return false;
   }
   @return true;

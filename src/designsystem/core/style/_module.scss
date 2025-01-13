@@ -3,16 +3,16 @@
 /// @group core
 ////
 
-@import 'action/module';
-@import 'motion/module';
-@import 'typography/module';
-@import 'color/module';
-@import 'reset/module';
-@import 'icon/module';
-@import 'display/module';
-@import 'media/module';
-@import 'grid/module';
-@import 'selector/module';
-@import 'collapse/module';
-@import 'spacing/module';
-@import 'placement/module';
+@use 'action/module';
+@use 'motion/module' as module2;
+@use 'typography/module' as module3;
+@use 'color/module' as module4;
+@use 'reset/module' as module5;
+@use 'icon/module' as module6;
+@use 'display/module' as module7;
+@use 'media/module' as module8;
+@use 'grid/module' as module9;
+@use 'selector/module' as module10;
+@use 'collapse/module' as module11;
+@use 'spacing/module' as module12;
+@use 'placement/module' as module13;

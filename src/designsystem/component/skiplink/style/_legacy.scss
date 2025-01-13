@@ -3,7 +3,7 @@
 /// @group skiplink
 ////
 
-@use 'src/module/legacy';
+@use '../../../../module/legacy';
 
 @include legacy.is(ie11) {
   /**

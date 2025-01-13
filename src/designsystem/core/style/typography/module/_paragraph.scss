@@ -1,8 +1,10 @@
+@use "../tool/styles";
+
 ////
 /// Core Module : Reset paragraph
 /// @group core
 ////
 
 p {
-  @include text-style(md, true);
+  @include styles.text-style(md, true);
 }

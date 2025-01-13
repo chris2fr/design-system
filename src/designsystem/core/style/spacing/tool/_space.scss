@@ -1,9 +1,11 @@
+@use "../../selector/tool/breakpoint";
+
 ////
 /// Core Tool : Spacing space
 /// @group core
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
 /// Set space property
 ///
@@ -36,7 +38,7 @@
 }
 
 @mixin _spacing-from($property: margin, $value: 0, $direction: null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @include _spacing($property, $value, $direction);
   }
 }

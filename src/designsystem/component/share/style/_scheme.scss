@@ -3,7 +3,7 @@
 /// @group share
 ////
 
-@use 'src/module/color';
+@use '../../../../module/color';
 
 @mixin _share-scheme($legacy: false) {
   #{ns(share)} {

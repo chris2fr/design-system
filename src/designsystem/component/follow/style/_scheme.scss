@@ -3,7 +3,7 @@
 /// @group follow
 ////
 
-@use 'src/module/color';
+@use '../../../../module/color';
 
 @mixin _follow-scheme($legacy: false) {
   #{ns(follow)} {

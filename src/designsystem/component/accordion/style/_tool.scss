@@ -1,10 +1,13 @@
+@use "../../link/style/tool/nest";
+@use "setting";
+
 ////
 /// Accordion Tool
 /// @group accordion
 ////
 
 @mixin nest-accordion-button($icon:null) {
-  @include _nest-link($accordions-settings, md, right, $icon, null, false) {
+  @include nest.nest-link(setting.$accordions-settings, md, right, $icon, null, false) {
     @content;
   }
 }

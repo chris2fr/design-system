@@ -3,6 +3,6 @@
 /// @group core
 ////
 
-@import 'display/module';
-@import 'media/module';
-@import 'icon/module';
+@use 'display/module';
+@use 'media/module' as module2;
+@use 'icon/module' as module3;

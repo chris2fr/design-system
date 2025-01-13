@@ -1,14 +1,17 @@
+@use "action/tool/link";
+@use "selector/function/namespace";
+
 ////
 /// Core Outdated
 /// @group core
 ////
 
 @-moz-document url-prefix() {
-  :root#{ns-attr(scrolling)} body {
+  :root#{namespace.ns-attr(scrolling)} body {
     position: sticky;
   }
 
   :root {
-    --underline-thickness: calc(#{$underline-thickness} + 0.25px);
+    --underline-thickness: calc(#{link.$underline-thickness} + 0.25px);
   }
 }

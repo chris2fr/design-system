@@ -3,8 +3,8 @@
 /// @group semgented
 ////
 
-@use 'src/module/spacing';
-@use 'src/module/selector';
+@use '../../../../../module/spacing';
+@use '../../../../../module/selector';
 
 #{selector.ns(segmented)} {
   @include relative;

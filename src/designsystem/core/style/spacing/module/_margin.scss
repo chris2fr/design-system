@@ -1,6 +1,9 @@
+@use "../setting/margin" as setting-margin;
+@use "../tool/margin" as tool-margin;
+
 ////
 /// Core Module : Spacing margin
 /// @group core
 ////
 
-@include create-spacing-properties($spacing-settings);
+@include tool-margin.create-spacing-properties(setting-margin.$spacing-settings);

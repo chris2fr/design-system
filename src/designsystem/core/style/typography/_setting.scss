@@ -3,9 +3,9 @@
 /// @group core
 ////
 
-@import 'setting/variables';
-@import 'setting/font-face';
-@import 'setting/font-weight';
-@import 'setting/text';
-@import 'setting/title';
-@import 'setting/spacing';
+@use 'setting/variables';
+@use 'setting/font-face';
+@use 'setting/font-weight';
+@use 'setting/text';
+@use 'setting/title';
+@use 'setting/spacing';

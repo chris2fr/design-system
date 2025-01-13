@@ -1,6 +1,8 @@
+@use "../tool/focus";
+
 ////
 /// Core Module : Action focus
 /// @group core
 ////
 
-@include focusable;
+@include focus.focusable;

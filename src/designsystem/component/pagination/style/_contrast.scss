@@ -3,8 +3,8 @@
 /// @group pagination
 ////
 
-@use 'src/module/media-query';
-@use 'src/module/selector';
+@use '../../../../module/media-query';
+@use '../../../../module/selector';
 
 @include media-query.high-contrast() {
   #{ns(pagination)} {

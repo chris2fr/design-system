@@ -1,3 +1,11 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:string";
+@use "../function";
+@use "../setting";
+@use "icon";
+@use "size";
+
 ////
 /// Link Tool : build
 /// @group link
@@ -19,7 +27,7 @@
     @if $selector == '' {
       $selector: '#{$base}';
     }
-    $selector: '#{$selector}:not([class*="#{str-slice($base, 2)}--icon-"])';
+    $selector: '#{$selector}:not([class*="#{string.slice($base, 2)}--icon-"])';
   }
   @else if $place == left or $place == right {
     $selector: '#{$selector}#{$base}--icon-#{$place}';
@@ -45,12 +53,12 @@
   }
 }
 
-@mixin _build-link-base {
+@mixin build-link-base {
   @include set-text-margin(0);
   @include set-title-margin(0);
 }
 
-@mixin _link-display($display) {
+@mixin link-display($display) {
   @if $display == flex {
     @include display-flex(row, center, null, null, true);
     width: -moz-fit-content;
@@ -65,17 +73,17 @@
 }
 
 @mixin _build-link($settings) {
-  $places: map_get($settings, places);
-  $sizes: _link-sort-sizes(map_get($settings, sizes));
-  $border-radius: map-get($settings, border-radius);
-  $align-on-content: map-get($settings, align-on-content);
-  $base: ns(map-get($settings, selector));
-  $underline: map-get($settings, underline);
-  $append: map-get($settings, append);
+  $places: map.get($settings, places);
+  $sizes: function.link-sort-sizes(map.get($settings, sizes));
+  $border-radius: map.get($settings, border-radius);
+  $align-on-content: map.get($settings, align-on-content);
+  $base: ns(map.get($settings, selector));
+  $underline: map.get($settings, underline);
+  $append: map.get($settings, append);
 
   #{$base} {
-    @include _build-link-base;
-    @include _link-display(map-get($settings, display));
+    @include build-link-base;
+    @include link-display(map.get($settings, display));
 
     @if $underline != true {
       @include disable-underline;
@@ -84,38 +92,38 @@
     @content;
   }
 
-  @if map_get($settings, no-modifier) != true {
+  @if map.get($settings, no-modifier) != true {
     @each $size, $size-settings in $sizes {
       @include _link-class($base, $size, null, false, $append) {
-        @include _build-link-size($size-settings, $border-radius);
+        @include size.build-link-size($size-settings, $border-radius);
 
-        @if map_get($settings, blank) {
+        @if map.get($settings, blank) {
           @include target-blank(true) {
-            @include _build-link-icon($size-settings, right, $size, false);
+            @include icon.build-link-icon($size-settings, right, $size, false);
           }
         }
       }
 
       @if $align-on-content {
         @include _link-class($base, $size, null, true, $append) {
-          @include _link-align-on-content($size, null, $size-settings);
+          @include size.link-align-on-content($size, null, $size-settings);
         }
       }
 
       @if $places != null {
         @each $place in $places {
           @include _link-class($base, $size, $place, false, $append) {
-            @include _build-link-icon($size-settings, $place, $size, true);
+            @include icon.build-link-icon($size-settings, $place, $size, true);
           }
 
           @if $align-on-content {
             @include _link-class($base, $size, $place, true, $append) {
-              @include _link-align-on-content($size, $place, $size-settings);
+              @include size.link-align-on-content($size, $place, $size-settings);
             }
           }
         }
 
-        @if index($places, only) == null {
+        @if list.index($places, only) == null {
           @include _link-class($base, $size, only, false, $append) {
             @include before(none);
           }
@@ -126,7 +134,7 @@
 }
 
 @mixin build-link() {
-  @include _build-link($links-settings) {
+  @include _build-link(setting.$links-settings) {
     @content;
   }
 }

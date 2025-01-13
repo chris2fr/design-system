@@ -1,26 +1,30 @@
+@use "../setting/elements";
+@use "../tool/hover";
+@use "../tool/link";
+
 ////
 /// Core Module : Action hover
 /// @group core
 ////
 
-@include hover-media-query {
+@include hover.hover-media-query {
   :root {
     --brighten: -1;
   }
 
-  @include hover-type-selector($action-elements, all, true) {
-    @include hover-tint;
+  @include hover.hover-type-selector(elements.$action-elements, all, true) {
+    @include hover.hover-tint;
   }
 
-  @include hover-type-selector($action-elements, underline, true) {
-    @include hover-underline;
+  @include hover.hover-type-selector(elements.$action-elements, underline, true) {
+    @include link.hover-underline;
   }
 }
 
-@include hover-type-selector($action-elements, tint) {
-  @include enable-tint;
+@include hover.hover-type-selector(elements.$action-elements, tint) {
+  @include hover.enable-tint;
 }
 
-@include hover-type-selector($action-elements, underline) {
-  @include tint-enabled(false, true);
+@include hover.hover-type-selector(elements.$action-elements, underline) {
+  @include hover.tint-enabled(false, true);
 }

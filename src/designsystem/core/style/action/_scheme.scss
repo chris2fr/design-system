@@ -3,8 +3,8 @@
 /// @group core
 ////
 
-@import 'scheme/disabled';
+@use 'scheme/disabled';
 
 @mixin _core-action-scheme($legacy: false) {
-  @include _core-action-disabled-scheme($legacy);
+  @include disabled._core-action-disabled-scheme($legacy);
 }

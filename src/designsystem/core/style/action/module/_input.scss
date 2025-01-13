@@ -1,17 +1,21 @@
+@use "../../spacing/tool/size";
+@use "../../spacing/tool/space";
+@use "../../typography/tool/font-face";
+
 ////
 /// Core Module : Reset input & form field
 /// @group core
 ////
 
-@use 'src/module/reset';
-@use 'src/module/spacing';
+@use '../../../../../module/reset';
+@use '../../../../../module/spacing';
 
 input,
 select,
 textarea {
   @include reset.appearance(none);
-  @include font-family;
-  @include text-adjustments;
+  @include font-face.font-family;
+  @include font-face.text-adjustments;
   border-radius: 0;
   border: 0;
   background-color: transparent;
@@ -32,8 +36,8 @@ input[type="range"] {
 
 input::-webkit-contacts-auto-fill-button,
 input::-webkit-credentials-auto-fill-button {
-  @include margin-left(4v);
-  @include margin-right(-1px);
-  @include size(5v, 5v);
+  @include space.margin-left(4v);
+  @include space.margin-right(-1px);
+  @include size.size(5v, 5v);
   -webkit-mask-size: #{spacing.space(5v 5v)};
 }

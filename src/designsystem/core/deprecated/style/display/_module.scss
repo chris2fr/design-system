@@ -1,12 +1,15 @@
+@use "../../../style/selector/function/namespace";
+@use "../../../style/selector/tool/breakpoint";
+
 ////
 /// Core Deprecated Module
 /// @group core
 ////
 
-#{ns(displayed-lg)} {
+#{namespace.ns(displayed-lg)} {
   display: none !important;
 
-  @include respond-from(lg) {
+  @include breakpoint.respond-from(lg) {
     display: inherit !important;
   }
 }

@@ -1,13 +1,20 @@
+@use "../../selector/function/namespace";
+@use "../../selector/setting/breakpoint" as setting-breakpoint;
+@use "../../selector/tool/breakpoint" as tool-breakpoint;
+@use "../../spacing/tool/position";
+@use "../../spacing/tool/size";
+@use "../../spacing/tool/space";
+
 ////
 /// Core Tool : Display sr-only
 /// @group core
 ////
 
 @mixin sr-only() {
-  @include absolute;
-  @include size(1px, 1px);
-  @include padding(0);
-  @include margin(-1px);
+  @include position.absolute;
+  @include size.size(1px, 1px);
+  @include space.padding(0);
+  @include space.margin(-1px);
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
@@ -16,10 +23,10 @@
 }
 
 @mixin sr-only-from() {
-  @each $bp, $limits in $breakpoints {
+  @each $bp, $limits in setting-breakpoint.$breakpoints {
     @if $bp != xs {
-      #{ns('sr-only-' + $bp)} {
-        @include respond-from($bp) {
+      #{namespace.ns('sr-only-' + $bp)} {
+        @include tool-breakpoint.respond-from($bp) {
           @include sr-only();
         }
       }
@@ -28,10 +35,10 @@
 }
 
 @mixin sr-only-to() {
-  @each $bp, $limits in $breakpoints {
+  @each $bp, $limits in setting-breakpoint.$breakpoints {
     @if $bp != xs {
-      #{ns('sr-only-to-' + $bp)} {
-        @include respond-to($bp) {
+      #{namespace.ns('sr-only-to-' + $bp)} {
+        @include tool-breakpoint.respond-to($bp) {
           @include sr-only();
         }
       }

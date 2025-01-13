@@ -1,3 +1,5 @@
+@use "../../selector/function/namespace";
+
 ////
 /// Core Module : Display no-scroll
 /// @group core
@@ -13,7 +15,7 @@
     border-right: var(--scrollbar-width) solid transparent;
   }
 
-  &#{ns-attr(scrolling)} body {
+  &#{namespace.ns-attr(scrolling)} body {
     overflow: hidden;
     bottom: 0;
     left: 0;

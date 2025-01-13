@@ -1,11 +1,14 @@
+@use "../../selector/function/namespace";
+@use "../tool/sr-only";
+
 ////
 /// Core Module : Display sr-only
 /// @group core
 ////
 
-#{ns(sr-only)} {
-  @include sr-only();
+#{namespace.ns(sr-only)} {
+  @include sr-only.sr-only();
 }
 
-@include sr-only-from();
+@include sr-only.sr-only-from();
 // @include sr-only-to();

@@ -4,7 +4,7 @@
 ////
 
 @use "sass:math";
-@use 'src/module/spacing';
+@use '../../../../module/spacing';
 
 @mixin logo-size($size) {
   $font-size: spacing.space(map-get($logo-sizes, $size));

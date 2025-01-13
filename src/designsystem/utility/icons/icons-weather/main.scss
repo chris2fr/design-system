@@ -7,14 +7,18 @@
   ICON COMMUNICATION
 \* ˍˍˍˍˍˍˍˍˍ */
 
-@use 'src/module/path';
-@use 'src/module/shame/media-query';
+@use '../../../../module/path';
+@use '../../../../module/shame/media-query';
+
+@use '../../../core/style/icon/tool/default';
 
 @include path.to-dist(3);
 @include media-query.order;
 
 @import 'index';
 @import 'style/module';
+
+@include generate-icons(filter-icons('weather'));
 
 // deprecated
 @import 'deprecated/style/setting';

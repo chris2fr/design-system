@@ -3,10 +3,10 @@
 /// @group core
 ////
 
-@import 'tool/link';
-@import 'tool/button';
-@import 'tool/focus';
-@import 'tool/hover';
-@import 'tool/cursor';
-@import 'tool/disabled';
-@import 'tool/clickable';
+@use 'tool/link';
+@use 'tool/button';
+@use 'tool/focus';
+@use 'tool/hover';
+@use 'tool/cursor';
+@use 'tool/disabled';
+@use 'tool/clickable';

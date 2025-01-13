@@ -1,3 +1,10 @@
+@use "sass:list";
+@use "sass:string";
+@use "../../../../../../.config/config";
+@use "../function/namespace";
+@use "../function/pattern" as function-pattern;
+@use "pattern" as tool-pattern;
+
 ////
 /// Core Tool : Selector icon
 /// @group core
@@ -8,13 +15,13 @@ $icon-prefixes: icon- fi-;
 @mixin has-icon() {
   $start: ();
   @each $prefix in $icon-prefixes {
-    $list: class-start-with(ns($prefix, ''));
+    $list: function-pattern.class-start-with(namespace.ns(config.$prefix, ''));
     @each $item in $list {
-      $start: append($start, $item, 'comma');
+      $start: list.append($start, $item, 'comma');
     }
   }
 
-  @include _class-pattern($start) {
+  @include tool-pattern.class-pattern($start) {
     @content;
   }
 }
@@ -22,10 +29,10 @@ $icon-prefixes: icon- fi-;
 @mixin has-not-icon() {
   $start: '';
   @each $prefix in $icon-prefixes {
-    $start: '#{$start}#{class-not-start-with(ns($prefix, ''))}';
+    $start: '#{$start}#{function-pattern.class-not-start-with(namespace.ns(config.$prefix, ''))}';
   }
 
-  @include _class-pattern(unquote($start)) {
+  @include tool-pattern.class-pattern(string.unquote($start)) {
     @content;
   }
 }

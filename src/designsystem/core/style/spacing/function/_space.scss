@@ -1,3 +1,6 @@
+@use "../../function/string" as function-string;
+@use "../setting/space";
+
 ////
 /// Core Function : Spacing space
 /// @group core
@@ -7,7 +10,7 @@
 @use 'sass:meta';
 @use 'sass:string';
 @use 'sass:list';
-@use 'src/module/string' as str;
+@use '../../../../../module/string' as str;
 
 /// Return space value from type map and convert to rem.
 ///
@@ -48,7 +51,7 @@
     $list: ();
     $separator: list.separator($value);
     @each $v in $value {
-      $list: append($list, space($v), $separator);
+      $list: list.append($list, space($v), $separator);
     }
     @return $list;
   }
@@ -57,11 +60,11 @@
     $u: math.unit($value);
 
     @if $u == 'v' {
-      @return math.div($value, 1v) * $V;
+      @return math.div($value, 1v) * space.$V;
     }
 
     @if $u == 'w' {
-      @return math.div($value, 1w) * $W;
+      @return math.div($value, 1w) * space.$W;
     }
 
     @return $value;
@@ -91,31 +94,31 @@
         $i: $i + 1;
       }
 
-      $start: unquote('');
+      $start: string.unquote('');
       $middle: space(string.slice($value, $c + 1, $b - 1));
-      $end: unquote('');
+      $end: string.unquote('');
 
       @if $c > 1 {
         $start: space(string.slice($value, 1, $c - 1));
       }
 
-      $l: str-length($value);
+      $l: string.length($value);
       @if $b < $l {
         $end: space(string.slice($value, $b + 1, $l));
       }
 
-      @return unquote('#{$start}(#{$middle})#{$end}');
+      @return string.unquote('#{$start}(#{$middle})#{$end}');
     }
 
     @if string.index($value, ',') != null {
-      @return space(str-split($value, ','));
+      @return space(function-string.str-split($value, ','));
     }
 
     @if string.index($value, ' ') != null {
       $list: str.split($value, ' ');
       $result: ();
       @each $item in $list {
-        $result: append($result, space($item), space);
+        $result: list.append($result, space($item), space);
       }
       @return $result;
     }
@@ -124,7 +127,7 @@
       @return space(str.to-num($value));
     }
 
-    @return unquote($value);
+    @return string.unquote($value);
   }
 
   @return $value;

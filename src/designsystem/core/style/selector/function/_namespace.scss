@@ -1,3 +1,5 @@
+@use "../../../../../../.config/config";
+
 ////
 /// Core Function : Selector namespace
 /// @group core
@@ -8,7 +10,7 @@
 /// @param {String} $name - nom de l'élément
 /// @param {String} $notation - notation du sélecteur, par défaut un point pour les classes
 @function ns($name, $notation: '.') {
-  $class-name: $notation + $prefix + '-' + $name;
+  $class-name: $notation + config.$prefix + '-' + $name;
   @return $class-name;
 }
 

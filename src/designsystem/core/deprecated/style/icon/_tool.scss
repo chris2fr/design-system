@@ -1,23 +1,29 @@
+@use "sass:list";
+@use "../../../../../../.config/icon";
+@use "../../../style/icon/tool/default";
+@use "../../../style/icon/tool/legacy";
+@use "../../../style/selector/function/namespace";
+
 ////
 /// Core Deprecated Tool
 /// @group core
 ////
 
-@mixin generate-deprecated-icons($ids, $config: $icons-config) {
+@mixin generate-deprecated-icons($ids, $config: icon.$icons-config) {
   @each $icon, $setting in $config {
-    @if index($ids, $icon) {
-      #{ns(fi-#{$icon})} {
-        @include icon-image($icon, null);
+    @if list.index($ids, $icon) {
+      #{namespace.ns(fi-#{$icon})} {
+        @include default.icon-image($icon, null);
       }
     }
   }
 }
 
-@mixin generate-deprecated-icons-legacy($ids, $config: $icons-config) {
+@mixin generate-deprecated-icons-legacy($ids, $config: icon.$icons-config) {
   @each $icon, $setting in $config {
-    @if index($ids, $icon) {
-      #{ns(fi-#{$icon})} {
-        @include icon-image-legacy($icon, before);
+    @if list.index($ids, $icon) {
+      #{namespace.ns(fi-#{$icon})} {
+        @include legacy.icon-image-legacy($icon, before);
       }
     }
   }

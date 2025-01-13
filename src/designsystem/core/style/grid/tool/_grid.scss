@@ -1,3 +1,14 @@
+@use "sass:list";
+@use "sass:map";
+@use "../../selector/function/namespace";
+@use "../../selector/function/pattern";
+@use "../../selector/setting/breakpoint" as setting-breakpoint;
+@use "../../selector/tool/breakpoint" as tool-breakpoint;
+@use "../../spacing/tool/size";
+@use "../../spacing/tool/space";
+@use "../setting";
+@use "col";
+
 ////
 /// Core Tool : Grid
 /// @group core
@@ -13,15 +24,15 @@
 ///
 /// @example scss - Génère les colonnes
 ///   @include grid-generator();
-@mixin grid($settings: $grid-settings, $with-container: true, $with-offsets: true) {
-  $columns: map-get($settings, columns);
-  $breakpoints-settings: map-get($grid-settings, breakpoints);
+@mixin grid($settings: setting.$grid-settings, $with-container: true, $with-offsets: true) {
+  $columns: map.get($settings, columns);
+  $breakpoints-settings: map.get(setting.$grid-settings, breakpoints);
   $last-gutter: 0;
   $last-max-width: null;
   $containers: ();
   $row-gutters: ();
 
-  @each $breakpoint, $limits in $breakpoints {
+  @each $breakpoint, $limits in setting-breakpoint.$breakpoints {
     $mod: '-#{$breakpoint}';
 
     @if $breakpoint == xs {
@@ -29,14 +40,14 @@
       $mod: '';
     }
 
-    @include respond-from($breakpoint) {
-      $breakpoint-settings: map-get($breakpoints-settings, $breakpoint);
+    @include tool-breakpoint.respond-from($breakpoint) {
+      $breakpoint-settings: map.get($breakpoints-settings, $breakpoint);
       $gutter: null;
       $max-width: null;
 
       @if $breakpoint-settings != null {
-        $gutter: map-get($breakpoint-settings, gutter);
-        $max-width: map-get($breakpoint-settings, max-width);
+        $gutter: map.get($breakpoint-settings, gutter);
+        $max-width: map.get($breakpoint-settings, max-width);
 
         @if $gutter != null {
           $last-gutter: $gutter;
@@ -50,53 +61,53 @@
       // Container
       @if $with-container {
 
-        $container: ns('container' + $mod);
+        $container: namespace.ns('container' + $mod);
 
-        @if length($containers) > 0 {
+        @if list.length($containers) > 0 {
           #{$containers} {
             @if $gutter != null {
-              @include padding-x($gutter * 2);
+              @include space.padding-x($gutter * 2);
             }
 
             @if $max-width != null {
-              @include max-size($max-width + $last-gutter * 4);
+              @include size.max-size($max-width + $last-gutter * 4);
             }
           }
         }
 
-        $containers: append($containers, $container, 'comma');
+        $containers: list.append($containers, $container, 'comma');
 
         #{$container} {
           @if $last-gutter != 0 {
-            @include padding-x($last-gutter * 2);
+            @include space.padding-x($last-gutter * 2);
           }
 
           @if $last-max-width != null {
-            @include max-size($last-max-width + $last-gutter * 4);
+            @include size.max-size($last-max-width + $last-gutter * 4);
           }
         }
 
-        #{ns('container' + $mod + '--fluid')} {
-          @include padding-x(0);
-          @include max-size(none);
+        #{namespace.ns('container' + $mod + '--fluid')} {
+          @include space.padding-x(0);
+          @include size.max-size(none);
           overflow: hidden;
         }
       }
 
       // Gutters
-      $row-gutter: ns(grid-row#{$mod}--gutters);
+      $row-gutter: namespace.ns(grid-row#{$mod}--gutters);
       $g: $last-gutter;
 
       @if $gutter != null {
         $g: $gutter;
-        @if length($row-gutters) > 0 {
+        @if list.length($row-gutters) > 0 {
           #{$row-gutters} {
-            @include margin(-$g);
+            @include space.margin(-$g);
 
             > {
-              #{class-start-with(ns(col-, ''))},
-              #{ns(col)} {
-                @include padding($g);
+              #{pattern.class-start-with(namespace.ns(col-, ''))},
+              #{namespace.ns(col)} {
+                @include space.padding($g);
               }
             }
           }
@@ -104,43 +115,43 @@
       }
 
       #{$row-gutter} {
-        @include margin(-$g);
+        @include space.margin(-$g);
 
         > {
-          #{class-start-with(ns(col-, ''))},
-          #{ns(col)} {
-            @include padding($g);
+          #{pattern.class-start-with(namespace.ns(col-, ''))},
+          #{namespace.ns(col)} {
+            @include space.padding($g);
           }
         }
       }
 
-      $row-gutters: append($row-gutters, $row-gutter, 'comma');
+      $row-gutters: list.append($row-gutters, $row-gutter, 'comma');
 
-      #{ns(grid-row + $mod + --no-gutters)} {
-        @include margin(0);
+      #{namespace.ns(grid-row + $mod + --no-gutters)} {
+        @include space.margin(0);
 
         > {
-          #{class-start-with(ns(col-, ''))},
-          #{ns(col)} {
-            @include padding(0);
+          #{pattern.class-start-with(namespace.ns(col-, ''))},
+          #{namespace.ns(col)} {
+            @include space.padding(0);
           }
         }
       }
 
       // Cols
-      #{ns('col' + $mod)} {
+      #{namespace.ns('col' + $mod)} {
         flex: 1;
       }
 
       @for $i from 1 through $columns {
         $append: '#{$mod}-#{$i}';
-        #{ns('col' + $append)} {
-          @include grid-col($i, $columns);
+        #{namespace.ns('col' + $append)} {
+          @include col.grid-col($i, $columns);
         }
 
         @if $with-offsets {
-          #{ns('col-offset' + $append)} {
-            @include grid-col-offset($i, $columns);
+          #{namespace.ns('col-offset' + $append)} {
+            @include col.grid-col-offset($i, $columns);
           }
         }
       }

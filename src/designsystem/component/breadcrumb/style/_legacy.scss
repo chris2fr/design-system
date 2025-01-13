@@ -3,8 +3,8 @@
 /// @group breadcrumb
 ////
 
-@use 'src/module/legacy';
-@use 'src/module/selector';
+@use '../../../../module/legacy';
+@use '../../../../module/selector';
 
 @include legacy.is(ie11) {
   /**

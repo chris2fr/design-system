@@ -1,21 +1,26 @@
+@use "../../../style/display/tool/fit";
+@use "../../../style/media/setting";
+@use "../../../style/media/tool";
+@use "../../../style/selector/function/namespace";
+
 ////
 /// Core Module : Medias
 /// @group core
 ////
 
-#{ns(responsive-img)} {
-  @each $ratio, $value in $ratio-scale {
+#{namespace.ns(responsive-img)} {
+  @each $ratio, $value in setting.$ratio-scale {
     &--#{$ratio} {
-      @include aspect-ratio($ratio, true);
-      @include fit-cover-center;
+      @include tool.aspect-ratio($ratio, true);
+      @include fit.fit-cover-center;
     }
   }
 }
 
-#{ns(responsive-vid)} {
+#{namespace.ns(responsive-vid)} {
   @each $ratio in (16x9 4x3 1x1) {
     &--#{$ratio} {
-      @include aspect-ratio($ratio, true);
+      @include tool.aspect-ratio($ratio, true);
     }
   }
 }

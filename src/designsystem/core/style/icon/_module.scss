@@ -1,18 +1,23 @@
+@use "../selector/function/namespace";
+@use "../selector/tool/icon";
+@use "setting";
+@use "tool/default";
+
 ////
 /// Core Module : Icons
 /// @group core
 ////
 
-@include has-icon {
-  @include icon-style;
-  @include icon-size;
-  @include icon-content;
+@include icon.has-icon {
+  @include default.icon-style;
+  @include default.icon-size;
+  @include default.icon-content;
 }
 
-#{ns(icon)} {
-  @each $size, $value in $icon-size-map {
+#{namespace.ns(icon)} {
+  @each $size, $value in setting.$icon-size-map {
     &--#{$size} {
-      @include icon-size($size);
+      @include default.icon-size($size);
     }
   }
 }

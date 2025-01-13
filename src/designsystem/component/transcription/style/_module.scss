@@ -3,8 +3,8 @@
 /// @group transcription
 ////
 
-@use 'src/module/media-query';
-@use 'src/module/animate';
+@use '../../../../module/media-query';
+@use '../../../../module/animate';
 
 #{ns(transcription)} {
   position: relative;

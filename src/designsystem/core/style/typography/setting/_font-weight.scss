@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "variables";
+
 ////
 /// Core Setting : Typography font-weight
 /// @group core
@@ -32,6 +35,6 @@ $font-weight-vars: (
   breakpoints: false
 ) !default;
 
-@if (map-get($typography-vars, font-weight) != null) {
-  $font-weight-vars: map-get($typography-vars, font-weight);
+@if (map.get(variables.$typography-vars, font-weight) != null) {
+  $font-weight-vars: map.get(variables.$typography-vars, font-weight);
 }

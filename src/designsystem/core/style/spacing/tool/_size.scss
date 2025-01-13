@@ -1,3 +1,5 @@
+@use "../../selector/tool/breakpoint";
+
 ////
 /// Core Tool : Spacing size
 /// @group core
@@ -6,7 +8,7 @@
 @use '../../../../../module/spacing';
 
 @mixin width($width:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $width != null {
       width: #{spacing.space($width)};
     }
@@ -14,7 +16,7 @@
 }
 
 @mixin min-width($width:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $width != null {
       min-width: #{spacing.space($width)};
     }
@@ -22,7 +24,7 @@
 }
 
 @mixin max-width($width:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $width != null {
       max-width: #{spacing.space($width)};
     }
@@ -30,7 +32,7 @@
 }
 
 @mixin height($height:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $height != null {
       height: #{spacing.space($height)};
     }
@@ -38,7 +40,7 @@
 }
 
 @mixin min-height($height:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $height != null {
       min-height: #{spacing.space($height)};
     }
@@ -46,7 +48,7 @@
 }
 
 @mixin max-height($height:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $height != null {
       max-height: #{spacing.space($height)};
     }
@@ -54,7 +56,7 @@
 }
 
 @mixin size($width:null, $height:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $width != null {
       width: #{spacing.space($width)};
     }
@@ -65,7 +67,7 @@
 }
 
 @mixin min-size($min-width:null, $min-height:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $min-width != null {
       min-width: #{spacing.space($min-width)};
     }
@@ -76,7 +78,7 @@
 }
 
 @mixin max-size($max-width:null, $max-height:null, $from: null) {
-  @include respond-from($from) {
+  @include breakpoint.respond-from($from) {
     @if $max-width != null {
       max-width: #{spacing.space($max-width)};
     }

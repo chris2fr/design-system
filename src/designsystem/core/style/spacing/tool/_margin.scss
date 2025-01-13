@@ -1,10 +1,17 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+@use "../../selector/function/namespace";
+@use "../../selector/tool/breakpoint";
+
 ////
 /// Core Module : Spacing
 /// @group tools
 ////
 
-@use 'src/module/spacing';
-@use 'src/module/string';
+@use '../../../../../module/spacing';
+@use '../../../../../module/string' as str;
+@use 'sass:string';
 
 @function _spacing-name($prop: margin, $side:top, $value:1, $unit: null, $breakpoint: null) {
   $start: string.slice($prop, 1, 1);
@@ -19,10 +26,10 @@
     $middle: '#{$breakpoint}-';
   }
 
-  $end: "#{string.replace($value, '.', '-')}";
+  $end: "#{str.replace($value, '.', '-')}";
 
-  @if type-of($value) == 'number' and $value < 0 {
-    $end: "n#{string.replace(abs($value), '.', '-')}";
+  @if meta.type-of($value) == 'number' and $value < 0 {
+    $end: "n#{str.replace(math.abs($value), '.', '-')}";
   }
 
   @if $value != 0 and $unit != null {
@@ -35,19 +42,19 @@
 }
 
 @function _spacing-selectors($prop, $side, $value, $breakpoint) {
-  @if type-of($value) != 'number' {
-    @return '#{ns(_spacing-name($prop, $side, $value, null, $breakpoint))}';
+  @if meta.type-of($value) != 'number' {
+    @return '#{namespace.ns(_spacing-name($prop, $side, $value, null, $breakpoint))}';
   }
 
   $w: null;
-  @if (abs($value) % 2) == 0 and $value != 0 {
-    $w: abs($value) * 0.5;
+  @if (math.abs($value) % 2) == 0 and $value != 0 {
+    $w: math.abs($value) * 0.5;
   }
 
-  $selectors:'#{ns(_spacing-name($prop, $side, $value, v, $breakpoint))}';
+  $selectors:'#{namespace.ns(_spacing-name($prop, $side, $value, v, $breakpoint))}';
 
   @if $w != null {
-    $selectors: '#{$selectors},#{ns(_spacing-name($prop, $side, $value * 0.5, w, $breakpoint))}';
+    $selectors: '#{$selectors},#{namespace.ns(_spacing-name($prop, $side, $value * 0.5, w, $breakpoint))}';
   }
 
   @return $selectors;
@@ -56,7 +63,7 @@
 @mixin _spacing-property-variations($prop:margin, $value:1, $breakpoint: null) {
   $v: $value;
 
-  @if type-of($value) == 'number' {
+  @if meta.type-of($value) == 'number' {
     $v: spacing.space('#{$value}v') !important;
   }
 
@@ -75,11 +82,11 @@
 }
 
 @mixin _spacing-properties($prop, $settings, $breakpoint:null) {
-  $active: map_get($settings, active);
-  $from: map_get($settings, from);
-  $half: map_get($settings, half);
-  $through: map_get($settings, through);
-  $specials: map_get($settings, special);
+  $active: map.get($settings, active);
+  $from: map.get($settings, from);
+  $half: map.get($settings, half);
+  $through: map.get($settings, through);
+  $specials: map.get($settings, special);
 
   @if $active != false {
     @for $i from $from through $through {
@@ -105,9 +112,9 @@
   @each $prop, $setting in $settings {
     @include _spacing-properties($prop, $setting);
 
-    @if map_has_key($setting, breakpoints) {
-      @each $breakpoint in map_get($setting, breakpoints) {
-        @include respond-from($breakpoint) {
+    @if map.has-key($setting, breakpoints) {
+      @each $breakpoint in map.get($setting, breakpoints) {
+        @include breakpoint.respond-from($breakpoint) {
           @include _spacing-properties($prop, $setting, $breakpoint);
         }
       }

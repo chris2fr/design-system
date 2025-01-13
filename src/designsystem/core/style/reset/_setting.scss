@@ -1,6 +1,9 @@
+@use "sass:map";
+@use "../../variables";
+
 ////
 /// Core Setting : Reset
 /// @group core
 ////
 
-$reset-settings: map-get($variables, reset);
+$reset-settings: map.get(variables.$variables, reset);

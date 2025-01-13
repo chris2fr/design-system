@@ -1,14 +1,19 @@
+@use "sass:list";
+@use "sass:map";
+@use "../function/get-clickable-elements";
+@use "../setting/elements";
+
 ////
 /// Core Tool : Action clickable
 /// @group core
 ////
 
-@mixin clickable-selector($elements: $action-elements) {
+@mixin clickable-selector($elements: elements.$action-elements) {
   $selectors: ();
-  $elements: get-clickable-elements($elements);
+  $elements: get-clickable-elements.get-clickable-elements($elements);
   @each $element, $setting in $elements {
-    $selector: map-get($setting, selector);
-    $selectors: append($selectors, $selector, 'comma');
+    $selector: map.get($setting, selector);
+    $selectors: list.append($selectors, $selector, 'comma');
   }
 
   #{$selectors} {

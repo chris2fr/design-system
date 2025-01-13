@@ -1,3 +1,12 @@
+@use "../../selector/tool/pseudo";
+@use "../../spacing/tool/size";
+@use "../../spacing/tool/space";
+@use "../../tool/utility";
+@use "../../typography/tool/font-weight";
+@use "../../typography/tool/styles";
+@use "../tool/display";
+@use "../tool/hr";
+
 ////
 /// Core Module : Display hr
 /// @group core
@@ -5,31 +14,31 @@
 
 // TODO: inclure le reset dans les variables
 hr {
-  @include build-hr();
+  @include hr.build-hr();
 }
 
-@include build-utility (display, hr) {
-  @include build-hr();
+@include utility.build-utility (display, hr) {
+  @include hr.build-hr();
 
   &--sm {
-    @include width(40v);
-    @include margin-x(auto);
+    @include size.width(40v);
+    @include space.margin-x(auto);
   }
 
   &-or {
-    @include text-style(sm);
+    @include styles.text-style(sm);
     text-transform: uppercase;
-    @include font-weight(bold);
-    @include display-flex(row, center, center, nowrap, inline);
-    @include _pseudo(before after, '', inline-flex) {
+    @include font-weight.font-weight(bold);
+    @include display.display-flex(row, center, center, nowrap, inline);
+    @include pseudo.pseudo(before after, '', inline-flex) {
       height: 1px;
       width: 100%;
     }
-    @include before {
-      @include margin-right(3v);
+    @include pseudo.before {
+      @include space.margin-right(3v);
     }
-    @include after {
-      @include margin-left(3v);
+    @include pseudo.after {
+      @include space.margin-left(3v);
     }
   }
 }

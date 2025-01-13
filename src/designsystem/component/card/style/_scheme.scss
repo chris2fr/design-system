@@ -3,9 +3,9 @@
 /// @group card
 ////
 
-@use 'src/module/color';
-@use 'src/module/elevation';
-@use 'src/module/disabled';
+@use '../../../../module/color';
+@use '../../../../module/elevation';
+@use '../../../../module/disabled';
 
 @mixin _card-scheme($legacy: false) {
   #{ns(card)} {

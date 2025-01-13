@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "variables";
+
 ////
 /// Core Setting : Typography content
 /// @group core
@@ -59,6 +62,6 @@ $text-settings: (
 );
 
 $text-utilities: true !default;
-@if map-get($typography-vars, text) == false {
+@if map.get(variables.$typography-vars, text) == false {
   $text-utilities: false;
 }

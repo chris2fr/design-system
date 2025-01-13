@@ -1,21 +1,30 @@
+@use "sass:selector";
+@use "../../display/tool/fit";
+@use "../../selector/function/namespace";
+@use "../../selector/function/pattern";
+@use "../../spacing/tool/size";
+@use "../../tool/utility";
+@use "../setting";
+@use "../tool";
+
 ////
 /// Core Module : Media - aspect ratio utilities
 /// @group core
 ////
 
 @supports (aspect-ratio: 16 / 9) {
-  @each $ratio, $value in $ratio-scale {
-    @include build-utility(media, ratio, $ratio) {
-      @include aspect-ratio($ratio, true);
+  @each $ratio, $value in setting.$ratio-scale {
+    @include utility.build-utility(media, ratio, $ratio) {
+      @include tool.aspect-ratio($ratio, true);
     }
   }
 }
 
-#{class-start-with(ns('ratio', ''))} {
-  @include fit-cover-center;
-  @include size(100%);
+#{pattern.class-start-with(namespace.ns('ratio', ''))} {
+  @include fit.fit-cover-center;
+  @include size.size(100%);
 }
 
-#{selector-unify(iframe, #{class-start-with(ns('ratio', ''))})} {
+#{selector.unify(iframe, #{pattern.class-start-with(namespace.ns('ratio', ''))})} {
   object-fit: fill;
 }

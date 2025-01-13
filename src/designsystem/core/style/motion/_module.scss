@@ -1,9 +1,11 @@
+@use "../selector/function/namespace";
+
 ////
 /// Core Module : Motion
 /// @group core
 ////
 
-#{ns(transition)} {
+#{namespace.ns(transition)} {
   &-none {
     transition: none !important;
   }

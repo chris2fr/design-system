@@ -3,10 +3,10 @@
 /// @group core
 ////
 
-@import 'config';
-@import 'style/function';
-@import 'style/setting';
-@import 'style/tool';
+@use 'config';
+@use 'style/function';
+@use 'style/setting';
+@use 'style/tool';
 
 // deprecated
-@import 'deprecated/style/tool';
+@use 'deprecated/style/tool' as tool2;

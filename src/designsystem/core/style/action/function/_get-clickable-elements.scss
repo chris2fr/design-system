@@ -1,14 +1,17 @@
+@use "sass:map";
+@use "../setting/elements";
+
 ////
 /// Core Function : Action get-clickable-elements
 /// @group core
 ////
 
-@function get-clickable-elements ($elements: $action-elements) {
+@function get-clickable-elements ($elements: elements.$action-elements) {
   $result: ();
 
   @each $key, $clickable in $elements {
-    @if map-get($clickable, clickable) {
-      $result: map-merge($result, ($key: $clickable));
+    @if map.get($clickable, clickable) {
+      $result: map.merge($result, ($key: $clickable));
     }
   }
 

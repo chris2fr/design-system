@@ -1,9 +1,13 @@
+@use "sass:list";
+@use "sass:map";
+@use "../setting/font-face" as setting-font-face;
+
 ////
 /// Core Tool : Typography font-face
 /// @group core
 ////
 
-@use 'src/module/path';
+@use '../../../../../module/path';
 
 @mixin font-face($name, $filename, $font-weight: 400, $font-style: normal, $font-display: swap) {
   @font-face {
@@ -17,19 +21,19 @@
   }
 }
 
-@mixin build-font-faces($settings: $font-settings) {
+@mixin build-font-faces($settings: setting-font-face.$font-settings) {
   @each $type, $type-settings in $settings {
-    $name: map-get($type-settings, name);
-    $display: map-get($type-settings, display);
-    @include font-face-styles($name, $display, map-get($type-settings, styles));
+    $name: map.get($type-settings, name);
+    $display: map.get($type-settings, display);
+    @include font-face-styles($name, $display, map.get($type-settings, styles));
   }
 }
 
 @mixin font-face-styles($name, $display, $settings) {
   @each $style, $variation in $settings {
-    $font-weight: map_get($variation, font-weight);
-    $font-style: map_get($variation, font-style);
-    $filename: map_get($variation, file);
+    $font-weight: map.get($variation, font-weight);
+    $font-style: map.get($variation, font-style);
+    $filename: map.get($variation, file);
 
     @if $font-style == null {
       $font-style: normal;
@@ -41,13 +45,13 @@
   }
 }
 
-@function font-family($type: primary, $settings: $font-settings) {
-  $type-settings: map-get($settings, $type);
-  $families: join(map-get($type-settings, name), map-get($type-settings, fallback), 'comma');
+@function font-family($type: primary, $settings: setting-font-face.$font-settings) {
+  $type-settings: map.get($settings, $type);
+  $families: list.join(map.get($type-settings, name), map.get($type-settings, fallback), 'comma');
   @return $families;
 }
 
-@mixin font-family($type: primary, $important: false, $settings: $font-settings) {
+@mixin font-family($type: primary, $important: false, $settings: setting-font-face.$font-settings) {
   $families: font-family($type, $settings);
   @if $important {
     font-family: $families !important;

@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../../../variables";
+
 ////
 /// Core Setting : Spacing
 /// @group core
@@ -19,8 +22,8 @@ $spacing-settings: (
   )
 ) !default;
 
-@if (map_has_key($variables, spacing)) {
-  $spacing-settings: map-get($variables, spacing);
+@if (map.has-key(variables.$variables, spacing)) {
+  $spacing-settings: map.get(variables.$variables, spacing);
 }
 
 $spacing-sides: (top right bottom left);

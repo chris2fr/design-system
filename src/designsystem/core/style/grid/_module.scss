@@ -3,9 +3,11 @@
 /// @group core
 ////
 
-@import 'module/row';
-@import 'module/col';
-@import 'module/container';
+@use 'module/row';
+@use 'module/col';
+@use 'module/container';
+@use "setting";
+@use "tool/grid";
 
 // Génère les conteneurs, les colonnes et les écarts de colonnes
-@include grid($grid-settings);
+@include grid.grid(setting.$grid-settings);

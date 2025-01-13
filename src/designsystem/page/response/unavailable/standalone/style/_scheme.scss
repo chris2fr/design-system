@@ -3,7 +3,7 @@
 /// @group server
 ////
 
-@use 'src/module/color';
+@use '../../../../../../module/color';
 
 body {
   @include color.background(alt designsystem-primary, (standalone: true));

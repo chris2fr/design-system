@@ -1,8 +1,11 @@
+@use "../selector/function/namespace";
+@use "tool";
+
 ////
 /// Core Module : Collapse
 /// @group core
 ////
 
-#{ns(collapse)} {
-  @include collapse();
+#{namespace.ns(collapse)} {
+  @include tool.collapse();
 }

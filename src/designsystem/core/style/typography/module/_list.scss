@@ -1,15 +1,20 @@
+@use "../../selector/function/namespace";
+@use "../../selector/tool/pseudo";
+@use "../../spacing/tool/space";
+@use "../tool/list";
+
 ////
 /// Core Module : Reset lists
 /// @group core
 ////
 
-@include enable-list-style;
+@include list.enable-list-style;
 
 ul,
 ol,
 dl {
-  @include margin(0);
-  @include padding(0);
+  @include space.margin(0);
+  @include space.padding(0);
 
   margin-block-start: var(--xl-block);
   margin-block-end: var(--xl-block);
@@ -22,7 +27,7 @@ ul {
   padding-inline-start: var(--ul-start);
 
   > li {
-    @include marker {
+    @include pseudo.marker {
       font-size: calc(var(--xl-size) * 0.9);
     }
   }
@@ -35,7 +40,7 @@ ol {
 
   > li {
     counter-increment: li-counter;
-    @include marker(var(--ol-content)) {
+    @include pseudo.marker(var(--ol-content)) {
       font-size: var(--xl-size);
       font-weight: bold;
     }
@@ -44,7 +49,7 @@ ol {
 
 dl,
 dd {
-  @include margin(0);
+  @include space.margin(0);
   padding-inline-start: var(--ul-start);
 }
 
@@ -52,13 +57,13 @@ li,
 dd,
 dt {
   --xl-base: calc(var(--xl-size) * 0.9);
-  @include padding-bottom(var(--li-bottom));
+  @include space.padding-bottom(var(--li-bottom));
 }
 
-#{ns(raw-list)} {
-  @include disable-list-style;
+#{namespace.ns(raw-list)} {
+  @include list.disable-list-style;
 }
 
-#{ns(list)} {
-  @include enable-list-style;
+#{namespace.ns(list)} {
+  @include list.enable-list-style;
 }

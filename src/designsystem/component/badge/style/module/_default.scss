@@ -1,14 +1,16 @@
+@use "../tool";
+
 ////
 /// Badge Module : default
 /// @group badge
 ////
 
-@use 'src/module/spacing';
+@use '../../../../../module/spacing';
 
-@include build-badge();
+@include tool.build-badge();
 
 #{ns(badge)} {
-  @include nest-badge(md, left, null, null, false);
+  @include tool.nest-badge(md, left, null, null, false);
   @include icon-style(before);
   @include font-weight(bold);
   @include max-width(100%);
@@ -16,7 +18,7 @@
   border-radius: spacing.space(1v);
 
   &--sm {
-    @include nest-badge(sm, left, null, null, false);
+    @include tool.nest-badge(sm, left, null, null, false);
   }
 
   &,

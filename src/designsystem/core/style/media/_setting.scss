@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../../variables";
+
 ////
 /// Core Setting : Medias
 /// @group core
@@ -5,7 +8,7 @@
 
 @use "sass:math";
 
-$media-settings: map-get($variables, media);
+$media-settings: map.get(variables.$variables, media);
 
 // Ratio
 $ratio-scale: (

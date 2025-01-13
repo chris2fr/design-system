@@ -3,7 +3,7 @@
 /// @group alert
 ////
 
-@use 'src/module/spacing';
+@use '../../../../module/spacing';
 
 #{ns(alert)} {
   @include relative();

@@ -1,6 +1,6 @@
 @use 'sass:map';
-@use 'src/module/string';
-@use 'src/module/spacing';
+@use '../../../module/string' as str;
+@use '../../../module/spacing';
 @use '../variable/box-shadows';
 @use '../variable/constant';
 
@@ -9,5 +9,5 @@
 }
 
 @function get($id, $index: 1) {
-  @return string.replace(spacing.space(map.get(box-shadows.$values, $id)), constant.$value, '$color##{$index}');
+  @return str.replace(spacing.space(map.get(box-shadows.$values, $id)), constant.$value, '$color##{$index}');
 }

@@ -1,3 +1,7 @@
+@use "sass:list";
+@use "sass:map";
+@use "../setting/breakpoint";
+
 ////
 /// Core Tool : Selector Breakpoint
 /// @group core
@@ -13,10 +17,10 @@
 ///     }
 ///   }
 @mixin respond-from($media) {
-  $limits: map_get($breakpoints, $media);
+  $limits: map.get(breakpoint.$breakpoints, $media);
 
   @if $limits != null {
-    @media (min-width: nth($limits, 1)) {
+    @media (min-width: list.nth($limits, 1)) {
       @content;
     }
   }
@@ -38,10 +42,10 @@
 
   @debug 'afin de rester mobile first, n‘utiliser la mixin respond-to uniquement s‘il n‘y a pas d‘autre alternative, lui préférer systématiquement la mixin respond-from';
 
-  $limits: map_get($breakpoints, $media);
+  $limits: map.get(breakpoint.$breakpoints, $media);
 
-  @if $limits != null and length($limits) == 2 {
-    @media (max-width: nth($limits, 2)) {
+  @if $limits != null and list.length($limits) == 2 {
+    @media (max-width: list.nth($limits, 2)) {
       @content;
     }
   }
